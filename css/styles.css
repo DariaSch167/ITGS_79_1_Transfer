@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "FuturaNewBook400";
+  src: url("../assets/fonts/FuturaNewBook-Reg.eot") format("eot"), url("../assets/fonts/FuturaNewBook-Reg.ttf") format("ttf"), url("../assets/fonts/FuturaNewBook-Reg.woff") format("woff"), url("../assets/fonts/FuturaNewBook-Reg.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  max-width: 1920px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "FuturaNewBook400", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #fff;
+}/*# sourceMappingURL=styles.css.map */
