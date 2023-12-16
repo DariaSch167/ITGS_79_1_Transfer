@@ -11,9 +11,90 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>Transfer</header>
+    <header>
+      <!-- Part1 -- start -->
+      <div class="header__screen__wrapper row">
+        <div class="header__screen__title col-lg-7">
+          <h1>Пассажирские перевозки Германия - Калиниград - Германия</h1>
+        </div>
+        <!-- Lead-form -->
+        <div class="header__lead-form lead-form col-lg-5">
+          <div class="lead-form__wrapper">
+            <form action="x" class="form" method="POST">
+              <div class="lead-form__info lead-form__info__title">
+                <h2>Выберите услугу:</h2>
+              </div>
+              <div class="lead-form__input lead-form__input__radio">
+                <div class="lead-form__input__radio__wrap">
+                  <input type="radio" name="service-name" value="passenger" />
+                  <label for="passenger">Перевозка пассажира</label>
+                </div>
+                <div class="lead-form__input__radio__wrap">
+                  <input type="radio" name="service-name" value="cargo" />
+                  <label for="cargo">Перевозка груза</label>
+                </div>
+              </div>
+              <!-- Swap inputs on button click - start -->
+              <div class="lead-form__input lead-form__input__switch">
+                <label for="input1">Пункт отправления</label>
+                <input
+                  required
+                  type="text"
+                  id="input1"
+                  value="Калининград"
+                  readonly />
+                <input
+                  type="button"
+                  id="btn_swap"
+                  value="Поменять местами"
+                  onclick="switcher()" />
+                <label for="input2">Пункт прибытия</label>
+                <input
+                  required
+                  type="text"
+                  id="input2"
+                  value="Германия"
+                  readonly />
+              </div>
+              <!-- Swap inputs on button click - end -->
+              <div class="lead-form__input lead-form__input__num-of-pass">
+                <label for="num-of-pass">Количество человек</label>
+                <select name="num-of-pass">
+                  <option value="one-pass">1</option>
+                  <option value="two-pass">2</option>
+                  <option value="three-pass">3</option>
+                  <option value="more-pass">Больше</option>
+                </select>
+              </div>
+              <div class="lead-form__input lead-form__input__comments">
+                <label for="comments">Комментарий</label>
+                <textarea name="comments" rows="5" cols="33">
+              Введите комментарий
+              </textarea
+                >
+              </div>
+              <div class="lead-form__info lead-form__info__tariff">
+                <h2>Стоимость</h2>
+                <span>150 €</span>
+              </div>
+              <button class="lead-form__button" type="submit">
+                Оставить заявку
+              </button>
+              <div class="lead-form__info lead-form__info__fz-rule">
+                <p>
+                  Нажимая кнопку, вы даёте согласие на обработку персональных
+                  данных
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Part1 -- end -->
+    </header>
     <main></main>
     <footer></footer>
-    <script src="./css/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script1_form_input_switch.js"></script>
   </body>
 </html>
