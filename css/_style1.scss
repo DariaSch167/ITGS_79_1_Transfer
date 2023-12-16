@@ -1,0 +1,15 @@
+.header__screen__title {
+  & h1 {
+    text-transform: uppercase;
+  }
+}
+
+// Test coloring start
+.header__screen__title {
+  background-color: #c9e592a7;
+}
+.header__lead-form {
+  background-color: #b0b0eb;
+}
+// Test coloring end
+

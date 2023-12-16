@@ -1,30 +1,33 @@
 @font-face {
   font-family: "FiraSans_Bold700";
-  src: url("../assets/fonts/FiraSans-Bold.eot") format("eot"),
-    url("../assets/fonts/FiraSans-Bold.ttf") format("ttf"),
-    url("../assets/fonts/FiraSans-Bold.woff") format("woff"),
-    url("../assets/fonts/FiraSans-Bold.woff2") format("woff2");
+  src: url("../assets/fonts/FiraSans-Bold.eot") format("eot"), url("../assets/fonts/FiraSans-Bold.ttf") format("ttf"), url("../assets/fonts/FiraSans-Bold.woff") format("woff"), url("../assets/fonts/FiraSans-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "FiraSans_SemiBold600";
-  src: url("../assets/fonts/FiraSans-SemiBold.eot") format("eot"),
-    url("../assets/fonts/FiraSans-SemiBold.ttf") format("ttf"),
-    url("../assets/fonts/FiraSans-SemiBold.woff") format("woff"),
-    url("../assets/fonts/FiraSans-SemiBold.woff2") format("woff2");
+  src: url("../assets/fonts/FiraSans-SemiBold.eot") format("eot"), url("../assets/fonts/FiraSans-SemiBold.ttf") format("ttf"), url("../assets/fonts/FiraSans-SemiBold.woff") format("woff"), url("../assets/fonts/FiraSans-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "FiraSans_Regular400";
-  src: url("../assets/fonts/FiraSans-Regular.eot") format("eot"),
-    url("../assets/fonts/FiraSans-Regular.ttf") format("ttf"),
-    url("../assets/fonts/FiraSans-Regular.woff") format("woff"),
-    url("../assets/fonts/FiraSans-Regular.woff2") format("woff2");
+  src: url("../assets/fonts/FiraSans-Regular.eot") format("eot"), url("../assets/fonts/FiraSans-Regular.ttf") format("ttf"), url("../assets/fonts/FiraSans-Regular.woff") format("woff"), url("../assets/fonts/FiraSans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
+.header__screen__title h1 {
+  text-transform: uppercase;
+}
+
+.header__screen__title {
+  background-color: rgba(201, 229, 146, 0.6549019608);
+}
+
+.header__lead-form {
+  background-color: #b0b0eb;
+}
+
 body {
   max-width: 1920px;
   min-width: 320px;
@@ -35,4 +38,4 @@ body {
   font-size: 16px;
   font-weight: 400;
   background-color: #fff;
-} /*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
