@@ -13,3 +13,73 @@
 }
 // Test coloring end
 
+.lead-form {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1.5rem;
+    margin: 2rem;
+  }
+  & h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  &__input {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+// Radio-buttons styling
+// Hiding default radio-buttons + creating new style + hover effects
+// .lead-form__input__radio__wrap {
+//   & input {
+//     position: absolute;
+//     z-index: -1;
+//     opacity: 0;
+//   }
+//   & input + label {
+//     display: inline-flex;
+//     align-items: center;
+//     user-select: none;
+//   }
+//   & ::before {
+//     content: "";
+//     display: inline-block;
+//     width: 1.5rem;
+//     height: 1.5rem;
+//     flex-shrink: 0;
+//     flex-grow: 0;
+//     border: 1px solid #aaa;
+//     margin-right: 0.5em;
+//     background-repeat: no-repeat;
+//     background-position: center center;
+//     background-size: 50% 50%;
+//   }
+//   & input:checked + label::before {
+//     border-color: #aaa;
+//     background-color: #aaa;
+//   }
+//   /* стили при наведении курсора на checkbox */
+//   & input:not(:disabled):not(:checked) + label:hover::before {
+//     border-color: #b3d7ff;
+//   }
+//   /* стили для активного состояния чекбокса (при нажатии на него) */
+//   & input:not(:disabled):active + label::before {
+//     background-color: #b3d7ff;
+//     border-color: #b3d7ff;
+//   }
+//   /* стили для чекбокса, находящегося в фокусе */
+//   & input:focus + label::before {
+//     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+//   }
+//   /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+//   & input:focus:not(:checked) + label::before {
+//     border-color: #80bdff;
+//   }
+//   /* стили для чекбокса, находящегося в состоянии disabled */
+//   & input:disabled + label::before {
+//     background-color: #e9ecef;
+//   }
+// }

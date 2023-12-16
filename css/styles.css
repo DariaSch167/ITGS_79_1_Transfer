@@ -28,6 +28,22 @@
   background-color: #b0b0eb;
 }
 
+.lead-form__wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1.5rem;
+  margin: 2rem;
+}
+.lead-form h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.lead-form__input {
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   max-width: 1920px;
   min-width: 320px;
