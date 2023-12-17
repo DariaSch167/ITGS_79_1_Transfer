@@ -1,0 +1,13 @@
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+@mixin input_clean {
+  border: none;
+  background-color: transparent;
+}
+@mixin input_border {
+  padding: 0.5rem;
+  border: 1px solid $grey;
+  background-color: $light-grey;
+}
