@@ -21,12 +21,16 @@
         <div class="header__lead-form lead-form col-lg-5">
           <div class="lead-form__wrapper">
             <form action="x" class="form" method="POST">
-              <div class="lead-form__info lead-form__info__title">
-                <h2>Выберите услугу:</h2>
+              <div class="lead-form__info">
+                <h2 class="lead-form__info__title">Выберите услугу:</h2>
               </div>
               <div class="lead-form__input lead-form__input__radio">
                 <div class="lead-form__input__radio__wrap">
-                  <input type="radio" name="service-name" value="passenger" />
+                  <input
+                    type="radio"
+                    name="service-name"
+                    value="passenger"
+                    checked />
                   <label for="passenger">Перевозка пассажира</label>
                 </div>
                 <div class="lead-form__input__radio__wrap">
@@ -36,25 +40,25 @@
               </div>
               <!-- Swap inputs on button click - start -->
               <div class="lead-form__input lead-form__input__switch">
-                <label for="input1">Пункт отправления</label>
-                <input
-                  required
-                  type="text"
-                  id="input1"
-                  value="Калининград"
-                  readonly />
-                <input
-                  type="button"
-                  id="btn_swap"
-                  value="Поменять местами"
-                  onclick="switcher()" />
-                <label for="input2">Пункт прибытия</label>
-                <input
-                  required
-                  type="text"
-                  id="input2"
-                  value="Германия"
-                  readonly />
+                <div class="lead-form__input__switch__block">
+                  <label for="input1">Пункт отправления</label>
+                  <input
+                    required
+                    type="text"
+                    id="input1"
+                    value="Калининград"
+                    readonly />
+                </div>
+                <input type="button" id="btn_swap" onclick="switcher()" />
+                <div class="lead-form__input__switch__block">
+                  <label for="input2">Пункт прибытия</label>
+                  <input
+                    required
+                    type="text"
+                    id="input2"
+                    value="Германия"
+                    readonly />
+                </div>
               </div>
               <!-- Swap inputs on button click - end -->
               <div class="lead-form__input lead-form__input__num-of-pass">
@@ -68,20 +72,18 @@
               </div>
               <div class="lead-form__input lead-form__input__comments">
                 <label for="comments">Комментарий</label>
-                <textarea name="comments" rows="5" cols="33">
-              Введите комментарий
-              </textarea
-                >
+                <textarea name="comments" placeholder="Введите комментарий">
+                </textarea>
               </div>
               <div class="lead-form__info lead-form__info__tariff">
-                <h2>Стоимость</h2>
-                <span>150 €</span>
+                <span class="lead-form__info__tariff__title">Стоимость:</span>
+                <span class="lead-form__info__tariff__cost">150 €</span>
               </div>
               <button class="lead-form__button" type="submit">
                 Оставить заявку
               </button>
-              <div class="lead-form__info lead-form__info__fz-rule">
-                <p>
+              <div class="lead-form__info">
+                <p class="lead-form__info__fz-rule">
                   Нажимая кнопку, вы даёте согласие на обработку персональных
                   данных
                 </p>

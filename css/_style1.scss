@@ -1,85 +1,155 @@
+.header__screen__wrapper {
+  background-color: #ccc;
+}
+
 .header__screen__title {
   & h1 {
     text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    max-width: 90%;
+    padding: 6rem 4rem;
   }
 }
 
-// Test coloring start
-.header__screen__title {
-  background-color: #c9e592a7;
-}
-.header__lead-form {
-  background-color: #b0b0eb;
-}
-// Test coloring end
-
 .lead-form {
+  display: flex;
+  justify-content: center;
   &__wrapper {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
+    @include flex-column;
+    background-color: $white;
     padding: 1.5rem;
-    margin: 2rem;
+    margin: 2rem 0;
+    width: 80%;
   }
   & h2 {
     font-size: 1.25rem;
     font-weight: 700;
   }
   &__input {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
+  }
+  &__input__radio {
+    margin: 1rem 0;
   }
 }
 
 // Radio-buttons styling
-// Hiding default radio-buttons + creating new style + hover effects
-// .lead-form__input__radio__wrap {
-//   & input {
-//     position: absolute;
-//     z-index: -1;
-//     opacity: 0;
-//   }
-//   & input + label {
-//     display: inline-flex;
-//     align-items: center;
-//     user-select: none;
-//   }
-//   & ::before {
-//     content: "";
-//     display: inline-block;
-//     width: 1.5rem;
-//     height: 1.5rem;
-//     flex-shrink: 0;
-//     flex-grow: 0;
-//     border: 1px solid #aaa;
-//     margin-right: 0.5em;
-//     background-repeat: no-repeat;
-//     background-position: center center;
-//     background-size: 50% 50%;
-//   }
-//   & input:checked + label::before {
-//     border-color: #aaa;
-//     background-color: #aaa;
-//   }
-//   /* стили при наведении курсора на checkbox */
-//   & input:not(:disabled):not(:checked) + label:hover::before {
-//     border-color: #b3d7ff;
-//   }
-//   /* стили для активного состояния чекбокса (при нажатии на него) */
-//   & input:not(:disabled):active + label::before {
-//     background-color: #b3d7ff;
-//     border-color: #b3d7ff;
-//   }
-//   /* стили для чекбокса, находящегося в фокусе */
-//   & input:focus + label::before {
-//     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-//   }
-//   /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
-//   & input:focus:not(:checked) + label::before {
-//     border-color: #80bdff;
-//   }
-//   /* стили для чекбокса, находящегося в состоянии disabled */
-//   & input:disabled + label::before {
-//     background-color: #e9ecef;
-//   }
-// }
+.lead-form__input__radio__wrap {
+  & input {
+    display: none;
+  }
+  & input + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  & label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 1.5rem;
+    margin-right: 0;
+    line-height: 1.25rem;
+    user-select: none;
+  }
+  & label::before {
+    content: "";
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.25rem;
+    position: absolute;
+    left: 0;
+    border: 1px solid $grey;
+  }
+  // Не работает стилизация:
+  & input:checked + label::before {
+    border-color: $grey;
+    background-color: $grey;
+  }
+  & input:hover {
+    border-color: #000;
+  }
+}
+
+// Switcher input styling
+.lead-form__input__switch__block {
+  @include flex-column;
+  margin: 0.25rem 0;
+  @include input_border;
+  & label {
+    font-size: 0.7rem;
+  }
+  & input {
+    margin-top: 0.25rem;
+    @include input_clean;
+    user-select: none;
+  }
+}
+
+.lead-form__input__switch {
+  @include flex-column;
+  & input[type="button"] {
+    background: url("../assets/svg/block1_switch.svg") no-repeat;
+    background-size: cover;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: none;
+    align-self: center;
+  }
+}
+
+.lead-form__input__num-of-pass {
+  margin: 0.25rem 0;
+  @include input_border;
+  & label {
+    font-size: 0.7rem;
+  }
+  & select {
+    margin-top: 0.25rem;
+    @include input_clean;
+    user-select: none;
+  }
+}
+.lead-form__input__comments {
+  margin: 0.5rem 0;
+  @include input_border;
+  & label {
+    font-size: 0.7rem;
+  }
+  & textarea {
+    margin-top: 0.25rem;
+    padding: 0.5rem;
+    @include input_clean;
+    width: 100%;
+    height: 6rem;
+  }
+}
+
+.lead-form__info {
+  &__tariff {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    &__title {
+      font-size: 1.25rem;
+    }
+    &__cost {
+      margin-left: 1rem;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+  }
+  &__fz-rule {
+    font-size: 0.7rem;
+  }
+}
+
+.lead-form__button {
+  width: 100%;
+  border: none;
+  background-color: #303030;
+  color: #fff;
+  padding: 0.75rem 0;
+  margin: 1rem 0;
+}
