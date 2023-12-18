@@ -196,3 +196,8 @@ body {
   font-weight: 400;
   background-color: #fff;
 }/*# sourceMappingURL=styles.css.map */
+.departures-custom-button {
+  border: none;
+  background-color: #303030;
+  color: #fff;
+}
