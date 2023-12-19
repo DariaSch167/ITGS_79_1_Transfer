@@ -5,7 +5,8 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
-      shrink-to-fit="no" />
+      shrink-to-fit="no"
+    />
     <title>Transfer</title>
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -70,6 +71,87 @@
           </div>
         </div>
       </div>
+      <!-- Part1 -- start -->
+      <div class="header__screen__wrapper row">
+        <div class="header__screen__title col-lg-7">
+          <h1>Пассажирские перевозки Германия - Калиниград - Германия</h1>
+        </div>
+        <!-- Lead-form -->
+        <div class="header__lead-form lead-form col-lg-5">
+          <div class="lead-form__wrapper">
+            <form action="x" class="form" method="POST">
+              <div class="lead-form__info">
+                <h2 class="lead-form__info__title">Выберите услугу:</h2>
+              </div>
+              <div class="lead-form__input lead-form__input__radio">
+                <div class="lead-form__input__radio__wrap">
+                  <input
+                    type="radio"
+                    name="service-name"
+                    value="passenger"
+                    checked />
+                  <label for="passenger">Перевозка пассажира</label>
+                </div>
+                <div class="lead-form__input__radio__wrap">
+                  <input type="radio" name="service-name" value="cargo" />
+                  <label for="cargo">Перевозка груза</label>
+                </div>
+              </div>
+              <!-- Swap inputs on button click - start -->
+              <div class="lead-form__input lead-form__input__switch">
+                <div class="lead-form__input__switch__block">
+                  <label for="input1">Пункт отправления</label>
+                  <input
+                    required
+                    type="text"
+                    id="input1"
+                    value="Калининград"
+                    readonly />
+                </div>
+                <input type="button" id="btn_swap" onclick="switcher()" />
+                <div class="lead-form__input__switch__block">
+                  <label for="input2">Пункт прибытия</label>
+                  <input
+                    required
+                    type="text"
+                    id="input2"
+                    value="Германия"
+                    readonly />
+                </div>
+              </div>
+              <!-- Swap inputs on button click - end -->
+              <div class="lead-form__input lead-form__input__num-of-pass">
+                <label for="num-of-pass">Количество человек</label>
+                <select name="num-of-pass">
+                  <option value="one-pass">1</option>
+                  <option value="two-pass">2</option>
+                  <option value="three-pass">3</option>
+                  <option value="more-pass">Больше</option>
+                </select>
+              </div>
+              <div class="lead-form__input lead-form__input__comments">
+                <label for="comments">Комментарий</label>
+                <textarea name="comments" placeholder="Введите комментарий">
+                </textarea>
+              </div>
+              <div class="lead-form__info lead-form__info__tariff">
+                <span class="lead-form__info__tariff__title">Стоимость:</span>
+                <span class="lead-form__info__tariff__cost">150 €</span>
+              </div>
+              <button class="lead-form__button" type="submit">
+                Оставить заявку
+              </button>
+              <div class="lead-form__info">
+                <p class="lead-form__info__fz-rule">
+                  Нажимая кнопку, вы даёте согласие на обработку персональных
+                  данных
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Part1 -- end -->
     </header>
     <!-- Main content -->
     <main>
@@ -105,6 +187,7 @@
             </div>
           </div>
         </div>
+<<<<<<< HEAD
       </section>
       </section>
       <!-- services card 1 -->
@@ -139,14 +222,92 @@
                     Оставить заявку
                   </button>
                 </div>
+=======
+      </div>
+    </section>
+        <!-- Конец Блок Отправления-О нас-Услуги -->
+      <section class="FAQ">
+        <div class="FAQ_title">Вопросы и ответы</div>
+        <div class="FAQ_questions">
+          <div
+            class="FAQ_questions accordion accordion-flush"
+            id="accordionFlushExample"
+          >
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  Вопрос 1
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">Ответ 1</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  Вопрос 2
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">Ответ 2</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  Вопрос 3
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">Ответ3</div>
+>>>>>>> b11ad7de3ee0a2da8213630883e8210c737dd018
               </div>
             </div>
           </div>
         </div>
       </section>
+<<<<<<< HEAD
       <!-- Конец Блок Отправления-Услуги-Дополнительно -->
+=======
+    </main>
+>>>>>>> b11ad7de3ee0a2da8213630883e8210c737dd018
     <!-- Footer -->
     <footer></footer>
-    <script src="./css/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script1_form_input_switch.js"></script>
   </body>
 </html>
