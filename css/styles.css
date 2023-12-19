@@ -207,22 +207,37 @@ header {
   margin: 1.25rem 0;
 }
 
+@font-face {
+  font-family: "FiraSans_Bold700";
+  src: url("../assets/fonts/FiraSans-Bold.eot") format("eot"), url("../assets/fonts/FiraSans-Bold.ttf") format("ttf"), url("../assets/fonts/FiraSans-Bold.woff") format("woff"), url("../assets/fonts/FiraSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FiraSans_SemiBold600";
+  src: url("../assets/fonts/FiraSans-SemiBold.eot") format("eot"), url("../assets/fonts/FiraSans-SemiBold.ttf") format("ttf"), url("../assets/fonts/FiraSans-SemiBold.woff") format("woff"), url("../assets/fonts/FiraSans-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FiraSans_Regular400";
+  src: url("../assets/fonts/FiraSans-Regular.eot") format("eot"), url("../assets/fonts/FiraSans-Regular.ttf") format("ttf"), url("../assets/fonts/FiraSans-Regular.woff") format("woff"), url("../assets/fonts/FiraSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
 .FAQ {
   display: grid;
   grid-template-columns: 30% 60%;
   margin-top: 20vh;
   justify-content: center;
 }
-
-.FAQ_title {
+.FAQ.FAQ_title {
   font-weight: 600;
   font-size: 2.5rem;
 }
 
 .accordion-item {
   border: none;
-  font-size: 20px;
-  padding: 20px, 30px, 20px, 30px;
   justify-content: space-between;
   margin-bottom: 20px;
 }
@@ -234,6 +249,8 @@ header {
 
 .accordion-button {
   position: static;
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 .accordion-button:focus {
   box-shadow: none;
@@ -245,6 +262,11 @@ header {
 .accordion-button:not(.collapsed) {
   color: black;
   background-color: white;
+}
+
+.accordion-body {
+  font-weight: 400;
+  font-size: 1.125rem;
 }
 
 body {

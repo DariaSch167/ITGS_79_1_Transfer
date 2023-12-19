@@ -13,7 +13,6 @@
 }
 .accordion-item {
 	border: none;
-	padding: 20px, 30px, 20px, 30px ;
 	justify-content: space-between;
 	margin-bottom: 20px;
 &.active {
@@ -24,15 +23,22 @@
   }
   .accordion-button {
 	position: static;
+	font-size: $r_20 ;
+	font-weight: 500;
 	&:focus {
 		box-shadow: none; 
 	}
 	&.collapsed {
 		border: 1px #EDEDED solid;
 		border-radius: 10px;
+
 	}
 	&:not(.collapsed) {
 		color: black;
 		background-color: white;
 	}
+}
+.accordion-body {
+	font-weight: 400;
+	font-size: $r_18;
 }
