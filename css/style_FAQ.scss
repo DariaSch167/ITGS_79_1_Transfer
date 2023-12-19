@@ -1,0 +1,38 @@
+@import "fonts";
+@import "variables";
+@import "mixins";
+.FAQ {
+	display: grid;
+	grid-template-columns: 30% 60%;
+	margin-top: 20vh;
+	justify-content: center;
+&.FAQ_title {
+		font-weight: 600;
+		font-size: $H2_40;
+	}
+}
+.accordion-item {
+	border: none;
+	padding: 20px, 30px, 20px, 30px ;
+	justify-content: space-between;
+	margin-bottom: 20px;
+&.active {
+	outline: 1px solid #FB8D00;
+	border-radius: 10px;
+	/* Устанавливаем оранжевую рамку для активного элемента */
+  }
+  }
+  .accordion-button {
+	position: static;
+	&:focus {
+		box-shadow: none; 
+	}
+	&.collapsed {
+		border: 1px #EDEDED solid;
+		border-radius: 10px;
+	}
+	&:not(.collapsed) {
+		color: black;
+		background-color: white;
+	}
+}
