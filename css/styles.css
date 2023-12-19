@@ -14,4 +14,30 @@ body {
   font-size: 16px;
   font-weight: 400;
   background-color: #fff;
-}/*# sourceMappingURL=styles.css.map */
+}
+.block {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.block h2 {
+  font-family: "Fira Sans";
+font-size: 96px;
+font-weight: 400;
+line-height: 125px;
+letter-spacing: 0.03em;
+text-align: left;
+flex: 1;
+margin-left: 2px;
+border: 2px solid #FB8D00
+}
+.block p {
+font-family: "Fira Sans";
+font-size: 20px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: left;
+flex: 6;
+margin-right: 2px;
+}
