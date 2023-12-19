@@ -30,7 +30,6 @@
 
 .accordion-item {
   border: none;
-  padding: 20px, 30px, 20px, 30px;
   justify-content: space-between;
   margin-bottom: 20px;
 }
@@ -42,6 +41,8 @@
 
 .accordion-button {
   position: static;
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 .accordion-button:focus {
   box-shadow: none;
@@ -53,4 +54,9 @@
 .accordion-button:not(.collapsed) {
   color: black;
   background-color: white;
+}
+
+.accordion-body {
+  font-weight: 400;
+  font-size: 1.125rem;
 }/*# sourceMappingURL=style_FAQ.css.map */
