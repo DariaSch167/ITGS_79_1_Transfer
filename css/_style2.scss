@@ -1,5 +1,4 @@
-.departures-custom-button {
-    border: none;
-    background-color: #303030;
-    color: #fff;
+.btn-custom-services {
+    @extend .btn; // Расширяем стили Bootstrap для кнопки
+    border: 2px solid #007bff; // Цвет границы, в данном случае синий
 }

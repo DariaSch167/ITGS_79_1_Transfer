@@ -217,3 +217,12 @@ body {
   font-weight: 400;
   background-color: #fff;
 }/*# sourceMappingURL=styles.css.map */
+
+.btn-custom-services {
+  border: 2px solid #fb8d00;
+  color: #fb8d00; 
+}
+.additionally {
+  background-color: #fb8d00;
+  color: #ffffff;
+}
