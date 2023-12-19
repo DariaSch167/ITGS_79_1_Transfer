@@ -11,7 +11,65 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+ <!-- Header -->
     <header>
+     <!-- Navigation bar -->
+      <div class="header">
+        <a href="/" class="header__logo">
+          <picture>
+            <source
+              srcset="./assets/svg/logo-min.svg"
+              media="(max-width: 965px)" />
+            <source srcset="./assets/svg/logo.svg" />
+            <img
+              src="./assets/svg/logo.svg"
+              alt="Логотип «Transfer»"
+              class="img__fluid" />
+          </picture>
+        </a>
+        <!-- Hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu" />
+        <label class="hamb" for="side-menu"
+          ><span class="hamb-line"></span
+        ></label>
+        <!-- Menu -->
+        <nav class="nav">
+          <ul class="nav__wrapper">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Отправления</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">О нас</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Услуги</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Почему мы</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Отзывы</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Contacts -->
+        <div class="header__contacts">
+          <div class="header__socials">
+            <a href="/" class="header__socials_link">
+              <svg></svg>
+            </a>
+            <a href="/" class="header__socials_link">
+              <svg></svg>
+            </a>
+            <a href="/" class="header__socials_link">
+              <svg></svg>
+            </a>
+          </div>
+          <div class="header__phone">
+            <a href="tel:+79996031585">+7 999 603 15 85</a>
+          </div>
+        </div>
+      </div>
       <!-- Part1 -- start -->
       <div class="header__screen__wrapper row">
         <div class="header__screen__title col-7">
@@ -251,7 +309,8 @@
           </div>
         </div>
       </section>
-    </main>
+    </main
+    <!-- Footer -->
     <footer></footer>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/script1_form_input_switch.js"></script>
