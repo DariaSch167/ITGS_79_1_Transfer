@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "FiraSans_Bold700";
   src: url("../assets/fonts/FiraSans-Bold.eot") format("eot"), url("../assets/fonts/FiraSans-Bold.ttf") format("ttf"), url("../assets/fonts/FiraSans-Bold.woff") format("woff"), url("../assets/fonts/FiraSans-Bold.woff2") format("woff2");
@@ -204,6 +205,46 @@ header {
   font-size: 1.25rem;
   padding: 0.75rem 0;
   margin: 1.25rem 0;
+}
+
+.FAQ {
+  display: grid;
+  grid-template-columns: 30% 60%;
+  margin-top: 20vh;
+  justify-content: center;
+}
+
+.FAQ_title {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.accordion-item {
+  border: none;
+  font-size: 20px;
+  padding: 20px, 30px, 20px, 30px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.accordion-item.active {
+  outline: 1px solid #FB8D00;
+  border-radius: 10px;
+  /* Устанавливаем оранжевую рамку для активного элемента */
+}
+
+.accordion-button {
+  position: static;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-button.collapsed {
+  border: 1px #EDEDED solid;
+  border-radius: 10px;
+}
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: white;
 }
 
 body {
