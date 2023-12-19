@@ -1,9 +1,3 @@
-@font-face {
-  font-family: "FuturaNewBook400";
-  src: url("../assets/fonts/FuturaNewBook-Reg.eot") format("eot"), url("../assets/fonts/FuturaNewBook-Reg.ttf") format("ttf"), url("../assets/fonts/FuturaNewBook-Reg.woff") format("woff"), url("../assets/fonts/FuturaNewBook-Reg.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
 body {
   max-width: 1920px;
   min-width: 320px;
@@ -15,12 +9,12 @@ body {
   font-weight: 400;
   background-color: #fff;
 }
-.block {
+.container-block {
   display: flex;
   align-items: center;
   gap: 2px;
 }
-.block h2 {
+.container-block h2 {
   font-family: "Fira Sans";
 font-size: 96px;
 font-weight: 400;
@@ -28,10 +22,9 @@ line-height: 125px;
 letter-spacing: 0.03em;
 text-align: left;
 flex: 1;
-margin-left: 2px;
 border: 2px solid #FB8D00
 }
-.block p {
+.container-block p {
 font-family: "Fira Sans";
 font-size: 20px;
 font-weight: 400;
@@ -39,5 +32,14 @@ line-height: 26px;
 letter-spacing: 0em;
 text-align: left;
 flex: 6;
-margin-right: 2px;
+}
+.col-12 text-center
+{
+font-family: "Fira Sans";
+font-size: 40px;
+font-weight: 600;
+line-height: 52px;
+letter-spacing: 0em;
+text-align: left;
+background: #292929;
 }
