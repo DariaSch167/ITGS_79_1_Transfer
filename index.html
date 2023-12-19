@@ -5,8 +5,7 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
-      shrink-to-fit="no"
-    />
+      shrink-to-fit="no" />
     <title>Transfer</title>
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -15,15 +14,16 @@
     <header>
       <!-- Part1 -- start -->
       <div class="header__screen__wrapper row">
-        <div class="header__screen__title col-lg-7">
-          <h1>Пассажирские перевозки Германия - Калиниград - Германия</h1>
+        <div class="header__screen__title col-7">
+          <h1>Пассажирские перевозки</h1>
+          <h2>Германия - Калиниград - Германия</h2>
         </div>
         <!-- Lead-form -->
-        <div class="header__lead-form lead-form col-lg-5">
+        <div class="header__lead-form lead-form col-5">
           <div class="lead-form__wrapper">
             <form action="x" class="form" method="POST">
               <div class="lead-form__info">
-                <h2 class="lead-form__info__title">Выберите услугу:</h2>
+                <h3 class="lead-form__info__title">Выберите услугу:</h3>
               </div>
               <div class="lead-form__input lead-form__input__radio">
                 <div class="lead-form__input__radio__wrap">
@@ -31,12 +31,33 @@
                     type="radio"
                     name="service-name"
                     value="passenger"
+                    id="passenger"
                     checked />
-                  <label for="passenger">Перевозка пассажира</label>
+                  <label for="passenger">Пассажирские перевозки</label>
                 </div>
                 <div class="lead-form__input__radio__wrap">
-                  <input type="radio" name="service-name" value="cargo" />
-                  <label for="cargo">Перевозка груза</label>
+                  <input
+                    type="radio"
+                    name="service-name"
+                    value="pets"
+                    id="pets" />
+                  <label for="pets">Перевозка домашних животных</label>
+                </div>
+                <div class="lead-form__input__radio__wrap">
+                  <input
+                    type="radio"
+                    name="service-name"
+                    value="cargo"
+                    id="cargo" />
+                  <label for="cargo">Доставка посылок и корреспонденции</label>
+                </div>
+                <div class="lead-form__input__radio__wrap">
+                  <input
+                    type="radio"
+                    name="service-name"
+                    value="urn"
+                    id="urn" />
+                  <label for="urn">Транспортировка праха в урнах</label>
                 </div>
               </div>
               <!-- Swap inputs on button click - start -->
@@ -73,8 +94,9 @@
               </div>
               <div class="lead-form__input lead-form__input__comments">
                 <label for="comments">Комментарий</label>
-                <textarea name="comments" placeholder="Введите комментарий">
-                </textarea>
+                <textarea
+                  name="comments"
+                  placeholder="Введите комментарий"></textarea>
               </div>
               <div class="lead-form__info lead-form__info__tariff">
                 <span class="lead-form__info__tariff__title">Стоимость:</span>
@@ -100,53 +122,75 @@
       <!-- Начало Блок Отправления-О нас-Услуги -->
       <section class="departures">
         <div class="title">Отправления</div>
-        <p>Германия (отправка каждую среду по индивидуальному мартшруту), Калининград (каждую субботу в 03:00)</p>
+        <p>
+          Германия (отправка каждую среду по индивидуальному мартшруту),
+          Калининград (каждую субботу в 03:00)
+        </p>
       </section>
       <section class="about_us">
         <div class="title">О нас</div>
         <p>Требования по сайту от заказчицы</p>
         <ul>
-          <li>требуется сайт-визитка (заказчица говорит одностраничный, но есть вопрос с отражением услуг)</li>
-          <li>на русском, тк ЦА русскоговорящая (емцы очень редко - это nice to have, не must have);</li>
+          <li>
+            требуется сайт-визитка (заказчица говорит одностраничный, но есть
+            вопрос с отражением услуг)
+          </li>
+          <li>
+            на русском, тк ЦА русскоговорящая (емцы очень редко - это nice to
+            have, не must have);
+          </li>
           <li>шапка: баннер (пожелание: фото Мюнхена);</li>
-          <li>в верхнем меню: название компании TRANSFER, разделы меню (не согласованы), иконки соц сетей (инста, телеграмм, WA, и контактный номер телефона)</li>
+          <li>
+            в верхнем меню: название компании TRANSFER, разделы меню (не
+            согласованы), иконки соц сетей (инста, телеграмм, WA, и контактный
+            номер телефона)
+          </li>
         </ul>
       </section>
-        <!-- services card 1 -->
+      <!-- services card 1 -->
       <section class="services">
         <div class="title">Услуги</div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card service-card bg-light text-white">
-              <img src="https://via.placeholder.com/500" class="card-img-top" alt="Изображение услуги 1">
-              <div class="card-img-overlay">
-                <div class="card-title">Перевозка пассажиров</div>
-                <button class="departures-custom-button">Оставить заявку</button>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card service-card bg-light text-white">
+                <img
+                  src="https://via.placeholder.com/500"
+                  class="card-img-top"
+                  alt="Изображение услуги 1" />
+                <div class="card-img-overlay">
+                  <div class="card-title">Перевозка пассажиров</div>
+                  <button class="departures-custom-button">
+                    Оставить заявку
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-        <!-- services card 2 -->
-          <div class="col-md-6">
-            <div class="card service-card bg-light text-white">
-              <img src="https://via.placeholder.com/500" class="card-img-top" alt="Изображение услуги 2">
-              <div class="card-img-overlay">
-                <div class="card-title">Перевозка грузов</div>
-                <button class="departures-custom-button">Оставить заявку</button>
+            <!-- services card 2 -->
+            <div class="col-md-6">
+              <div class="card service-card bg-light text-white">
+                <img
+                  src="https://via.placeholder.com/500"
+                  class="card-img-top"
+                  alt="Изображение услуги 2" />
+                <div class="card-img-overlay">
+                  <div class="card-title">Перевозка грузов</div>
+                  <button class="departures-custom-button">
+                    Оставить заявку
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-        <!-- Конец Блок Отправления-О нас-Услуги -->
+      </section>
+      <!-- Конец Блок Отправления-О нас-Услуги -->
       <section class="FAQ">
         <div class="FAQ_title">Вопросы и ответы</div>
         <div class="FAQ_questions">
           <div
             class="FAQ_questions accordion accordion-flush"
-            id="accordionFlushExample"
-          >
+            id="accordionFlushExample">
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button
@@ -155,16 +199,14 @@
                   data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseOne"
                   aria-expanded="false"
-                  aria-controls="flush-collapseOne"
-                >
+                  aria-controls="flush-collapseOne">
                   Вопрос 1
                 </button>
               </h2>
               <div
                 id="flush-collapseOne"
                 class="accordion-collapse collapse"
-                data-bs-parent="#accordionFlushExample"
-              >
+                data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">Ответ 1</div>
               </div>
             </div>
@@ -176,16 +218,14 @@
                   data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseTwo"
                   aria-expanded="false"
-                  aria-controls="flush-collapseTwo"
-                >
+                  aria-controls="flush-collapseTwo">
                   Вопрос 2
                 </button>
               </h2>
               <div
                 id="flush-collapseTwo"
                 class="accordion-collapse collapse"
-                data-bs-parent="#accordionFlushExample"
-              >
+                data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">Ответ 2</div>
               </div>
             </div>
@@ -197,16 +237,14 @@
                   data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseThree"
                   aria-expanded="false"
-                  aria-controls="flush-collapseThree"
-                >
+                  aria-controls="flush-collapseThree">
                   Вопрос 3
                 </button>
               </h2>
               <div
                 id="flush-collapseThree"
                 class="accordion-collapse collapse"
-                data-bs-parent="#accordionFlushExample"
-              >
+                data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">Ответ3</div>
               </div>
             </div>

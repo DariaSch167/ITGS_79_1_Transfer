@@ -1,14 +1,21 @@
-.header__screen__wrapper {
-  background-color: #ccc;
+header {
+  background-image: url("../assets/images/header_screen_background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .header__screen__title {
-  & h1 {
+  @include flex-column;
+  justify-content: flex-end;
+  padding-left: 4.875rem;
+  padding-bottom: 3.125rem;
+  & h1,
+  & h2 {
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: $H1_48;
     font-weight: 700;
-    max-width: 90%;
-    padding: 6rem 4rem;
+    color: $white;
+    // padding: 6rem 4rem;
   }
 }
 
@@ -18,19 +25,23 @@
   &__wrapper {
     @include flex-column;
     background-color: $white;
-    padding: 1.5rem;
-    margin: 2rem 0;
+    border-radius: 0.625rem;
+    border: $grey-border;
+    padding: 1.875rem;
+    margin-top: 1.875rem;
+    margin-bottom: 3.125rem;
     width: 80%;
+    color: $black;
   }
-  & h2 {
-    font-size: 1.25rem;
-    font-weight: 700;
+  & h3 {
+    font-size: $H3_32;
+    font-weight: 600;
   }
   &__input {
     @include flex-column;
   }
   &__input__radio {
-    margin: 1rem 0;
+    margin: 1.25rem 0;
   }
 }
 
@@ -43,12 +54,14 @@
     display: inline-flex;
     align-items: center;
     user-select: none;
+    margin-top: 0.75rem;
   }
   & label {
+    font-size: $r_18;
     display: inline-block;
     cursor: pointer;
     position: relative;
-    padding-left: 1.5rem;
+    padding-left: 2.25rem;
     margin-right: 0;
     line-height: 1.25rem;
     user-select: none;
@@ -56,19 +69,18 @@
   & label::before {
     content: "";
     display: inline-block;
-    width: 1.25rem;
-    height: 1.25rem;
+    background-image: url("../assets/svg/radio-button_unchecked.svg");
+    background-size: cover;
+    width: 1.875rem;
+    height: 1.875rem;
     position: absolute;
     left: 0;
-    border: 1px solid $grey;
   }
-  // Не работает стилизация:
   & input:checked + label::before {
-    border-color: $grey;
-    background-color: $grey;
-  }
-  & input:hover {
-    border-color: #000;
+    background-image: url("../assets/svg/radio-button_checked.svg");
+    background-size: cover;
+    width: 1.875rem;
+    height: 1.875rem;
   }
 }
 
@@ -78,9 +90,10 @@
   margin: 0.25rem 0;
   @include input_border;
   & label {
-    font-size: 0.7rem;
+    font-size: $r_14;
   }
   & input {
+    font-size: $r_18;
     margin-top: 0.25rem;
     @include input_clean;
     user-select: none;
@@ -92,8 +105,8 @@
   & input[type="button"] {
     background: url("../assets/svg/block1_switch.svg") no-repeat;
     background-size: cover;
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 1.5rem;
+    height: 1.5rem;
     border: none;
     align-self: center;
   }
@@ -103,9 +116,10 @@
   margin: 0.25rem 0;
   @include input_border;
   & label {
-    font-size: 0.7rem;
+    font-size: $r_14;
   }
   & select {
+    font-size: $r_18;
     margin-top: 0.25rem;
     @include input_clean;
     user-select: none;
@@ -115,11 +129,11 @@
   margin: 0.5rem 0;
   @include input_border;
   & label {
-    font-size: 0.7rem;
+    font-size: $r_14;
   }
   & textarea {
+    font-size: $r_18;
     margin-top: 0.25rem;
-    padding: 0.5rem;
     @include input_clean;
     width: 100%;
     height: 6rem;
@@ -130,26 +144,28 @@
   &__tariff {
     display: flex;
     align-items: center;
-    margin: 1rem 0;
+    justify-content: space-between;
+    margin-top: 1.25rem 0;
     &__title {
-      font-size: 1.25rem;
+      font-size: $r_18;
     }
     &__cost {
-      margin-left: 1rem;
-      font-size: 2rem;
+      font-size: $H2_40;
       font-weight: 700;
     }
   }
   &__fz-rule {
-    font-size: 0.7rem;
+    font-size: $r_14;
   }
 }
 
 .lead-form__button {
   width: 100%;
   border: none;
-  background-color: #303030;
-  color: #fff;
+  border-radius: 0.1875rem;
+  background-color: $orange;
+  color: $white;
+  font-size: $r_20;
   padding: 0.75rem 0;
-  margin: 1rem 0;
+  margin: 1.25rem 0;
 }

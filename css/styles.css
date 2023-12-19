@@ -16,16 +16,24 @@
   font-weight: 400;
   font-style: normal;
 }
-.header__screen__wrapper {
-  background-color: #ccc;
+header {
+  background-image: url("../assets/images/header_screen_background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.header__screen__title h1 {
+.header__screen__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 4.875rem;
+  padding-bottom: 3.125rem;
+}
+.header__screen__title h1, .header__screen__title h2 {
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
-  max-width: 90%;
-  padding: 6rem 4rem;
+  color: #ffffff;
 }
 
 .lead-form {
@@ -35,21 +43,25 @@
 .lead-form__wrapper {
   display: flex;
   flex-direction: column;
-  background-color: #fff;
-  padding: 1.5rem;
-  margin: 2rem 0;
+  background-color: #ffffff;
+  border-radius: 0.625rem;
+  border: 1px solid #ededed;
+  padding: 1.875rem;
+  margin-top: 1.875rem;
+  margin-bottom: 3.125rem;
   width: 80%;
+  color: #292929;
 }
-.lead-form h2 {
-  font-size: 1.25rem;
-  font-weight: 700;
+.lead-form h3 {
+  font-size: 2rem;
+  font-weight: 600;
 }
 .lead-form__input {
   display: flex;
   flex-direction: column;
 }
 .lead-form__input__radio {
-  margin: 1rem 0;
+  margin: 1.25rem 0;
 }
 
 .lead-form__input__radio__wrap input {
@@ -61,12 +73,14 @@
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  margin-top: 0.75rem;
 }
 .lead-form__input__radio__wrap label {
+  font-size: 1.125rem;
   display: inline-block;
   cursor: pointer;
   position: relative;
-  padding-left: 1.5rem;
+  padding-left: 2.25rem;
   margin-right: 0;
   line-height: 1.25rem;
   -webkit-user-select: none;
@@ -76,32 +90,34 @@
 .lead-form__input__radio__wrap label::before {
   content: "";
   display: inline-block;
-  width: 1.25rem;
-  height: 1.25rem;
+  background-image: url("../assets/svg/radio-button_unchecked.svg");
+  background-size: cover;
+  width: 1.875rem;
+  height: 1.875rem;
   position: absolute;
   left: 0;
-  border: 1px solid #aaa;
 }
 .lead-form__input__radio__wrap input:checked + label::before {
-  border-color: #aaa;
-  background-color: #aaa;
-}
-.lead-form__input__radio__wrap input:hover {
-  border-color: #000;
+  background-image: url("../assets/svg/radio-button_checked.svg");
+  background-size: cover;
+  width: 1.875rem;
+  height: 1.875rem;
 }
 
 .lead-form__input__switch__block {
   display: flex;
   flex-direction: column;
   margin: 0.25rem 0;
+  border-radius: 0.1875rem;
   padding: 0.5rem;
-  border: 1px solid #aaa;
-  background-color: #ddd;
+  border: 1px solid #ededed;
+  background-color: #ffffff;
 }
 .lead-form__input__switch__block label {
-  font-size: 0.7rem;
+  font-size: 0.875rem;
 }
 .lead-form__input__switch__block input {
+  font-size: 1.125rem;
   margin-top: 0.25rem;
   border: none;
   background-color: transparent;
@@ -117,22 +133,24 @@
 .lead-form__input__switch input[type=button] {
   background: url("../assets/svg/block1_switch.svg") no-repeat;
   background-size: cover;
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border: none;
   align-self: center;
 }
 
 .lead-form__input__num-of-pass {
   margin: 0.25rem 0;
+  border-radius: 0.1875rem;
   padding: 0.5rem;
-  border: 1px solid #aaa;
-  background-color: #ddd;
+  border: 1px solid #ededed;
+  background-color: #ffffff;
 }
 .lead-form__input__num-of-pass label {
-  font-size: 0.7rem;
+  font-size: 0.875rem;
 }
 .lead-form__input__num-of-pass select {
+  font-size: 1.125rem;
   margin-top: 0.25rem;
   border: none;
   background-color: transparent;
@@ -143,16 +161,17 @@
 
 .lead-form__input__comments {
   margin: 0.5rem 0;
+  border-radius: 0.1875rem;
   padding: 0.5rem;
-  border: 1px solid #aaa;
-  background-color: #ddd;
+  border: 1px solid #ededed;
+  background-color: #ffffff;
 }
 .lead-form__input__comments label {
-  font-size: 0.7rem;
+  font-size: 0.875rem;
 }
 .lead-form__input__comments textarea {
+  font-size: 1.125rem;
   margin-top: 0.25rem;
-  padding: 0.5rem;
   border: none;
   background-color: transparent;
   width: 100%;
@@ -162,27 +181,29 @@
 .lead-form__info__tariff {
   display: flex;
   align-items: center;
-  margin: 1rem 0;
+  justify-content: space-between;
+  margin-top: 1.25rem 0;
 }
 .lead-form__info__tariff__title {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 .lead-form__info__tariff__cost {
-  margin-left: 1rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 .lead-form__info__fz-rule {
-  font-size: 0.7rem;
+  font-size: 0.875rem;
 }
 
 .lead-form__button {
   width: 100%;
   border: none;
-  background-color: #303030;
-  color: #fff;
+  border-radius: 0.1875rem;
+  background-color: #fb8d00;
+  color: #ffffff;
+  font-size: 1.25rem;
   padding: 0.75rem 0;
-  margin: 1rem 0;
+  margin: 1.25rem 0;
 }
 
 body {
@@ -196,8 +217,3 @@ body {
   font-weight: 400;
   background-color: #fff;
 }/*# sourceMappingURL=styles.css.map */
-.departures-custom-button {
-  border: none;
-  background-color: #303030;
-  color: #fff;
-}
