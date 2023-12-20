@@ -1,4 +1,16 @@
-header {
+body {
+  max-width: 1920px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "FiraSans_Regular400", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #fff;
+}
+
+.header__screen__wrapper {
   background-image: url("../assets/images/header_screen_background.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -30,7 +42,7 @@ header {
     padding: 1.875rem;
     margin-top: 1.875rem;
     margin-bottom: 3.125rem;
-    width: 80%;
+    width: 85%;
     color: $black;
   }
   & h3 {
@@ -84,6 +96,24 @@ header {
   }
 }
 
+// Telephone input styling
+.lead-form__input__tel {
+  @include flex-column;
+  margin: 0.25rem 0;
+  @include input_border;
+  & label {
+    font-size: $r_14;
+  }
+  & input {
+    font-size: $r_18;
+    margin-top: 0.25rem;
+    @include input_clean;
+  }
+  & input::placeholder {
+    color: $black;
+  }
+}
+
 // Switcher input styling
 .lead-form__input__switch__block {
   @include flex-column;
@@ -112,19 +142,20 @@ header {
   }
 }
 
-.lead-form__input__num-of-pass {
-  margin: 0.25rem 0;
-  @include input_border;
-  & label {
-    font-size: $r_14;
-  }
-  & select {
-    font-size: $r_18;
-    margin-top: 0.25rem;
-    @include input_clean;
-    user-select: none;
-  }
-}
+// Selector "num of pass" - excluded from a form
+// .lead-form__input__num-of-pass {
+//   margin: 0.25rem 0;
+//   @include input_border;
+//   & label {
+//     font-size: $r_14;
+//   }
+//   & select {
+//     font-size: $r_18;
+//     margin-top: 0.25rem;
+//     @include input_clean;
+//     user-select: none;
+//   }
+// }
 .lead-form__input__comments {
   margin: 0.5rem 0;
   @include input_border;
@@ -136,28 +167,32 @@ header {
     margin-top: 0.25rem;
     @include input_clean;
     width: 100%;
-    height: 6rem;
+    height: 9.75rem;
+  }
+  & textarea::placeholder {
+    color: $black;
   }
 }
 
-.lead-form__info {
-  &__tariff {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 1.25rem 0;
-    &__title {
-      font-size: $r_18;
-    }
-    &__cost {
-      font-size: $H2_40;
-      font-weight: 700;
-    }
-  }
-  &__fz-rule {
-    font-size: $r_14;
-  }
-}
+// Tariff info - excluded from a form
+// .lead-form__info {
+//   &__tariff {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     margin-top: 1.25rem 0;
+//     &__title {
+//       font-size: $r_18;
+//     }
+//     &__cost {
+//       font-size: $H2_40;
+//       font-weight: 700;
+//     }
+//   }
+//   &__fz-rule {
+//     font-size: $r_14;
+//   }
+// }
 
 .lead-form__button {
   width: 100%;

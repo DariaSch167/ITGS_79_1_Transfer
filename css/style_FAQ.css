@@ -24,13 +24,13 @@
   justify-content: center;
 }
 .FAQ.FAQ_title {
-  font-weight: 600;
+  font-weight: 900;
+  font-family: "FiraSans_SemiBold600";
   font-size: 2.5rem;
 }
 
 .accordion-item {
   border: none;
-  justify-content: space-between;
   margin-bottom: 20px;
 }
 .accordion-item.active {
@@ -42,6 +42,7 @@
 .accordion-button {
   position: static;
   font-size: 1.25rem;
+  font-family: "FiraSans_SemiBold600";
   font-weight: 500;
 }
 .accordion-button:focus {
@@ -57,6 +58,7 @@
 }
 
 .accordion-body {
+  font-family: "FiraSans_Regular400";
   font-weight: 400;
   font-size: 1.125rem;
 }/*# sourceMappingURL=style_FAQ.css.map */

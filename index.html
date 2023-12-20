@@ -70,7 +70,7 @@
           </div>
         </div>
       </div>
-      <!-- Part1 -- start -->
+      <!-- Header screen-part start-->
       <div class="header__screen__wrapper row">
         <div class="header__screen__title col-7">
           <h1>Пассажирские перевозки</h1>
@@ -83,6 +83,7 @@
               <div class="lead-form__info">
                 <h3 class="lead-form__info__title">Выберите услугу:</h3>
               </div>
+              <!-- Radio-buttons services -->
               <div class="lead-form__input lead-form__input__radio">
                 <div class="lead-form__input__radio__wrap">
                   <input
@@ -118,6 +119,11 @@
                   <label for="urn">Транспортировка праха в урнах</label>
                 </div>
               </div>
+              <!-- Contact info - tel number -->
+              <div class="lead-form__input lead-form__input__tel">
+              <label for="tel_form">Номер телефона</label>
+              <input type="tel_form" name="tel_form" placeholder="+49 176 803 498 04">
+              </div>
               <!-- Swap inputs on button click - start -->
               <div class="lead-form__input lead-form__input__switch">
                 <div class="lead-form__input__switch__block">
@@ -140,8 +146,8 @@
                     readonly />
                 </div>
               </div>
-              <!-- Swap inputs on button click - end -->
-              <div class="lead-form__input lead-form__input__num-of-pass">
+              <!-- Selector "num of pass" - excluded from a form -->
+              <!-- <div class="lead-form__input lead-form__input__num-of-pass">
                 <label for="num-of-pass">Количество человек</label>
                 <select name="num-of-pass">
                   <option value="one-pass">1</option>
@@ -149,17 +155,18 @@
                   <option value="three-pass">3</option>
                   <option value="more-pass">Больше</option>
                 </select>
-              </div>
+              </div> -->
               <div class="lead-form__input lead-form__input__comments">
                 <label for="comments">Комментарий</label>
                 <textarea
                   name="comments"
                   placeholder="Введите комментарий"></textarea>
               </div>
-              <div class="lead-form__info lead-form__info__tariff">
+              <!-- Tariff info - excluded from a form -->
+              <!-- <div class="lead-form__info lead-form__info__tariff">
                 <span class="lead-form__info__tariff__title">Стоимость:</span>
                 <span class="lead-form__info__tariff__cost">150 €</span>
-              </div>
+              </div> -->
               <button class="lead-form__button" type="submit">
                 Оставить заявку
               </button>
@@ -173,7 +180,7 @@
           </div>
         </div>
       </div>
-      <!-- Part1 -- end -->
+      <!-- Header screen-part end-->
     </header>
     <!-- Main content -->
     <main>
