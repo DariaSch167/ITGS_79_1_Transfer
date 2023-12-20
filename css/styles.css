@@ -285,8 +285,31 @@ body {
   border: 2px solid #fb8d00;
   color: #fb8d00; 
 }
+.card-img-top-germany {
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+}
+.card-img-top-kaliningrad {
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+}
 .additionally {
   background-color: #fb8d00;
   color: #ffffff;
   border-radius: 0.60rem;
+  width: 90%;
+  margin-left: 4%;
+  padding: 1%;
+}
+.departures {
+  display: grid;
+  grid-template-rows: 1fr;
+  margin-top: 20vh;
+  margin-left: 4% ;
+}
+.title-services {
+  display: grid;
+  grid-template-rows: 1fr;
+  margin-top: 20vh;
+  margin-left: 4% ;
 }
