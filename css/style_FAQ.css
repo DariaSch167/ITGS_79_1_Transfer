@@ -23,7 +23,6 @@
   justify-content: center;
 }
 .FAQ.FAQ_title {
-  position: fixed;
   font-weight: 600;
   font-size: 60em;
 }
@@ -60,4 +59,15 @@
 }
 .accordion-body .special_text {
   color: #FB8D00;
+}
+
+@media screen and (max-width: 767px) {
+  .FAQ {
+    display: inline;
+  }
+  .accordion {
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=style_FAQ.css.map */

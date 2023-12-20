@@ -231,7 +231,6 @@ header {
   justify-content: center;
 }
 .FAQ.FAQ_title {
-  position: fixed;
   font-weight: 600;
   font-size: 60em;
 }
@@ -270,6 +269,16 @@ header {
   color: #FB8D00;
 }
 
+@media screen and (max-width: 767px) {
+  .FAQ {
+    display: inline;
+  }
+  .accordion {
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+  }
+}
 body {
   max-width: 1920px;
   min-width: 320px;
