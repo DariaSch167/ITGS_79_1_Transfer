@@ -233,7 +233,7 @@ header {
 .FAQ.FAQ_title {
   position: fixed;
   font-weight: 600;
-  font-size: 2.5rem;
+  font-size: 60em;
 }
 
 .accordion-item {
@@ -266,8 +266,8 @@ header {
   font-weight: 400;
   font-size: 1.125rem;
 }
-.accordion-body.spe {
-  color: palevioletred;
+.accordion-body .special_text {
+  color: #FB8D00;
 }
 
 body {

@@ -9,7 +9,7 @@
 	&.FAQ_title {	
 		position: fixed;
 		font-weight: 600;
-		font-size: $H2_40;
+		font-size: 60em;
 	}
 }
 .accordion-item {
@@ -41,8 +41,8 @@
 .accordion-body {
 	font-weight: 400;
 	font-size: $r_18;
-	&.spe {
-		color: palevioletred;
+	.special_text {
+		color:#FB8D00;
 	}
 }
 
