@@ -19,7 +19,7 @@ body {
 .header__screen__title {
   @include flex-column;
   justify-content: flex-end;
-  padding-left: 4.875rem;
+  padding-left: $left-block-gap;
   padding-bottom: 3.125rem;
   & h1,
   & h2 {
@@ -31,6 +31,11 @@ body {
   }
 }
 
+.header__lead-form {
+  margin-top: 1.875rem;
+  margin-bottom: 3.125rem;
+}
+
 .lead-form {
   display: flex;
   justify-content: center;
@@ -40,8 +45,6 @@ body {
     border-radius: 0.625rem;
     border: $grey-border;
     padding: 1.875rem;
-    margin-top: 1.875rem;
-    margin-bottom: 3.125rem;
     width: 85%;
     color: $black;
   }
@@ -58,7 +61,7 @@ body {
 }
 
 // Radio-buttons styling
-.lead-form__input__radio__wrap {
+.lead-form_radio_screen {
   & input {
     display: none;
   }

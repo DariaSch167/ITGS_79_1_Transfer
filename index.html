@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
- <!-- Header -->
+    <!-- Header -->
     <header>
-     <!-- Navigation bar -->
+      <!-- Navigation bar -->
       <div class="header">
         <a href="/" class="header__logo">
           <picture>
@@ -84,45 +84,49 @@
                 <h3 class="lead-form__info__title">Выберите услугу:</h3>
               </div>
               <!-- Radio-buttons services -->
-              <div class="lead-form__input lead-form__input__radio">
+              <div
+                class="lead-form__input lead-form__input__radio lead-form_radio_screen">
                 <div class="lead-form__input__radio__wrap">
                   <input
                     type="radio"
                     name="service-name"
-                    value="passenger"
-                    id="passenger"
+                    value="passenger1"
+                    id="passenger1"
                     checked />
-                  <label for="passenger">Пассажирские перевозки</label>
+                  <label for="passenger1">Пассажирские перевозки</label>
                 </div>
                 <div class="lead-form__input__radio__wrap">
                   <input
                     type="radio"
                     name="service-name"
-                    value="pets"
-                    id="pets" />
-                  <label for="pets">Перевозка домашних животных</label>
+                    value="pets1"
+                    id="pets1" />
+                  <label for="pets1">Перевозка домашних животных</label>
                 </div>
                 <div class="lead-form__input__radio__wrap">
                   <input
                     type="radio"
                     name="service-name"
-                    value="cargo"
-                    id="cargo" />
-                  <label for="cargo">Доставка посылок и корреспонденции</label>
+                    value="cargo1"
+                    id="cargo1" />
+                  <label for="cargo1">Доставка посылок и корреспонденции</label>
                 </div>
                 <div class="lead-form__input__radio__wrap">
                   <input
                     type="radio"
                     name="service-name"
-                    value="urn"
-                    id="urn" />
-                  <label for="urn">Транспортировка праха в урнах</label>
+                    value="urn1"
+                    id="urn1" />
+                  <label for="urn1">Транспортировка праха в урнах</label>
                 </div>
               </div>
               <!-- Contact info - tel number -->
               <div class="lead-form__input lead-form__input__tel">
-              <label for="tel_form">Номер телефона</label>
-              <input type="tel_form" name="tel_form" placeholder="+49 176 803 498 04">
+                <label for="tel_form">Номер телефона</label>
+                <input
+                  type="tel_form"
+                  name="tel_form"
+                  placeholder="+49 176 803 498 04" />
               </div>
               <!-- Swap inputs on button click - start -->
               <div class="lead-form__input lead-form__input__switch">
@@ -135,7 +139,7 @@
                     value="Калининград"
                     readonly />
                 </div>
-                <input type="button" id="btn_swap" onclick="switcher()" />
+                <input type="button" id="btn_swap1" onclick="switcher()" />
                 <div class="lead-form__input__switch__block">
                   <label for="input2">Пункт прибытия</label>
                   <input
@@ -187,40 +191,46 @@
       <!-- Начало Блок Отправления-Услуги-Дополнительно -->
       <section class="departures">
         <h2 class="title-departures">Отправления</h2>
-              <!-- Германия -->
-      <section class="services">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="card service-card bg-light text-white">
-                <img
-                  src="assets/images/Card_Germany.png"
-                  class="card-img-top-germany"
-                  alt="img_germany" />
-                <div class="card-img-overlay">
-                  <h2>Германия</h2>
-                  <p>Отправление каждую среду по индивидуальному маршруту</p>
-                  <p>Уточняйте в наших мессенджерах или в комментариии при заполнении формы</p>
+        <!-- Германия -->
+        <section class="services">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card service-card bg-light text-white">
+                  <img
+                    src="assets/images/Card_Germany.png"
+                    class="card-img-top-germany"
+                    alt="img_germany" />
+                  <div class="card-img-overlay">
+                    <h2>Германия</h2>
+                    <p>Отправление каждую среду по индивидуальному маршруту</p>
+                    <p>
+                      Уточняйте в наших мессенджерах или в комментариии при
+                      заполнении формы
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- Калининград -->
-            <div class="col-md-6">
-              <div class="card service-card bg-light text-white">
-                <img
-                  src="assets/images/Card_Kaliningrad.png"
-                  class="card-img-top-kaliningrad"
-                  alt="img_kaliningrad" />
-                <div class="card-img-overlay">
-                  <h2>Калининград</h2>
-                  <p>Отправление каждую субботу в 03:00</p>
-                  <p>Cбор у гостевого дома Бриг по адресу: г. Калининград, поселок Большое Исаково, ул. Зеленая, 4А</p>
+              <!-- Калининград -->
+              <div class="col-md-6">
+                <div class="card service-card bg-light text-white">
+                  <img
+                    src="assets/images/Card_Kaliningrad.png"
+                    class="card-img-top-kaliningrad"
+                    alt="img_kaliningrad" />
+                  <div class="card-img-overlay">
+                    <h2>Калининград</h2>
+                    <p>Отправление каждую субботу в 03:00</p>
+                    <p>
+                      Cбор у гостевого дома Бриг по адресу: г. Калининград,
+                      поселок Большое Исаково, ул. Зеленая, 4А
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
       </section>
       <!-- Карточки услуг -->
       <section class="services">
@@ -229,68 +239,88 @@
           <div class="row">
             <!-- Первая карточка -->
             <div class="col-md-6">
-              <div class="card mb-3" style="max-width: 540px;">
+              <div class="card mb-3" style="max-width: 540px">
                 <div class="row g-0">
                   <div class="col-md-4">
-                    <img src="/assets/images/service1.png" class="img-fluid rounded-start" alt="picture_service1">
+                    <img
+                      src="/assets/images/service1.png"
+                      class="img-fluid rounded-start"
+                      alt="picture_service1" />
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
                       <h5 class="card-title">Пассажирские перевозки</h5>
-                      <button class="btn btn-custom-services">Оставить заявку</button>
+                      <button class="btn btn-custom-services">
+                        Оставить заявку
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-        
+
             <!-- Вторая карточка -->
             <div class="col-md-6">
-              <div class="card mb-3" style="max-width: 540px;">
+              <div class="card mb-3" style="max-width: 540px">
                 <div class="row g-0">
                   <div class="col-md-4">
-                    <img src="/assets/images/service2.png" class="img-fluid rounded-start" alt="...">
+                    <img
+                      src="/assets/images/service2.png"
+                      class="img-fluid rounded-start"
+                      alt="..." />
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
                       <h5 class="card-title">Перевозка домашних животных</h5>
-                      <button class="btn btn-custom-services">Оставить заявку</button>
+                      <button class="btn btn-custom-services">
+                        Оставить заявку
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        
+
           <div class="row">
             <!-- Третья карточка -->
             <div class="col-md-6">
-              <div class="card mb-3" style="max-width: 540px;">
+              <div class="card mb-3" style="max-width: 540px">
                 <div class="row g-0">
                   <div class="col-md-4">
-                    <img src="/assets/images/service3.png" class="img-fluid rounded-start" alt="...">
+                    <img
+                      src="/assets/images/service3.png"
+                      class="img-fluid rounded-start"
+                      alt="..." />
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
                       <h5 class="card-title">Доставка посылок</h5>
-                      <button class="btn btn-custom-services">Оставить заявку</button>
+                      <button class="btn btn-custom-services">
+                        Оставить заявку
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-        
+
             <!-- Четвёртая карточка -->
             <div class="col-md-6">
-              <div class="card mb-3" style="max-width: 540px;">
+              <div class="card mb-3" style="max-width: 540px">
                 <div class="row g-0">
                   <div class="col-md-4">
-                    <img src="/assets/images/service4.png" class="img-fluid rounded-start" alt="...">
+                    <img
+                      src="/assets/images/service4.png"
+                      class="img-fluid rounded-start"
+                      alt="..." />
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
                       <h5 class="card-title">Транспортировка праха в урнах</h5>
-                      <button class="btn btn-custom-services">Оставить заявку</button>
+                      <button class="btn btn-custom-services">
+                        Оставить заявку
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -300,13 +330,17 @@
         </div>
       </section>
       <section class="additionally">
-        <div>Дополнительно:
+        <div>
+          Дополнительно:
           <ul>
             <li>Помощь с оформлением документов для перевозки животных;</li>
             <li>Помощь с оформлением документов для транспортировки праха;</li>
             <li>Трансфер до аэропорта Храброво в Калининграде (15€);</li>
             <li>Сопровождение несовершеннолетних;</li>
-            <li>Бронь гостиницы, авиа- и ж/д билетов по всей России без комиссии (услуга доступна только для пассажиров нашей компании)</li>
+            <li>
+              Бронь гостиницы, авиа- и ж/д билетов по всей России без комиссии
+              (услуга доступна только для пассажиров нашей компании)
+            </li>
           </ul>
         </div>
       </section>
@@ -319,210 +353,670 @@
               <div class="accordion" id="accordionFlushExample">
                 <div class="accordion-item" onclick="toggleActive(this)">
                   <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseOne">
                       Элемент аккордеона #1
                     </button>
                   </h2>
-                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  <div
+                    id="flush-collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the first item's accordion body.
+                    </div>
                   </div>
                 </div>
                 <div class="accordion-item" onclick="toggleActive(this)">
                   <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseTwo">
                       Элемент аккордеона #2
                     </button>
                   </h2>
-                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                  <div
+                    id="flush-collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the second item's accordion body. Let's imagine
+                      this being filled with some actual content.
+                    </div>
                   </div>
                 </div>
                 <div class="accordion-item" onclick="toggleActive(this)">
                   <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseThree">
                       Элемент аккордеона #3
                     </button>
                   </h2>
-                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  <div
+                    id="flush-collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just
+                      filling up the space to make it look, at least at first
+                      glance, a bit more representative of how this would look
+                      in a real-world application.
+                    </div>
                   </div>
                 </div>
                 <div class="accordion-item" onclick="toggleActive(this)">
                   <h2 class="accordion-header" id="flush-headingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFour"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseFour">
                       Элемент аккордеона #4
                     </button>
                   </h2>
-                  <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  <div
+                    id="flush-collapseFour"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingFour"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just
+                      filling up the space to make it look, at least at first
+                      glance, a bit more representative of how this would look
+                      in a real-world application.
+                    </div>
                   </div>
                 </div>
                 <div class="accordion-item" onclick="toggleActive(this)">
                   <h2 class="accordion-header" id="flush-headingfive">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapsefive"
+                      aria-expanded="false"
+                      aria-controls="flush-collapsefive">
                       Элемент аккордеона #5
                     </button>
                   </h2>
-                  <div id="flush-collapsefive" class="accordion-collapse collapse" aria-labelledby="flush-headingfive" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  <div
+                    id="flush-collapsefive"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingfive"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just
+                      filling up the space to make it look, at least at first
+                      glance, a bit more representative of how this would look
+                      in a real-world application.
+                    </div>
                   </div>
                 </div>
                 <div class="accordion-item" onclick="toggleActive(this)">
                   <h2 class="accordion-header" id="flush-headingsix">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsesix" aria-expanded="false" aria-controls="flush-collapsesix">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapsesix"
+                      aria-expanded="false"
+                      aria-controls="flush-collapsesix">
                       Элемент аккордеона #6
                     </button>
                   </h2>
-                  <div id="flush-collapsesix" class="accordion-collapse collapse" aria-labelledby="flush-headingsix" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  <div
+                    id="flush-collapsesix"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingsix"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just
+                      filling up the space to make it look, at least at first
+                      glance, a bit more representative of how this would look
+                      in a real-world application.
+                    </div>
                   </div>
                 </div>
                 <div class="accordion-item" onclick="toggleActive(this)">
                   <h2 class="accordion-header" id="flush-headingseven">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseseven" aria-expanded="false" aria-controls="flush-collapseseven">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseseven"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseseven">
                       Элемент аккордеона #7
                     </button>
                   </h2>
-                  <div id="flush-collapseseven" class="accordion-collapse collapse" aria-labelledby="flush-headingseven" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  <div
+                    id="flush-collapseseven"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingseven"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just
+                      filling up the space to make it look, at least at first
+                      glance, a bit more representative of how this would look
+                      in a real-world application.
+                    </div>
                   </div>
                 </div>
                 <div class="accordion-item" onclick="toggleActive(this)">
                   <h2 class="accordion-header" id="flush-headingeight">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseeight" aria-expanded="false" aria-controls="flush-collapseeight">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseeight"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseeight">
                       Элемент аккордеона #8
                     </button>
                   </h2>
-                  <div id="flush-collapseeight" class="accordion-collapse collapse" aria-labelledby="flush-headingeight" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  <div
+                    id="flush-collapseeight"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingeight"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just
+                      filling up the space to make it look, at least at first
+                      glance, a bit more representative of how this would look
+                      in a real-world application.
+                    </div>
                   </div>
                 </div>
                 <div class="accordion-item" onclick="toggleActive(this)">
                   <h2 class="accordion-header" id="flush-headingnine">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsenine" aria-expanded="false" aria-controls="flush-collapsenine">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapsenine"
+                      aria-expanded="false"
+                      aria-controls="flush-collapsenine">
                       Элемент аккордеона #9
                     </button>
                   </h2>
-                  <div id="flush-collapsenine" class="accordion-collapse collapse" aria-labelledby="flush-headingnine" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  <div
+                    id="flush-collapsenine"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingnine"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just
+                      filling up the space to make it look, at least at first
+                      glance, a bit more representative of how this would look
+                      in a real-world application.
+                    </div>
                   </div>
                 </div>
                 <div class="accordion-item" onclick="toggleActive(this)">
                   <h2 class="accordion-header" id="flush-headingten">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseten" aria-expanded="false" aria-controls="flush-collapseten">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseten"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseten">
                       Элемент аккордеона #10
                     </button>
                   </h2>
-                  <div id="flush-collapseten" class="accordion-collapse collapse" aria-labelledby="flush-headingten" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  <div
+                    id="flush-collapseten"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingten"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just
+                      filling up the space to make it look, at least at first
+                      glance, a bit more representative of how this would look
+                      in a real-world application.
+                    </div>
                   </div>
                 </div>
                 <div class="accordion-item" onclick="toggleActive(this)">
                   <h2 class="accordion-header" id="flush-headingeleven">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseeleven" aria-expanded="false" aria-controls="flush-collapseeleven">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseeleven"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseeleven">
                       Элемент аккордеона #11
                     </button>
                   </h2>
-                  <div id="flush-collapseeleven" class="accordion-collapse collapse" aria-labelledby="flush-headingeleven" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  <div
+                    id="flush-collapseeleven"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingeleven"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just
+                      filling up the space to make it look, at least at first
+                      glance, a bit more representative of how this would look
+                      in a real-world application.
+                    </div>
                   </div>
                 </div>
                 <div class="accordion-item" onclick="toggleActive(this)">
                   <h2 class="accordion-header" id="flush-headingtwelve">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsetwelve" aria-expanded="false" aria-controls="flush-collapsetwelve">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapsetwelve"
+                      aria-expanded="false"
+                      aria-controls="flush-collapsetwelve">
                       Элемент аккордеона #12
                     </button>
                   </h2>
-                  <div id="flush-collapsetwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingtwelve" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  <div
+                    id="flush-collapsetwelve"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingtwelve"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just
+                      filling up the space to make it look, at least at first
+                      glance, a bit more representative of how this would look
+                      in a real-world application.
+                    </div>
                   </div>
                 </div>
                 <div class="accordion-item" onclick="toggleActive(this)">
                   <h2 class="accordion-header" id="flush-headingthirteen">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsethirteen" aria-expanded="false" aria-controls="flush-collapsethirteen">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapsethirteen"
+                      aria-expanded="false"
+                      aria-controls="flush-collapsethirteen">
                       Элемент аккордеона #13
                     </button>
                   </h2>
-                  <div id="flush-collapsethirteen" class="accordion-collapse collapse" aria-labelledby="flush-headingthirteen" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  <div
+                    id="flush-collapsethirteen"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingthirteen"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just
+                      filling up the space to make it look, at least at first
+                      glance, a bit more representative of how this would look
+                      in a real-world application.
+                    </div>
                   </div>
                 </div>
                 <div class="accordion-item" onclick="toggleActive(this)">
                   <h2 class="accordion-header" id="flush-headingeight">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseeight" aria-expanded="false" aria-controls="flush-collapseeight">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseeight"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseeight">
                       Элемент аккордеона #14
                     </button>
                   </h2>
-                  <div id="flush-collapseeight" class="accordion-collapse collapse" aria-labelledby="flush-headingeight" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  <div
+                    id="flush-collapseeight"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingeight"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just
+                      filling up the space to make it look, at least at first
+                      glance, a bit more representative of how this would look
+                      in a real-world application.
+                    </div>
                   </div>
                 </div>
                 <div class="accordion-item" onclick="toggleActive(this)">
                   <h2 class="accordion-header" id="flush-headingeight">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseeight" aria-expanded="false" aria-controls="flush-collapseeight">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseeight"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseeight">
                       Элемент аккордеона #15
                     </button>
                   </h2>
-                  <div id="flush-collapseeight" class="accordion-collapse collapse" aria-labelledby="flush-headingeight" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  <div
+                    id="flush-collapseeight"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingeight"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just
+                      filling up the space to make it look, at least at first
+                      glance, a bit more representative of how this would look
+                      in a real-world application.
+                    </div>
                   </div>
                 </div>
                 <div class="accordion-item" onclick="toggleActive(this)">
                   <h2 class="accordion-header" id="flush-headingeight">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseeight" aria-expanded="false" aria-controls="flush-collapseeight">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseeight"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseeight">
                       Элемент аккордеона #16
                     </button>
                   </h2>
-                  <div id="flush-collapseeight" class="accordion-collapse collapse" aria-labelledby="flush-headingeight" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  <div
+                    id="flush-collapseeight"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingeight"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just
+                      filling up the space to make it look, at least at first
+                      glance, a bit more representative of how this would look
+                      in a real-world application.
+                    </div>
                   </div>
                 </div>
                 <div class="accordion-item" onclick="toggleActive(this)">
                   <h2 class="accordion-header" id="flush-headingeight">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseeight" aria-expanded="false" aria-controls="flush-collapseeight">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseeight"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseeight">
                       Элемент аккордеона #8
                     </button>
                   </h2>
-                  <div id="flush-collapseeight" class="accordion-collapse collapse" aria-labelledby="flush-headingeight" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  <div
+                    id="flush-collapseeight"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingeight"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just
+                      filling up the space to make it look, at least at first
+                      glance, a bit more representative of how this would look
+                      in a real-world application.
+                    </div>
                   </div>
                 </div>
                 <div class="accordion-item" onclick="toggleActive(this)">
                   <h2 class="accordion-header" id="flush-headingeight">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseeight" aria-expanded="false" aria-controls="flush-collapseeight">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseeight"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseeight">
                       Элемент аккордеона #17
                     </button>
                   </h2>
-                  <div id="flush-collapseeight" class="accordion-collapse collapse" aria-labelledby="flush-headingeight" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  <div
+                    id="flush-collapseeight"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingeight"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just
+                      filling up the space to make it look, at least at first
+                      glance, a bit more representative of how this would look
+                      in a real-world application.
+                    </div>
                   </div>
                 </div>
                 <div class="accordion-item" onclick="toggleActive(this)">
                   <h2 class="accordion-header" id="flush-headingeight">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseeight" aria-expanded="false" aria-controls="flush-collapseeight">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseeight"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseeight">
                       Элемент аккордеона #18
                     </button>
                   </h2>
-                  <div id="flush-collapseeight" class="accordion-collapse collapse" aria-labelledby="flush-headingeight" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  <div
+                    id="flush-collapseeight"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingeight"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just
+                      filling up the space to make it look, at least at first
+                      glance, a bit more representative of how this would look
+                      in a real-world application.
+                    </div>
                   </div>
                 </div>
                 <div class="accordion-item" onclick="toggleActive(this)">
                   <h2 class="accordion-header" id="flush-headingeight">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseeight" aria-expanded="false" aria-controls="flush-collapseeight">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseeight"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseeight">
                       Элемент аккордеона #19
                     </button>
                   </h2>
-                  <div id="flush-collapseeight" class="accordion-collapse collapse" aria-labelledby="flush-headingeight" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  <div
+                    id="flush-collapseeight"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingeight"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just
+                      filling up the space to make it look, at least at first
+                      glance, a bit more representative of how this would look
+                      in a real-world application.
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
         </div>
-      </div>
       </section>
-    </main
+      <!-- Contact_us-part start -->
+      <section class="contact-us">
+        <div class="contact-us__wrapper row">
+          <div class="contact-us__info col-7">
+            <h2 class="contact-us__title">Оставить заявку</h2>
+            <img
+              class="contact-us__image"
+              src="./assets/images/main_lead-form_image.png"
+              alt="Пассажирские перевозки" />
+          </div>
+          <!-- Lead-form -->
+          <div class="contact-us__lead-form lead-form col-5">
+            <div class="lead-form__wrapper">
+              <form action="x" class="form" method="POST">
+                <div class="lead-form__info">
+                  <h3 class="lead-form__info__title">Выберите услугу:</h3>
+                </div>
+                <!-- Radio-buttons services -->
+                <div
+                  class="lead-form__input lead-form__input__radio c-u_lead-form_radio">
+                  <div class="lead-form__input__radio__wrap">
+                    <input
+                      type="radio"
+                      name="service-name"
+                      value="passenger2"
+                      id="passenger2"
+                      checked />
+                    <label for="passenger2">Пассажирские перевозки</label>
+                  </div>
+                  <div class="lead-form__input__radio__wrap">
+                    <input
+                      type="radio"
+                      name="service-name"
+                      value="pets2"
+                      id="pets2" />
+                    <label for="pets2">Перевозка домашних животных</label>
+                  </div>
+                  <div class="lead-form__input__radio__wrap">
+                    <input
+                      type="radio"
+                      name="service-name"
+                      value="cargo2"
+                      id="cargo2" />
+                    <label for="cargo2"
+                      >Доставка посылок и корреспонденции</label
+                    >
+                  </div>
+                  <div class="lead-form__input__radio__wrap">
+                    <input
+                      type="radio"
+                      name="service-name"
+                      value="urn2"
+                      id="urn2" />
+                    <label for="urn2">Транспортировка праха в урнах</label>
+                  </div>
+                </div>
+                <!-- Contact info - tel number -->
+                <div class="lead-form__input lead-form__input__tel">
+                  <label for="tel_form">Номер телефона</label>
+                  <input
+                    type="tel_form"
+                    name="tel_form"
+                    placeholder="+49 176 803 498 04" />
+                </div>
+                <!-- Swap inputs on button click - start -->
+                <div class="lead-form__input lead-form__input__switch">
+                  <div class="lead-form__input__switch__block">
+                    <label for="input1_2">Пункт отправления</label>
+                    <input
+                      required
+                      type="text"
+                      id="input1_2"
+                      value="Калининград"
+                      readonly />
+                  </div>
+                  <input type="button" id="btn_swap2" onclick="switcher()" />
+                  <div class="lead-form__input__switch__block">
+                    <label for="input2_2">Пункт прибытия</label>
+                    <input
+                      required
+                      type="text"
+                      id="input2_2"
+                      value="Германия"
+                      readonly />
+                  </div>
+                </div>
+                <div class="lead-form__input lead-form__input__comments">
+                  <label for="comments">Комментарий</label>
+                  <textarea
+                    name="comments"
+                    placeholder="Введите комментарий"></textarea>
+                </div>
+                <button class="lead-form__button" type="submit">
+                  Оставить заявку
+                </button>
+                <div class="lead-form__info">
+                  <p class="lead-form__info__fz-rule">
+                    Нажимая кнопку, вы даёте согласие на обработку персональных
+                    данных
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact_us-part end-->
+    </main>
     <!-- Footer -->
     <footer></footer>
     <script src="./js/bootstrap.bundle.min.js"></script>

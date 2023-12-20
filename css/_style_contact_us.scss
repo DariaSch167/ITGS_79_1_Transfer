@@ -1,0 +1,56 @@
+.contact-us {
+  &__wrapper {
+    margin-top: $top-block-gap;
+    margin-left: $left-block-gap;
+  }
+  &__title {
+    font-size: $H2_40;
+    font-weight: 600;
+  }
+  &__image {
+    margin-top: 10%;
+    width: 80%;
+  }
+}
+
+.lead-form__wrapper {
+  width: 85%;
+}
+
+.c-u_lead-form_radio {
+  & input {
+    display: none;
+  }
+  & input + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    margin-top: 0.75rem;
+  }
+  & label {
+    font-size: $r_18;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 2.25rem;
+    margin-right: 0;
+    line-height: 1.25rem;
+    user-select: none;
+  }
+  & label::before {
+    content: "";
+    display: inline-block;
+    background-image: url("../assets/svg/radio-button_unchecked.svg");
+    background-size: cover;
+    width: 1.875rem;
+    height: 1.875rem;
+    position: absolute;
+    left: 0;
+  }
+  & input:checked + label::before {
+    background-image: url("../assets/svg/radio-button_checked.svg");
+    background-size: cover;
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+}
