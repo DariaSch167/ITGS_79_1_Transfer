@@ -6,9 +6,9 @@
 	grid-template-columns: 30% 60%;
 	margin-top: 20vh;
 	justify-content: center;
-&.FAQ_title {
-		font-weight: 900;
-		font-family: "FiraSans_SemiBold600";
+	&.FAQ_title {	
+		position: fixed;
+		font-weight: 600;
 		font-size: $H2_40;
 	}
 }
@@ -18,13 +18,12 @@
 &.active {
 	outline: 1px solid #FB8D00;
 	border-radius: 10px;
-	/* Устанавливаем оранжевую рамку для активного элемента */
   }
   }
   .accordion-button {
 	position: static;
 	font-size: $r_20 ;
-	font-family: "FiraSans_SemiBold600";
+
 	font-weight: 500;
 	&:focus {
 		box-shadow: none; 
@@ -40,7 +39,10 @@
 	}
 }
 .accordion-body {
-	font-family: "FiraSans_Regular400";
 	font-weight: 400;
 	font-size: $r_18;
+	&.spe {
+		color: palevioletred;
+	}
 }
+
