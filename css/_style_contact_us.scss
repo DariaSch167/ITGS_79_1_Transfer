@@ -54,3 +54,22 @@
     height: 1.875rem;
   }
 }
+
+@media screen and (max-width: 1025px) and (min-width: 500px) {
+  .contact-us {
+    @include flex-column;
+    &__wrapper {
+      margin: 3.125rem 0;
+      padding: 0;
+    }
+    &__title {
+      padding-left: 1.25rem;
+    }
+    &__image {
+      display: none;
+    }
+  }
+  .lead-form__wrapper {
+    margin-top: 3.125rem;
+  }
+}
