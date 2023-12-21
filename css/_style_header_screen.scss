@@ -102,7 +102,7 @@ body {
 // Telephone input styling
 .lead-form__input__tel {
   @include flex-column;
-  margin: 0.25rem 0;
+  margin: 0.5rem 0;
   @include input_border;
   & label {
     font-size: $r_14;
@@ -115,6 +115,12 @@ body {
   & input::placeholder {
     color: $black;
   }
+}
+.lead-form__input__tel:hover {
+  border: $orange-border;
+}
+.lead-form__input__tel:focus {
+  border: $orange-border;
 }
 
 // Switcher input styling
@@ -132,7 +138,12 @@ body {
     user-select: none;
   }
 }
-
+.lead-form__input__switch__block:hover {
+  border: $orange-border;
+}
+.lead-form__input__switch__block:focus {
+  border: $orange-border;
+}
 .lead-form__input__switch {
   @include flex-column;
   & input[type="button"] {
@@ -176,7 +187,14 @@ body {
     color: $black;
   }
 }
-
+.lead-form__input {
+  &__comments:hover {
+    border: $orange-border;
+  }
+  &__comments:focus {
+    border: $orange-border;
+  }
+}
 // Tariff info - excluded from a form
 // .lead-form__info {
 //   &__tariff {

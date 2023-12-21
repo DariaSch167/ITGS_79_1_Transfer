@@ -5,6 +5,19 @@
 @mixin input_clean {
   border: none;
   background-color: transparent;
+  outline: none;
+  & input:hover {
+    outline: 0;
+    outline-offset: 0;
+  }
+  & input:focus {
+    outline: 0;
+    outline-offset: 0;
+  }
+  & input:active {
+    outline: 0;
+    outline-offset: 0;
+  }
 }
 @mixin input_border {
   border-radius: 0.1875rem;

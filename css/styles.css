@@ -123,7 +123,7 @@ body {
 .lead-form__input__tel {
   display: flex;
   flex-direction: column;
-  margin: 0.25rem 0;
+  margin: 0.5rem 0;
   border-radius: 0.1875rem;
   padding: 0.5rem;
   border: 1px solid #ededed;
@@ -137,12 +137,33 @@ body {
   margin-top: 0.25rem;
   border: none;
   background-color: transparent;
+  outline: none;
+}
+.lead-form__input__tel input input:hover {
+  outline: 0;
+  outline-offset: 0;
+}
+.lead-form__input__tel input input:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+.lead-form__input__tel input input:active {
+  outline: 0;
+  outline-offset: 0;
 }
 .lead-form__input__tel input::-moz-placeholder {
   color: #292929;
 }
 .lead-form__input__tel input::placeholder {
   color: #292929;
+}
+
+.lead-form__input__tel:hover {
+  border: 1px solid #fb8d00;
+}
+
+.lead-form__input__tel:focus {
+  border: 1px solid #fb8d00;
 }
 
 .lead-form__input__switch__block {
@@ -162,9 +183,30 @@ body {
   margin-top: 0.25rem;
   border: none;
   background-color: transparent;
+  outline: none;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+}
+.lead-form__input__switch__block input input:hover {
+  outline: 0;
+  outline-offset: 0;
+}
+.lead-form__input__switch__block input input:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+.lead-form__input__switch__block input input:active {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.lead-form__input__switch__block:hover {
+  border: 1px solid #fb8d00;
+}
+
+.lead-form__input__switch__block:focus {
+  border: 1px solid #fb8d00;
 }
 
 .lead-form__input__switch {
@@ -195,14 +237,34 @@ body {
   margin-top: 0.25rem;
   border: none;
   background-color: transparent;
+  outline: none;
   width: 100%;
   height: 9.75rem;
+}
+.lead-form__input__comments textarea input:hover {
+  outline: 0;
+  outline-offset: 0;
+}
+.lead-form__input__comments textarea input:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+.lead-form__input__comments textarea input:active {
+  outline: 0;
+  outline-offset: 0;
 }
 .lead-form__input__comments textarea::-moz-placeholder {
   color: #292929;
 }
 .lead-form__input__comments textarea::placeholder {
   color: #292929;
+}
+
+.lead-form__input__comments:hover {
+  border: 1px solid #fb8d00;
+}
+.lead-form__input__comments:focus {
+  border: 1px solid #fb8d00;
 }
 
 .lead-form__button {
