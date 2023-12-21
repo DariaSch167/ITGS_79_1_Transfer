@@ -29,7 +29,7 @@ body {
   background-color: #fff;
 }
 
-.header__screen__wrapper {
+header {
   background-image: url("../assets/images/header_screen_background.png");
   background-size: cover;
   background-repeat: no-repeat;
