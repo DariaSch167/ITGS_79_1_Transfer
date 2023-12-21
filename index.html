@@ -232,7 +232,7 @@
           </div>
         </section>
       </section>
-      <!-- Карточки услуг -->
+      <!-- Карточки услуг блок-1 -->
       <section class="services">
         <h2 class="title-services">Услуги</h2>
         <div class="container">
@@ -245,20 +245,75 @@
                     <img
                       src="/assets/images/service1.png"
                       class="img-fluid rounded-start"
-                      alt="picture_service1" />
+                      alt="img_service1" />
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
                       <h5 class="card-title">Пассажирские перевозки</h5>
-                      <button class="btn btn-custom-services">
-                        Оставить заявку
-                      </button>
+                        <p>Еженедельные пассажирские перевозки по маршруту Германия-Калининград-Германия</p>
+                        <p>Багаж включен в стоимость</p>
+                        <p>Возраст пассажиров не ограничен</p>
+                        <p>Трансфер от адреса до адреса</p>
+                        <p>Маршрут проходит, преимущественно, по скоростным и платным трассам</p>
+            <!-- Кнопка-триггер модального окна -->
+                      <button class="btn btn-custom-services" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Оставить заявку</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
+            <!-- Модальное окно -->
+  <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Пассажирские перевозки</h5>
+          <!-- Кнопка для закрытия модального окна -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+      </div>
+          <!-- Тело модального окна -->
+          <div class="lead-form__input lead-form__input__switch">
+            <div class="lead-form__input__switch__block">
+              <label for="input1">Пункт отправления</label>
+              <input
+                required
+                type="text"
+                id="input1"
+                value="Калининград"
+                readonly />
+            </div>
+            <input type="button" id="btn_swap_services" onclick="switcher()" />
+            <div class="lead-form__input__switch__block">
+              <label for="input2">Пункт прибытия</label>
+              <input
+                required
+                type="text"
+                id="input2"
+                value="Германия"
+                readonly />
+            </div>
+          </div>
+                  <!-- Поле ввода номера телефона -->
+                  <div class="form-group">
+                    <label for="phoneNumber">Номер телефона:</label>
+                    <input type="tel" 
+                    class="form-control" 
+                    id="phoneNumber" 
+                    placeholder="Введите номер телефона">
+                </div>
+                <!-- Поле ввода комментария -->
+                <div class="form-group">
+                  <label for="comment">Комментарий:</label>
+                  <textarea class="form-control" id="comment" rows="3" placeholder="Введите комментарий"></textarea>
+              </div>
+        <!-- Нижняя часть модального окна с кнопкой "Отправить запрос" и текстом о согласии на обработку данных -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Отправить запрос</button>
+          <p>Нажимая "Отправить запрос", вы соглашаетесь на обработку ваших данных.</p>
+  </div>
+      </div>
+          </div>
+              </div>
             <!-- Вторая карточка -->
             <div class="col-md-6">
               <div class="card mb-3" style="max-width: 540px">
@@ -267,21 +322,72 @@
                     <img
                       src="/assets/images/service2.png"
                       class="img-fluid rounded-start"
-                      alt="..." />
+                      alt="img_service2"/>
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
                       <h5 class="card-title">Перевозка домашних животных</h5>
-                      <button class="btn btn-custom-services">
-                        Оставить заявку
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                      <p>Профессионально и комфортно доставим вашего питомца от адреса до адреса</p>
+            <!-- Кнопка-триггер модального окна -->
+            <button class="btn btn-custom-services" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Оставить заявку</button>
           </div>
-
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Модальное окно -->
+<div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="staticBackdropLabel">Перевозка домашних животных</h5>
+<!-- Кнопка для закрытия модального окна -->
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+</div>
+<!-- Тело модального окна -->
+<div class="lead-form__input lead-form__input__switch">
+  <div class="lead-form__input__switch__block">
+    <label for="input1">Пункт отправления</label>
+    <input
+      required
+      type="text"
+      id="input1"
+      value="Калининград"
+      readonly />
+  </div>
+  <input type="button" id="btn_swap1" onclick="switcher()" />
+  <div class="lead-form__input__switch__block">
+    <label for="input2">Пункт прибытия</label>
+    <input
+      required
+      type="text"
+      id="input2"
+      value="Германия"
+      readonly />
+  </div>
+</div>
+        <!-- Поле ввода номера телефона -->
+        <div class="form-group">
+          <label for="phoneNumber">Номер телефона:</label>
+          <input type="tel" 
+          class="form-control" 
+          id="phoneNumber" 
+          placeholder="Введите номер телефона">
+      </div>
+      <!-- Поле ввода комментария -->
+      <div class="form-group">
+        <label for="comment">Комментарий:</label>
+        <textarea class="form-control" id="comment" rows="3" placeholder="Введите комментарий"></textarea>
+    </div>
+<!-- Нижняя часть модального окна с кнопкой "Отправить запрос" и текстом о согласии на обработку данных -->
+<div class="modal-footer">
+<button type="button" class="btn btn-primary">Отправить запрос</button>
+<p>Нажимая "Отправить запрос", вы соглашаетесь на обработку ваших данных.</p>
+</div>
+</div>
+</div>
+    </div>
+          <!-- Карточки услуг блок-2 -->
           <div class="row">
             <!-- Третья карточка -->
             <div class="col-md-6">
@@ -291,20 +397,74 @@
                     <img
                       src="/assets/images/service3.png"
                       class="img-fluid rounded-start"
-                      alt="..." />
+                      alt="img_service3"/>
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Доставка посылок</h5>
-                      <button class="btn btn-custom-services">
-                        Оставить заявку
-                      </button>
+                      <h5 class="card-title">Доставка посылок и корреспонденции</h5>
+                      <p>Посылки и корреспонденцию принимаем на почтовый адрес в Германии и отправляем из Калининграда по всей России почтой либо СДЭК</p>
+            <!-- Кнопка-триггер модального окна -->
+            <button class="btn btn-custom-services" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">Оставить заявку</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Модальное окно -->
+<div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="staticBackdropLabel">Доставка посылок и корреспонденции</h5>
+<!-- Кнопка для закрытия модального окна -->
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+</div>
+<!-- Тело модального окна -->
+<div class="lead-form__input lead-form__input__switch">
+  <div class="lead-form__input__switch__block">
+    <label for="input1">Пункт отправления</label>
+    <input
+      required
+      type="text"
+      id="input1"
+      value="Калининград"
+      readonly />
+  </div>
+  <input type="button" id="btn_swap1" onclick="switcher()" />
+  <div class="lead-form__input__switch__block">
+    <label for="input2">Пункт прибытия</label>
+    <input
+      required
+      type="text"
+      id="input2"
+      value="Германия"
+      readonly />
+  </div>
+</div>
+        <!-- Поле ввода номера телефона -->
+        <div class="form-group">
+          <label for="phoneNumber">Номер телефона:</label>
+          <input type="tel" 
+          class="form-control" 
+          id="phoneNumber" 
+          placeholder="Введите номер телефона">
+      </div>
+      <!-- Поле ввода комментария -->
+      <div class="form-group">
+        <label for="comment">Комментарий:</label>
+        <textarea class="form-control" id="comment" rows="3" placeholder="Введите комментарий"></textarea>
+    </div>
+<!-- Нижняя часть модального окна с кнопкой "Отправить запрос" и текстом о согласии на обработку данных -->
+<div class="modal-footer">
+<button type="button" class="btn btn-primary">Отправить запрос</button>
+<p>Нажимая "Отправить запрос", вы соглашаетесь на обработку ваших данных.</p>
+</div>
+</div>
+</div>
+    </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-
             <!-- Четвёртая карточка -->
             <div class="col-md-6">
               <div class="card mb-3" style="max-width: 540px">
@@ -313,21 +473,72 @@
                     <img
                       src="/assets/images/service4.png"
                       class="img-fluid rounded-start"
-                      alt="..." />
+                      alt="img_service4" />
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
                       <h5 class="card-title">Транспортировка праха в урнах</h5>
-                      <button class="btn btn-custom-services">
-                        Оставить заявку
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                      <p>Проконсультируем и поможем организовать процесс транспортировки бережно и с уважительным подходом</p>
+            <!-- Кнопка-триггер модального окна -->
+            <button class="btn btn-custom-services" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">Оставить заявку</button>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Модальное окно -->
+<div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="staticBackdropLabel">Транспортировка праха в урнах</h5>
+<!-- Кнопка для закрытия модального окна -->
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+</div>
+<!-- Тело модального окна -->
+<div class="lead-form__input lead-form__input__switch">
+  <div class="lead-form__input__switch__block">
+    <label for="input1">Пункт отправления</label>
+    <input
+      required
+      type="text"
+      id="input1"
+      value="Калининград"
+      readonly />
+  </div>
+  <input type="button" id="btn_swap1" onclick="switcher()" />
+  <div class="lead-form__input__switch__block">
+    <label for="input2">Пункт прибытия</label>
+    <input
+      required
+      type="text"
+      id="input2"
+      value="Германия"
+      readonly />
+  </div>
+</div>
+        <!-- Поле ввода номера телефона -->
+        <div class="form-group">
+          <label for="phoneNumber">Номер телефона:</label>
+          <input type="tel" 
+          class="form-control" 
+          id="phoneNumber" 
+          placeholder="Введите номер телефона">
+      </div>
+      <!-- Поле ввода комментария -->
+      <div class="form-group">
+        <label for="comment">Комментарий:</label>
+        <textarea class="form-control" id="comment" rows="3" placeholder="Введите комментарий"></textarea>
+    </div>
+<!-- Нижняя часть модального окна с кнопкой "Отправить запрос" и текстом о согласии на обработку данных -->
+<div class="modal-footer">
+<button type="button" class="btn btn-primary">Отправить запрос</button>
+<p>Нажимая "Отправить запрос", вы соглашаетесь на обработку ваших данных.</p>
+</div>
+</div>
+</div>
+    </div>
       </section>
       <section class="additionally">
         <div>
