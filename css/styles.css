@@ -14,6 +14,7 @@ body {
   align-items: center;
   gap: 2px;
 }
+
 .container-block h2 {
   font-family: "Fira Sans";
 font-size: 96px;
@@ -22,7 +23,8 @@ line-height: 125px;
 letter-spacing: 0.03em;
 text-align: left;
 flex: 1;
-border: 2px solid #FB8D00
+-webkit-text-stroke: 2px #FB8D00;
+color: #fff;
 }
 .container-block p {
 font-family: "Fira Sans";
