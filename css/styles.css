@@ -348,13 +348,11 @@ header {
 .accordion-item.active {
   outline: 1px solid #FB8D00;
   border-radius: 10px;
-  /* Устанавливаем оранжевую рамку для активного элемента */
 }
 
 .accordion-button {
   position: static;
   font-size: 1.25rem;
-  font-family: "FiraSans_SemiBold600";
   font-weight: 500;
 }
 .accordion-button:focus {
@@ -370,9 +368,22 @@ header {
 }
 
 .accordion-body {
-  font-family: "FiraSans_Regular400";
   font-weight: 400;
   font-size: 1.125rem;
+}
+.accordion-body .special_text {
+  color: #FB8D00;
+}
+
+@media screen and (max-width: 767px) {
+  .FAQ {
+    display: inline;
+  }
+  .accordion {
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+  }
 }
 
 .contact-us__wrapper {

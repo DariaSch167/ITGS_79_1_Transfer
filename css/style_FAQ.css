@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "FiraSans_Bold700";
   src: url("../assets/fonts/FiraSans-Bold.eot") format("eot"), url("../assets/fonts/FiraSans-Bold.ttf") format("ttf"), url("../assets/fonts/FiraSans-Bold.woff") format("woff"), url("../assets/fonts/FiraSans-Bold.woff2") format("woff2");
@@ -36,13 +35,11 @@
 .accordion-item.active {
   outline: 1px solid #FB8D00;
   border-radius: 10px;
-  /* Устанавливаем оранжевую рамку для активного элемента */
 }
 
 .accordion-button {
   position: static;
   font-size: 1.25rem;
-  font-family: "FiraSans_SemiBold600";
   font-weight: 500;
 }
 .accordion-button:focus {
@@ -58,7 +55,20 @@
 }
 
 .accordion-body {
-  font-family: "FiraSans_Regular400";
   font-weight: 400;
   font-size: 1.125rem;
+}
+.accordion-body .special_text {
+  color: #FB8D00;
+}
+
+@media screen and (max-width: 767px) {
+  .FAQ {
+    display: inline;
+  }
+  .accordion {
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=style_FAQ.css.map */

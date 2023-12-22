@@ -18,13 +18,12 @@
 &.active {
 	outline: 1px solid #FB8D00;
 	border-radius: 10px;
-	/* Устанавливаем оранжевую рамку для активного элемента */
   }
   }
   .accordion-button {
 	position: static;
 	font-size: $r_20 ;
-	font-family: "FiraSans_SemiBold600";
+
 	font-weight: 500;
 	&:focus {
 		box-shadow: none; 
@@ -40,7 +39,20 @@
 	}
 }
 .accordion-body {
-	font-family: "FiraSans_Regular400";
 	font-weight: 400;
 	font-size: $r_18;
+	.special_text {
+		color:#FB8D00;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.FAQ {
+		display: inline;
+}
+.accordion {
+display: grid;  
+grid-template-columns: 80%;
+justify-content: center;
+}
 }
