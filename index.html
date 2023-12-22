@@ -5,7 +5,8 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
-      shrink-to-fit="no" />
+      shrink-to-fit="no"
+    />
     <title>Transfer</title>
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -19,12 +20,14 @@
           <picture>
             <source
               srcset="./assets/svg/logo-mobile.svg"
-              media="(max-width: 965px)" />
+              media="(max-width: 965px)"
+            />
             <source srcset="./assets/svg/logo.svg" />
             <img
               src="./assets/svg/logo.svg"
               alt="Логотип «Transfer»"
-              class="img__fluid" />
+              class="img__fluid"
+            />
           </picture>
         </a>
         <!-- Hamburger icon 
@@ -87,14 +90,16 @@
                 </div>
                 <!-- Radio-buttons services -->
                 <div
-                  class="lead-form__input lead-form__input__radio lead-form_radio_screen">
+                  class="lead-form__input lead-form__input__radio lead-form_radio_screen"
+                >
                   <div class="lead-form__input__radio__wrap">
                     <input
                       type="radio"
                       name="service-name"
                       value="passenger1"
                       id="passenger1"
-                      checked />
+                      checked
+                    />
                     <label for="passenger1">Пассажирские перевозки</label>
                   </div>
                   <div class="lead-form__input__radio__wrap">
@@ -102,7 +107,8 @@
                       type="radio"
                       name="service-name"
                       value="pets1"
-                      id="pets1" />
+                      id="pets1"
+                    />
                     <label for="pets1">Перевозка домашних животных</label>
                   </div>
                   <div class="lead-form__input__radio__wrap">
@@ -110,7 +116,8 @@
                       type="radio"
                       name="service-name"
                       value="cargo1"
-                      id="cargo1" />
+                      id="cargo1"
+                    />
                     <label for="cargo1"
                       >Доставка посылок и корреспонденции</label
                     >
@@ -120,7 +127,8 @@
                       type="radio"
                       name="service-name"
                       value="urn1"
-                      id="urn1" />
+                      id="urn1"
+                    />
                     <label for="urn1">Транспортировка праха в урнах</label>
                   </div>
                 </div>
@@ -133,7 +141,8 @@
                     type="tel_form"
                     name="tel_form"
                     placeholder="+49 176 803 498 04"
-                    required />
+                    required
+                  />
                 </div>
                 <!-- Swap inputs on button click - start -->
                 <div class="lead-form__input lead-form__input__switch">
@@ -144,7 +153,8 @@
                       type="text"
                       id="input1"
                       value="Калининград"
-                      readonly />
+                      readonly
+                    />
                   </div>
                   <input type="button" id="btn_swap1" onclick="switcher()" />
                   <div class="lead-form__input__switch__block">
@@ -154,7 +164,8 @@
                       type="text"
                       id="input2"
                       value="Германия"
-                      readonly />
+                      readonly
+                    />
                   </div>
                 </div>
                 <!-- Selector "num of pass" - excluded from a form -->
@@ -171,7 +182,8 @@
                   <label for="comments">Комментарий</label>
                   <textarea
                     name="comments"
-                    placeholder="Введите комментарий"></textarea>
+                    placeholder="Введите комментарий"
+                  ></textarea>
                 </div>
               </div>
               <!-- Tariff info - excluded from a form -->
@@ -202,15 +214,16 @@
       <section class="departures">
         <h2 class="title-departures">Отправления</h2>
         <!-- Германия -->
-        <section class="services">
+        <section class="departures_card">
           <div class="container">
-            <div class="row">
+            <div class="row departures_row">
               <div class="col-md-6">
                 <div class="card service-card bg-light text-white">
                   <img
                     src="assets/images/Card_Germany.png"
                     class="card-img-top-germany"
-                    alt="img_germany" />
+                    alt="img_germany"
+                  />
                   <div class="card-img-overlay">
                     <h2>Германия</h2>
                     <p>Отправление каждую среду по индивидуальному маршруту</p>
@@ -227,7 +240,8 @@
                   <img
                     src="assets/images/Card_Kaliningrad.png"
                     class="card-img-top-kaliningrad"
-                    alt="img_kaliningrad" />
+                    alt="img_kaliningrad"
+                  />
                   <div class="card-img-overlay">
                     <h2>Калининград</h2>
                     <p>Отправление каждую субботу в 03:00</p>
@@ -255,7 +269,8 @@
                     <img
                       src="/assets/images/service1.png"
                       class="img-fluid rounded-start"
-                      alt="img_service1" />
+                      alt="img_service1"
+                    />
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
@@ -275,7 +290,8 @@
                       <button
                         class="btn btn-custom-services"
                         data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop1">
+                        data-bs-target="#staticBackdrop1"
+                      >
                         Оставить заявку
                       </button>
                     </div>
@@ -291,7 +307,8 @@
               data-bs-keyboard="false"
               tabindex="-1"
               aria-labelledby="staticBackdropLabel"
-              aria-hidden="true">
+              aria-hidden="true"
+            >
               <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -303,10 +320,21 @@
                       type="button"
                       class="btn-close"
                       data-bs-dismiss="modal"
-                      aria-label="Закрыть"></button>
+                      aria-label="Закрыть"
+                    ></button>
                   </div>
                   <!-- Тело модального окна -->
                   <div class="modal-body">
+                    <!-- Поле ввода номера телефона -->
+                    <div class="form-group">
+                      <label for="phoneNumber">Номер телефона:</label>
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="phoneNumber"
+                        placeholder="+49 176 803 498 04"
+                      />
+                    </div>
                     <!-- Выпадающие списки для пункта отправления и прибытия -->
                     <!-- Пункт отправления -->
                     <div class="form-group">
@@ -320,7 +348,8 @@
                     <button onclick="switchPoints()">
                       <img
                         src="assets/svg/block1_switch.svg"
-                        alt="img_switch" />
+                        alt="img_switch"
+                      />
                     </button>
                     <!-- Пункт прибытия -->
                     <div class="form-group">
@@ -330,15 +359,6 @@
                         <option value="Калининград">Калининград</option>
                       </select>
                     </div>
-                    <!-- Поле ввода номера телефона -->
-                    <div class="form-group">
-                      <label for="phoneNumber">Номер телефона:</label>
-                      <input
-                        type="tel"
-                        class="form-control"
-                        id="phoneNumber"
-                        placeholder="Введите номер телефона" />
-                    </div>
                     <!-- Поле ввода комментария -->
                     <div class="form-group">
                       <label for="comment">Комментарий:</label>
@@ -346,7 +366,8 @@
                         class="form-control"
                         id="comment"
                         rows="3"
-                        placeholder="Введите комментарий"></textarea>
+                        placeholder="Введите комментарий"
+                      ></textarea>
                     </div>
                   </div>
                   <!-- Нижняя часть модального окна с кнопкой "Отправить запрос" и текстом о согласии на обработку данных -->
@@ -370,7 +391,8 @@
                     <img
                       src="/assets/images/service2.png"
                       class="img-fluid rounded-start"
-                      alt="img_service2" />
+                      alt="img_service2"
+                    />
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
@@ -383,7 +405,8 @@
                       <button
                         class="btn btn-custom-services"
                         data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop1">
+                        data-bs-target="#staticBackdrop1"
+                      >
                         Оставить заявку
                       </button>
                       <!-- Модальное окно -->
@@ -394,7 +417,8 @@
                         data-bs-keyboard="false"
                         tabindex="-1"
                         aria-labelledby="staticBackdropLabel"
-                        aria-hidden="true">
+                        aria-hidden="true"
+                      >
                         <div class="modal-dialog modal-dialog-centered">
                           <div class="modal-content">
                             <div class="modal-header">
@@ -406,7 +430,8 @@
                                 type="button"
                                 class="btn-close"
                                 data-bs-dismiss="modal"
-                                aria-label="Закрыть"></button>
+                                aria-label="Закрыть"
+                              ></button>
                             </div>
                             <!-- Тело модального окна -->
                             <div class="modal-body">
@@ -418,7 +443,8 @@
                                 >
                                 <select
                                   class="form-control"
-                                  id="departurePoint">
+                                  id="departurePoint"
+                                >
                                   <option value="Калининград">
                                     Калининград
                                   </option>
@@ -429,7 +455,8 @@
                               <button onclick="switchPoints()">
                                 <img
                                   src="assets/svg/block1_switch.svg"
-                                  alt="img_switch" />
+                                  alt="img_switch"
+                                />
                               </button>
                               <!-- Пункт прибытия -->
                               <div class="form-group">
@@ -450,7 +477,8 @@
                                   type="tel"
                                   class="form-control"
                                   id="phoneNumber"
-                                  placeholder="Введите номер телефона" />
+                                  placeholder="Введите номер телефона"
+                                />
                               </div>
                               <!-- Поле ввода комментария -->
                               <div class="form-group">
@@ -459,7 +487,8 @@
                                   class="form-control"
                                   id="comment"
                                   rows="3"
-                                  placeholder="Введите комментарий"></textarea>
+                                  placeholder="Введите комментарий"
+                                ></textarea>
                               </div>
                             </div>
                             <!-- Нижняя часть модального окна с кнопкой "Отправить запрос" и текстом о согласии на обработку данных -->
@@ -481,221 +510,236 @@
               </div>
             </div>
           </div>
-        </div>
-        <!-- Карточки услуг блок-2 -->
-        <div class="row">
-          <!-- Третья карточка -->
-          <div class="col-md-6">
-            <div class="card mb-3" style="max-width: 540px">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img
-                    src="/assets/images/service3.png"
-                    class="img-fluid rounded-start"
-                    alt="img_service3" />
+          <!-- Карточки услуг блок-2 -->
+          <div class="row">
+            <!-- Третья карточка -->
+            <div class="col-md-6">
+              <div class="card mb-3" style="max-width: 540px">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="/assets/images/service3.png"
+                      class="img-fluid rounded-start"
+                      alt="img_service3"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Доставка посылок и корреспонденции
+                      </h5>
+                      <p>
+                        Посылки и корреспонденцию принимаем на почтовый адрес в
+                        Германии и отправляем из Калининграда по всей России
+                        почтой либо СДЭК
+                      </p>
+                      <!-- Кнопка-триггер модального окна -->
+                      <button
+                        class="btn btn-custom-services"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop1"
+                      >
+                        Оставить заявку
+                      </button>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">
+              </div>
+            </div>
+            <!-- Модальное окно -->
+            <div
+              class="modal fade"
+              id="staticBackdrop1"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
                       Доставка посылок и корреспонденции
                     </h5>
-                    <p>
-                      Посылки и корреспонденцию принимаем на почтовый адрес в
-                      Германии и отправляем из Калининграда по всей России
-                      почтой либо СДЭК
-                    </p>
-                    <!-- Кнопка-триггер модального окна -->
+                    <!-- Кнопка для закрытия модального окна -->
                     <button
-                      class="btn btn-custom-services"
-                      data-bs-toggle="modal"
-                      data-bs-target="#staticBackdrop1">
-                      Оставить заявку
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Закрыть"
+                    ></button>
+                  </div>
+                  <!-- Тело модального окна -->
+                  <div class="modal-body">
+                    <!-- Выпадающие списки для пункта отправления и прибытия -->
+                    <!-- Пункт отправления -->
+                    <div class="form-group">
+                      <label for="departurePoint">Пункт отправления:</label>
+                      <select class="form-control" id="departurePoint">
+                        <option value="Калининград">Калининград</option>
+                        <option value="Германия">Германия</option>
+                      </select>
+                    </div>
+                    <!-- Переключатель -->
+                    <button onclick="switchPoints()">
+                      <img
+                        src="assets/svg/block1_switch.svg"
+                        alt="img_switch"
+                      />
                     </button>
+                    <!-- Пункт прибытия -->
+                    <div class="form-group">
+                      <label for="arrivalPoint">Пункт прибытия:</label>
+                      <select class="form-control" id="arrivalPoint">
+                        <option value="Германия">Германия</option>
+                        <option value="Калининград">Калининград</option>
+                      </select>
+                    </div>
+                    <!-- Поле ввода номера телефона -->
+                    <div class="form-group">
+                      <label for="phoneNumber">Номер телефона:</label>
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="phoneNumber"
+                        placeholder="Введите номер телефона"
+                      />
+                    </div>
+                    <!-- Поле ввода комментария -->
+                    <div class="form-group">
+                      <label for="comment">Комментарий:</label>
+                      <textarea
+                        class="form-control"
+                        id="comment"
+                        rows="3"
+                        placeholder="Введите комментарий"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <!-- Нижняя часть модального окна с кнопкой "Отправить запрос" и текстом о согласии на обработку данных -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">
+                      Отправить запрос
+                    </button>
+                    <p>
+                      Нажимая "Отправить запрос", вы соглашаетесь на обработку
+                      ваших данных.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Четвёртая карточка -->
+            <div class="col-md-6">
+              <div class="card mb-3" style="max-width: 540px">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img
+                      src="/assets/images/service4.png"
+                      class="img-fluid rounded-start"
+                      alt="img_service4"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Транспортировка праха в урнах</h5>
+                      <p>
+                        Проконсультируем и поможем организовать процесс
+                        транспортировки бережно и с уважительным подходом
+                      </p>
+                      <!-- Кнопка-триггер модального окна -->
+                      <button
+                        class="btn btn-custom-services"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop1"
+                      >
+                        Оставить заявку
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- Модальное окно -->
-        <div
-          class="modal fade"
-          id="staticBackdrop1"
-          data-bs-backdrop="static"
-          data-bs-keyboard="false"
-          tabindex="-1"
-          aria-labelledby="staticBackdropLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">
-                  Доставка посылок и корреспонденции
-                </h5>
-                <!-- Кнопка для закрытия модального окна -->
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Закрыть"></button>
-              </div>
-              <!-- Тело модального окна -->
-              <div class="modal-body">
-                <!-- Выпадающие списки для пункта отправления и прибытия -->
-                <!-- Пункт отправления -->
-                <div class="form-group">
-                  <label for="departurePoint">Пункт отправления:</label>
-                  <select class="form-control" id="departurePoint">
-                    <option value="Калининград">Калининград</option>
-                    <option value="Германия">Германия</option>
-                  </select>
-                </div>
-                <!-- Переключатель -->
-                <button onclick="switchPoints()">
-                  <img src="assets/svg/block1_switch.svg" alt="img_switch" />
-                </button>
-                <!-- Пункт прибытия -->
-                <div class="form-group">
-                  <label for="arrivalPoint">Пункт прибытия:</label>
-                  <select class="form-control" id="arrivalPoint">
-                    <option value="Германия">Германия</option>
-                    <option value="Калининград">Калининград</option>
-                  </select>
-                </div>
-                <!-- Поле ввода номера телефона -->
-                <div class="form-group">
-                  <label for="phoneNumber">Номер телефона:</label>
-                  <input
-                    type="tel"
-                    class="form-control"
-                    id="phoneNumber"
-                    placeholder="Введите номер телефона" />
-                </div>
-                <!-- Поле ввода комментария -->
-                <div class="form-group">
-                  <label for="comment">Комментарий:</label>
-                  <textarea
-                    class="form-control"
-                    id="comment"
-                    rows="3"
-                    placeholder="Введите комментарий"></textarea>
-                </div>
-              </div>
-              <!-- Нижняя часть модального окна с кнопкой "Отправить запрос" и текстом о согласии на обработку данных -->
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary">
-                  Отправить запрос
-                </button>
-                <p>
-                  Нажимая "Отправить запрос", вы соглашаетесь на обработку ваших
-                  данных.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Четвёртая карточка -->
-        <div class="col-md-6">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="/assets/images/service4.png"
-                  class="img-fluid rounded-start"
-                  alt="img_service4" />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Транспортировка праха в урнах</h5>
-                  <p>
-                    Проконсультируем и поможем организовать процесс
-                    транспортировки бережно и с уважительным подходом
-                  </p>
-                  <!-- Кнопка-триггер модального окна -->
+          <!-- Модальное окно -->
+          <div
+            class="modal fade"
+            id="staticBackdrop1"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">
+                    Транспортировка праха в урнах
+                  </h5>
+                  <!-- Кнопка для закрытия модального окна -->
                   <button
-                    class="btn btn-custom-services"
-                    data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop1">
-                    Оставить заявку
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Закрыть"
+                  ></button>
+                </div>
+                <!-- Тело модального окна -->
+                <div class="modal-body">
+                  <!-- Выпадающие списки для пункта отправления и прибытия -->
+                  <!-- Пункт отправления -->
+                  <div class="form-group">
+                    <label for="departurePoint">Пункт отправления:</label>
+                    <select class="form-control" id="departurePoint">
+                      <option value="Калининград">Калининград</option>
+                      <option value="Германия">Германия</option>
+                    </select>
+                  </div>
+                  <!-- Переключатель -->
+                  <button onclick="switchPoints()">
+                    <img src="assets/svg/block1_switch.svg" alt="img_switch" />
                   </button>
+                  <!-- Пункт прибытия -->
+                  <div class="form-group">
+                    <label for="arrivalPoint">Пункт прибытия:</label>
+                    <select class="form-control" id="arrivalPoint">
+                      <option value="Германия">Германия</option>
+                      <option value="Калининград">Калининград</option>
+                    </select>
+                  </div>
+                  <!-- Поле ввода номера телефона -->
+                  <div class="form-group">
+                    <label for="phoneNumber">Номер телефона:</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="phoneNumber"
+                      placeholder="Введите номер телефона"
+                    />
+                  </div>
+                  <!-- Поле ввода комментария -->
+                  <div class="form-group">
+                    <label for="comment">Комментарий:</label>
+                    <textarea
+                      class="form-control"
+                      id="comment"
+                      rows="3"
+                      placeholder="Введите комментарий"
+                    ></textarea>
+                  </div>
+                  <!-- Нижняя часть модального окна с кнопкой "Отправить запрос" и текстом о согласии на обработку данных -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">
+                      Отправить запрос
+                    </button>
+                    <p>
+                      Нажимая "Отправить запрос", вы соглашаетесь на обработку
+                      ваших данных.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Модальное окно -->
-        <div
-          class="modal fade"
-          id="staticBackdrop1"
-          data-bs-backdrop="static"
-          data-bs-keyboard="false"
-          tabindex="-1"
-          aria-labelledby="staticBackdropLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">
-                  Транспортировка праха в урнах
-                </h5>
-                <!-- Кнопка для закрытия модального окна -->
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Закрыть"></button>
-              </div>
-              <!-- Тело модального окна -->
-              <div class="modal-body">
-                <!-- Выпадающие списки для пункта отправления и прибытия -->
-                <!-- Пункт отправления -->
-                <div class="form-group">
-                  <label for="departurePoint">Пункт отправления:</label>
-                  <select class="form-control" id="departurePoint">
-                    <option value="Калининград">Калининград</option>
-                    <option value="Германия">Германия</option>
-                  </select>
-                </div>
-                <!-- Переключатель -->
-                <button onclick="switchPoints()">
-                  <img src="assets/svg/block1_switch.svg" alt="img_switch" />
-                </button>
-                <!-- Пункт прибытия -->
-                <div class="form-group">
-                  <label for="arrivalPoint">Пункт прибытия:</label>
-                  <select class="form-control" id="arrivalPoint">
-                    <option value="Германия">Германия</option>
-                    <option value="Калининград">Калининград</option>
-                  </select>
-                </div>
-                <!-- Поле ввода номера телефона -->
-                <div class="form-group">
-                  <label for="phoneNumber">Номер телефона:</label>
-                  <input
-                    type="tel"
-                    class="form-control"
-                    id="phoneNumber"
-                    placeholder="Введите номер телефона" />
-                </div>
-                <!-- Поле ввода комментария -->
-                <div class="form-group">
-                  <label for="comment">Комментарий:</label>
-                  <textarea
-                    class="form-control"
-                    id="comment"
-                    rows="3"
-                    placeholder="Введите комментарий"></textarea>
-                </div>
-              </div>
-              <!-- Нижняя часть модального окна с кнопкой "Отправить запрос" и текстом о согласии на обработку данных -->
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary">
-                  Отправить запрос
-                </button>
-                <p>
-                  Нажимая "Отправить запрос", вы соглашаетесь на обработку ваших
-                  данных.
-                </p>
               </div>
             </div>
           </div>
@@ -731,7 +775,8 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseOne"
                       aria-expanded="false"
-                      aria-controls="flush-collapseOne">
+                      aria-controls="flush-collapseOne"
+                    >
                       Элемент аккордеона #1
                     </button>
                   </h2>
@@ -739,7 +784,8 @@
                     id="flush-collapseOne"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingOne"
-                    data-bs-parent="#accordionFlushExample">
+                    data-bs-parent="#accordionFlushExample"
+                  >
                     <div class="accordion-body">
                       Placeholder content for this accordion, which is intended
                       to demonstrate the <code>.accordion-flush</code> class.
@@ -755,7 +801,8 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseTwo"
                       aria-expanded="false"
-                      aria-controls="flush-collapseTwo">
+                      aria-controls="flush-collapseTwo"
+                    >
                       Элемент аккордеона #2
                     </button>
                   </h2>
@@ -763,7 +810,8 @@
                     id="flush-collapseTwo"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingTwo"
-                    data-bs-parent="#accordionFlushExample">
+                    data-bs-parent="#accordionFlushExample"
+                  >
                     <div class="accordion-body">
                       Placeholder content for this accordion, which is intended
                       to demonstrate the <code>.accordion-flush</code> class.
@@ -780,7 +828,8 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseThree"
                       aria-expanded="false"
-                      aria-controls="flush-collapseThree">
+                      aria-controls="flush-collapseThree"
+                    >
                       Элемент аккордеона #3
                     </button>
                   </h2>
@@ -788,7 +837,8 @@
                     id="flush-collapseThree"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingThree"
-                    data-bs-parent="#accordionFlushExample">
+                    data-bs-parent="#accordionFlushExample"
+                  >
                     <div class="accordion-body">
                       Placeholder content for this accordion, which is intended
                       to demonstrate the <code>.accordion-flush</code> class.
@@ -808,7 +858,8 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseFour"
                       aria-expanded="false"
-                      aria-controls="flush-collapseFour">
+                      aria-controls="flush-collapseFour"
+                    >
                       Элемент аккордеона #4
                     </button>
                   </h2>
@@ -816,7 +867,8 @@
                     id="flush-collapseFour"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingFour"
-                    data-bs-parent="#accordionFlushExample">
+                    data-bs-parent="#accordionFlushExample"
+                  >
                     <div class="accordion-body">
                       Placeholder content for this accordion, which is intended
                       to demonstrate the <code>.accordion-flush</code> class.
@@ -836,7 +888,8 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapsefive"
                       aria-expanded="false"
-                      aria-controls="flush-collapsefive">
+                      aria-controls="flush-collapsefive"
+                    >
                       Элемент аккордеона #5
                     </button>
                   </h2>
@@ -844,7 +897,8 @@
                     id="flush-collapsefive"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingfive"
-                    data-bs-parent="#accordionFlushExample">
+                    data-bs-parent="#accordionFlushExample"
+                  >
                     <div class="accordion-body">
                       Placeholder content for this accordion, which is intended
                       to demonstrate the <code>.accordion-flush</code> class.
@@ -864,7 +918,8 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapsesix"
                       aria-expanded="false"
-                      aria-controls="flush-collapsesix">
+                      aria-controls="flush-collapsesix"
+                    >
                       Элемент аккордеона #6
                     </button>
                   </h2>
@@ -872,7 +927,8 @@
                     id="flush-collapsesix"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingsix"
-                    data-bs-parent="#accordionFlushExample">
+                    data-bs-parent="#accordionFlushExample"
+                  >
                     <div class="accordion-body">
                       Placeholder content for this accordion, which is intended
                       to demonstrate the <code>.accordion-flush</code> class.
@@ -892,7 +948,8 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseseven"
                       aria-expanded="false"
-                      aria-controls="flush-collapseseven">
+                      aria-controls="flush-collapseseven"
+                    >
                       Элемент аккордеона #7
                     </button>
                   </h2>
@@ -900,7 +957,8 @@
                     id="flush-collapseseven"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingseven"
-                    data-bs-parent="#accordionFlushExample">
+                    data-bs-parent="#accordionFlushExample"
+                  >
                     <div class="accordion-body">
                       Placeholder content for this accordion, which is intended
                       to demonstrate the <code>.accordion-flush</code> class.
@@ -920,7 +978,8 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseeight"
                       aria-expanded="false"
-                      aria-controls="flush-collapseeight">
+                      aria-controls="flush-collapseeight"
+                    >
                       Элемент аккордеона #8
                     </button>
                   </h2>
@@ -928,7 +987,8 @@
                     id="flush-collapseeight"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingeight"
-                    data-bs-parent="#accordionFlushExample">
+                    data-bs-parent="#accordionFlushExample"
+                  >
                     <div class="accordion-body">
                       Placeholder content for this accordion, which is intended
                       to demonstrate the <code>.accordion-flush</code> class.
@@ -948,7 +1008,8 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapsenine"
                       aria-expanded="false"
-                      aria-controls="flush-collapsenine">
+                      aria-controls="flush-collapsenine"
+                    >
                       Элемент аккордеона #9
                     </button>
                   </h2>
@@ -956,7 +1017,8 @@
                     id="flush-collapsenine"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingnine"
-                    data-bs-parent="#accordionFlushExample">
+                    data-bs-parent="#accordionFlushExample"
+                  >
                     <div class="accordion-body">
                       Placeholder content for this accordion, which is intended
                       to demonstrate the <code>.accordion-flush</code> class.
@@ -976,7 +1038,8 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseten"
                       aria-expanded="false"
-                      aria-controls="flush-collapseten">
+                      aria-controls="flush-collapseten"
+                    >
                       Элемент аккордеона #10
                     </button>
                   </h2>
@@ -984,7 +1047,8 @@
                     id="flush-collapseten"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingten"
-                    data-bs-parent="#accordionFlushExample">
+                    data-bs-parent="#accordionFlushExample"
+                  >
                     <div class="accordion-body">
                       Placeholder content for this accordion, which is intended
                       to demonstrate the <code>.accordion-flush</code> class.
@@ -1004,7 +1068,8 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseeleven"
                       aria-expanded="false"
-                      aria-controls="flush-collapseeleven">
+                      aria-controls="flush-collapseeleven"
+                    >
                       Элемент аккордеона #11
                     </button>
                   </h2>
@@ -1012,7 +1077,8 @@
                     id="flush-collapseeleven"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingeleven"
-                    data-bs-parent="#accordionFlushExample">
+                    data-bs-parent="#accordionFlushExample"
+                  >
                     <div class="accordion-body">
                       Placeholder content for this accordion, which is intended
                       to demonstrate the <code>.accordion-flush</code> class.
@@ -1032,7 +1098,8 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapsetwelve"
                       aria-expanded="false"
-                      aria-controls="flush-collapsetwelve">
+                      aria-controls="flush-collapsetwelve"
+                    >
                       Элемент аккордеона #12
                     </button>
                   </h2>
@@ -1040,7 +1107,8 @@
                     id="flush-collapsetwelve"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingtwelve"
-                    data-bs-parent="#accordionFlushExample">
+                    data-bs-parent="#accordionFlushExample"
+                  >
                     <div class="accordion-body">
                       Placeholder content for this accordion, which is intended
                       to demonstrate the <code>.accordion-flush</code> class.
@@ -1060,7 +1128,8 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapsethirteen"
                       aria-expanded="false"
-                      aria-controls="flush-collapsethirteen">
+                      aria-controls="flush-collapsethirteen"
+                    >
                       Элемент аккордеона #13
                     </button>
                   </h2>
@@ -1068,7 +1137,8 @@
                     id="flush-collapsethirteen"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingthirteen"
-                    data-bs-parent="#accordionFlushExample">
+                    data-bs-parent="#accordionFlushExample"
+                  >
                     <div class="accordion-body">
                       Placeholder content for this accordion, which is intended
                       to demonstrate the <code>.accordion-flush</code> class.
@@ -1088,7 +1158,8 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseeight"
                       aria-expanded="false"
-                      aria-controls="flush-collapseeight">
+                      aria-controls="flush-collapseeight"
+                    >
                       Элемент аккордеона #14
                     </button>
                   </h2>
@@ -1096,7 +1167,8 @@
                     id="flush-collapseeight"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingeight"
-                    data-bs-parent="#accordionFlushExample">
+                    data-bs-parent="#accordionFlushExample"
+                  >
                     <div class="accordion-body">
                       Placeholder content for this accordion, which is intended
                       to demonstrate the <code>.accordion-flush</code> class.
@@ -1116,7 +1188,8 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseeight"
                       aria-expanded="false"
-                      aria-controls="flush-collapseeight">
+                      aria-controls="flush-collapseeight"
+                    >
                       Элемент аккордеона #15
                     </button>
                   </h2>
@@ -1124,7 +1197,8 @@
                     id="flush-collapseeight"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingeight"
-                    data-bs-parent="#accordionFlushExample">
+                    data-bs-parent="#accordionFlushExample"
+                  >
                     <div class="accordion-body">
                       Placeholder content for this accordion, which is intended
                       to demonstrate the <code>.accordion-flush</code> class.
@@ -1144,7 +1218,8 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseeight"
                       aria-expanded="false"
-                      aria-controls="flush-collapseeight">
+                      aria-controls="flush-collapseeight"
+                    >
                       Элемент аккордеона #16
                     </button>
                   </h2>
@@ -1152,7 +1227,8 @@
                     id="flush-collapseeight"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingeight"
-                    data-bs-parent="#accordionFlushExample">
+                    data-bs-parent="#accordionFlushExample"
+                  >
                     <div class="accordion-body">
                       Placeholder content for this accordion, which is intended
                       to demonstrate the <code>.accordion-flush</code> class.
@@ -1172,7 +1248,8 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseeight"
                       aria-expanded="false"
-                      aria-controls="flush-collapseeight">
+                      aria-controls="flush-collapseeight"
+                    >
                       Элемент аккордеона #8
                     </button>
                   </h2>
@@ -1180,7 +1257,8 @@
                     id="flush-collapseeight"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingeight"
-                    data-bs-parent="#accordionFlushExample">
+                    data-bs-parent="#accordionFlushExample"
+                  >
                     <div class="accordion-body">
                       Placeholder content for this accordion, which is intended
                       to demonstrate the <code>.accordion-flush</code> class.
@@ -1200,7 +1278,8 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseeight"
                       aria-expanded="false"
-                      aria-controls="flush-collapseeight">
+                      aria-controls="flush-collapseeight"
+                    >
                       Элемент аккордеона #17
                     </button>
                   </h2>
@@ -1208,7 +1287,8 @@
                     id="flush-collapseeight"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingeight"
-                    data-bs-parent="#accordionFlushExample">
+                    data-bs-parent="#accordionFlushExample"
+                  >
                     <div class="accordion-body">
                       Placeholder content for this accordion, which is intended
                       to demonstrate the <code>.accordion-flush</code> class.
@@ -1228,7 +1308,8 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseeight"
                       aria-expanded="false"
-                      aria-controls="flush-collapseeight">
+                      aria-controls="flush-collapseeight"
+                    >
                       Элемент аккордеона #18
                     </button>
                   </h2>
@@ -1236,7 +1317,8 @@
                     id="flush-collapseeight"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingeight"
-                    data-bs-parent="#accordionFlushExample">
+                    data-bs-parent="#accordionFlushExample"
+                  >
                     <div class="accordion-body">
                       Placeholder content for this accordion, which is intended
                       to demonstrate the <code>.accordion-flush</code> class.
@@ -1256,7 +1338,8 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseeight"
                       aria-expanded="false"
-                      aria-controls="flush-collapseeight">
+                      aria-controls="flush-collapseeight"
+                    >
                       Элемент аккордеона #19
                     </button>
                   </h2>
@@ -1264,7 +1347,8 @@
                     id="flush-collapseeight"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingeight"
-                    data-bs-parent="#accordionFlushExample">
+                    data-bs-parent="#accordionFlushExample"
+                  >
                     <div class="accordion-body">
                       Placeholder content for this accordion, which is intended
                       to demonstrate the <code>.accordion-flush</code> class.
@@ -1289,7 +1373,8 @@
             <img
               class="contact-us__image"
               src="./assets/images/main_lead-form_image.png"
-              alt="Пассажирские перевозки" />
+              alt="Пассажирские перевозки"
+            />
           </div>
           <!-- Lead-form -->
           <div class="contact-us__lead-form lead-form col-xl-5 col-lg-12">
@@ -1301,14 +1386,16 @@
                   </div>
                   <!-- Radio-buttons services -->
                   <div
-                    class="lead-form__input lead-form__input__radio c-u_lead-form_radio">
+                    class="lead-form__input lead-form__input__radio c-u_lead-form_radio"
+                  >
                     <div class="lead-form__input__radio__wrap">
                       <input
                         type="radio"
                         name="service-name"
                         value="passenger2"
                         id="passenger2"
-                        checked />
+                        checked
+                      />
                       <label for="passenger2">Пассажирские перевозки</label>
                     </div>
                     <div class="lead-form__input__radio__wrap">
@@ -1316,7 +1403,8 @@
                         type="radio"
                         name="service-name"
                         value="pets2"
-                        id="pets2" />
+                        id="pets2"
+                      />
                       <label for="pets2">Перевозка домашних животных</label>
                     </div>
                     <div class="lead-form__input__radio__wrap">
@@ -1324,7 +1412,8 @@
                         type="radio"
                         name="service-name"
                         value="cargo2"
-                        id="cargo2" />
+                        id="cargo2"
+                      />
                       <label for="cargo2"
                         >Доставка посылок и корреспонденции</label
                       >
@@ -1334,7 +1423,8 @@
                         type="radio"
                         name="service-name"
                         value="urn2"
-                        id="urn2" />
+                        id="urn2"
+                      />
                       <label for="urn2">Транспортировка праха в урнах</label>
                     </div>
                   </div>
@@ -1346,7 +1436,8 @@
                     <input
                       type="tel_form"
                       name="tel_form"
-                      placeholder="+49 176 803 498 04" />
+                      placeholder="+49 176 803 498 04"
+                    />
                   </div>
                   <!-- Swap inputs on button click - start -->
                   <div class="lead-form__input lead-form__input__switch">
@@ -1357,12 +1448,14 @@
                         type="text"
                         id="input1_2"
                         value="Калининград"
-                        readonly />
+                        readonly
+                      />
                     </div>
                     <input
                       type="button"
                       id="btn_swap2"
-                      onclick="switcher_2()" />
+                      onclick="switcher_2()"
+                    />
                     <div class="lead-form__input__switch__block">
                       <label for="input2_2">Пункт прибытия</label>
                       <input
@@ -1370,14 +1463,16 @@
                         type="text"
                         id="input2_2"
                         value="Германия"
-                        readonly />
+                        readonly
+                      />
                     </div>
                   </div>
                   <div class="lead-form__input lead-form__input__comments">
                     <label for="comments">Комментарий</label>
                     <textarea
                       name="comments"
-                      placeholder="Введите комментарий"></textarea>
+                      placeholder="Введите комментарий"
+                    ></textarea>
                   </div>
                 </div>
                 <div class="lead-form__grid-col1r2">
