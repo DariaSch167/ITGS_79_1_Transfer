@@ -298,7 +298,7 @@ body {
   }
   .lead-form form {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 45% 55%;
     grid-template-rows: 1fr 1fr;
   }
   .lead-form__grid-col1r1 {
@@ -316,6 +316,36 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+  }
+  .header__screen__title h1, .header__screen__title h2 {
+    font-size: 2.5rem;
+  }
+  .lead-form h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .lead-form_radio_screen label {
+    font-size: 0.875rem;
+  }
+  .lead-form__input__tel label,
+  .lead-form__input__switch__block label {
+    font-size: 0.75rem;
+  }
+  .lead-form__input__tel input,
+  .lead-form__input__switch__block input {
+    font-size: 1rem;
+  }
+  .lead-form__input__comments label {
+    font-size: 0.75rem;
+  }
+  .lead-form__input__comments textarea {
+    font-size: 1rem;
+  }
+  .lead-form__button {
+    font-size: 1rem;
+  }
+  .lead-form__info__fz-rule {
+    font-size: 0.875rem;
   }
 }
 @font-face {
@@ -459,12 +489,16 @@ body {
   }
   .contact-us__title {
     padding-left: 1.25rem;
+    font-size: 2rem;
   }
   .contact-us__image {
     display: none;
   }
   .lead-form__wrapper {
     margin-top: 3.125rem;
+  }
+  .c-u_lead-form_radio label {
+    font-size: 0.875rem;
   }
 }
 /*# Проверено. Работает */

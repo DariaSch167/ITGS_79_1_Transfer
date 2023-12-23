@@ -214,7 +214,7 @@ body {
   .lead-form {
     & form {
       display: grid;
-      grid-template-columns: 50% 50%;
+      grid-template-columns: 45% 55%;
       grid-template-rows: 1fr 1fr;
     }
   }
@@ -232,5 +232,45 @@ body {
     grid-column: 1 / 2;
     @include flex-column;
     justify-content: flex-end;
+  }
+  .header__screen__title {
+    & h1,
+    & h2 {
+      font-size: $H2_40;
+    }
+  }
+  .lead-form {
+    & h3 {
+      font-size: $H4_24;
+      font-weight: 600;
+    }
+  }
+  .lead-form_radio_screen {
+    & label {
+      font-size: $r_14;
+    }
+  }
+  .lead-form__input__tel,
+  .lead-form__input__switch__block {
+    & label {
+      font-size: $r_12;
+    }
+    & input {
+      font-size: 1rem;
+    }
+  }
+  .lead-form__input__comments {
+    & label {
+      font-size: $r_12;
+    }
+    & textarea {
+      font-size: 1rem;
+    }
+  }
+  .lead-form__button {
+    font-size: 1rem;
+  }
+  .lead-form__info__fz-rule {
+    font-size: $r_14;
   }
 }
