@@ -10,11 +10,22 @@ body {
   background-color: #fff;
 }
 
-header {
-  background-image: url("../assets/images/header_screen_background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+.header__container {
+  position: relative;
+  &__banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
 }
+
+// header {
+//   background-image: url("../assets/images/header_background.jpg");
+//   background-size: cover;
+//   background-repeat: no-repeat;
+// }
 
 .header__screen__title {
   @include flex-column;
