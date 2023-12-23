@@ -451,7 +451,100 @@ header {
     margin-top: 3.125rem;
   }
 }
+.title-services {
+  margin-left: 4rem;
+  margin-top: 5%;
+}
 
+.title-departures {
+  margin-left: 4rem;
+  margin-top: 8%;
+}
+
+.btn-custom-services {
+  border: 1px solid #fb8d00;
+}
+
+.additionally {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  background-color: #fb8d00;
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.title-services {
+  margin-left: 5rem;
+  margin-top: 5%;
+}
+
+.departures {
+  max-width: 1920px;
+  min-width: 320px;
+}
+
+.title-departures {
+  margin-left: 5rem;
+  margin-top: 8%;
+}
+
+.btn-custom-services {
+  border: 1px solid #fb8d00;
+  color: #fb8d00; /* Устанавливаем начальный цвет текста */
+  background-color: white; /* Устанавливаем начальный цвет фона */
+}
+
+.btn-custom-services:hover {
+  color: white; /* Устанавливаем цвет текста при наведении */
+  background-color: #fb8d00; /* Устанавливаем цвет фона при наведении */
+}
+
+.additionally {
+  margin-left: 5rem;
+  margin-right: 3rem;
+  background-color: #fb8d00;
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-family: "FiraSans_Regular400";
+}
+
+.departures_row {
+  width: 1800px; /* Задайте нужную ширину */
+  height: 530px; /* Задайте нужную высоту */
+}
+
+.departures_card {
+  width: 1800px; /* Задайте нужную ширину */
+  height: 600px; /* Задайте нужную высоту */
+  margin: 0;
+  margin-left: 4rem;
+  font-family: "FiraSans_Regular400";
+}
+
+.card-img-top {
+  /* Ваши настройки стилей для изображения */
+  width: 870px; /* Задайте нужную ширину */
+  height: 524px; /* Задайте нужную высоту */
+  border-radius: 1%;
+  border: #ffffff; /* Пример закругления углов */
+}
+
+.card-img-overlay h2, .card-img-overlay p {
+  text-align: left; /* Выравнивание текста по левому краю */
+  padding: 20px; /* Внутренний отступ */
+  color: white; /* Цвет текста */
+  padding: 2px; /* Внутренний отступ текстового блока */
+  margin-bottom: 1px; /* Добавление отступа между заголовком и абзацами */
+}
+
+div.card.service-card {
+  width: 870px; /* Задайте нужную ширину */
+  height: 524px; /* Задайте нужную высоту */
+  border-radius: 10%;
+  border: #ffffff;
+}
 body {
   max-width: 1920px;
   min-width: 320px;
