@@ -6,9 +6,9 @@
 	grid-template-columns: 30% 60%;
 	margin-top: 20vh;
 	justify-content: center;
-	.FAQ_title {
-		font-family: "FiraSans_SemiBold600", sans-serif ;
-	}
+}
+.FAQ_title {
+	$H2_40;
 }
 .accordion-item {
 	border: none;
@@ -20,7 +20,7 @@
   }
   .accordion-button {
 	position: static;
-	font-size: $r_20 ;
+	font-size: $H3_32 ;
 
 	font-weight: 500;
 	&:focus {
@@ -43,7 +43,6 @@
 		color:#FB8D00;
 	}
 }
-
 @media screen and (max-width: 767px) {
 	.FAQ {
 		display: inline;
