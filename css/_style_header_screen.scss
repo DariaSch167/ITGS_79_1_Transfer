@@ -14,18 +14,13 @@ body {
   position: relative;
   &__banner {
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: 0;
+    object-fit: cover;
     width: 100%;
+    height: 100%;
     z-index: -1;
   }
 }
-
-// header {
-//   background-image: url("../assets/images/header_background.jpg");
-//   background-size: cover;
-//   background-repeat: no-repeat;
-// }
 
 .header__screen__title {
   @include flex-column;
@@ -166,20 +161,6 @@ body {
   }
 }
 
-// Selector "num of pass" - excluded from a form
-// .lead-form__input__num-of-pass {
-//   margin: 0.25rem 0;
-//   @include input_border;
-//   & label {
-//     font-size: $r_14;
-//   }
-//   & select {
-//     font-size: $r_18;
-//     margin-top: 0.25rem;
-//     @include input_clean;
-//     user-select: none;
-//   }
-// }
 .lead-form__input__comments {
   margin: 0.5rem 0;
   @include input_border;
@@ -205,25 +186,6 @@ body {
     border: $orange-border;
   }
 }
-// Tariff info - excluded from a form
-// .lead-form__info {
-//   &__tariff {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//     margin-top: 1.25rem 0;
-//     &__title {
-//       font-size: $r_18;
-//     }
-//     &__cost {
-//       font-size: $H2_40;
-//       font-weight: 700;
-//     }
-//   }
-//   &__fz-rule {
-//     font-size: $r_14;
-//   }
-// }
 
 .lead-form__button {
   width: 100%;
