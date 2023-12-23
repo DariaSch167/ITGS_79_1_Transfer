@@ -55,7 +55,7 @@
   }
 }
 
-@media screen and (max-width: 1025px) and (min-width: 500px) {
+@media screen and (max-width: 1025px) and (min-width: 426px) {
   .contact-us {
     @include flex-column;
     &__wrapper {
@@ -72,6 +72,28 @@
   }
   .lead-form__wrapper {
     margin-top: 3.125rem;
+  }
+  .c-u_lead-form_radio {
+    & label {
+      font-size: $r_14;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .contact-us {
+    @include flex-column;
+    &__wrapper {
+      margin: 3.125rem 0;
+      padding: 0;
+    }
+    &__title {
+      padding-left: 1.25rem;
+      font-size: $H4_24;
+    }
+    &__image {
+      display: none;
+    }
   }
   .c-u_lead-form_radio {
     & label {

@@ -198,7 +198,7 @@ body {
   margin: 1.25rem 0;
 }
 
-@media screen and (max-width: 1025px) and (min-width: 500px) {
+@media screen and (max-width: 1025px) and (min-width: 426px) {
   .header__screen {
     &__wrapper {
       margin: 3.125rem 0;
@@ -242,6 +242,49 @@ body {
   .lead-form {
     & h3 {
       font-size: $H4_24;
+      font-weight: 600;
+    }
+  }
+  .lead-form_radio_screen {
+    & label {
+      font-size: $r_14;
+    }
+  }
+  .lead-form__input__tel,
+  .lead-form__input__switch__block {
+    & label {
+      font-size: $r_12;
+    }
+    & input {
+      font-size: 1rem;
+    }
+  }
+  .lead-form__input__comments {
+    & label {
+      font-size: $r_12;
+    }
+    & textarea {
+      font-size: 1rem;
+    }
+  }
+  .lead-form__button {
+    font-size: 1rem;
+  }
+  .lead-form__info__fz-rule {
+    font-size: $r_14;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header__screen__title {
+    & h1,
+    & h2 {
+      font-size: $H4_24;
+    }
+  }
+  .lead-form {
+    & h3 {
+      font-size: $r_20;
       font-weight: 600;
     }
   }
