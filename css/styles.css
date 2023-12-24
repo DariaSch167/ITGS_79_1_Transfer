@@ -698,6 +698,46 @@ body {
   display: flex;
   padding-left: 4.875rem;
 }
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+.header__contacts {
+  display: flex;
+  align-items: center;
+  gap: 1.875rem;
+  padding-right: 4.875rem;
+}
+.header__socials {
+  display: flex;
+  gap: 10px;
+}
+.header__phone {
+  display: flex;
+  flex-direction: column;
+  font-family: "FiraSans_Regular400", sans-serif;
+  font-size: 1.25rem;
+  line-height: 130%;
+  white-space: nowrap;
+}
+.header__phone a {
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+}
+.header__phone a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -2px;
+  background-color: #ffffff;
+  transition: 0.3s ease-in-out;
+}
+.header__phone a:hover::before {
+  width: 100%;
+}
 
 a,
 a:hover {
@@ -731,16 +771,27 @@ ul {
   line-height: 130%;
 }
 .nav__link {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #ffffff;
   line-height: 1.3;
 }
+.nav__link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #fb8d00;
+  transition: 0.3s ease-out;
+}
 .nav__link:hover {
   color: #fb8d00;
 }
-.nav__link:hover:hover::before {
+.nav__link:hover:before {
   width: 100%;
 }
 
