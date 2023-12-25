@@ -1,7 +1,7 @@
 .footer {
   @include flex-column;
   margin: 0 auto;
-  padding-top: 11.625rem;
+  margin-top: 11.625rem;
   padding-bottom: 1rem;
 
   &__inner {
@@ -18,6 +18,11 @@
   &__logo {
     display: flex;
     align-items: center;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 10px;
   }
 
   .nav {
@@ -69,5 +74,72 @@
 
   a {
     color: $black;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .footer {
+    padding-top: 1.875rem;
+    margin-top: 9.375ram;
+    margin-bottom: 5rem;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: $grey-border;
+
+    &__logo {
+      display: flex;
+      align-items: start;
+    }
+
+    &__inner {
+      width: 50%;
+      position: relative;
+
+      &_content {
+        .nav {
+          &__inner {
+            display: flex;
+            width: max-content;
+            flex-direction: column;
+            align-items: start;
+            gap: 10px;
+          }
+
+          &__item {
+            font-size: 1rem;
+            padding: 0;
+          }
+        }
+      }
+    }
+
+    &__socials {
+      position: absolute;
+      top: 4.375rem;
+    }
+
+    &__holder {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 0;
+      justify-content: flex-start;
+    }
+
+    &__contacts {
+      display: flex;
+      flex-direction: column;
+      order: -1;
+      gap: 0;
+    }
+  }
+
+  .policy {
+    display: inline;
+    order: 0;
+
+    p {
+      margin: 0;
+    }
   }
 }

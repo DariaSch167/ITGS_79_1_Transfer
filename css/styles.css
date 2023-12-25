@@ -666,7 +666,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding-top: 11.625rem;
+  margin-top: 11.625rem;
   padding-bottom: 1rem;
 }
 .footer__inner {
@@ -681,6 +681,10 @@ a:hover {
 .footer__logo {
   display: flex;
   align-items: center;
+}
+.footer__socials {
+  display: flex;
+  gap: 10px;
 }
 .footer .nav {
   padding-left: 1.875rem;
@@ -726,6 +730,60 @@ a:hover {
   color: #292929;
 }
 
+@media screen and (max-width: 1025px) {
+  .footer {
+    padding-top: 1.875rem;
+    margin-top: 9.375ram;
+    margin-bottom: 5rem;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid #ededed;
+  }
+  .footer__logo {
+    display: flex;
+    align-items: start;
+  }
+  .footer__inner {
+    width: 50%;
+    position: relative;
+  }
+  .footer__inner_content .nav__inner {
+    display: flex;
+    width: -moz-max-content;
+    width: max-content;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+  .footer__inner_content .nav__item {
+    font-size: 1rem;
+    padding: 0;
+  }
+  .footer__socials {
+    position: absolute;
+    top: 4.375rem;
+  }
+  .footer__holder {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 0;
+    justify-content: flex-start;
+  }
+  .footer__contacts {
+    display: flex;
+    flex-direction: column;
+    order: -1;
+    gap: 0;
+  }
+  .policy {
+    display: inline;
+    order: 0;
+  }
+  .policy p {
+    margin: 0;
+  }
+}
 /*# Блок дополнительно */
 .additionally {
   margin-left: 4.875rem;
