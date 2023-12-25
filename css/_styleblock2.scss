@@ -15,10 +15,12 @@ $white: #ffffff;
     margin-left: 5rem;
     margin-top:5%;
 }
+$left-block-gap: 4.875rem;
+$right-block-gap: 4.875rem;
 /*# Блок дополнительно */
 .additionally {
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: $left-block-gap;
+    margin-right: 3rem;
     background-color: $orange;
     color: $white;
     padding: 1rem;
@@ -54,16 +56,7 @@ $white: #ffffff;
     margin-left: 5rem;
     margin-top:5%;
 }
-/*# Блок дополнительно */
-.additionally {
-    margin-left: 5rem;
-    margin-right: 5rem;
-    background-color: $orange;
-    color: $white;
-    padding: 1rem;
-    border-radius: 1rem;
-    font-family: "FiraSans_Regular400", sans-serif;
-}
+
 /*# Кнопка в блоке услуги */
 .btn-custom-services {
   border: 1px solid $orange;
@@ -115,8 +108,21 @@ $white: #ffffff;
   max-width: 100%;
   height: auto;
 }
-/*# Проверено. Работает */
+/*# Услуги */
 .services_row {
   margin-left: 3rem;
   margin-right: 2rem;
+}
+/*# Дополнительно */
+
+/*# Текст */
+.list.additionally {
+  display: flex;
+  flex-direction: row;
+  padding: 1%;
+}
+/*# Восклицательный знак */
+.img.warning {
+  margin-left: 50rem;
+  margin-top: 5rem;
 }

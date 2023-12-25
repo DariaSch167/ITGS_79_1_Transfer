@@ -659,6 +659,7 @@ ul {
 .nav__link:hover:before {
   width: 100%;
 }
+
 /*# Проверено. Работает */
 /*# Заголовок Отправления */
 .title-departures {
@@ -674,8 +675,8 @@ ul {
 
 /*# Блок дополнительно */
 .additionally {
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin-left: 4.875rem;
+  margin-right: 3rem;
   background-color: #fb8d00;
   color: #ffffff;
   padding: 1rem;
@@ -694,6 +695,7 @@ ul {
   color: #ffffff;
   background-color: #fb8d00;
 }
+
 /*# Формат текста, оверлей на карточках блока отправления */
 .card-img-overlay h2, .card-img-overlay p {
   text-align: left;
@@ -713,17 +715,6 @@ ul {
 .title-services {
   margin-left: 5rem;
   margin-top: 5%;
-}
-
-/*# Блок дополнительно */
-.additionally {
-  margin-left: 5rem;
-  margin-right: 5rem;
-  background-color: #fb8d00;
-  color: #ffffff;
-  padding: 1rem;
-  border-radius: 1rem;
-  font-family: "FiraSans_Regular400", sans-serif;
 }
 
 /*# Кнопка в блоке услуги */
@@ -786,10 +777,24 @@ ul {
   height: auto;
 }
 
-/*# Проверено. Работает */
+/*# Услуги */
 .services_row {
   margin-left: 3rem;
   margin-right: 2rem;
+}
+
+/*# Дополнительно */
+/*# Текст */
+.list.additionally {
+  display: flex;
+  flex-direction: row;
+  padding: 1%;
+}
+
+/*# Восклицательный знак */
+.img.warning {
+  margin-left: 50rem;
+  margin-top: 5rem;
 }
 
 body {
