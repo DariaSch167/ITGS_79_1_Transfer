@@ -8,7 +8,8 @@
   justify-content: center;
 }
 .FAQ_title {
-  font-size: $H2_40;
+  font-size: $H3_32;
+  font-weight: 600;
 }
 .accordion-item {
   border: none;
@@ -20,7 +21,7 @@
 }
 .accordion-button {
   position: static;
-  font-size: $H3_32;
+  font-size: $r_20;
 
   font-weight: 500;
   &:focus {
@@ -46,9 +47,13 @@
   .FAQ {
     display: inline;
   }
+  .FAQ_title {
+    margin-left: 3%;
+    margin-top:5%;
+  }
   .accordion {
     display: grid;
-    grid-template-columns: 80%;
+    grid-template-columns: 95%;
     justify-content: center;
   }
 }
