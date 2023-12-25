@@ -660,26 +660,13 @@ ul {
   width: 100%;
 }
 
-/*# Проверено. Работает */
-/*# Заголовок Отправления */
-.title-departures {
-  margin-left: 5rem;
-  margin-top: 5%;
-}
-
-/*# Заголовок Услуги */
-.title-services {
-  margin-left: 5rem;
-  margin-top: 5%;
-}
-
 /*# Блок дополнительно */
 .additionally {
   margin-left: 4.875rem;
   margin-right: 3rem;
   background-color: #fb8d00;
   color: #ffffff;
-  padding: 1rem;
+  padding: 10px;
   border-radius: 1rem;
   font-family: "FiraSans_Regular400", sans-serif;
 }
@@ -704,7 +691,6 @@ ul {
   margin-bottom: 1px;
 }
 
-/*# Проверено. Работает */
 /*# Заголовок Отправления */
 .title-departures {
   margin-left: 5rem;
@@ -771,14 +757,10 @@ ul {
   background-color: #fb8d00;
 }
 
-/*# Возможно это лишнее, стоит убрать */
-.card img {
-  max-width: 100%;
-  height: auto;
-}
-
 /*# Услуги */
 .services_row {
+  display: flex;
+  justify-content: space-between;
   margin-left: 3rem;
   margin-right: 2rem;
 }
@@ -788,15 +770,40 @@ ul {
 .list.additionally {
   display: flex;
   flex-direction: row;
-  padding: 1%;
+  margin-left: 2%;
 }
 
 /*# Восклицательный знак */
 .img.warning {
-  margin-left: 50rem;
-  margin-top: 5rem;
+  margin-left: 60%;
+  margin-top: 3%;
 }
 
+.card-body.services {
+  display: flex;
+  margin-top: 2%;
+}
+
+.card-img.services {
+  max-width: 800px;
+  max-height: 537px;
+  padding: 5%;
+}
+
+@media (max-width: 767px) {
+  .img.warning {
+    margin-left: 1%;
+  }
+}
+@media (max-width: 767px) {
+  .card.germany,
+  .card.kaliningrad {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px; /* Добавьте отступ между карточками */
+  }
+}
 body {
   max-width: 1920px;
   min-width: 320px;
