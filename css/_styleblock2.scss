@@ -83,6 +83,7 @@ $white: #ffffff;
   border: 1px solid $orange;
   color: $orange;
   background-color: $white;
+  margin-bottom: 1%;
 }
 /*# Эффект при наведении на кнопку */
 .btn-services:hover {
@@ -96,6 +97,7 @@ $white: #ffffff;
   justify-content: space-between;
   margin-left: 3rem;
   margin-right: 2rem;
+  gap: 30px;
 }
 /*# Дополнительно */
 
@@ -111,28 +113,38 @@ $white: #ffffff;
   margin-top: 3%;
 }
 
-.card-body.services {
-  display: flex;
-  margin-top: 2%;
-}
-
 .card-img.services {
-  max-width: 800px;
-  max-height: 537px;
-  padding: 5%;
+  display: flex;
+  width: 390px; /* Ширина контейнера */
+  height: 199px; /* Высота контейнера */
+  object-fit: cover; /* Обрезать изображение под размер контейнера */
 }
 
 @media (max-width: 767px) {
   .img.warning {
+    display: flex;
     margin-left: 1%;
+    width: 30px; /* Ширина контейнера */
+    height: 30px; /* Высота контейнера */
   }
 }
 @media (max-width: 767px) {
-  .card.germany,
-  .card.kaliningrad  {
-  width: 100%;
+  .card.germany  {
   display: flex;
   flex-direction: column;
+  width: 320px; /* Ширина контейнера */
+  height: 544px; /* Высота контейнера */
+  object-fit: cover; /* Обрезать изображение под размер контейнера */
+  margin-bottom: 25px; /* Добавьте отступ между карточками */
+  }
+}
+@media (max-width: 767px) {
+  .card.kaliningrad  {
+  display: flex;
+  flex-direction: column;
+  width: 320px; /* Ширина контейнера */
+  height: 560px; /* Высота контейнера */
+  object-fit: cover; /* Обрезать изображение под размер контейнера */
   margin-bottom: 25px; /* Добавьте отступ между карточками */
   }
 }
