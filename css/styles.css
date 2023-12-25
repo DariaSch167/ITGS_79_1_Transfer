@@ -406,7 +406,8 @@ body {
 }
 
 .FAQ_title {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .accordion-item {
@@ -420,7 +421,7 @@ body {
 
 .accordion-button {
   position: static;
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: 500;
 }
 .accordion-button:focus {
@@ -447,9 +448,13 @@ body {
   .FAQ {
     display: inline;
   }
+  .FAQ_title {
+    margin-left: 3%;
+    margin-top: 5%;
+  }
   .accordion {
     display: grid;
-    grid-template-columns: 80%;
+    grid-template-columns: 95%;
     justify-content: center;
   }
 }
