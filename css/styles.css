@@ -609,17 +609,6 @@ a:hover {
   text-decoration: none;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  padding-inline-start: 0;
-}
-
 .nav {
   padding-left: 4rem;
 }
@@ -628,6 +617,14 @@ ul {
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
 }
 .nav__item {
   padding: 1.25rem;
