@@ -1,0 +1,122 @@
+$orange: #fb8d00;
+$grey: #ededed;
+$grey-dark: #c8c8c8;
+$black: #292929;
+$white: #ffffff;
+
+/*# Проверено. Работает */
+/*# Заголовок Отправления */
+.title-departures {
+  margin-left: 5rem;
+  margin-top: 5%;
+}
+/*# Заголовок Услуги */
+.title-services {
+    margin-left: 5rem;
+    margin-top:5%;
+}
+/*# Блок дополнительно */
+.additionally {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    background-color: #fb8d00;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-family: "FiraSans_Regular400", sans-serif;
+}
+/*# Кнопка в блоке услуги */
+.btn-custom-services {
+  border: 1px solid #fb8d00;
+  color: #fb8d00;
+  background-color: white;
+}
+/*# эффект при наведении на кнопку */
+.btn-custom-services:hover {
+  color: white; 
+  background-color: #fb8d00; 
+}
+/*# Формат текста, оверлей на карточках блока отправления */
+.card-img-overlay h2, .card-img-overlay p {
+  text-align: left; 
+  color: white;
+  padding: 2px; 
+  margin-bottom: 1px;
+}
+/*# Проверено. Работает */
+/*# Заголовок Отправления */
+.title-departures {
+  margin-left: 5rem;
+  margin-top: 5%;
+}
+/*# Заголовок Услуги */
+.title-services {
+    margin-left: 5rem;
+    margin-top:5%;
+}
+/*# Блок дополнительно */
+.additionally {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    background-color: #fb8d00;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-family: "FiraSans_Regular400", sans-serif;
+}
+/*# Кнопка в блоке услуги */
+.btn-custom-services {
+  border: 1px solid #fb8d00;
+  color: #fb8d00;
+  background-color: white;
+}
+/*# эффект при наведении на кнопку */
+.btn-custom-services:hover {
+  color: white; 
+  background-color: #fb8d00; 
+}
+/*# Формат текста, оверлей на карточках блока отправления */
+.card-img-overlay h2, .card-img-overlay p {
+  text-align: left; 
+  color: white;
+  padding: 2px; 
+  margin-bottom: 1px;
+}
+/*# Карточка отправления Германия */
+.card.germany {
+  margin-left: 4rem;
+  margin-right: 3rem;
+  max-height: 100%;
+  border-color: #ffffff;
+}
+/*# Карточка отправления Калининград */
+.card.kaliningrad {
+  margin-left: 4rem;
+  margin-right: 3rem;
+  max-height: 100%;
+  border-color: #ffffff;
+}
+.card-body.departures {
+  padding: 0px;
+}
+/*# Кнопка в блоке услуги */
+.btn-services {
+  border: 1px solid #fb8d00;
+  color: #fb8d00;
+  background-color: white;
+}
+/*# Эффект при наведении на кнопку */
+.btn-services:hover {
+  color: white; 
+  background-color: #fb8d00; 
+}
+/*# Возможно это лишнее, стоит убрать */
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+/*# Проверено. Работает */
+.services_row {
+  margin-left: 3rem;
+  margin-right: 2rem;
+}
