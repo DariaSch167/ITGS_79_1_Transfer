@@ -662,6 +662,70 @@ a:hover {
   width: 100%;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 11.625rem;
+  padding-bottom: 1rem;
+}
+.footer__inner {
+  display: flex;
+  padding-left: 4.875rem;
+  justify-content: space-between;
+  border-bottom: 1px solid #ededed;
+}
+.footer__inner_content {
+  display: flex;
+}
+.footer__logo {
+  display: flex;
+  align-items: center;
+}
+.footer .nav {
+  padding-left: 1.875rem;
+}
+.footer .nav__link {
+  color: #292929;
+}
+.footer .nav__link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #fb8d00;
+  transition: 0.3s ease-out;
+}
+.footer .nav__link:hover {
+  color: #fb8d00;
+}
+.footer .nav__link:hover:before {
+  width: 100%;
+}
+.footer__holder {
+  display: flex;
+  padding-top: 1.25rem;
+  padding-left: 4.875rem;
+  justify-content: space-between;
+}
+.footer__contacts {
+  display: flex;
+  gap: 1.875rem;
+}
+.footer__contacts a {
+  color: #292929;
+}
+
+.policy {
+  display: flex;
+  gap: 1.25rem;
+}
+.policy a {
+  color: #292929;
+}
+
 /*# Блок дополнительно */
 .additionally {
   margin-left: 4.875rem;

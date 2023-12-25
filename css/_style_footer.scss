@@ -1,0 +1,73 @@
+.footer {
+  @include flex-column;
+  margin: 0 auto;
+  padding-top: 11.625rem;
+  padding-bottom: 1rem;
+
+  &__inner {
+    display: flex;
+    padding-left: $left-block-gap;
+    justify-content: space-between;
+    border-bottom: $grey-border;
+
+    &_content {
+      display: flex;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav {
+    padding-left: 1.875rem;
+    &__link {
+      color: $black;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 0;
+        background-color: $orange;
+        transition: 0.3s ease-out;
+      }
+
+      &:hover {
+        color: $orange;
+
+        &:before {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__holder {
+    display: flex;
+    padding-top: 1.25rem;
+    padding-left: $left-block-gap;
+    justify-content: space-between;
+  }
+
+  &__contacts {
+    display: flex;
+    gap: 1.875rem;
+
+    a {
+      color: $black;
+    }
+  }
+}
+
+.policy {
+  display: flex;
+  gap: 1.25rem;
+
+  a {
+    color: $black;
+  }
+}
