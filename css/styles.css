@@ -33,7 +33,7 @@ body {
   gap: 2px;
 }
 
-.container-block h2 {
+.container-block h3 {
   font-family: "FiraSans_Regular400";
 font-size: 96px;
 font-weight: 400;
@@ -45,7 +45,7 @@ flex: 1;
 color: #fff;
 }
 .container-block p {
-font-family: ""FiraSans_Regular400"";
+font-family: "FiraSans_Regular400";
 font-size: 20px;
 font-weight: 400;
 line-height: 26px;
@@ -53,13 +53,53 @@ letter-spacing: 0em;
 text-align: left;
 flex: 6;
 }
-.col-12 text-center
-{
-font-family: ""FiraSans_Regular400"";
+.container h2 {
+font-family: "FiraSans_Regular400";
 font-size: 40px;
 font-weight: 600;
 line-height: 52px;
 letter-spacing: 0em;
-text-align: left;
-background: #292929;
+}
+@media screen and  (max-width: 767px) {
+  .container-block h3 {
+    font-size: 64px;
+    text-align: left;
+    justify-content: left;
+  }
+  .container-block p {
+    font-size: 18px;
+    text-align: left;
+    justify-content: left;
+  }
+  .container-block {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: left;
+    align-items: left;
+  }
+  .container h2 {
+font-size: 24px;
+font-weight: 600;
+line-height: 31px;
+letter-spacing: 0em;
+text-align: center;
+  }
+}
+
+@media screen and  (min-width: 768px) and (max-width: 1023px) {
+  .container-block h3 {
+    font-size: 64px;
+  }
+  .container-block p {
+    font-size: 18px;
+  }
+  .container h2 {
+font-size: 32px;
+font-weight: 600;
+line-height: 35px;
+letter-spacing: 0em;
+text-align: center;
+
+  }
 }
