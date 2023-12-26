@@ -786,14 +786,6 @@ a:hover {
   width: 100%;
 }
 
-/*# Блок дополнительно */
-.additionally {
-  margin-left: 4.875rem;
-  margin-right: 3rem;
-  background-color: #fb8d00;
-  border-radius: 1rem;
-}
-
 /*# Кнопка в блоке услуги */
 .btn-custom-services {
   color: #fb8d00;
@@ -807,23 +799,76 @@ a:hover {
 }
 
 /*# Формат текста, оверлей на карточках блока отправления */
-.card-img-overlay h2, .card-img-overlay p {
+.card-img-overlay.Germany {
   text-align: left;
   color: #ffffff;
   padding: 2px;
-  margin-bottom: 1px;
+  margin-bottom: 100px;
+  margin-left: 30px;
+}
+
+.card-img-overlay.Kaliningrad {
+  text-align: left;
+  color: #ffffff;
+  padding: 2px;
+  margin-bottom: 100px;
+  margin-left: 30px;
+}
+
+.card-title.Germany {
+  color: #ffffff;
+  font-family: "FiraSans_SemiBold600", serif;
+  font-size: 32px;
+  line-height: 110%;
+}
+
+.card-title.Kaliningrad {
+  color: #ffffff;
+  font-family: "FiraSans_SemiBold600", serif;
+  font-size: 32px;
+  line-height: 110%;
+}
+
+.card-text.germany1 {
+  color: #ffffff;
+  font-family: "FiraSans_Regular400", serif;
+  font-size: 20px;
+  line-height: 130%;
+}
+
+.card-text.germany2 {
+  color: #ffffff;
+  font-family: "FiraSans_Regular400", serif;
+  font-size: 14px;
+  line-height: 130%;
+}
+
+.card-text.kaliningrad1 {
+  color: #ffffff;
+  font-family: "FiraSans_Regular400", serif;
+  font-size: 20px;
+  line-height: 130%;
+}
+
+.card-text.kaliningrad2 {
+  color: #ffffff;
+  font-family: "FiraSans_Regular400", serif;
+  font-size: 14px;
+  line-height: 130%;
 }
 
 /*# Заголовок Отправления */
 .title-departures {
   margin-left: 5rem;
-  margin-top: 5%;
+  margin-top: 8%;
+  margin-bottom: 30px;
 }
 
 /*# Заголовок Услуги */
 .title-services {
   margin-left: 5rem;
-  margin-top: 5%;
+  margin-top: 8%;
+  margin-bottom: 30px;
 }
 
 /*# Кнопка в блоке услуги */
@@ -851,21 +896,13 @@ a:hover {
 /*# Карточка отправления Германия */
 .card.germany {
   margin-left: 4rem;
-  margin-right: 3rem;
-  max-height: 100%;
   border-color: #ffffff;
 }
 
 /*# Карточка отправления Калининград */
 .card.kaliningrad {
-  margin-left: 4rem;
-  margin-right: 3rem;
-  max-height: 100%;
+  margin-left: 5rem;
   border-color: #ffffff;
-}
-
-.card-body.departures {
-  padding: 0px;
 }
 
 /*# Кнопка в блоке услуги */
@@ -893,7 +930,7 @@ a:hover {
 .list.additionally {
   color: #ffffff;
   margin-left: 40px;
-  font-family: "FiraSans_Regular400";
+  font-family: "FiraSans_Regular400", serif;
   font-size: 20px;
   line-height: 150%;
 }
@@ -930,6 +967,14 @@ a:hover {
   font-size: 16px;
   line-height: 150%;
   margin-bottom: 0;
+}
+
+/*# Блок дополнительно */
+.additionally {
+  margin-left: 4.875rem;
+  margin-right: 3rem;
+  background-color: #fb8d00;
+  border-radius: 1rem;
 }
 
 @media (max-width: 767px) {
