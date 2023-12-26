@@ -27,6 +27,18 @@ body {
   font-weight: 400;
   background-color: #fff;
 }
+.container {
+  width: 1,770px;
+  height: 797px;
+  padding: 50px;
+  border-radius: 10px;
+  border: 1px;
+  gap: 20px;
+  justify-content: space-between;
+  border: 1px solid #EDEDED;
+  
+}
+
 .container-block {
   display: flex;
   align-items: center;
