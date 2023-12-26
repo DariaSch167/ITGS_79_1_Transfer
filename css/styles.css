@@ -380,6 +380,130 @@ body {
     font-size: 0.875rem;
   }
 }
+.container {
+  max-width: 1770px;
+  padding: 50px;
+  border-radius: 10px;
+  border: 1px;
+  gap: 20px;
+  justify-content: space-between;
+  border: 1px solid #ededed;
+  margin-top: 100px;
+}
+
+.container h2 {
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
+
+.inner-container {
+  max-width: 1553px;
+  --bs-gutter-x: 1.5rem;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ededed;
+}
+
+.container-block {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.container-block h3 {
+  font-family: "FiraSans_Regular400";
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 125px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  flex: 1;
+  -webkit-text-stroke: 2px #fb8d00;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.container-wrapper {
+  max-width: 671px;
+}
+
+.container-block p {
+  font-family: "FiraSans_Regular400";
+  font-size: 20px;
+  line-height: 26px;
+  text-align: left;
+  flex: 6;
+}
+.container h2 {
+  font-family: "FiraSans_Regular400";
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 52px;
+  letter-spacing: 0em;
+}
+@media screen and (max-width: 767px) {
+  .container-block h3 {
+    font-size: 64px;
+  }
+  .container-block p {
+    font-size: 18px;
+  }
+  .container-block {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 280px;
+  }
+  .container h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .container {
+    max-width: 320px;
+    gap: 20px;
+  }
+  .container-wrapper {
+    max-width: 280px;
+  }
+  .inner-container {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container-block h3 {
+    font-size: 64px;
+  }
+  .container-block p {
+    font-size: 18px;
+  }
+  .container h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .container {
+    max-width: 960px;
+    flex-direction: column-reverse;
+
+  }
+  .container-wrapper {
+    max-width: 343px;
+  
+  }
+  .container-block {
+    max-width: 342px;
+  }
+}
+
 @font-face {
   font-family: "FiraSans_Bold700";
   src: url("../assets/fonts/FiraSans-Bold.eot") format("eot"), url("../assets/fonts/FiraSans-Bold.ttf") format("ttf"), url("../assets/fonts/FiraSans-Bold.woff") format("woff"), url("../assets/fonts/FiraSans-Bold.woff2") format("woff2");
