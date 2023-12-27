@@ -96,7 +96,7 @@
           <div class="header__lead-form lead-form col-xl-5 col-lg-12">
             <div class="lead-form__wrapper">
               <form action="x" class="form" method="POST">
-                <div class="lead-form__grid-col1r1">
+                <div class="lead-form__grid-services">
                   <div class="lead-form__info">
                     <h3 class="lead-form__info__title">Выберите услугу:</h3>
                   </div>
@@ -146,7 +146,7 @@
                   </div>
                 </div>
                 <!-- Input - tel number -->
-                <div class="lead-form__grid-col2">
+                <div class="lead-form__grid-data">
                   <div class="lead-form__input lead-form__input__tel">
                     <label for="tel_form">Номер телефона</label>
                     <input
@@ -190,7 +190,7 @@
                   </div>
                 </div>
                 <!-- Button -->
-                <div class="lead-form__grid-col1r2">
+                <div class="lead-form__grid-submit">
                   <button class="lead-form__button" type="submit">
                     Оставить заявку
                   </button>
@@ -1312,7 +1312,7 @@
           <div class="contact-us__lead-form lead-form col-xl-5 col-lg-12">
             <div class="lead-form__wrapper">
               <form action="x" class="form" method="POST">
-                <div class="lead-form__grid-col1r1">
+                <div class="lead-form__grid-services">
                   <div class="lead-form__info">
                     <h3 class="lead-form__info__title">Выберите услугу:</h3>
                   </div>
@@ -1362,7 +1362,7 @@
                   </div>
                 </div>
                 <!-- Contact info - tel number -->
-                <div class="lead-form__grid-col2">
+                <div class="lead-form__grid-data">
                   <div class="lead-form__input lead-form__input__tel">
                     <label for="tel_form">Номер телефона</label>
                     <input
@@ -1407,7 +1407,7 @@
                     ></textarea>
                   </div>
                 </div>
-                <div class="lead-form__grid-col1r2">
+                <div class="lead-form__grid-submit">
                   <button class="lead-form__button" type="submit">
                     Оставить заявку
                   </button>
@@ -1429,61 +1429,66 @@
     <footer>
       <div class="footer">
         <div class="footer__inner">
-          <div class="footer__logo">
-            <a href="/" class="footer__logo_link">
-              <picture>
-                <source srcset="./assets/svg/logo.svg" />
-                <img
-                  src="./assets/svg/logo.svg"
-                  alt="Логотип «Transfer»"
-                  class="img__fluid"
-                />
-              </picture>
+          <div class="footer__inner_content">
+            <div class="footer__logo">
+              <a href="/" class="footer__logo_link">
+                <picture>
+                  <source srcset="./assets/svg/logo-footer.svg" />
+                  <img
+                    src="./assets/svg/logo-footer.svg"
+                    alt="Логотип «Transfer»"
+                    class="img__fluid" />
+                </picture>
+              </a>
+            </div>
+            <div class="nav">
+              <ul class="nav__inner">
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Отправления</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Услуги</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Почему мы</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Отзывы</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Вопросы и ответы</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__socials">
+            <a href="/" class="footer__socials_link">
+              <img src="./assets/svg/instagram.svg" alt="Instagram" />
+            </a>
+            <a href="/" class="footer__socials_link">
+              <img src="./assets/svg/telegram.svg" alt="Telegram" />
+            </a>
+            <a href="/" class="footer__socials_link">
+              <img src="./assets/svg/whatsapp.svg" alt="WhatsApp" />
             </a>
           </div>
-          <div class="nav">
-            <ul class="nav__inner">
-              <li class="nav__item">
-                <a class="nav__link" href="#">Отправления</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Услуги</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Почему мы</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Отзывы</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Вопросы и ответы</a>
-              </li>
-            </ul>
+        </div>
+        <div class="footer__holder">
+          <div class="policy">
+            <p>&copy TRANSFER 2023</p>
+            <a href="/">Политика конфиденциальности</a>
           </div>
-        </div>
-        <div class="header__socials">
-          <a href="/" class="header__socials_link">
-            <img src="./assets/svg/instagram.svg" alt="Instagram" />
-          </a>
-          <a href="/" class="header__socials_link">
-            <img src="./assets/svg/telegram.svg" alt="Telegram" />
-          </a>
-          <a href="/" class="header__socials_link">
-            <img src="./assets/svg/whatsapp.svg" alt="WhatsApp" />
-          </a>
-        </div>
-        <div class="policy">
-          <p>© TRANSFER 2023</p>
-          <p>Политика конфиденциальности</p>
-        </div>
-        <div class="footer__mail">
-          <a href="mailto:transferdeutschland@gmail.com">
-            transferdeutschland@gmail.com
-          </a>
-        </div>
-        <div class="footer__phone">
-          <a href="tel:+4917680349804">+49 176 803 498 04</a>
-          <a href="tel:+4917666646855">+49 176 666 468 55</a>
+          <div class="footer__contacts">
+            <div class="footer__mail">
+              <a href="mailto:transferdeutschland@gmail.com">
+                transferdeutschland@gmail.com
+              </a>
+            </div>
+            <div class="footer__phone">
+              <a href="tel:+4917680349804">+49 176 803 498 04</a>
+              <a href="tel:+4917666646855">+49 176 666 468 55</a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
