@@ -116,3 +116,107 @@ a:hover {
     }
   }
 }
+
+.side-menu {
+  display: none;
+}
+
+@media screen and (max-width: 1025px) {
+  .header {
+    position: sticky;
+    z-index: 999998;
+    top: 0;
+    width: 100%;
+  }
+
+  .nav {
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    z-index: 999998;
+    background-color: $orange;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+
+    &__inner {
+      display: inline;
+      width: 100%;
+    }
+
+    &__item {
+      width: 100%;
+    }
+
+    &__link {
+      display: block;
+      padding: 30px;
+      color: $white;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        width: 0;
+        background-color: $white;
+        transition: 0.3s ease-out;
+      }
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  .hamb {
+    cursor: pointer;
+    float: right;
+    padding: 30px 15px;
+    border: $orange-border;
+    border-radius: 5%;
+  }
+
+  .hamb-line {
+    background: $white;
+    display: block;
+    height: 2px;
+    position: relative;
+    z-index: 999999;
+    width: 20px;
+  }
+
+  .hamb-line::before,
+  .hamb-line::after {
+    background: $white;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    z-index: 999999;
+    transition: all 0.2s ease-out;
+    width: 100%;
+  }
+  .hamb-line::before {
+    top: 5px;
+  }
+  .hamb-line::after {
+    top: -5px;
+  }
+
+  .side-menu:checked ~ nav {
+    max-height: 100%;
+  }
+  .side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+  }
+  .side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  .side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+}

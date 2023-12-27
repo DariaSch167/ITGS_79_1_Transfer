@@ -662,6 +662,99 @@ a:hover {
   width: 100%;
 }
 
+.side-menu {
+  display: none;
+}
+
+@media screen and (max-width: 1025px) {
+  .header {
+    position: sticky;
+    z-index: 999998;
+    top: 0;
+    width: 100%;
+  }
+  .nav {
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    z-index: 999998;
+    background-color: #fb8d00;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+  }
+  .nav__inner {
+    display: inline;
+    width: 100%;
+  }
+  .nav__item {
+    width: 100%;
+  }
+  .nav__link {
+    display: block;
+    padding: 30px;
+    color: #ffffff;
+  }
+  .nav__link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 0;
+    background-color: #ffffff;
+    transition: 0.3s ease-out;
+  }
+  .nav__link:hover {
+    color: #ffffff;
+  }
+  .hamb {
+    cursor: pointer;
+    float: right;
+    padding: 30px 15px;
+    border: 1px solid #fb8d00;
+    border-radius: 5%;
+  }
+  .hamb-line {
+    background: #ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    z-index: 999999;
+    width: 20px;
+  }
+  .hamb-line::before,
+  .hamb-line::after {
+    background: #ffffff;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    z-index: 999999;
+    transition: all 0.2s ease-out;
+    width: 100%;
+  }
+  .hamb-line::before {
+    top: 5px;
+  }
+  .hamb-line::after {
+    top: -5px;
+  }
+  .side-menu:checked ~ nav {
+    max-height: 100%;
+  }
+  .side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+  }
+  .side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  .side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+}
 .footer {
   display: flex;
   flex-direction: column;
@@ -820,17 +913,6 @@ a:hover {
     flex-direction: column;
   }
 }
-/*# Блок дополнительно */
-.additionally {
-  margin-left: 4.875rem;
-  margin-right: 3rem;
-  background-color: #fb8d00;
-  color: #ffffff;
-  padding: 10px;
-  border-radius: 1rem;
-  font-family: "FiraSans_Regular400", sans-serif;
-}
-
 /*# Кнопка в блоке услуги */
 .btn-custom-services {
   color: #fb8d00;
