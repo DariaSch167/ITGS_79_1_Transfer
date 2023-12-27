@@ -822,8 +822,13 @@ a:hover {
   }
 }
 .container__feedback {
-  margin-left: 200px;
-  margin-top: 100px;
+  padding-left: 4.875rem;
+  padding-top: 12.5rem;
+}
+
+.title-feedback {
+  margin-left: 5rem;
+  margin-top: 5%;
 }
 
 .embed- {
@@ -845,31 +850,28 @@ a:hover {
 }
 
 .card__text__feedback {
-  min-height: 240px;
-  max-width: 350px;
+  min-height: 340px;
+  max-width: 450px;
+  width: 100%;
 }
 
 .card__video__feedback {
-  max-width: 50%;
-  max-height: 70%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.btn_feedback {
-  background-color: orange;
-  border: 1px orange solid;
-  color: white;
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #ffffff;
+  border: 1px solid #fb8d00;
+  color: #fb8d00;
   transition: all 0.2s ease;
 }
-.btn_feedback:hover {
-  background-color: white;
-  border: 1px orange solid;
-  color: black;
-}
-
-.btn_feedback:visited {
-  background-color: white;
-  border: 1px orange solid;
-  color: black;
+.nav-pills .nav-link.active:hover,
+.nav-pills .show > .nav-link:hover {
+  background-color: #fb8d00;
+  border: 1px solid #fb8d00;
+  color: #ffffff;
 }
 
 .owl-theme .owl-nav [class*=owl-]:hover {
@@ -964,17 +966,16 @@ a:hover {
   top: 0;
 }
 
-.owl-carousel .owl-theme {
-  margin-left: -100%;
-  transform: translateX(-200%);
+.carousel-feedback {
+  margin-left: -100px;
 }
 
 @media screen and (max-width: 576px) {
   .owl-nav {
     position: absolute;
     top: 100%;
-    transform: translate(150%);
-    left: 10%;
+    transform: translate(-160%);
+    left: 15%;
   }
 }
 body {
