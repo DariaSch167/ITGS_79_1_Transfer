@@ -769,7 +769,7 @@
       <!-- Конец Блок Отправления-Услуги-Дополнительно -->
       <!--feedback-->
       <section class="feedback">
-        <div class="container">
+        <div class="container__feedback">
           <div class="row">
             <div class="col-xl-2 col-md-2 col-sm-12">
               <h2>Отзывы</h2>
@@ -778,7 +778,7 @@
               <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
                   <button
-                    class="nav-link btn-feedback active"
+                    class="nav-link btn-lg btn-feedback active"
                     id="pills-text-feedback-tab"
                     data-bs-toggle="pill"
                     data-bs-target="#pills-text-feedback"
@@ -792,7 +792,7 @@
                 </li>
                 <li class="nav-item" role="presentation">
                   <button
-                    class="nav-link btn_feedback"
+                    class="nav-link btn-lg btn_feedback"
                     id="pills-video-feedback-tab"
                     data-bs-toggle="pill"
                     data-bs-target="#pills-video-feedback"
@@ -1769,15 +1769,16 @@
     </script>
     <script>
       $(".owl-carousel").owlCarousel({
-        margin: 10,
+        margin: 20,
         loop: false,
-        items: 4,
         nav: true,
         dots: false,
+        autoplayspeed: 1500,
+        autoplayTimeout: 1000,
         responsive: {
-          0: { items: 1 },
-          576: { items: 3 },
-          992: { items: 6 },
+          0: { items: 1, dots: true },
+          575: { items: 2 },
+          991: { items: 4 },
         },
       });
     </script>

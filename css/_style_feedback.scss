@@ -1,3 +1,8 @@
+.container__feedback {
+  margin-left: 200px;
+  margin-top: 100px;
+}
+
 .embed- {
   position: relative;
   padding-bottom: 56.25%;
@@ -31,13 +36,12 @@
   border: 1px orange solid;
   color: white;
   transition: all 0.2s ease;
-}
 
-.btn_feedback:hover,
-.btn_feedback:focus {
-  background-color: white;
-  border: 1px orange solid;
-  color: black;
+  &:hover {
+    background-color: white;
+    border: 1px orange solid;
+    color: black;
+  }
 }
 
 //.btn_feedback:focus,
@@ -89,6 +93,7 @@
 .owl-item {
   background-color: transparent;
   color: black;
+  transition: 0.3s ease-in-out;
   text-align: center;
 }
 
@@ -147,11 +152,16 @@
   }
 }
 
+.owl-carousel .owl-theme {
+  margin-left: -100%;
+  transform: translateX(-200%);
+}
+
 @media screen and (max-width: 576px) {
   .owl-nav {
     position: absolute;
     top: 100%;
-    transform: translate(-50%);
+    transform: translate(150%);
     left: 10%;
   }
 }
