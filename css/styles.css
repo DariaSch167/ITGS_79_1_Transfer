@@ -430,7 +430,7 @@ body {
 }
 
 .FAQ_title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
 }
 
@@ -473,6 +473,8 @@ body {
     display: inline;
   }
   .FAQ_title {
+    font-size: 2rem;
+    font-weight: 600;
     margin-left: 3%;
     margin-top: 5%;
   }
