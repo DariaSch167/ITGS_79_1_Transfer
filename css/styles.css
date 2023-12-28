@@ -404,130 +404,6 @@ body {
     order: 1;
   }
 }
-.container {
-  max-width: 1770px;
-  padding: 50px;
-  border-radius: 10px;
-  border: 1px;
-  gap: 20px;
-  justify-content: space-between;
-  border: 1px solid #ededed;
-  margin-top: 150px;
-}
-
-.container h2 {
-  padding-bottom: 20px;
-  margin-bottom: 0;
-}
-
-.inner-container {
-  max-width: 1553px;
-  --bs-gutter-x: 1.5rem;
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  border-top: 1px solid #ededed;
-}
-
-.container-block {
-  display: flex;
-  align-items: center;
-  gap: 2px;
-}
-
-.container-block h3 {
-  font-family: "FiraSans_Regular400";
-  font-size: 96px;
-  font-weight: 400;
-  line-height: 125px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  flex: 1;
-  -webkit-text-stroke: 2px #fb8d00;
-  color: #fff;
-  margin-right: 20px;
-}
-
-.container-wrapper {
-  max-width: 671px;
-}
-
-.container-block p {
-  font-family: "FiraSans_Regular400";
-  font-size: 20px;
-  line-height: 26px;
-  text-align: left;
-  flex: 6;
-}
-.container h2 {
-  font-family: "FiraSans_Regular400";
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 52px;
-  letter-spacing: 0em;
-}
-@media screen and (max-width: 767px) {
-  .container-block h3 {
-    font-size: 64px;
-  }
-  .container-block p {
-    font-size: 18px;
-  }
-  .container-block {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    max-width: 280px;
-  }
-  .container h2 {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 31px;
-    letter-spacing: 0em;
-    text-align: center;
-  }
-  .container {
-    max-width: 320px;
-    gap: 20px;
-  }
-  .container-wrapper {
-    max-width: 280px;
-  }
-  .inner-container {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .container-block h3 {
-    font-size: 64px;
-  }
-  .container-block p {
-    font-size: 18px;
-  }
-  .container h2 {
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 35px;
-    letter-spacing: 0em;
-    text-align: center;
-  }
-  .container {
-    max-width: 960px;
-    flex-direction: column-reverse;
-
-  }
-  .container-wrapper {
-    max-width: 343px;
-  
-  }
-  .container-block {
-    max-width: 342px;
-  }
-}
-
 @font-face {
   font-family: "FiraSans_Bold700";
   src: url("../assets/fonts/FiraSans-Bold.eot") format("eot"), url("../assets/fonts/FiraSans-Bold.ttf") format("ttf"), url("../assets/fonts/FiraSans-Bold.woff") format("woff"), url("../assets/fonts/FiraSans-Bold.woff2") format("woff2");
@@ -969,17 +845,6 @@ a:hover {
     flex-direction: column;
   }
 }
-/*# Блок дополнительно */
-.additionally {
-  margin-left: 4.875rem;
-  margin-right: 3rem;
-  background-color: #fb8d00;
-  color: #ffffff;
-  padding: 10px;
-  border-radius: 1rem;
-  font-family: "FiraSans_Regular400", sans-serif;
-}
-
 /*# Кнопка в блоке услуги */
 .btn-custom-services {
   color: #fb8d00;
@@ -1054,15 +919,15 @@ a:hover {
 /*# Заголовок Отправления */
 .title-departures {
   margin-left: 5rem;
-  margin-top: 8%;
-  margin-bottom: 30px;
+  margin-top: 5%;
+  margin-bottom: 25px;
 }
 
 /*# Заголовок Услуги */
 .title-services {
   margin-left: 5rem;
-  margin-top: 8%;
-  margin-bottom: 30px;
+  margin-top: 4%;
+  margin-bottom: 25px;
 }
 
 /*# Кнопка в блоке услуги */
@@ -1171,34 +1036,352 @@ a:hover {
   border-radius: 1rem;
 }
 
-@media (max-width: 767px) {
-  .img.warning {
-    display: flex;
-    margin-left: 1%;
-    width: 30px; /* Ширина контейнера */
-    height: 30px; /* Высота контейнера */
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  /* Блок отправления */
+  .departures {
+    width: 1024px;
+    height: 1085px;
   }
-}
-@media (max-width: 767px) {
+  .title-departures {
+    color: #292929;
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 32px;
+    line-height: 110%;
+    width: 201px;
+    height: 35px;
+  }
   .card.germany {
+    width: 871px;
+    height: 505px;
+    margin-left: 4rem;
+    margin-right: 3rem;
+    padding: 0;
+  }
+  .card-img-overlay.Germany {
+    display: flex;
+    width: 873px;
+    height: 460px;
+    margin: 0;
+  }
+  .card-title.Germany {
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 24px;
+    line-height: 130%;
+    width: 120px;
+    height: 31px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+  }
+  .card-text.germany1 {
+    width: 550px;
+    height: 23px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 18px;
+    line-height: 130%;
+    margin-left: 30px;
+    margin-bottom: 5px;
+  }
+  .card-text.germany2 {
+    width: 450px;
+    height: 16px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 12px;
+    line-height: 130%;
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+  .card.kaliningrad {
+    width: 871px;
+    height: 440px;
+    margin-left: 4rem;
+    margin-right: 3rem;
+    padding: 0;
+  }
+  .img-fluid.Kaliningrad {
+    width: 960px;
+    height: 505px;
+  }
+  .card-img-overlay.Kaliningrad {
+    display: flex;
+    width: 873px;
+    height: 505px;
+    margin: 0;
+  }
+  .card-title.Kaliningrad {
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 24px;
+    line-height: 130%;
+    width: 120px;
+    height: 31px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+  }
+  .card-text.kaliningrad1 {
+    width: 550px;
+    height: 23px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 18px;
+    line-height: 130%;
+    margin-left: 30px;
+    margin-bottom: 5px;
+  }
+  .card-text.kaliningrad2 {
+    width: 450px;
+    height: 16px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 12px;
+    line-height: 130%;
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+  .services {
     display: flex;
     flex-direction: column;
-    width: 320px; /* Ширина контейнера */
-    height: 544px; /* Высота контейнера */
-    -o-object-fit: cover;
-       object-fit: cover; /* Обрезать изображение под размер контейнера */
-    margin-bottom: 25px; /* Добавьте отступ между карточками */
+    align-items: flex-start;
+    width: 960px;
+    height: 1033px;
+    gap: 20px;
+  }
+  .title-services {
+    width: 100px;
+    height: 32px;
+    color: #292929;
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 32px;
+    line-height: 110%;
+  }
+  .row.services_row {
+    width: 968px;
+    height: 222px;
+  }
+  .card.border.services {
+    width: 960px;
+    height: 222px;
+  }
+  .card-img.services {
+    width: 390px;
+    height: 182px;
+  }
+  .card-text.services {
+    width: 500px;
+    height: 26px;
+  }
+  .card-body.services {
+    width: 500px;
+    height: 182px;
+  }
+  .card-title.services {
+    width: 303px;
+    height: 26px;
+  }
+  .btn.btn-custom-services {
+    width: 500px;
+    height: 54px;
+  }
+  .btn.btn-services {
+    width: 564px;
+    height: 54px;
+  }
+  .modal.fade.services {
+    width: 624px;
+    height: 666px;
+  }
+  .additionally {
+    width: 960px;
+    height: 268px;
+  }
+  .title-additionally {
+    width: 153px;
+    height: 26px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+  }
+  .list.additionally {
+    width: 800px;
+    height: 162px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 18px;
+    line-height: 150%;
+  }
+  .img.warning {
+    width: 100px;
+    height: 100px;
   }
 }
-@media (max-width: 767px) {
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  /* Блок отправления */
+  .departures {
+    width: 320px;
+    height: 1124px;
+  }
+  .title-departures {
+    color: #292929;
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 24px;
+    line-height: 130%;
+    width: 151px;
+    height: 31px;
+  }
+  .card.germany {
+    width: 320px;
+    height: 544px;
+  }
+  .img-fluid.Germany {
+    width: 320px;
+    height: 544px;
+  }
+  .card-img-overlay.Germany {
+    width: 320px;
+    height: 544px;
+    display: flex;
+  }
+  .card-title.Germany {
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 24px;
+    line-height: 130%;
+    width: 109px;
+    height: 31px;
+  }
+  .card-text.germany1 {
+    width: 273px;
+    height: 46px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 18px;
+    line-height: 130%;
+  }
+  .card-text.germany2 {
+    width: 280px;
+    height: 32px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 12px;
+    line-height: 130%;
+  }
   .card.kaliningrad {
+    width: 320px;
+    height: 560px;
+  }
+  .img-fluid.Kaliningrad {
+    width: 320px;
+    height: 560px;
+  }
+  .card-img-overlay.Kaliningrad {
+    display: flex;
+    width: 320px;
+    height: 560px;
+  }
+  .card-title.Kaliningrad {
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 24px;
+    line-height: 130%;
+    width: 149px;
+    height: 31px;
+  }
+  .card-text.kaliningrad1 {
+    width: 273px;
+    height: 46px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 18px;
+    line-height: 130%;
+  }
+  .card-text.kaliningrad2 {
+    width: 280px;
+    height: 48px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 12px;
+    line-height: 130%;
+  }
+  .services {
     display: flex;
     flex-direction: column;
-    width: 320px; /* Ширина контейнера */
-    height: 560px; /* Высота контейнера */
-    -o-object-fit: cover;
-       object-fit: cover; /* Обрезать изображение под размер контейнера */
-    margin-bottom: 25px; /* Добавьте отступ между карточками */
+    align-items: flex-start;
+    width: 320px;
+    height: 1900px;
+    gap: 20px;
+  }
+  .title-services {
+    width: 320px;
+    height: 31px;
+    color: #292929;
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 24px;
+    line-height: 130%;
+  }
+  .row.services_row {
+    width: 320px;
+    height: 1900px;
+  }
+  .card.border.services {
+    width: 320px;
+    height: 442px;
+  }
+  .card-img.services {
+    width: 280px;
+    height: 166px;
+  }
+  .card-text.services {
+    width: 280px;
+    height: 150px;
+  }
+  .card-body.services {
+    width: 280px;
+    height: 232px;
+  }
+  .card-title.services {
+    width: 197px;
+    height: 52px;
+  }
+  .btn.btn-custom-services {
+    width: 280px;
+    height: 54px;
+  }
+  .btn.btn-services {
+    width: 580px;
+    height: 54px;
+  }
+  .modal.fade.services {
+    width: 320px;
+    height: 677px;
+  }
+  .additionally {
+    width: 320px;
+    height: 450px;
+  }
+  .title-additionally {
+    width: 153px;
+    height: 26px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+  }
+  .list.additionally {
+    width: 800px;
+    height: 162px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 16px;
+    line-height: 150%;
+  }
+  .img.warning {
+    width: 30px;
+    height: 30px;
   }
 }
 body {
