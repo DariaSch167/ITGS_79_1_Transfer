@@ -1770,13 +1770,14 @@
     <script>
       $(".owl-carousel").owlCarousel({
         margin: 20,
-        loop: false,
+        loop: true,
         nav: true,
         dots: false,
-        autoplayspeed: 1500,
-        autoplayTimeout: 1000,
+        autoplayspeed: 2500,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: false,
         responsive: {
-          0: { items: 1, dots: true },
+          0: { items: 1 },
           575: { items: 2 },
           991: { items: 4 },
         },
