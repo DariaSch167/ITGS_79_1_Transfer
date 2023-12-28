@@ -1,72 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
-      shrink-to-fit="no"
-    />
+      shrink-to-fit="no" />
     <link rel="icon" href="./assets/svg/logo-mobile.svg" type="image/svg" />
     <title>Transfer</title>
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- Header -->
-    <header>
+    <main>
       <div class="header__container">
         <!-- Background banner -->
         <img
           class="header__container__banner"
           src="./assets/images/header_background.jpg"
-          alt="Пассажирские перевозки"
-        />
-        <!-- Navigation bar -->
-        <div class="header">
-          <div class="header__inner">
-            <div class="header__logo">
-              <a href="/" class="header__logo_link">
-                <picture>
-                  <source
-                    srcset="./assets/svg/logo-mobile.svg"
-                    media="(max-width: 360px)"
-                  />
-                  <source srcset="./assets/svg/logo.svg" />
-                  <img
-                    src="./assets/svg/logo.svg"
-                    alt="Логотип «Transfer»"
-                    class="img__fluid"
-                  />
-                </picture>
-              </a>
-            </div>
-            <!-- Hamburger icon -->
+          alt="Пассажирские перевозки" />
+        <!-- Header -->
+        <header class="header">
+          <!-- Navigation bar -->
+          <div class="header__logo">
+            <a href="/" class="header__logo_link">
+              <picture>
+                <source
+                  srcset="./assets/svg/logo-mobile.svg"
+                  media="(max-width: 360px)" />
+                <source srcset="./assets/svg/logo.svg" />
+                <img
+                  src="./assets/svg/logo.svg"
+                  alt="Логотип «Transfer»"
+                  class="img__fluid" />
+              </picture>
+            </a>
+          </div>
+          <!-- Hamburger icon -->
           <input class="side-menu" type="checkbox" id="side-menu" />
           <label class="hamb" for="side-menu"
             ><span class="hamb-line"></span
           ></label>
-            <!-- Menu -->
-            <nav class="nav">
-              <ul class="nav__inner">
-                <li class="nav__item">
-                  <a class="nav__link" href="#">Отправления</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#">Услуги</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#">Почему мы</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#">Отзывы</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#">Вопросы и ответы</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+          <!-- Menu -->
+          <nav class="nav">
+            <ul class="nav__inner">
+              <li class="nav__item">
+                <a class="nav__link" href="#">Отправления</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Услуги</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Почему мы</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Отзывы</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Вопросы и ответы</a>
+              </li>
+            </ul>
+            <div class="header__contacts_mobile">
+              <div class="header__socials">
+                <a href="/" class="header__socials_link">
+                  <img src="./assets/svg/instagram.svg" alt="Instagram" />
+                </a>
+                <a href="/" class="header__socials_link">
+                  <img src="./assets/svg/telegram.svg" alt="Telegram" />
+                </a>
+                <a href="/" class="header__socials_link">
+                  <img src="./assets/svg/whatsapp.svg" alt="WhatsApp" />
+                </a>
+              </div>
+              <div class="header__phone">
+                <a href="tel:+4917680349804">+49 176 803 498 04</a>
+                <a href="tel:+4917666646855">+49 176 666 468 55</a>
+              </div>
+            </div>
+          </nav>
           <!-- Contacts -->
           <div class="header__contacts">
             <div class="header__socials">
@@ -85,7 +96,8 @@
               <a href="tel:+4917666646855">+49 176 666 468 55</a>
             </div>
           </div>
-        </div>
+        </header>
+        <!-- Main content -->
         <!-- Header screen-part start-->
         <div class="header__screen__wrapper row g-0">
           <div class="header__screen__title col-xl-7 col-lg-12">
@@ -102,16 +114,14 @@
                   </div>
                   <!-- Radio-buttons services -->
                   <div
-                    class="lead-form__input lead-form__input__radio lead-form_radio_screen"
-                  >
+                    class="lead-form__input lead-form__input__radio lead-form_radio_screen">
                     <div class="lead-form__input__radio__wrap">
                       <input
                         type="radio"
                         name="service-name"
                         value="passenger1"
                         id="passenger1"
-                        checked
-                      />
+                        checked />
                       <label for="passenger1">Пассажирские перевозки</label>
                     </div>
                     <div class="lead-form__input__radio__wrap">
@@ -119,8 +129,7 @@
                         type="radio"
                         name="service-name"
                         value="pets1"
-                        id="pets1"
-                      />
+                        id="pets1" />
                       <label for="pets1">Перевозка домашних животных</label>
                     </div>
                     <div class="lead-form__input__radio__wrap">
@@ -128,8 +137,7 @@
                         type="radio"
                         name="service-name"
                         value="cargo1"
-                        id="cargo1"
-                      />
+                        id="cargo1" />
                       <label for="cargo1"
                         >Доставка посылок и корреспонденции</label
                       >
@@ -139,8 +147,7 @@
                         type="radio"
                         name="service-name"
                         value="urn1"
-                        id="urn1"
-                      />
+                        id="urn1" />
                       <label for="urn1">Транспортировка праха в урнах</label>
                     </div>
                   </div>
@@ -153,8 +160,7 @@
                       type="tel_form"
                       name="tel_form"
                       placeholder="+49 176 803 498 04"
-                      required
-                    />
+                      required />
                   </div>
                   <!-- Swap inputs on button click - start -->
                   <div class="lead-form__input lead-form__input__switch">
@@ -165,8 +171,7 @@
                         type="text"
                         id="input1"
                         value="Калининград"
-                        readonly
-                      />
+                        readonly />
                     </div>
                     <input type="button" id="btn_swap1" onclick="switcher()" />
                     <div class="lead-form__input__switch__block">
@@ -176,8 +181,7 @@
                         type="text"
                         id="input2"
                         value="Германия"
-                        readonly
-                      />
+                        readonly />
                     </div>
                   </div>
                   <!--Textarea -  Comments -->
@@ -185,8 +189,7 @@
                     <label for="comments">Комментарий</label>
                     <textarea
                       name="comments"
-                      placeholder="Введите комментарий"
-                    ></textarea>
+                      placeholder="Введите комментарий"></textarea>
                   </div>
                 </div>
                 <!-- Button -->
@@ -207,12 +210,11 @@
         </div>
         <!-- Header screen-part end-->
       </div>
-    </header>
-    <!-- Main content -->
-    <main>
       <!-- Начало Блок Отправления-Услуги-Дополнительно -->
       <section class="departures" style="width: 1770px; height: 606px">
-        <h2 class="title-departures" style="width: 252px; height: 52px">Отправления</h2>
+        <h2 class="title-departures" style="width: 252px; height: 52px">
+          Отправления
+        </h2>
         <!-- Контейнер отправления Германия-Калининград -->
         <div class="container-fluid departures-container">
           <div class="row">
@@ -223,25 +225,27 @@
                   <!-- Источник для меньших экранов (ширина до 965 пикселей) -->
                   <source
                     srcset="assets/images/Germany=Mobile.jpg"
-                    media="(max-width: 965px)"
-                  />
+                    media="(max-width: 965px)" />
                   <!-- Источник по умолчанию для больших экранов -->
                   <source srcset="assets/images/Germany=Tablet.jpg" />
                   <!-- Изображение по умолчанию, отображаемое, если ни один из источников не подходит -->
                   <img
                     src="assets/images/Germany=Desktop.jpg"
                     alt="img_Germany»"
-                    class="img-fluid Germany"
-                  />
+                    class="img-fluid Germany" />
                 </picture>
                 <div class="card-body departures">
                   <div
-                    class="card-img-overlay Germany d-flex flex-column justify-content-end"
-                  >
+                    class="card-img-overlay Germany d-flex flex-column justify-content-end">
                     <div>
                       <h2 class="card-title Germany">Германия</h2>
-                      <p class="card-text germany1">Отправление каждую среду по индивидуальному маршруту</p>
-                      <p class="card-text germany2">Уточняйте в наших мессенджерах или в комментарии при заполнении формы</p>
+                      <p class="card-text germany1">
+                        Отправление каждую среду по индивидуальному маршруту
+                      </p>
+                      <p class="card-text germany2">
+                        Уточняйте в наших мессенджерах или в комментарии при
+                        заполнении формы
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -254,25 +258,27 @@
                   <!-- Источник для меньших экранов (ширина до 965 пикселей) -->
                   <source
                     srcset="assets/images/Kaliningrad=Mobile.jpg"
-                    media="(max-width: 965px)"
-                  />
+                    media="(max-width: 965px)" />
                   <!-- Источник по умолчанию для больших экранов -->
                   <source srcset="assets/images/Kaliningrad=Tablet.jpg" />
                   <!-- Изображение по умолчанию, отображаемое, если ни один из источников не подходит -->
                   <img
                     src="assets/images/Kaliningrad=Desktop.jpg"
                     alt="img_Kaliningrad»"
-                    class="img-fluid Kaliningrad"
-                  />
+                    class="img-fluid Kaliningrad" />
                 </picture>
                 <div class="card-body departures">
                   <div
-                    class="card-img-overlay Kaliningrad d-flex flex-column justify-content-end"
-                  >
+                    class="card-img-overlay Kaliningrad d-flex flex-column justify-content-end">
                     <div>
                       <h2 class="card-title Kaliningrad">Калининград</h2>
-                      <p class="card-text kaliningrad1">Отправление каждую субботу в 03:00</p>
-                      <p class="card-text kaliningrad2">Cбор у гостевого дома Бриг по адресу: г. Калининград, поселок Большое Исаково, ул. Зеленая, 4А</p>
+                      <p class="card-text kaliningrad1">
+                        Отправление каждую субботу в 03:00
+                      </p>
+                      <p class="card-text kaliningrad2">
+                        Cбор у гостевого дома Бриг по адресу: г. Калининград,
+                        поселок Большое Исаково, ул. Зеленая, 4А
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -290,24 +296,21 @@
             <div class="col-lg-6 col-md-12 col-12 mb-3">
               <div
                 class="card border services"
-                style="width: 870px; height: 259px"
-              >
+                style="width: 870px; height: 259px">
                 <div class="row services">
                   <div class="col-md-6">
                     <img
                       src="assets/images/service1.png"
                       class="card-img services"
                       alt="img_service1"
-                      style="width: 390px; height: 199px"
-                    />
+                      style="width: 390px; height: 199px" />
                   </div>
                   <div class="col-md-6">
                     <div class="card-body services">
                       <p class="card-title services">Пассажирские перевозки</p>
                       <p
                         class="card-text services"
-                        style="width: 390px; height: 113px"
-                      >
+                        style="width: 390px; height: 113px">
                         Еженедельные рейсы по маршруту
                         Германия-Калининград-Германия, совершаемые,
                         преимущественно, по скоростным и платным трассам.
@@ -315,8 +318,7 @@
                       </p>
                       <button
                         class="btn btn-custom-services"
-                        style="width: 390px; height: 66px"
-                      >
+                        style="width: 390px; height: 66px">
                         Оставить заявку
                       </button>
                     </div>
@@ -329,16 +331,14 @@
             <div class="col-lg-6 col-md-12 col-12 mb-3">
               <div
                 class="card border services"
-                style="width: 870px; height: 259px"
-              >
+                style="width: 870px; height: 259px">
                 <div class="row services">
                   <div class="col-md-6">
                     <img
                       src="assets/images/service2.png"
                       class="card-img services"
                       alt="img_service2"
-                      style="width: 390px; height: 199px"
-                    />
+                      style="width: 390px; height: 199px" />
                   </div>
                   <div class="col-md-6">
                     <div class="card-body services">
@@ -347,15 +347,13 @@
                       </p>
                       <p
                         class="card-text services"
-                        style="width: 390px; height: 113px"
-                      >
+                        style="width: 390px; height: 113px">
                         Профессионально и комфортно доставим вашего питомца от
                         адреса до адреса
                       </p>
                       <button
                         class="btn btn-custom-services"
-                        style="width: 390px; height: 66px"
-                      >
+                        style="width: 390px; height: 66px">
                         Оставить заявку
                       </button>
                     </div>
@@ -368,32 +366,28 @@
             <div class="col-lg-6 col-md-12 col-12 mb-3">
               <div
                 class="card border services"
-                style="width: 870px; height: 259px"
-              >
+                style="width: 870px; height: 259px">
                 <div class="row services">
                   <div class="col-md-6">
                     <img
                       src="assets/images/service3.png"
                       class="card-img services"
                       alt="img_service3"
-                      style="width: 390px; height: 199px"
-                    />
+                      style="width: 390px; height: 199px" />
                   </div>
                   <div class="col-md-6">
                     <div class="card-body services">
                       <p class="card-title services">Доставка посылок</p>
                       <p
                         class="card-text services"
-                        style="width: 390px; height: 113px"
-                      >
+                        style="width: 390px; height: 113px">
                         Посылки и корреспонденцию принимаем на почтовый адрес в
                         Германии и отправляем из Калининграда по всей России
                         почтой либо СДЭК
                       </p>
                       <button
                         class="btn btn-custom-services"
-                        style="width: 390px; height: 66px"
-                      >
+                        style="width: 390px; height: 66px">
                         Оставить заявку
                       </button>
                     </div>
@@ -406,16 +400,14 @@
             <div class="col-lg-6 col-md-12 col-12 mb-3">
               <div
                 class="card border services"
-                style="width: 870px; height: 259px"
-              >
+                style="width: 870px; height: 259px">
                 <div class="row services">
                   <div class="col-md-6">
                     <img
                       src="assets/images/service4.png"
                       class="card-img services"
                       alt="img_service4"
-                      style="width: 390px; height: 199px"
-                    />
+                      style="width: 390px; height: 199px" />
                   </div>
                   <div class="col-md-6">
                     <div class="card-body services">
@@ -424,15 +416,13 @@
                       </p>
                       <p
                         class="card-text services"
-                        style="width: 390px; height: 113px"
-                      >
+                        style="width: 390px; height: 113px">
                         Проконсультируем и поможем организовать процесс
                         транспортировки бережно и с уважительным подходом
                       </p>
                       <button
                         class="btn btn-custom-services"
-                        style="width: 390px; height: 66px"
-                      >
+                        style="width: 390px; height: 66px">
                         Оставить заявку
                       </button>
                     </div>
@@ -452,8 +442,7 @@
         data-bs-keyboard="false"
         tabindex="-1"
         aria-labelledby="staticBackdropLabel2"
-        aria-hidden="true"
-      >
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
@@ -464,8 +453,7 @@
                 type="button"
                 class="btn-close"
                 data-bs-dismiss="modal"
-                aria-label="Закрыть"
-              ></button>
+                aria-label="Закрыть"></button>
             </div>
             <div class="modal-body">
               <div class="form-group">
@@ -474,8 +462,7 @@
                   type="tel"
                   class="form-control"
                   id="phoneNumber2"
-                  placeholder="+49 176 803 498 04"
-                />
+                  placeholder="+49 176 803 498 04" />
               </div>
               <div class="form-group">
                 <label for="departurePoint2">Пункт отправления:</label>
@@ -500,8 +487,7 @@
                   class="form-control"
                   id="comment2"
                   rows="3"
-                  placeholder="Введите комментарий"
-                ></textarea>
+                  placeholder="Введите комментарий"></textarea>
               </div>
             </div>
             <div class="modal-footer">
@@ -524,8 +510,7 @@
         data-bs-keyboard="false"
         tabindex="-1"
         aria-labelledby="staticBackdropLabel3"
-        aria-hidden="true"
-      >
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
@@ -536,8 +521,7 @@
                 type="button"
                 class="btn-close"
                 data-bs-dismiss="modal"
-                aria-label="Закрыть"
-              ></button>
+                aria-label="Закрыть"></button>
             </div>
             <div class="modal-body">
               <div class="form-group">
@@ -546,8 +530,7 @@
                   type="tel"
                   class="form-control"
                   id="phoneNumber3"
-                  placeholder="+49 176 803 498 04"
-                />
+                  placeholder="+49 176 803 498 04" />
               </div>
               <div class="form-group">
                 <label for="departurePoint3">Пункт отправления:</label>
@@ -572,8 +555,7 @@
                   class="form-control"
                   id="comment3"
                   rows="3"
-                  placeholder="Введите комментарий"
-                ></textarea>
+                  placeholder="Введите комментарий"></textarea>
               </div>
             </div>
             <div class="modal-footer">
@@ -596,8 +578,7 @@
         data-bs-keyboard="false"
         tabindex="-1"
         aria-labelledby="staticBackdropLabel4"
-        aria-hidden="true"
-      >
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
@@ -608,8 +589,7 @@
                 type="button"
                 class="btn-close"
                 data-bs-dismiss="modal"
-                aria-label="Закрыть"
-              ></button>
+                aria-label="Закрыть"></button>
             </div>
             <div class="modal-body">
               <div class="form-group">
@@ -618,8 +598,7 @@
                   type="tel"
                   class="form-control"
                   id="phoneNumber4"
-                  placeholder="+49 176 803 498 04"
-                />
+                  placeholder="+49 176 803 498 04" />
               </div>
               <div class="form-group">
                 <label for="departurePoint4">Пункт отправления:</label>
@@ -644,8 +623,7 @@
                   class="form-control"
                   id="comment4"
                   rows="3"
-                  placeholder="Введите комментарий"
-                ></textarea>
+                  placeholder="Введите комментарий"></textarea>
               </div>
             </div>
             <div class="modal-footer">
@@ -667,23 +645,20 @@
       <section class="additionally" style="width: 1770px; height: 261px">
         <h2 class="title-additionally">Дополнительно:</h2>
         <div class="list additionally">
-            <ul>
-              <li>Помощь с оформлением документов для перевозки животных;</li>
-              <li>
-                Помощь с оформлением документов для транспортировки праха;
-              </li>
-              <li>Трансфер до аэропорта Храброво в Калининграде (15€);</li>
-              <li>Сопровождение несовершеннолетних;</li>
-              <li>
-                Бронь гостиницы, авиа- и ж/д билетов по всей России без
-                комиссии(услуга доступна только для пассажиров нашей компании);
-              </li>
-              <li>Пассажирские и грузовые перевозки по Европе.</li>
-            </ul>
-          </div>
-          <div class="img warning">
-            <img src="assets/svg/Warning.svg" alt="warning" />
-          </div>
+          <ul>
+            <li>Помощь с оформлением документов для перевозки животных;</li>
+            <li>Помощь с оформлением документов для транспортировки праха;</li>
+            <li>Трансфер до аэропорта Храброво в Калининграде (15€);</li>
+            <li>Сопровождение несовершеннолетних;</li>
+            <li>
+              Бронь гостиницы, авиа- и ж/д билетов по всей России без
+              комиссии(услуга доступна только для пассажиров нашей компании);
+            </li>
+            <li>Пассажирские и грузовые перевозки по Европе.</li>
+          </ul>
+        </div>
+        <div class="img warning">
+          <img src="assets/svg/Warning.svg" alt="warning" />
         </div>
       </section>
       <!-- Конец Блок Отправления-Услуги-Дополнительно -->
@@ -701,8 +676,7 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseOne"
                       aria-expanded="false"
-                      aria-controls="flush-collapseOne"
-                    >
+                      aria-controls="flush-collapseOne">
                       Какой маршрут из Германии в Калининград?
                     </button>
                   </h3>
@@ -710,8 +684,7 @@
                     id="flush-collapseOne"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingOne"
-                    data-bs-parent="#accordionFlushExample"
-                  >
+                    data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                       Едем через Германию и Польшу, пересекаем границу через
                       МАПП Мамоново (Гжехотки).
@@ -726,8 +699,7 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseTwo"
                       aria-expanded="false"
-                      aria-controls="flush-collapseTwo"
-                    >
+                      aria-controls="flush-collapseTwo">
                       Как узнать стоимость поездки?
                     </button>
                   </h3>
@@ -735,8 +707,7 @@
                     id="flush-collapseTwo"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingTwo"
-                    data-bs-parent="#accordionFlushExample"
-                  >
+                    data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                       Оставьте заявку, заполнив форму на сайте, или свяжитесь с
                       нами через социальные сети и вам сообщат точную стоимость
@@ -752,8 +723,7 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseThree"
                       aria-expanded="false"
-                      aria-controls="flush-collapseThree"
-                    >
+                      aria-controls="flush-collapseThree">
                       Предусмотрена ли скидка на поездку для детей?
                     </button>
                   </h3>
@@ -761,8 +731,7 @@
                     id="flush-collapseThree"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingThree"
-                    data-bs-parent="#accordionFlushExample"
-                  >
+                    data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                       Да, мы предоставляем скидку в размере 20€ на детей от 0 до
                       12 лет.
@@ -777,8 +746,7 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseFour"
                       aria-expanded="false"
-                      aria-controls="flush-collapseFour"
-                    >
+                      aria-controls="flush-collapseFour">
                       Из какого города в Германии вы стартуете?
                     </button>
                   </h3>
@@ -786,8 +754,7 @@
                     id="flush-collapseFour"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingFour"
-                    data-bs-parent="#accordionFlushExample"
-                  >
+                    data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                       Забираем почти со всех городов Германии. Цена зависит от
                       расстояния.
@@ -802,8 +769,7 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapsefive"
                       aria-expanded="false"
-                      aria-controls="flush-collapsefive"
-                    >
+                      aria-controls="flush-collapsefive">
                       Куда привозите в Калининграде?
                     </button>
                   </h3>
@@ -811,8 +777,7 @@
                     id="flush-collapsefive"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingfive"
-                    data-bs-parent="#accordionFlushExample"
-                  >
+                    data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                       В самом Калининграде довозим до адреса. Трансфер до
                       аэропорта возможен за дополнительную плату. В другие
@@ -828,8 +793,7 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapsesix"
                       aria-expanded="false"
-                      aria-controls="flush-collapsesix"
-                    >
+                      aria-controls="flush-collapsesix">
                       Как можно оплатить?
                     </button>
                   </h3>
@@ -837,8 +801,7 @@
                     id="flush-collapsesix"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingsix"
-                    data-bs-parent="#accordionFlushExample"
-                  >
+                    data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                       Принимаем оплату банковской картой как российских, так
                       европейских банков, а также PayPal.
@@ -853,8 +816,7 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseseven"
                       aria-expanded="false"
-                      aria-controls="flush-collapseseven"
-                    >
+                      aria-controls="flush-collapseseven">
                       А поездка точно состоится?
                     </button>
                   </h3>
@@ -862,8 +824,7 @@
                     id="flush-collapseseven"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingseven"
-                    data-bs-parent="#accordionFlushExample"
-                  >
+                    data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                       Да! Конечно, у нас есть график, которого мы придерживаемся
                       еженедельно. Не бывает такого, что одну неделю машина
@@ -880,8 +841,7 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseeight"
                       aria-expanded="false"
-                      aria-controls="flush-collapseeight"
-                    >
+                      aria-controls="flush-collapseeight">
                       В какое время меня заберут из дома?
                     </button>
                   </h3>
@@ -889,8 +849,7 @@
                     id="flush-collapseeight"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingeight"
-                    data-bs-parent="#accordionFlushExample"
-                  >
+                    data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                       <div>
                         Выезд из Калининграда каждую субботу в 03:00 утра. Сбор
@@ -916,8 +875,7 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapsenine"
                       aria-expanded="false"
-                      aria-controls="flush-collapsenine"
-                    >
+                      aria-controls="flush-collapsenine">
                       Сколько багажа можно взять с собой в поездку?
                     </button>
                   </h3>
@@ -925,8 +883,7 @@
                     id="flush-collapsenine"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingnine"
-                    data-bs-parent="#accordionFlushExample"
-                  >
+                    data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                       На одного человека 23 кг багажа. Габариты — до 203 см по
                       сумме трех измерений.
@@ -941,8 +898,7 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseten"
                       aria-expanded="false"
-                      aria-controls="flush-collapseten"
-                    >
+                      aria-controls="flush-collapseten">
                       Как долго проходим границу?
                     </button>
                   </h3>
@@ -950,8 +906,7 @@
                     id="flush-collapseten"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingten"
-                    data-bs-parent="#accordionFlushExample"
-                  >
+                    data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                       На этот вопрос даже сама граница не даст ответ. Можно
                       пройти за пару часов обе границы, а можно стоять, но
@@ -969,8 +924,7 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseeleven"
                       aria-expanded="false"
-                      aria-controls="flush-collapseeleven"
-                    >
+                      aria-controls="flush-collapseeleven">
                       Безопасно ли с вами ехать? Как вы подготавливаете машины к
                       дороге?
                     </button>
@@ -979,8 +933,7 @@
                     id="flush-collapseeleven"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingeleven"
-                    data-bs-parent="#accordionFlushExample"
-                  >
+                    data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                       Машины управляются профессиональными водителями с большим
                       стажем. Имеют удостоверение соответствующей категории,
@@ -1003,8 +956,7 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapsetwelve"
                       aria-expanded="false"
-                      aria-controls="flush-collapsetwelve"
-                    >
+                      aria-controls="flush-collapsetwelve">
                       Кого пропускают в сторону Германии?
                     </button>
                   </h3>
@@ -1012,8 +964,7 @@
                     id="flush-collapsetwelve"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingtwelve"
-                    data-bs-parent="#accordionFlushExample"
-                  >
+                    data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                       <ul>
                         <li>с двойным гражданством немецкое и российское;</li>
@@ -1036,8 +987,7 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapsethirteen"
                       aria-expanded="false"
-                      aria-controls="flush-collapsethirteen"
-                    >
+                      aria-controls="flush-collapsethirteen">
                       Какие требования к посылкам из Германии в Калининград и из
                       Калининграда в Германию?
                     </button>
@@ -1046,8 +996,7 @@
                     id="flush-collapsethirteen"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingthirteen"
-                    data-bs-parent="#accordionFlushExample"
-                  >
+                    data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                       <ul>
                         <li>до 12 кг</li>
@@ -1067,8 +1016,7 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapsefourteen"
                       aria-expanded="false"
-                      aria-controls="flush-collapsefourteen"
-                    >
+                      aria-controls="flush-collapsefourteen">
                       Сколько времени примерно в пути?
                     </button>
                   </h3>
@@ -1076,8 +1024,7 @@
                     id="flush-collapsefourteen"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingfourteen"
-                    data-bs-parent="#accordionFlushExample"
-                  >
+                    data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                       В среднем 15 часов, зависит от города отправления и
                       скорости прохождения таможни.
@@ -1092,8 +1039,7 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapsefiveteen"
                       aria-expanded="false"
-                      aria-controls="flush-collapsefiveteen"
-                    >
+                      aria-controls="flush-collapsefiveteen">
                       За какое время лучше забронировать место на поездку?
                     </button>
                   </h3>
@@ -1101,8 +1047,7 @@
                     id="flush-collapsefiveteen"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingfiveteen"
-                    data-bs-parent="#accordionFlushExample"
-                  >
+                    data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                       Идеально это сделать за недели 2-3. А если у Вас возник
                       форс-мажор, то обязательно сообщите нам, что не сможете
@@ -1123,8 +1068,7 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapsesixteen"
                       aria-expanded="false"
-                      aria-controls="flush-collapsesixteen"
-                    >
+                      aria-controls="flush-collapsesixteen">
                       Какие документы нужны для въезда в Германию?
                     </button>
                   </h3>
@@ -1132,8 +1076,7 @@
                     id="flush-collapsesixteen"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingsixteen"
-                    data-bs-parent="#accordionFlushExample"
-                  >
+                    data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                       <ul>
                         <li>гражданство Германии</li>
@@ -1163,8 +1106,7 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseseventeen"
                       aria-expanded="false"
-                      aria-controls="flush-collapseseventeen"
-                    >
+                      aria-controls="flush-collapseseventeen">
                       Сколько времени в пути находимся?
                     </button>
                   </h3>
@@ -1172,8 +1114,7 @@
                     id="flush-collapseseventeen"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingseventeen"
-                    data-bs-parent="#accordionFlushExample"
-                  >
+                    data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                       На этот вопрос сложно ответить. Понимаем, что многие
                       пассажиры едут дальше из Калининграда по российским
@@ -1193,8 +1134,7 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseeighteen"
                       aria-expanded="false"
-                      aria-controls="flush-collapseeighteen"
-                    >
+                      aria-controls="flush-collapseeighteen">
                       Можно ли передать через вас документы?
                     </button>
                   </h3>
@@ -1202,8 +1142,7 @@
                     id="flush-collapseeighteen"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingeighteen"
-                    data-bs-parent="#accordionFlushExample"
-                  >
+                    data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                       Можно, но не все. Согласно законодательству, мы не имеем
                       права перевозить чужой паспорт.
@@ -1218,8 +1157,7 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapsenineteen"
                       aria-expanded="false"
-                      aria-controls="flush-collapsenineteen"
-                    >
+                      aria-controls="flush-collapsenineteen">
                       Может ли поехать с вами несовершеннолетний ребенок без
                       сопровождения?
                     </button>
@@ -1228,8 +1166,7 @@
                     id="flush-collapsenineteen"
                     class="accordion-collapse collapse"
                     aria-labelledby="flush-headingnineteen"
-                    data-bs-parent="#accordionFlushExample"
-                  >
+                    data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                       Да, может.
                       <span class="special_text"
@@ -1252,8 +1189,7 @@
             <img
               class="contact-us__image"
               src="./assets/images/main_lead-form_image.png"
-              alt="Пассажирские перевозки"
-            />
+              alt="Пассажирские перевозки" />
           </div>
           <!-- Lead-form -->
           <div class="contact-us__lead-form lead-form col-xl-5 col-lg-12">
@@ -1265,16 +1201,14 @@
                   </div>
                   <!-- Radio-buttons services -->
                   <div
-                    class="lead-form__input lead-form__input__radio c-u_lead-form_radio"
-                  >
+                    class="lead-form__input lead-form__input__radio c-u_lead-form_radio">
                     <div class="lead-form__input__radio__wrap">
                       <input
                         type="radio"
                         name="service-name"
                         value="passenger2"
                         id="passenger2"
-                        checked
-                      />
+                        checked />
                       <label for="passenger2">Пассажирские перевозки</label>
                     </div>
                     <div class="lead-form__input__radio__wrap">
@@ -1282,8 +1216,7 @@
                         type="radio"
                         name="service-name"
                         value="pets2"
-                        id="pets2"
-                      />
+                        id="pets2" />
                       <label for="pets2">Перевозка домашних животных</label>
                     </div>
                     <div class="lead-form__input__radio__wrap">
@@ -1291,8 +1224,7 @@
                         type="radio"
                         name="service-name"
                         value="cargo2"
-                        id="cargo2"
-                      />
+                        id="cargo2" />
                       <label for="cargo2"
                         >Доставка посылок и корреспонденции</label
                       >
@@ -1302,8 +1234,7 @@
                         type="radio"
                         name="service-name"
                         value="urn2"
-                        id="urn2"
-                      />
+                        id="urn2" />
                       <label for="urn2">Транспортировка праха в урнах</label>
                     </div>
                   </div>
@@ -1315,8 +1246,7 @@
                     <input
                       type="tel_form"
                       name="tel_form"
-                      placeholder="+49 176 803 498 04"
-                    />
+                      placeholder="+49 176 803 498 04" />
                   </div>
                   <!-- Swap inputs on button click - start -->
                   <div class="lead-form__input lead-form__input__switch">
@@ -1327,14 +1257,12 @@
                         type="text"
                         id="input1_2"
                         value="Калининград"
-                        readonly
-                      />
+                        readonly />
                     </div>
                     <input
                       type="button"
                       id="btn_swap2"
-                      onclick="switcher_2()"
-                    />
+                      onclick="switcher_2()" />
                     <div class="lead-form__input__switch__block">
                       <label for="input2_2">Пункт прибытия</label>
                       <input
@@ -1342,16 +1270,14 @@
                         type="text"
                         id="input2_2"
                         value="Германия"
-                        readonly
-                      />
+                        readonly />
                     </div>
                   </div>
                   <div class="lead-form__input lead-form__input__comments">
                     <label for="comments">Комментарий</label>
                     <textarea
                       name="comments"
-                      placeholder="Введите комментарий"
-                    ></textarea>
+                      placeholder="Введите комментарий"></textarea>
                   </div>
                 </div>
                 <div class="lead-form__grid-col1r2">
@@ -1438,10 +1364,11 @@
           </div>
         </div>
       </div>
+      <div class="creators"><p>Создано ученицами онлайн школы IT-Girls</p></div>
     </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/FAQ.js"></script>
     <script src="./js/script1_form_input_switch.js"></script>
-    <script src="js/script_services_switch.js" defer></script>
+    <script src="./js/script_services_switch.js" defer></script>
   </body>
 </html>
