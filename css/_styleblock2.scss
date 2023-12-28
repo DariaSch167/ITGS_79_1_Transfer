@@ -4,185 +4,268 @@ $grey-dark: #c8c8c8;
 $black: #292929;
 $white: #ffffff;
 
-      /*# Кнопка в блоке услуги */
-      .btn-custom-services {
-        $orange-border: 1px solid $orange;
-        color: $orange;
-        background-color: $white;
-      }
-      /*# эффект при наведении на кнопку */
-      .btn-custom-services:hover {
-        color: $white; 
-        background-color: $orange; 
-      }
-      /*# Формат текста, оверлей на карточках блока отправления */
-      .card-img-overlay.Germany {
-        text-align: left; 
-        color: $white;
-        padding: 2px; 
-        margin-bottom: 100px;
-        margin-left: 30px;
-      }
-      
-      .card-img-overlay.Kaliningrad {
-        text-align: left; 
-        color: $white;
-        padding: 2px; 
-        margin-bottom: 100px;
-        margin-left: 30px;
-      }
-      
-      .card-title.Germany {
-        color: $white;
-        font-family: "FiraSans_SemiBold600", serif;
-        font-size: 32px;
-        line-height: 110%;
-      }
-      .card-title.Kaliningrad {
-        color: $white;
-        font-family: "FiraSans_SemiBold600", serif;
-        font-size: 32px;
-        line-height: 110%;
-      }
-      
-      .card-text.germany1 {
-        color: $white;
-        font-family: "FiraSans_Regular400", serif;
-        font-size: 20px;
-        line-height: 130%;
-      }
-      
-      .card-text.germany2 {
-        color: $white;
-        font-family: "FiraSans_Regular400", serif;
-        font-size: 14px;
-        line-height: 130%;
-      }
-      
-      .card-text.kaliningrad1 {
-        color: $white;
-        font-family: "FiraSans_Regular400", serif;
-        font-size: 20px;
-        line-height: 130%;
-      }
-      
-      .card-text.kaliningrad2 {
-        color: $white;
-        font-family: "FiraSans_Regular400", serif;
-        font-size: 14px;
-        line-height: 130%;
-      }
-      
-      /*# Заголовок Отправления */
-      .title-departures {
-        margin-left: 5rem;
+/*# Стили для Desktop */
+.departures {
+    width: 1077px;
+    height: 606px;
+}
+.title-departures {
+    width: 252px;
+    height: 57px;
+    margin-left: 5rem;
         margin-top: 5%;
         margin-bottom: 25px;
+        color: $black;
+        font-family: "FiraSans_SemiBold600", serif;
+        font-size: 40px;
+        line-height: 130%;
       }
-      /*# Заголовок Услуги */
-      .title-services {
-          margin-left: 5rem;
-          margin-top: 4%;
-          margin-bottom: 25px;
+    .card.germany {
+        width: 870px;
+        height: 524px;
+        margin-left: 4rem;
+        margin-right: 3rem;
+        padding: 0;
+        border-color: $white;
       }
-      
-      /*# Кнопка в блоке услуги */
-      .btn-custom-services {
-        border: 1px solid $orange;
-        color: $orange;
-        background-color: $white;
-        margin-top: 0px;
-      }
-      
-      /*# эффект при наведении на кнопку */
-      .btn-custom-services:hover {
-        color: $white; 
-        background-color: $orange; 
-      }
-      /*# Формат текста, оверлей на карточках блока отправления */
-      .card-img-overlay h2, .card-img-overlay p {
+    .card-img-overlay.Germany {
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+        width: 870px;
+        height: 524px;
+        margin: 0;
+        padding: 0;
         text-align: left; 
         color: $white;
         padding: 2px; 
-        margin-bottom: 1px;
+        margin-bottom: 90px;
+        margin-left: 30px;
       }
-      /*# Карточка отправления Германия */
-      .card.germany {
+    .card-title.Germany {
+        font-family: "FiraSans_SemiBold600", serif;
+        font-size: 32px;
+        line-height: 110%;
+        width: 145px;
+        height: 35px;
+        margin-bottom: 15px;
+        margin-left: 30px;
+        color: $white;
+        font-family: "FiraSans_SemiBold600", serif;
+      }
+    .card-text.germany1 {
+        width: 564px;
+        height: 26px;
+        color: $white;
+        font-family: "FiraSans_Regular400", serif;
+        font-size: 20px;
+        line-height: 130%;
+        margin-left: 30px;
+        margin-bottom: 5px;
+      } 
+    .card-text.germany2 {
+        width: 518px;
+        height: 18px;
+        color: $white;
+        font-family: "FiraSans_Regular400", serif;
+        font-size: 14px;
+        line-height: 130%;
+        margin-bottom: 30px;
+        margin-left: 30px;
+      }
+    
+    .card.kaliningrad {
+        width: 870px;
+        height: 524px;
         margin-left: 4rem;
+        margin-right: 3rem;
+        padding: 0;
         border-color: $white;
       }
-      /*# Карточка отправления Калининград */
-      .card.kaliningrad {
+    .img-fluid.Kaliningrad {
+        width: 870px;
+        height: 524px;
+      }
+    .card-img-overlay.Kaliningrad {
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+        width: 870px;
+        height: 524px;
+        text-align: left; 
+        color: $white;
+        padding: 2px; 
+        margin-bottom: 90px;
+        margin-left: 30px;
+      }
+    .card-title.Kaliningrad {
+        font-family: "FiraSans_SemiBold600", serif;
+        font-size: 32px;
+        line-height: 110%;
+        width: 199px;
+        height: 35px;
+        margin-bottom: 15px;
+        margin-left: 30px;
+        color: $white;
+      }
+    .card-text.kaliningrad1 {
+        width: 351px;
+        height: 26px;
+        color: $white;
+        font-family: "FiraSans_Regular400", serif;
+        font-size: 20px;
+        line-height: 130%;
+        margin-left: 30px;
+        margin-bottom: 5px;
+      } 
+    .card-text.kaliningrad2 {
+        width: 644px;
+        height: 18px;
+        color: $white;
+        font-family: "FiraSans_Regular400", serif;
+        font-size: 14px;
+        line-height: 130%;
+        margin-bottom: 30px;
+        margin-left: 30px;
+      }
+    
+    .services {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 1770px;
+        height: 921px;
+        gap: 30px;
+      }
+      
+    .title-services {
+        width: 152px;
+        height: 52px;
+        color: $black;
+        font-family: "FiraSans_SemiBold600", serif;
+        font-size: 40px;
+        line-height: 130%;
+        margin-top: 60px;
         margin-left: 5rem;
-        border-color: $white;
       }
       
-      /*# Кнопка в блоке услуги */
-      .btn-services {
-        border: 1px solid $orange;
-        color: $orange;
-        background-color: $white;
+    .row.services_row {
+        width: 1770px;
+        height: 921px;
       }
-      /*# Эффект при наведении на кнопку */
-      .btn-services:hover {
-        color: $white; 
-        background-color: $orange; 
-      }
-      
-      /*# Услуги */
-      .services_row {
+
+    .services_row {
         display: flex;
         justify-content: space-between;
         margin-left: 3rem;
         margin-right: 2rem;
+      } /*# Что это? */
+
+    .card.border.services {
+        width: 870px;
+        height: 259px;
       }
-      
-      /*# Текст */
-      .list.additionally {
-        color: $white;
-        margin-left: 40px;
-        font-family: "FiraSans_Regular400", serif;
-        font-size: 20px;
-        line-height: 150%;
-      }
-      
-      .card-img.services {
+    .card-img.services {
+        width: 390px; 
+        height: 199px;
         display: flex;
         object-fit: cover; /* Обрезать изображение под размер контейнера */
         margin-top: 30px;
         margin-left: 30px;
         margin-bottom: 30px;
       }
-      
-      .card-title.services {
-        margin-top: 2px;
-        color: $black;
-        font-family: "FiraSans_SemiBold600";
-        font-size: 24px;
-        line-height: 130%;
-      }
-      .title-additionally {
-        color: $white;
-        font-family: "FiraSans_SemiBold600";
-        font-size: 24px;
-        line-height: 130%;
-        margin-left: 30px;
-        margin-top: 30px;
-      }
-      .card-text.services {
+    .card-text.services {
+        width: 390px; 
+        height: 113px;
         color: $black;
         font-family: "FiraSans_Regular400";
         font-size: 16px;
         line-height: 150%;
         margin-bottom: 0;
       }
-      /*# Блок дополнительно */
-      .additionally {
+    
+    .card-body.services {
+        width: 390px;
+        height: 199px;
+      }
+    
+    .card-title.services {
+        width: 363px;
+        height: 31px;
+        margin-top: 2px;
+        color: $black;
+        font-family: "FiraSans_SemiBold600";
+        font-size: 24px;
+        line-height: 130%;
+      }
+    
+      /*# Кнопка в блоке услуги */
+    .btn-custom-services {
+        $orange-border: 1px solid $orange;
+        color: $orange;
+        background-color: $white;
+        border: 1px solid $orange;
+        color: $orange;
+        background-color: $white;
+        margin-top: 0px;
+      }
+      /*# эффект при наведении на кнопку */
+    .btn-custom-services:hover {
+        color: $white; 
+        background-color: $orange; 
+      }
+
+    .btn.btn-custom-services {
+        width: 500px; 
+        height: 54px;
+      }
+    .btn.btn-services {
+        width: 390px; 
+        height: 66px;
+        $orange-border: 1px solid $orange;
+        color: $orange;
+        background-color: $white;
+      }
+    .modal.fade.services {
+        width: 624px; 
+        height: 684px;
+      }
+    .additionally {
+        width: 1770px; 
+        height: 261px;
         margin-left: $left-block-gap;
         margin-right: 3rem;
         background-color: $orange;
         border-radius: 1rem;
       }
+
+    .title-additionally {
+        width: 183px;
+        height: 31px;
+        color: $white;
+        font-family: "FiraSans_Regular400", serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        margin-left: 30px;
+        margin-top: 30px;
+      }
+
+    .list.additionally {
+        width: 1239px;
+        height: 150px;
+        color: $white;
+        margin-left: 40px;
+        font-family: "FiraSans_Regular400", serif;
+        font-size: 20px;
+        line-height: 150%;
+    }
+    
+    .img.warning {
+      width: 123px;
+      height: 123px;
+    }
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
@@ -199,7 +282,6 @@ $white: #ffffff;
     width: 201px;
     height: 35px;
   }
-
   .card.germany {
     width: 871px;
     height: 505px;
@@ -209,6 +291,8 @@ $white: #ffffff;
   }
   .card-img-overlay.Germany {
     display: flex;
+    justify-content: end;
+    flex-direction: column;
     width: 873px;
     height: 460px;
     margin: 0;
@@ -245,7 +329,7 @@ $white: #ffffff;
 
   .card.kaliningrad {
     width: 871px;
-    height: 440px;
+    height: 570px;
     margin-left: 4rem;
     margin-right: 3rem;
     padding: 0;
@@ -256,15 +340,17 @@ $white: #ffffff;
   }
   .card-img-overlay.Kaliningrad {
     display: flex;
+    justify-content: end;
+    flex-direction: column;
     width: 873px;
-    height: 505px;
+    height: 506px;
     margin: 0;
   }
   .card-title.Kaliningrad {
     font-family: "FiraSans_SemiBold600", serif;
     font-size: 24px;
     line-height: 130%;
-    width: 120px;
+    width: 170px;
     height: 31px;
     margin-bottom: 15px;
     margin-left: 30px;
@@ -280,7 +366,7 @@ $white: #ffffff;
     margin-bottom: 5px;
   } 
   .card-text.kaliningrad2 {
-    width: 450px;
+    width: 600px;
     height: 16px;
     color: $white;
     font-family: "FiraSans_Regular400", serif;
@@ -294,9 +380,9 @@ $white: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 960px;
+    width: 1301px;
     height: 1033px;
-    gap: 20px;
+    gap: 30px;
   }
   
   .title-services {
@@ -306,11 +392,16 @@ $white: #ffffff;
     font-family: "FiraSans_SemiBold600", serif;
     font-size: 32px;
     line-height: 110%;
+    margin-top: 60px;
   }
   
   .row.services_row {
     width: 968px;
-    height: 222px;
+    height: 1200px;
+  }
+  .row.services_row {
+    width: 968px;
+    height: 1100px;
   }
   .card.border.services {
     width: 960px;
