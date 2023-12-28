@@ -6,42 +6,47 @@ $white: #ffffff;
 
 /*# Стили для Desktop */
 .departures {
-    width: 1077px;
+    width: 1793px;
     height: 606px;
+    padding: 0;
+    margin-left: 1.700rem;
 }
 .title-departures {
     width: 252px;
     height: 57px;
-    margin-left: 5rem;
-        margin-top: 5%;
-        margin-bottom: 25px;
-        color: $black;
-        font-family: "FiraSans_SemiBold600", serif;
-        font-size: 40px;
-        line-height: 130%;
-      }
-    .card.germany {
-        width: 870px;
-        height: 524px;
-        margin-left: 4rem;
-        margin-right: 3rem;
-        padding: 0;
-        border-color: $white;
-      }
-    .card-img-overlay.Germany {
-        display: flex;
-        justify-content: end;
-        flex-direction: column;
-        width: 870px;
-        height: 524px;
-        margin: 0;
-        padding: 0;
-        text-align: left; 
-        color: $white;
-        padding: 2px; 
-        margin-bottom: 90px;
-        margin-left: 30px;
-      }
+    margin-left: 3rem;
+    margin-top: 10%;
+    margin-bottom: 25px;
+    color: $black;
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 40px;
+    line-height: 130%;
+}
+.card.germany {
+    width: 870px;
+    height: 524px;
+    padding: 0;
+    border-color: $white;
+}
+.card-img-overlay.Germany {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    width: 870px;
+    height: 524px;
+    margin: 0;
+    padding: 0;
+    text-align: left; 
+    color: $white;
+    padding: 2px; 
+    margin-bottom: 90px;
+    margin-left: 30px;
+    object-fit: cover;
+}
+.img-fluid.Germany {
+    width: 870px;
+    height: 524px;
+}
     .card-title.Germany {
         font-family: "FiraSans_SemiBold600", serif;
         font-size: 32px;
@@ -49,7 +54,7 @@ $white: #ffffff;
         width: 145px;
         height: 35px;
         margin-bottom: 15px;
-        margin-left: 30px;
+        margin-left: 1px;
         color: $white;
         font-family: "FiraSans_SemiBold600", serif;
       }
@@ -60,7 +65,7 @@ $white: #ffffff;
         font-family: "FiraSans_Regular400", serif;
         font-size: 20px;
         line-height: 130%;
-        margin-left: 30px;
+        margin-left: 1px;
         margin-bottom: 5px;
       } 
     .card-text.germany2 {
@@ -70,15 +75,13 @@ $white: #ffffff;
         font-family: "FiraSans_Regular400", serif;
         font-size: 14px;
         line-height: 130%;
-        margin-bottom: 30px;
-        margin-left: 30px;
+        margin-bottom: 35px;
+        margin-left: 1px;
       }
     
     .card.kaliningrad {
         width: 870px;
         height: 524px;
-        margin-left: 4rem;
-        margin-right: 3rem;
         padding: 0;
         border-color: $white;
       }
@@ -97,6 +100,7 @@ $white: #ffffff;
         padding: 2px; 
         margin-bottom: 90px;
         margin-left: 30px;
+        object-fit: cover;
       }
     .card-title.Kaliningrad {
         font-family: "FiraSans_SemiBold600", serif;
@@ -105,7 +109,7 @@ $white: #ffffff;
         width: 199px;
         height: 35px;
         margin-bottom: 15px;
-        margin-left: 30px;
+        margin-left: 1px;
         color: $white;
       }
     .card-text.kaliningrad1 {
@@ -115,7 +119,7 @@ $white: #ffffff;
         font-family: "FiraSans_Regular400", serif;
         font-size: 20px;
         line-height: 130%;
-        margin-left: 30px;
+        margin-left: 1px;
         margin-bottom: 5px;
       } 
     .card-text.kaliningrad2 {
@@ -126,16 +130,20 @@ $white: #ffffff;
         font-size: 14px;
         line-height: 130%;
         margin-bottom: 30px;
-        margin-left: 30px;
+        margin-left: 1px;
       }
     
     .services {
+        width: 1900px;
+        height: 750px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: flex-start;
-        width: 1770px;
-        height: 921px;
-        gap: 30px;
+      }
+      .row.services {
+        width: 1900px;
+        height: 200px;
       }
       
     .title-services {
@@ -145,22 +153,18 @@ $white: #ffffff;
         font-family: "FiraSans_SemiBold600", serif;
         font-size: 40px;
         line-height: 130%;
-        margin-top: 60px;
+        margin-top: 70px;
+        margin-bottom: 30px;
         margin-left: 5rem;
       }
       
-    .row.services_row {
-        width: 1770px;
-        height: 921px;
-      }
-
     .services_row {
+      width: 1792px;
+      height: 580px;
         display: flex;
         justify-content: space-between;
-        margin-left: 3rem;
-        margin-right: 2rem;
-      } /*# Что это? */
-
+        margin-left: 3.400rem;
+      }
     .card.border.services {
         width: 870px;
         height: 259px;
@@ -181,18 +185,20 @@ $white: #ffffff;
         font-family: "FiraSans_Regular400";
         font-size: 16px;
         line-height: 150%;
+        margin-top: 5px;
         margin-bottom: 0;
       }
     
     .card-body.services {
-        width: 390px;
+        width: 395px;
         height: 199px;
+        padding: 7px;
       }
     
     .card-title.services {
-        width: 363px;
+        width: 400px;
         height: 31px;
-        margin-top: 2px;
+        margin-top: 10px;
         color: $black;
         font-family: "FiraSans_SemiBold600";
         font-size: 24px;
@@ -231,12 +237,13 @@ $white: #ffffff;
         height: 684px;
       }
     .additionally {
-        width: 1770px; 
+        width: 1767px; 
         height: 261px;
         margin-left: $left-block-gap;
         margin-right: 3rem;
         background-color: $orange;
         border-radius: 1rem;
+        margin-top: 1rem;
       }
 
     .title-additionally {
@@ -249,7 +256,7 @@ $white: #ffffff;
         font-weight: 500;
         line-height: 130%;
         margin-left: 30px;
-        margin-top: 30px;
+        margin-top: 10px;
       }
 
     .list.additionally {
@@ -265,6 +272,7 @@ $white: #ffffff;
     .img.warning {
       width: 123px;
       height: 123px;
+      margin-left: auto; /* Устанавливаем отступ слева в auto, чтобы картинка была выравнена справа */
     }
 
 /* Tablet */

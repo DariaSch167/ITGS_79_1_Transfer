@@ -847,15 +847,17 @@ a:hover {
 }
 /*# Стили для Desktop */
 .departures {
-  width: 1077px;
+  width: 1793px;
   height: 606px;
+  padding: 0;
+  margin-left: 1.7rem;
 }
 
 .title-departures {
   width: 252px;
   height: 57px;
-  margin-left: 5rem;
-  margin-top: 5%;
+  margin-left: 3rem;
+  margin-top: 10%;
   margin-bottom: 25px;
   color: #292929;
   font-family: "FiraSans_SemiBold600", serif;
@@ -866,8 +868,6 @@ a:hover {
 .card.germany {
   width: 870px;
   height: 524px;
-  margin-left: 4rem;
-  margin-right: 3rem;
   padding: 0;
   border-color: #ffffff;
 }
@@ -885,6 +885,13 @@ a:hover {
   padding: 2px;
   margin-bottom: 90px;
   margin-left: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img-fluid.Germany {
+  width: 870px;
+  height: 524px;
 }
 
 .card-title.Germany {
@@ -894,7 +901,7 @@ a:hover {
   width: 145px;
   height: 35px;
   margin-bottom: 15px;
-  margin-left: 30px;
+  margin-left: 1px;
   color: #ffffff;
   font-family: "FiraSans_SemiBold600", serif;
 }
@@ -906,7 +913,7 @@ a:hover {
   font-family: "FiraSans_Regular400", serif;
   font-size: 20px;
   line-height: 130%;
-  margin-left: 30px;
+  margin-left: 1px;
   margin-bottom: 5px;
 }
 
@@ -917,15 +924,13 @@ a:hover {
   font-family: "FiraSans_Regular400", serif;
   font-size: 14px;
   line-height: 130%;
-  margin-bottom: 30px;
-  margin-left: 30px;
+  margin-bottom: 35px;
+  margin-left: 1px;
 }
 
 .card.kaliningrad {
   width: 870px;
   height: 524px;
-  margin-left: 4rem;
-  margin-right: 3rem;
   padding: 0;
   border-color: #ffffff;
 }
@@ -946,6 +951,8 @@ a:hover {
   padding: 2px;
   margin-bottom: 90px;
   margin-left: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card-title.Kaliningrad {
@@ -955,7 +962,7 @@ a:hover {
   width: 199px;
   height: 35px;
   margin-bottom: 15px;
-  margin-left: 30px;
+  margin-left: 1px;
   color: #ffffff;
 }
 
@@ -966,7 +973,7 @@ a:hover {
   font-family: "FiraSans_Regular400", serif;
   font-size: 20px;
   line-height: 130%;
-  margin-left: 30px;
+  margin-left: 1px;
   margin-bottom: 5px;
 }
 
@@ -978,16 +985,21 @@ a:hover {
   font-size: 14px;
   line-height: 130%;
   margin-bottom: 30px;
-  margin-left: 30px;
+  margin-left: 1px;
 }
 
 .services {
+  width: 1900px;
+  height: 750px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: flex-start;
-  width: 1770px;
-  height: 921px;
-  gap: 30px;
+}
+
+.row.services {
+  width: 1900px;
+  height: 200px;
 }
 
 .title-services {
@@ -997,21 +1009,19 @@ a:hover {
   font-family: "FiraSans_SemiBold600", serif;
   font-size: 40px;
   line-height: 130%;
-  margin-top: 60px;
+  margin-top: 70px;
+  margin-bottom: 30px;
   margin-left: 5rem;
 }
 
-.row.services_row {
-  width: 1770px;
-  height: 921px;
-}
-
 .services_row {
+  width: 1792px;
+  height: 580px;
   display: flex;
   justify-content: space-between;
-  margin-left: 3rem;
-  margin-right: 2rem;
-} /*# Что это? */
+  margin-left: 3.4rem;
+}
+
 .card.border.services {
   width: 870px;
   height: 259px;
@@ -1035,18 +1045,20 @@ a:hover {
   font-family: "FiraSans_Regular400";
   font-size: 16px;
   line-height: 150%;
+  margin-top: 5px;
   margin-bottom: 0;
 }
 
 .card-body.services {
-  width: 390px;
+  width: 395px;
   height: 199px;
+  padding: 7px;
 }
 
 .card-title.services {
-  width: 363px;
+  width: 400px;
   height: 31px;
-  margin-top: 2px;
+  margin-top: 10px;
   color: #292929;
   font-family: "FiraSans_SemiBold600";
   font-size: 24px;
@@ -1087,12 +1099,13 @@ a:hover {
 }
 
 .additionally {
-  width: 1770px;
+  width: 1767px;
   height: 261px;
   margin-left: 4.875rem;
   margin-right: 3rem;
   background-color: #fb8d00;
   border-radius: 1rem;
+  margin-top: 1rem;
 }
 
 .title-additionally {
@@ -1105,7 +1118,7 @@ a:hover {
   font-weight: 500;
   line-height: 130%;
   margin-left: 30px;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .list.additionally {
@@ -1121,6 +1134,7 @@ a:hover {
 .img.warning {
   width: 123px;
   height: 123px;
+  margin-left: auto; /* Устанавливаем отступ слева в auto, чтобы картинка была выравнена справа */
 }
 
 /* Tablet */
