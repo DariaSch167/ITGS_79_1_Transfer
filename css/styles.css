@@ -1,27 +1,19 @@
+@charset "UTF-8";
 @font-face {
   font-family: "FiraSans_Bold700";
-  src: url("../assets/fonts/FiraSans-Bold.eot") format("eot"),
-    url("../assets/fonts/FiraSans-Bold.ttf") format("ttf"),
-    url("../assets/fonts/FiraSans-Bold.woff") format("woff"),
-    url("../assets/fonts/FiraSans-Bold.woff2") format("woff2");
+  src: url("../assets/fonts/FiraSans-Bold.eot") format("eot"), url("../assets/fonts/FiraSans-Bold.ttf") format("ttf"), url("../assets/fonts/FiraSans-Bold.woff") format("woff"), url("../assets/fonts/FiraSans-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "FiraSans_SemiBold600";
-  src: url("../assets/fonts/FiraSans-SemiBold.eot") format("eot"),
-    url("../assets/fonts/FiraSans-SemiBold.ttf") format("ttf"),
-    url("../assets/fonts/FiraSans-SemiBold.woff") format("woff"),
-    url("../assets/fonts/FiraSans-SemiBold.woff2") format("woff2");
+  src: url("../assets/fonts/FiraSans-SemiBold.eot") format("eot"), url("../assets/fonts/FiraSans-SemiBold.ttf") format("ttf"), url("../assets/fonts/FiraSans-SemiBold.woff") format("woff"), url("../assets/fonts/FiraSans-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "FiraSans_Regular400";
-  src: url("../assets/fonts/FiraSans-Regular.eot") format("eot"),
-    url("../assets/fonts/FiraSans-Regular.ttf") format("ttf"),
-    url("../assets/fonts/FiraSans-Regular.woff") format("woff"),
-    url("../assets/fonts/FiraSans-Regular.woff2") format("woff2");
+  src: url("../assets/fonts/FiraSans-Regular.eot") format("eot"), url("../assets/fonts/FiraSans-Regular.ttf") format("ttf"), url("../assets/fonts/FiraSans-Regular.woff") format("woff"), url("../assets/fonts/FiraSans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -44,7 +36,7 @@ body {
   position: absolute;
   bottom: 0;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -57,8 +49,7 @@ body {
   padding-left: 4.875rem;
   padding-bottom: 3.125rem;
 }
-.header__screen__title h1,
-.header__screen__title h2 {
+.header__screen__title h1, .header__screen__title h2 {
   text-transform: uppercase;
   font-size: 3rem;
   font-weight: 700;
@@ -103,8 +94,8 @@ body {
   display: inline-flex;
   align-items: center;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   margin-top: 0.75rem;
 }
 .lead-form_radio_screen label {
@@ -116,8 +107,8 @@ body {
   margin-right: 0;
   line-height: 1.25rem;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .lead-form_radio_screen label::before {
   content: "";
@@ -182,63 +173,6 @@ body {
   border: 1px solid #fb8d00;
 }
 
-.lead-form__input__tel {
-  display: flex;
-  flex-direction: column;
-  margin: 0.5rem 0;
-  border-radius: 0.1875rem;
-  padding: 0.5rem;
-  border: 1px solid #ededed;
-  background-color: #ffffff;
-}
-.lead-form__input__tel label {
-  font-size: 0.875rem;
-}
-.lead-form__input__tel input {
-  font-size: 1.125rem;
-  margin-top: 0.25rem;
-  border: none;
-  background-color: transparent;
-  outline: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
-.lead-form__input__switch__block input input:hover {
-  outline: 0;
-
-  outline-offset: 0;
-}
-.lead-form__input__switch__block input input:focus {
-  outline: 0;
-  outline-offset: 0;
-}
-.lead-form__input__switch__block input input:active {
-  outline: 0;
-  outline-offset: 0;
-}
-
-.lead-form__input__switch__block:hover {
-  border: 1px solid #fb8d00;
-}
-
-.lead-form__input__switch__block:focus {
-  border: 1px solid #fb8d00;
-}
-
-.lead-form__input__switch {
-  display: flex;
-  flex-direction: column;
-}
-.lead-form__input__switch input[type="button"] {
-  background: url("../assets/svg/block1_switch.svg") no-repeat;
-  background-size: cover;
-  width: 1.5rem;
-  height: 1.5rem;
-  border: none;
-  align-self: center;
-}
-
 .lead-form__input__switch__block {
   display: flex;
   flex-direction: column;
@@ -258,8 +192,8 @@ body {
   background-color: transparent;
   outline: none;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .lead-form__input__switch__block input input:hover {
   outline: 0;
@@ -286,7 +220,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.lead-form__input__switch input[type="button"] {
+.lead-form__input__switch input[type=button] {
   background: url("../assets/svg/block1_switch.svg") no-repeat;
   background-size: cover;
   width: 1.5rem;
@@ -383,8 +317,7 @@ body {
     flex-direction: column;
     justify-content: flex-end;
   }
-  .header__screen__title h1,
-  .header__screen__title h2 {
+  .header__screen__title h1, .header__screen__title h2 {
     font-size: 2.5rem;
   }
   .lead-form h3 {
@@ -424,8 +357,7 @@ body {
     padding: 1.25rem;
     margin-top: 3.125rem;
   }
-  .header__screen__title h1,
-  .header__screen__title h2 {
+  .header__screen__title h1, .header__screen__title h2 {
     font-size: 1.5rem;
     width: 100%;
   }
@@ -474,28 +406,19 @@ body {
 }
 @font-face {
   font-family: "FiraSans_Bold700";
-  src: url("../assets/fonts/FiraSans-Bold.eot") format("eot"),
-    url("../assets/fonts/FiraSans-Bold.ttf") format("ttf"),
-    url("../assets/fonts/FiraSans-Bold.woff") format("woff"),
-    url("../assets/fonts/FiraSans-Bold.woff2") format("woff2");
+  src: url("../assets/fonts/FiraSans-Bold.eot") format("eot"), url("../assets/fonts/FiraSans-Bold.ttf") format("ttf"), url("../assets/fonts/FiraSans-Bold.woff") format("woff"), url("../assets/fonts/FiraSans-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "FiraSans_SemiBold600";
-  src: url("../assets/fonts/FiraSans-SemiBold.eot") format("eot"),
-    url("../assets/fonts/FiraSans-SemiBold.ttf") format("ttf"),
-    url("../assets/fonts/FiraSans-SemiBold.woff") format("woff"),
-    url("../assets/fonts/FiraSans-SemiBold.woff2") format("woff2");
+  src: url("../assets/fonts/FiraSans-SemiBold.eot") format("eot"), url("../assets/fonts/FiraSans-SemiBold.ttf") format("ttf"), url("../assets/fonts/FiraSans-SemiBold.woff") format("woff"), url("../assets/fonts/FiraSans-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "FiraSans_Regular400";
-  src: url("../assets/fonts/FiraSans-Regular.eot") format("eot"),
-    url("../assets/fonts/FiraSans-Regular.ttf") format("ttf"),
-    url("../assets/fonts/FiraSans-Regular.woff") format("woff"),
-    url("../assets/fonts/FiraSans-Regular.woff2") format("woff2");
+  src: url("../assets/fonts/FiraSans-Regular.eot") format("eot"), url("../assets/fonts/FiraSans-Regular.ttf") format("ttf"), url("../assets/fonts/FiraSans-Regular.woff") format("woff"), url("../assets/fonts/FiraSans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -585,8 +508,8 @@ body {
   display: inline-flex;
   align-items: center;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   margin-top: 0.75rem;
 }
 .c-u_lead-form_radio label {
@@ -598,8 +521,8 @@ body {
   margin-right: 0;
   line-height: 1.25rem;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .c-u_lead-form_radio label::before {
   content: "";
@@ -964,7 +887,7 @@ a:hover {
   padding: 2px;
   margin-bottom: 90px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .img-fluid.Germany {
@@ -1029,7 +952,7 @@ a:hover {
   padding: 2px;
   margin-bottom: 90px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .card-title.Kaliningrad {
@@ -1109,7 +1032,7 @@ a:hover {
   height: 199px;
   display: flex;
   -o-object-fit: cover;
-  object-fit: cover; /* Обрезать изображение под размер контейнера */
+     object-fit: cover; /* Обрезать изображение под размер контейнера */
   margin-top: 30px;
   margin-left: 30px;
   margin-bottom: 30px;
@@ -1121,39 +1044,1973 @@ a:hover {
   color: #292929;
   font-family: "FiraSans_Regular400";
   font-size: 16px;
+  line-height: 150%;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.card-body.services {
+  width: 395px;
+  height: 199px;
+  padding: 7px;
+}
+
+.card-title.services {
+  width: 400px;
+  height: 31px;
+  margin-top: 10px;
+  color: #292929;
+  font-family: "FiraSans_SemiBold600";
+  font-size: 24px;
+  line-height: 130%;
+}
+
+/*# Кнопка в блоке услуги */
+.btn-custom-services {
+  color: #fb8d00;
+  background-color: #ffffff;
+  border: 1px solid #fb8d00;
+  color: #fb8d00;
+  background-color: #ffffff;
+  margin-top: 0px;
+}
+
+/*# эффект при наведении на кнопку */
+.btn-custom-services:hover {
+  color: #ffffff;
+  background-color: #fb8d00;
+}
+
+.btn.btn-custom-services {
+  width: 500px;
+  height: 54px;
+}
+
+.btn.btn-services {
+  width: 390px;
+  height: 66px;
+  color: #fb8d00;
+  background-color: #ffffff;
+}
+
+.modal.fade.services {
+  width: 624px;
+  height: 684px;
+}
+
+.additionally.row {
+  width: 1767px;
+  height: 261px;
+  margin-left: 4.875rem;
+  margin-right: 3rem;
+  background-color: #fb8d00;
+  border-radius: 1rem;
+  margin-top: 1px;
+}
+
+.title-additionally {
+  color: #ffffff;
+  font-family: "FiraSans_Regular400", serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  margin-left: 35px;
+  margin-top: 20px;
+}
+
+.list.additionally {
+  color: #ffffff;
+  margin-left: 45px;
+  font-family: "FiraSans_Regular400", serif;
+  font-size: 18px;
+  line-height: 150%;
+  margin-top: 5px;
+}
+
+.img.warning {
+  width: 123px;
+  height: 123px;
+  margin-top: 100px;
+  margin-left: 400px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  /* Блок отправления */
+  .departures {
+    width: 1024px;
+    height: 1085px;
+  }
+  .title-departures {
+    color: #292929;
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 32px;
+    line-height: 110%;
+    width: 201px;
+    height: 35px;
+  }
+  .card.germany {
+    width: 871px;
+    height: 505px;
+    margin-left: 4rem;
+    margin-right: 3rem;
+    padding: 0;
+  }
+  .card-img-overlay.Germany {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    width: 873px;
+    height: 460px;
+    margin: 0;
+  }
+  .card-title.Germany {
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 24px;
+    line-height: 130%;
+    width: 120px;
+    height: 31px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+  }
+  .card-text.germany1 {
+    width: 550px;
+    height: 23px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 18px;
+    line-height: 130%;
+    margin-left: 30px;
+    margin-bottom: 5px;
+  }
+  .card-text.germany2 {
+    width: 450px;
+    height: 16px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 12px;
+    line-height: 130%;
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+  .card.kaliningrad {
+    width: 871px;
+    height: 570px;
+    margin-left: 4rem;
+    margin-right: 3rem;
+    padding: 0;
+  }
+  .img-fluid.Kaliningrad {
+    width: 960px;
+    height: 505px;
+  }
+  .card-img-overlay.Kaliningrad {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    width: 873px;
+    height: 506px;
+    margin: 0;
+  }
+  .card-title.Kaliningrad {
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 24px;
+    line-height: 130%;
+    width: 170px;
+    height: 31px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+  }
+  .card-text.kaliningrad1 {
+    width: 550px;
+    height: 23px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 18px;
+    line-height: 130%;
+    margin-left: 30px;
+    margin-bottom: 5px;
+  }
+  .card-text.kaliningrad2 {
+    width: 600px;
+    height: 16px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 12px;
+    line-height: 130%;
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 1301px;
+    height: 1033px;
+    gap: 30px;
+  }
+  .title-services {
+    width: 100px;
+    height: 32px;
+    color: #292929;
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 32px;
+    line-height: 110%;
+    margin-top: 60px;
+  }
+  .row.services_row {
+    width: 968px;
+    height: 1200px;
+  }
+  .row.services_row {
+    width: 968px;
+    height: 1100px;
+  }
+  .card.border.services {
+    width: 960px;
+    height: 222px;
+  }
+  .card-img.services {
+    width: 390px;
+    height: 182px;
+  }
+  .card-text.services {
+    width: 500px;
+    height: 26px;
+  }
+  .card-body.services {
+    width: 500px;
+    height: 182px;
+  }
+  .card-title.services {
+    width: 303px;
+    height: 26px;
+  }
+  .btn.btn-custom-services {
+    width: 500px;
+    height: 54px;
+  }
+  .btn.btn-services {
+    width: 564px;
+    height: 54px;
+  }
+  .modal.fade.services {
+    width: 624px;
+    height: 666px;
+  }
+  .additionally {
+    width: 960px;
+    height: 268px;
+  }
+  .title-additionally {
+    width: 153px;
+    height: 26px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+  }
+  .list.additionally {
+    width: 800px;
+    height: 162px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 18px;
+    line-height: 150%;
+  }
+  .img.warning {
+    width: 100px;
+    height: 100px;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  /* Блок отправления */
+  .departures {
+    width: 320px;
+    height: 1124px;
+  }
+  .title-departures {
+    color: #292929;
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 24px;
+    line-height: 130%;
+    width: 151px;
+    height: 31px;
+  }
+  .card.germany {
+    width: 320px;
+    height: 544px;
+  }
+  .img-fluid.Germany {
+    width: 320px;
+    height: 544px;
+  }
+  .card-img-overlay.Germany {
+    width: 320px;
+    height: 544px;
+    display: flex;
+  }
+  .card-title.Germany {
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 24px;
+    line-height: 130%;
+    width: 109px;
+    height: 31px;
+  }
+  .card-text.germany1 {
+    width: 273px;
+    height: 46px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 18px;
+    line-height: 130%;
+  }
+  .card-text.germany2 {
+    width: 280px;
+    height: 32px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 12px;
+    line-height: 130%;
+  }
+  .card.kaliningrad {
+    width: 320px;
+    height: 560px;
+  }
+  .img-fluid.Kaliningrad {
+    width: 320px;
+    height: 560px;
+  }
+  .card-img-overlay.Kaliningrad {
+    display: flex;
+    width: 320px;
+    height: 560px;
+  }
+  .card-title.Kaliningrad {
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 24px;
+    line-height: 130%;
+    width: 149px;
+    height: 31px;
+  }
+  .card-text.kaliningrad1 {
+    width: 273px;
+    height: 46px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 18px;
+    line-height: 130%;
+  }
+  .card-text.kaliningrad2 {
+    width: 280px;
+    height: 48px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 12px;
+    line-height: 130%;
+  }
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 320px;
+    height: 1900px;
+    gap: 20px;
+  }
+  .title-services {
+    width: 320px;
+    height: 31px;
+    color: #292929;
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 24px;
+    line-height: 130%;
+  }
+  .row.services_row {
+    width: 320px;
+    height: 1900px;
+  }
+  .card.border.services {
+    width: 320px;
+    height: 442px;
+  }
+  .card-img.services {
+    width: 280px;
+    height: 166px;
+  }
+  .card-text.services {
+    width: 280px;
+    height: 150px;
+  }
+  .card-body.services {
+    width: 280px;
+    height: 232px;
+  }
+  .card-title.services {
+    width: 197px;
+    height: 52px;
+  }
+  .btn.btn-custom-services {
+    width: 280px;
+    height: 54px;
+  }
+  .btn.btn-services {
+    width: 580px;
+    height: 54px;
+  }
+  .modal.fade.services {
+    width: 320px;
+    height: 677px;
+  }
+  .additionally {
+    width: 320px;
+    height: 450px;
+  }
+  .title-additionally {
+    width: 153px;
+    height: 26px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+  }
+  .list.additionally {
+    width: 800px;
+    height: 162px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 16px;
+    line-height: 150%;
+  }
+  .img.warning {
+    width: 30px;
+    height: 30px;
+  }
+}
+.card-title.Kaliningrad a:hover {
+  height: 199px;
+  display: flex;
+  -o-object-fit: cover;
+  object-fit: cover; /* Обрезать изображение под размер контейнера */
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.card-title.Kaliningrad a:hover {
+  color: #292929;
+  font-family: "FiraSans_Regular400";
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.card-body.services {
+  width: 395px;
+  height: 199px;
+  padding: 7px;
+}
+
+.card-title.services {
+  width: 400px;
+  height: 31px;
+  margin-top: 10px;
+  color: #292929;
+  font-family: "FiraSans_SemiBold600";
+  font-size: 24px;
+  line-height: 130%;
+}
+
+/*# Кнопка в блоке услуги */
+.btn-custom-services {
+  color: #fb8d00;
+  background-color: #ffffff;
+  border: 1px solid #fb8d00;
+  color: #fb8d00;
+  background-color: #ffffff;
+  margin-top: 0px;
+}
+
+/*# эффект при наведении на кнопку */
+.btn-custom-services:hover {
+  color: #ffffff;
+  background-color: #fb8d00;
+}
+
+.btn.btn-custom-services {
+  width: 500px;
+  height: 54px;
+}
+
+.btn.btn-services {
+  width: 390px;
+  height: 66px;
+  color: #fb8d00;
+  background-color: #ffffff;
+}
+
+.modal.fade.services {
+  width: 624px;
+  height: 684px;
+}
+
+.additionally.row {
+  width: 1767px;
+  height: 261px;
+  margin-left: 4.875rem;
+  margin-right: 3rem;
+  background-color: #fb8d00;
+  border-radius: 1rem;
+  margin-top: 1px;
+}
+
+.title-additionally {
+  color: #ffffff;
+  font-family: "FiraSans_Regular400", serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  margin-left: 35px;
+  margin-top: 20px;
+}
+
+.list.additionally {
+  color: #ffffff;
+  margin-left: 45px;
+  font-family: "FiraSans_Regular400", serif;
+  font-size: 18px;
+  line-height: 150%;
+  margin-top: 5px;
+}
+
+.img.warning {
+  width: 123px;
+  height: 123px;
+  margin-top: 100px;
+  margin-left: 400px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  /* Блок отправления */
+  .departures {
+    width: 1024px;
+    height: 1085px;
+  }
+  .title-departures {
+    color: #292929;
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 32px;
+    line-height: 110%;
+    width: 201px;
+    height: 35px;
+  }
+  .card.germany {
+    width: 871px;
+    height: 505px;
+    margin-left: 4rem;
+    margin-right: 3rem;
+    padding: 0;
+  }
+  .card-img-overlay.Germany {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    width: 873px;
+    height: 460px;
+    margin: 0;
+  }
+  .card-title.Germany {
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 24px;
+    line-height: 130%;
+    width: 120px;
+    height: 31px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+  }
+  .card-text.germany1 {
+    width: 550px;
+    height: 23px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 18px;
+    line-height: 130%;
+    margin-left: 30px;
+    margin-bottom: 5px;
+  }
+  .card-text.germany2 {
+    width: 450px;
+    height: 16px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 12px;
+    line-height: 130%;
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+  .card.kaliningrad {
+    width: 871px;
+    height: 570px;
+    margin-left: 4rem;
+    margin-right: 3rem;
+    padding: 0;
+  }
+  .img-fluid.Kaliningrad {
+    width: 960px;
+    height: 505px;
+  }
+  .card-img-overlay.Kaliningrad {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    width: 873px;
+    height: 506px;
+    margin: 0;
+  }
+  .card-title.Kaliningrad {
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 24px;
+    line-height: 130%;
+    width: 170px;
+    height: 31px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+  }
+  .card-text.kaliningrad1 {
+    width: 550px;
+    height: 23px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 18px;
+    line-height: 130%;
+    margin-left: 30px;
+    margin-bottom: 5px;
+  }
+  .card-text.kaliningrad2 {
+    width: 600px;
+    height: 16px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 12px;
+    line-height: 130%;
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 1301px;
+    height: 1033px;
+    gap: 30px;
+  }
+  .title-services {
+    width: 100px;
+    height: 32px;
+    color: #292929;
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 32px;
+    line-height: 110%;
+    margin-top: 60px;
+  }
+  .row.services_row {
+    width: 968px;
+    height: 1200px;
+  }
+  .row.services_row {
+    width: 968px;
+    height: 1100px;
+  }
+  .card.border.services {
+    width: 960px;
+    height: 222px;
+  }
+  .card-img.services {
+    width: 390px;
+    height: 182px;
+  }
+  .card-text.services {
+    width: 500px;
+    height: 26px;
+  }
+  .card-body.services {
+    width: 500px;
+    height: 182px;
+  }
+  .card-title.services {
+    width: 303px;
+    height: 26px;
+  }
+  .btn.btn-custom-services {
+    width: 500px;
+    height: 54px;
+  }
+  .btn.btn-services {
+    width: 564px;
+    height: 54px;
+  }
+  .modal.fade.services {
+    width: 624px;
+    height: 666px;
+  }
+  .additionally {
+    width: 960px;
+    height: 268px;
+  }
+  .title-additionally {
+    width: 153px;
+    height: 26px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+  }
+  .list.additionally {
+    width: 800px;
+    height: 162px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 18px;
+    line-height: 150%;
+  }
+  .img.warning {
+    width: 100px;
+    height: 100px;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  /* Блок отправления */
+  .departures {
+    width: 320px;
+    height: 1124px;
+  }
+  .title-departures {
+    color: #292929;
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 24px;
+    line-height: 130%;
+    width: 151px;
+    height: 31px;
+  }
+  .card.germany {
+    width: 320px;
+    height: 544px;
+  }
+  .img-fluid.Germany {
+    width: 320px;
+    height: 544px;
+  }
+  .card-img-overlay.Germany {
+    width: 320px;
+    height: 544px;
+    display: flex;
+  }
+  .card-title.Germany {
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 24px;
+    line-height: 130%;
+    width: 109px;
+    height: 31px;
+  }
+  .card-text.germany1 {
+    width: 273px;
+    height: 46px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 18px;
+    line-height: 130%;
+  }
+  .card-text.germany2 {
+    width: 280px;
+    height: 32px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 12px;
+    line-height: 130%;
+  }
+  .card.kaliningrad {
+    width: 320px;
+    height: 560px;
+  }
+  .img-fluid.Kaliningrad {
+    width: 320px;
+    height: 560px;
+  }
+  .card-img-overlay.Kaliningrad {
+    display: flex;
+    width: 320px;
+    height: 560px;
+  }
+  .card-title.Kaliningrad {
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 24px;
+    line-height: 130%;
+    width: 149px;
+    height: 31px;
+  }
+  .card-text.kaliningrad1 {
+    width: 273px;
+    height: 46px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 18px;
+    line-height: 130%;
+  }
+  .card-text.kaliningrad2 {
+    width: 280px;
+    height: 48px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 12px;
+    line-height: 130%;
+  }
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 320px;
+    height: 1900px;
+    gap: 20px;
+  }
+  .title-services {
+    width: 320px;
+    height: 31px;
+    color: #292929;
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 24px;
+    line-height: 130%;
+  }
+  .row.services_row {
+    width: 320px;
+    height: 1900px;
+  }
+  .card.border.services {
+    width: 320px;
+    height: 442px;
+  }
+  .card-img.services {
+    width: 280px;
+    height: 166px;
+  }
+  .card-text.services {
+    width: 280px;
+    height: 150px;
+  }
+  .card-body.services {
+    width: 280px;
+    height: 232px;
+  }
+  .card-title.services {
+    width: 197px;
+    height: 52px;
+  }
+  .btn.btn-custom-services {
+    width: 280px;
+    height: 54px;
+  }
+  .btn.btn-services {
+    width: 580px;
+    height: 54px;
+  }
+  .modal.fade.services {
+    width: 320px;
+    height: 677px;
+  }
+  .additionally {
+    width: 320px;
+    height: 450px;
+  }
+  .title-additionally {
+    width: 153px;
+    height: 26px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+  }
+  .list.additionally {
+    width: 800px;
+    height: 162px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 16px;
+    line-height: 150%;
+  }
+  .img.warning {
+    width: 30px;
+    height: 30px;
+  }
+}
+.container__feedback {
+  padding-left: 4.875rem;
+  padding-top: 12.5rem;
+}
+
+.title-feedback {
+  margin-left: 5rem;
+  margin-top: 5%;
+}
+
+.embed- {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card__text__feedback {
+  min-height: 340px;
+  max-width: 450px;
+  width: 100%;
+}
+
+.card-title.Kaliningrad a:hover {
+  height: 199px;
+  display: flex;
+  -o-object-fit: cover;
+  object-fit: cover; /* Обрезать изображение под размер контейнера */
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.card-title.Kaliningrad a:hover {
+  color: #292929;
+  font-family: "FiraSans_Regular400";
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.card-body.services {
+  width: 395px;
+  height: 199px;
+  padding: 7px;
+}
+
+.card-title.services {
+  width: 400px;
+  height: 31px;
+  margin-top: 10px;
+  color: #292929;
+  font-family: "FiraSans_SemiBold600";
+  font-size: 24px;
+  line-height: 130%;
+}
+
+/*# Кнопка в блоке услуги */
+.btn-custom-services {
+  color: #fb8d00;
+  background-color: #ffffff;
+  border: 1px solid #fb8d00;
+  color: #fb8d00;
+  background-color: #ffffff;
+  margin-top: 0px;
+}
+
+/*# эффект при наведении на кнопку */
+.btn-custom-services:hover {
+  color: #ffffff;
+  background-color: #fb8d00;
+}
+
+.btn.btn-custom-services {
+  width: 500px;
+  height: 54px;
+}
+
+.btn.btn-services {
+  width: 390px;
+  height: 66px;
+  color: #fb8d00;
+  background-color: #ffffff;
+}
+
+.modal.fade.services {
+  width: 624px;
+  height: 684px;
+}
+
+.additionally.row {
+  width: 1767px;
+  height: 261px;
+  margin-left: 4.875rem;
+  margin-right: 3rem;
+  background-color: #fb8d00;
+  border-radius: 1rem;
+  margin-top: 1px;
+}
+
+.title-additionally {
+  color: #ffffff;
+  font-family: "FiraSans_Regular400", serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  margin-left: 35px;
+  margin-top: 20px;
+}
+
+.list.additionally {
+  color: #ffffff;
+  margin-left: 45px;
+  font-family: "FiraSans_Regular400", serif;
+  font-size: 18px;
+  line-height: 150%;
+  margin-top: 5px;
+}
+
+.img.warning {
+  width: 123px;
+  height: 123px;
+  margin-top: 100px;
+  margin-left: 400px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  /* Блок отправления */
+  .departures {
+    width: 1024px;
+    height: 1085px;
+  }
+  .title-departures {
+    color: #292929;
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 32px;
+    line-height: 110%;
+    width: 201px;
+    height: 35px;
+  }
+  .card.germany {
+    width: 871px;
+    height: 505px;
+    margin-left: 4rem;
+    margin-right: 3rem;
+    padding: 0;
+  }
+  .card-img-overlay.Germany {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    width: 873px;
+    height: 460px;
+    margin: 0;
+  }
+  .card-title.Germany {
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 24px;
+    line-height: 130%;
+    width: 120px;
+    height: 31px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+  }
+  .card-text.germany1 {
+    width: 550px;
+    height: 23px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 18px;
+    line-height: 130%;
+    margin-left: 30px;
+    margin-bottom: 5px;
+  }
+  .card-text.germany2 {
+    width: 450px;
+    height: 16px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 12px;
+    line-height: 130%;
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+  .card.kaliningrad {
+    width: 871px;
+    height: 570px;
+    margin-left: 4rem;
+    margin-right: 3rem;
+    padding: 0;
+  }
+  .img-fluid.Kaliningrad {
+    width: 960px;
+    height: 505px;
+  }
+  .card-img-overlay.Kaliningrad {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    width: 873px;
+    height: 506px;
+    margin: 0;
+  }
+  .card-title.Kaliningrad {
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 24px;
+    line-height: 130%;
+    width: 170px;
+    height: 31px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+  }
+  .card-text.kaliningrad1 {
+    width: 550px;
+    height: 23px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 18px;
+    line-height: 130%;
+    margin-left: 30px;
+    margin-bottom: 5px;
+  }
+  .card-text.kaliningrad2 {
+    width: 600px;
+    height: 16px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 12px;
+    line-height: 130%;
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 1301px;
+    height: 1033px;
+    gap: 30px;
+  }
+  .title-services {
+    width: 100px;
+    height: 32px;
+    color: #292929;
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 32px;
+    line-height: 110%;
+    margin-top: 60px;
+  }
+  .row.services_row {
+    width: 968px;
+    height: 1200px;
+  }
+  .row.services_row {
+    width: 968px;
+    height: 1100px;
+  }
+  .card.border.services {
+    width: 960px;
+    height: 222px;
+  }
+  .card-img.services {
+    width: 390px;
+    height: 182px;
+  }
+  .card-text.services {
+    width: 500px;
+    height: 26px;
+  }
+  .card-body.services {
+    width: 500px;
+    height: 182px;
+  }
+  .card-title.services {
+    width: 303px;
+    height: 26px;
+  }
+  .btn.btn-custom-services {
+    width: 500px;
+    height: 54px;
+  }
+  .btn.btn-services {
+    width: 564px;
+    height: 54px;
+  }
+  .modal.fade.services {
+    width: 624px;
+    height: 666px;
+  }
+  .additionally {
+    width: 960px;
+    height: 268px;
+  }
+  .title-additionally {
+    width: 153px;
+    height: 26px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+  }
+  .list.additionally {
+    width: 800px;
+    height: 162px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 18px;
+    line-height: 150%;
+  }
+  .img.warning {
+    width: 100px;
+    height: 100px;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  /* Блок отправления */
+  .departures {
+    width: 320px;
+    height: 1124px;
+  }
+  .title-departures {
+    color: #292929;
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 24px;
+    line-height: 130%;
+    width: 151px;
+    height: 31px;
+  }
+  .card.germany {
+    width: 320px;
+    height: 544px;
+  }
+  .img-fluid.Germany {
+    width: 320px;
+    height: 544px;
+  }
+  .card-img-overlay.Germany {
+    width: 320px;
+    height: 544px;
+    display: flex;
+  }
+  .card-title.Germany {
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 24px;
+    line-height: 130%;
+    width: 109px;
+    height: 31px;
+  }
+  .card-text.germany1 {
+    width: 273px;
+    height: 46px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 18px;
+    line-height: 130%;
+  }
+  .card-text.germany2 {
+    width: 280px;
+    height: 32px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 12px;
+    line-height: 130%;
+  }
+  .card.kaliningrad {
+    width: 320px;
+    height: 560px;
+  }
+  .img-fluid.Kaliningrad {
+    width: 320px;
+    height: 560px;
+  }
+  .card-img-overlay.Kaliningrad {
+    display: flex;
+    width: 320px;
+    height: 560px;
+  }
+  .card-title.Kaliningrad {
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 24px;
+    line-height: 130%;
+    width: 149px;
+    height: 31px;
+  }
+  .card-text.kaliningrad1 {
+    width: 273px;
+    height: 46px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 18px;
+    line-height: 130%;
+  }
+  .card-text.kaliningrad2 {
+    width: 280px;
+    height: 48px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 12px;
+    line-height: 130%;
+  }
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 320px;
+    height: 1900px;
+    gap: 20px;
+  }
+  .title-services {
+    width: 320px;
+    height: 31px;
+    color: #292929;
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 24px;
+    line-height: 130%;
+  }
+  .row.services_row {
+    width: 320px;
+    height: 1900px;
+  }
+  .card.border.services {
+    width: 320px;
+    height: 442px;
+  }
+  .card-img.services {
+    width: 280px;
+    height: 166px;
+  }
+  .card-text.services {
+    width: 280px;
+    height: 150px;
+  }
+  .card-body.services {
+    width: 280px;
+    height: 232px;
+  }
+  .card-title.services {
+    width: 197px;
+    height: 52px;
+  }
+  .btn.btn-custom-services {
+    width: 280px;
+    height: 54px;
+  }
+  .btn.btn-services {
+    width: 580px;
+    height: 54px;
+  }
+  .modal.fade.services {
+    width: 320px;
+    height: 677px;
+  }
+  .additionally {
+    width: 320px;
+    height: 450px;
+  }
+  .title-additionally {
+    width: 153px;
+    height: 26px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+  }
+  .list.additionally {
+    width: 800px;
+    height: 162px;
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 16px;
+    line-height: 150%;
+  }
+  .img.warning {
+    width: 30px;
+    height: 30px;
+  }
+}
+.container__feedback {
+  padding-left: 4.875rem;
+  padding-top: 12.5rem;
+}
+
+.title-feedback {
+  margin-left: 5rem;
+  margin-top: 5%;
+}
+
+.embed- {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card__text__feedback {
+  min-height: 340px;
+  max-width: 450px;
+  width: 100%;
+}
+
+.card__video__feedback {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.container__feedback {
+  padding-left: 4.875rem;
+  padding-top: 12.5rem;
+}
+
+.title-feedback {
+  margin-left: 5rem;
+  margin-top: 5%;
+}
+
+.embed- {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card__text__feedback {
+  min-height: 340px;
+  max-width: 450px;
+  width: 100%;
+}
+
+.card__video__feedback {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #ffffff;
+  border: 1px solid #fb8d00;
+  color: #fb8d00;
+  transition: all 0.2s ease;
+}
+.nav-pills .nav-link.active:hover,
+.nav-pills .show > .nav-link:hover {
+  background-color: #fb8d00;
+  border: 1px solid #fb8d00;
+  color: #ffffff;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: transparent !important;
+  color: black !important;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+  outline: none;
+}
+
+#owl-example-article .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.owl-next span,
+.owl-prev span {
+  font-size: 30px !important;
+  cursor: pointer;
+  outline: none !important;
+}
+.owl-next span:focus,
+.owl-prev span:focus {
+  outline: none !important;
+}
+
+.owl-nav {
+  position: absolute;
+  top: -13%;
+  transform: translate(-50%);
+  left: 85%;
+}
+
+.owl-item {
+  background-color: transparent;
+  color: black;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+}
+
+.owl-prev {
+  float: left;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 20px;
+  margin-right: 70px;
+  margin-top: 0;
+}
+
+.owl-next {
+  float: right;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.owl-dots {
+  counter-reset: slides-num; /* Initialize counter. */
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 15px;
+}
+.owl-dots:after {
+  content: counter(slides-num);
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+.owl-dot {
+  display: inline-block;
+  counter-increment: slides-num; /* Increment counter */
+  margin-right: 5px;
+}
+.owl-dot span {
+  display: none;
+}
+.owl-dot.active:before {
+  content: counter(slides-num) " / "; /* Use the same counter to get current item. */
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media screen and (max-width: 576px) {
+  .owl-nav {
+    position: absolute;
+    top: 100%;
+    transform: translate(-160%);
+    left: 15%;
+  }
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #ffffff;
+  border: 1px solid #fb8d00;
+  color: #fb8d00;
+  transition: all 0.2s ease;
+}
+
+.nav-pills .nav-link.active:hover,
+.nav-pills .show > .nav-link:hover {
+  background-color: #fb8d00;
+  border: 1px solid #fb8d00;
+  color: #ffffff;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: transparent !important;
+  color: black !important;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+  outline: none;
+}
+
+#owl-example-article .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.owl-next span,
+.owl-prev span {
+  font-size: 30px !important;
+  cursor: pointer;
+  outline: none !important;
+}
+
+.owl-next span:focus,
+.owl-prev span:focus {
+  outline: none !important;
+}
+
+.owl-nav {
+  position: absolute;
+  top: -13%;
+  transform: translate(-50%);
+  left: 85%;
+}
+
+.owl-item {
+  background-color: transparent;
+  color: black;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+}
+
+.owl-prev {
+  float: left;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 20px;
+  margin-right: 70px;
+  margin-top: 0;
+}
+
+.owl-next {
+  float: right;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.owl-dots {
+  counter-reset: slides-num; /* Initialize counter. */
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 15px;
+}
+
+.owl-dots:after {
+  content: counter(slides-num);
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+.owl-dot {
+  display: inline-block;
+  counter-increment: slides-num; /* Increment counter */
+  margin-right: 5px;
+}
+
+.owl-dot span {
+  display: none;
+}
+
+.owl-dot.active:before {
+  content: counter(slides-num) " / "; /* Use the same counter to get current item. */
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media screen and (max-width: 576px) {
+  .owl-nav {
+    position: absolute;
+    top: 100%;
+    transform: translate(-160%);
+    left: 15%;
+  }
+}
+.container {
+  max-width: 1770px;
+  padding: 50px;
+  border-radius: 10px;
+  border: 1px;
+  gap: 20px;
+  justify-content: space-between;
+  border: 1px solid #ededed;
+  margin-top: 150px;
+}
+
+.container h2 {
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
+
+.inner-container {
+  max-width: 1553px;
+  --bs-gutter-x: 1.5rem;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ededed;
+}
+
+.container-block {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.container-block h3 {
+  font-family: "FiraSans_Regular400";
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 125px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  flex: 1;
+  -webkit-text-stroke: 2px #fb8d00;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.container-wrapper {
+  max-width: 671px;
+}
+
+.container-block p {
+  font-family: "FiraSans_Regular400";
+  font-size: 20px;
+  line-height: 26px;
+  text-align: left;
+  flex: 6;
+}
+
+.container h2 {
+  font-family: "FiraSans_Regular400";
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 52px;
+  letter-spacing: 0em;
+}
+
+@media screen and (max-width: 767px) {
+  .container-block h3 {
+    font-size: 64px;
+  }
+  .container-block p {
+    font-size: 18px;
+  }
+  .container-block {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 280px;
+  }
+  .container h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .container {
+    max-width: 320px;
+    gap: 20px;
+  }
+  .container-wrapper {
+    max-width: 280px;
+  }
+  .inner-container {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container-block h3 {
+    font-size: 64px;
+  }
+  .container-block p {
+    font-size: 18px;
+  }
+  .container h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .container {
+    max-width: 960px;
+    flex-direction: column-reverse;
+  }
+  .container-wrapper {
+    max-width: 343px;
+  }
+  .container-block {
+    max-width: 342px;
+  }
+}
+.container {
+  max-width: 1770px;
+  padding: 50px;
+  border-radius: 10px;
+  border: 1px;
+  gap: 20px;
+  justify-content: space-between;
+  border: 1px solid #ededed;
+  margin-top: 150px;
+}
+
+.container h2 {
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
+
+.inner-container {
+  max-width: 1553px;
+  --bs-gutter-x: 1.5rem;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ededed;
+}
+
+.container-block {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.container-block h3 {
+  font-family: "FiraSans_Regular400";
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 125px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  flex: 1;
+  -webkit-text-stroke: 2px #fb8d00;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.container-wrapper {
+  max-width: 671px;
+}
+
+.container-block p {
+  font-family: "FiraSans_Regular400";
+  font-size: 20px;
+  line-height: 26px;
+  text-align: left;
+  flex: 6;
+}
+
+.container h2 {
+  font-family: "FiraSans_Regular400";
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 52px;
+  letter-spacing: 0em;
+}
+
+@media screen and (max-width: 767px) {
+  .container-block h3 {
+    font-size: 64px;
+  }
+  .container-block p {
+    font-size: 18px;
+  }
+  .container-block {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 280px;
+  }
+  .container h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .container {
+    max-width: 320px;
+    gap: 20px;
+  }
+  .container-wrapper {
+    max-width: 280px;
+  }
+  .inner-container {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container-block h3 {
+    font-size: 64px;
+  }
+  .container-block p {
+    font-size: 18px;
+  }
+  .container h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .container {
+    max-width: 960px;
+    flex-direction: column-reverse;
+  }
+  .container-wrapper {
+    max-width: 343px;
+  }
+  .container-block {
+    max-width: 342px;
+  }
+}
+body {
+  max-width: 1920px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "FiraSans_Regular400", sans-serif;
+  font-style: normal;
+  font-size: 16px;
   font-weight: 400;
   background-color: #fff;
-} /*# sourceMappingURL=styles.css.map */
-
-.btn-custom-services {
-  border: 2px solid #fb8d00;
-  color: #fb8d00;
-}
-.card-img-top-germany {
-  border-radius: 10px;
-  border: 2px solid #ffffff;
-}
-.card-img-top-kaliningrad {
-  border-radius: 10px;
-  border: 2px solid #ffffff;
-}
-.additionally {
-  background-color: #fb8d00;
-  color: #ffffff;
-  border-radius: 0.6rem;
-  width: 90%;
-  margin-left: 4%;
-  padding: 1%;
-}
-.departures {
-  display: grid;
-  grid-template-rows: 1fr;
-  margin-top: 20vh;
-  margin-left: 4%;
-}
-.title-services {
-  display: grid;
-  grid-template-rows: 1fr;
-  margin-top: 20vh;
-  margin-left: 4%;
-}
+}/*# sourceMappingURL=styles.css.map */
