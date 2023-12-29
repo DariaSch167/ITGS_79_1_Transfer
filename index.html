@@ -99,7 +99,7 @@
           <div class="header__lead-form lead-form col-xl-5 col-lg-12">
             <div class="lead-form__wrapper">
               <form action="x" class="form" method="POST">
-                <div class="lead-form__grid-col1r1">
+                <div class="lead-form__grid-services">
                   <div class="lead-form__info">
                     <h3 class="lead-form__info__title">Выберите услугу:</h3>
                   </div>
@@ -149,7 +149,7 @@
                   </div>
                 </div>
                 <!-- Input - tel number -->
-                <div class="lead-form__grid-col2">
+                <div class="lead-form__grid-data">
                   <div class="lead-form__input lead-form__input__tel">
                     <label for="tel_form">Номер телефона</label>
                     <input
@@ -193,7 +193,7 @@
                   </div>
                 </div>
                 <!-- Button -->
-                <div class="lead-form__grid-col1r2">
+                <div class="lead-form__grid-submit">
                   <button class="lead-form__button" type="submit">
                     Оставить заявку
                   </button>
@@ -218,9 +218,9 @@
         <h2 class="title-departures">Отправления</h2>
         <!-- Контейнер отправления Германия-Калининград -->
         <div class="container-fluid departures-container">
-          <div class="row">
+          <div class="row departures">
             <!-- Первая карточка отправления Германия -->
-            <div class="col-md-6">
+            <div class="col-lg-6 col-md-12 col-12">
               <div class="card germany">
                 <picture>
                   <!-- Источник для меньших экранов (ширина до 965 пикселей) -->
@@ -232,21 +232,19 @@
                   <source srcset="assets/images/Germany=Tablet.jpg" />
                   <!-- Изображение по умолчанию, отображаемое, если ни один из источников не подходит -->
                   <img
-                    src="assets/images/Germany=Desktop.jpg"
+                    src="assets/images/card_germany.jpg"
                     alt="img_Germany»"
-                    class="img-fluid img-zoom"
+                    class="img-fluid Germany"
                   />
                 </picture>
                 <div class="card-body departures">
-                  <div
-                    class="card-img-overlay d-flex flex-column justify-content-end"
-                  >
+                  <div class="card-img-overlay Germany">
                     <div>
-                      <h2>Германия</h2>
-                      <p>
+                      <h2 class="card-title Germany">Германия</h2>
+                      <p class="card-text germany1">
                         Отправление каждую среду по индивидуальному маршруту
                       </p>
-                      <p>
+                      <p class="card-text germany2">
                         Уточняйте в наших мессенджерах или в комментарии при
                         заполнении формы
                       </p>
@@ -256,7 +254,7 @@
               </div>
             </div>
             <!-- Вторая карточка отправления Калининград -->
-            <div class="col-md-6">
+            <div class="col-lg-6 col-md-12 col-12">
               <div class="card kaliningrad">
                 <picture>
                   <!-- Источник для меньших экранов (ширина до 965 пикселей) -->
@@ -268,19 +266,19 @@
                   <source srcset="assets/images/Kaliningrad=Tablet.jpg" />
                   <!-- Изображение по умолчанию, отображаемое, если ни один из источников не подходит -->
                   <img
-                    src="assets/images/Kaliningrad=Desktop.jpg"
+                    src="assets/images/card_kaliningrad.jpg"
                     alt="img_Kaliningrad»"
-                    class="img-fluid img-zoom"
+                    class="img-fluid Kaliningrad"
                   />
                 </picture>
                 <div class="card-body departures">
-                  <div
-                    class="card-img-overlay d-flex flex-column justify-content-end"
-                  >
+                  <div class="card-img-overlay Kaliningrad">
                     <div>
-                      <h2>Калининград</h2>
-                      <p>Отправление каждую субботу в 03:00</p>
-                      <p>
+                      <h2 class="card-title Kaliningrad">Калининград</h2>
+                      <p class="card-text kaliningrad1">
+                        Отправление каждую субботу в 03:00
+                      </p>
+                      <p class="card-text kaliningrad2">
                         Cбор у гостевого дома Бриг по адресу: г. Калининград,
                         поселок Большое Исаково, ул. Зеленая, 4А
                       </p>
@@ -298,29 +296,25 @@
         <div class="container-fluid services">
           <div class="row services_row">
             <!-- Первая карточка -->
-            <div class="col-md-6 mb-3" style="max-width: 850px">
-              <div class="card border">
-                <div class="row g-0 align-items-center">
-                  <div class="col-md-7">
+            <div class="col-lg-6 col-md-12 col-12 mb-0">
+              <div class="card border services">
+                <div class="row services">
+                  <div class="col-md-6">
                     <img
                       src="assets/images/service1.png"
-                      class="card-img services rounded-2 mx-auto d-block"
+                      class="card-img services"
                       alt="img_service1"
                     />
                   </div>
-                  <div class="col-md-4">
-                    <div
-                      class="card-body services1 d-flex flex-column justify-content-between"
-                    >
-                      <div>
-                        <h5>Пассажирские перевозки</h5>
-                        <p>
-                          Еженедельные рейсы по маршруту
-                          Германия-Калининград-Германия, совершаемые,
-                          преимущественно, по скоростным и платным трассам.
-                          Возможен трансфер от адреса до адреса
-                        </p>
-                      </div>
+                  <div class="col-md-6">
+                    <div class="card-body services">
+                      <p class="card-title services">Пассажирские перевозки</p>
+                      <p class="card-text services">
+                        Еженедельные рейсы по маршруту
+                        Германия-Калининград-Германия, совершаемые,
+                        преимущественно, по скоростным и платным трассам.
+                        Возможен трансфер от адреса до адреса.
+                      </p>
                       <!-- Кнопка-триггер модального окна -->
                       <button
                         class="btn btn-custom-services"
@@ -334,28 +328,27 @@
                 </div>
               </div>
             </div>
+
             <!-- Вторая карточка -->
-            <div class="col-md-6 mb-3" style="max-width: 850px">
-              <div class="card border">
-                <div class="row g-0 align-items-center">
-                  <div class="col-md-7">
+            <div class="col-lg-6 col-md-12 col-12 mb-0">
+              <div class="card border services">
+                <div class="row services">
+                  <div class="col-md-6">
                     <img
                       src="assets/images/service2.png"
-                      class="card-img services rounded-2 mx-auto d-block"
+                      class="card-img services"
                       alt="img_service2"
                     />
                   </div>
-                  <div class="col-md-4">
-                    <div
-                      class="card-body services d-flex flex-column justify-content-between"
-                    >
-                      <div>
-                        <h5>Перевозка домашних животных</h5>
-                        <p>
-                          Профессионально и комфортно доставим вашего питомца от
-                          адреса до адреса
-                        </p>
-                      </div>
+                  <div class="col-md-6">
+                    <div class="card-body services">
+                      <p class="card-title services">
+                        Перевозка домашних животных
+                      </p>
+                      <p class="card-text services">
+                        Профессионально и комфортно доставим вашего питомца от
+                        адреса до адреса
+                      </p>
                       <!-- Кнопка-триггер модального окна -->
                       <button
                         class="btn btn-custom-services"
@@ -369,33 +362,26 @@
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Карточки услуг блок-2 -->
-          <div class="row services_row">
             <!-- Третья карточка -->
-            <div class="col-md-6 mb-3" style="max-width: 850px">
-              <div class="card border">
-                <div class="row g-0 align-items-center">
-                  <div class="col-md-7">
+            <div class="col-lg-6 col-md-12 col-12 mb-0">
+              <div class="card border services">
+                <div class="row services">
+                  <div class="col-md-6">
                     <img
                       src="assets/images/service3.png"
-                      class="card-img services rounded-2 mx-auto d-block"
+                      class="card-img services"
                       alt="img_service3"
                     />
                   </div>
-                  <div class="col-md-4">
-                    <div
-                      class="card-body services d-flex flex-column justify-content-between"
-                    >
-                      <div>
-                        <h5>Доставка посылок и корреспонденции</h5>
-                        <p>
-                          Посылки и корреспонденцию принимаем на почтовый адрес
-                          в Германии и отправляем из Калининграда по всей России
-                          почтой либо СДЭК
-                        </p>
-                      </div>
+                  <div class="col-md-6">
+                    <div class="card-body services">
+                      <p class="card-title services">Доставка посылок</p>
+                      <p class="card-text services">
+                        Посылки и корреспонденцию принимаем на почтовый адрес в
+                        Германии и отправляем из Калининграда по всей России
+                        почтой либо СДЭК
+                      </p>
                       <!-- Кнопка-триггер модального окна -->
                       <button
                         class="btn btn-custom-services"
@@ -409,33 +395,32 @@
                 </div>
               </div>
             </div>
+
             <!-- Четвёртая карточка -->
-            <div class="col-md-6 mb-3" style="max-width: 850px">
-              <div class="card border">
-                <div class="row g-0 align-items-center">
-                  <div class="col-md-7">
+            <div class="col-lg-6 col-md-12 col-12 mb-0">
+              <div class="card border services">
+                <div class="row services">
+                  <div class="col-md-6">
                     <img
                       src="assets/images/service4.png"
-                      class="card-img services rounded-2 mx-auto d-block"
+                      class="card-img services"
                       alt="img_service4"
                     />
                   </div>
-                  <div class="col-md-4">
-                    <div
-                      class="card-body services d-flex flex-column justify-content-between"
-                    >
-                      <div>
-                        <h5>Транспортировка праха в урнах</h5>
-                        <p>
-                          Проконсультируем и поможем организовать процесс
-                          транспортировки бережно и с уважительным подходом
-                        </p>
-                      </div>
+                  <div class="col-md-6">
+                    <div class="card-body services">
+                      <p class="card-title services">
+                        Транспортировка праха в урнах
+                      </p>
+                      <p class="card-text services">
+                        Проконсультируем и поможем организовать процесс
+                        транспортировки бережно и с уважительным подходом
+                      </p>
                       <!-- Кнопка-триггер модального окна -->
                       <button
                         class="btn btn-custom-services"
                         data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop4"
+                        data-bs-target="#staticBackdrop1"
                       >
                         Оставить заявку
                       </button>
@@ -447,10 +432,7 @@
           </div>
         </div>
       </section>
-
-      <!-- Модальные окна к блоку услуг 1, 2, 3, 4  -->
-
-      <!-- Модальное окно блок услуг Пассажирские перевозки -->
+      <!-- Основное модальное окно блока услуг Пассажирские перевозки -->
       <div
         class="modal fade"
         id="staticBackdrop1"
@@ -475,39 +457,88 @@
             </div>
             <div class="modal-body">
               <div class="form-group">
-                <label for="phoneNumber1">Номер телефона:</label>
+                <label for="phoneNumber2">Номер телефона:</label>
                 <input
                   type="tel"
                   class="form-control"
-                  id="phoneNumber1"
+                  id="phoneNumber2"
                   placeholder="+49 176 803 498 04"
                 />
               </div>
               <div class="form-group">
-                <label for="departurePoint1">Пункт отправления:</label>
-                <select class="form-control" id="departurePoint1">
+                <label for="departurePoint2">Пункт отправления:</label>
+                <select class="form-control" id="departurePoint2">
                   <option value="Калининград">Калининград</option>
                   <option value="Германия">Германия</option>
                 </select>
               </div>
-              <button onclick="switchPoints1()">
+              <button onclick="switchPoints2()">
                 <img src="assets/svg/block1_switch.svg" alt="img_switch" />
               </button>
               <div class="form-group">
-                <label for="arrivalPoint1">Пункт прибытия:</label>
-                <select class="form-control" id="arrivalPoint1">
+                <label for="arrivalPoint2">Пункт прибытия:</label>
+                <select class="form-control" id="arrivalPoint2">
                   <option value="Германия">Германия</option>
                   <option value="Калининград">Калининград</option>
                 </select>
               </div>
               <div class="form-group">
-                <label for="comment1">Комментарий:</label>
+                <label for="comment2">Комментарий:</label>
                 <textarea
                   class="form-control"
-                  id="comment1"
+                  id="comment2"
                   rows="3"
                   placeholder="Введите комментарий"
                 ></textarea>
+              </div>
+
+              <!-- Кнопка для открытия внутреннего модального окна -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#internalModal1"
+              >
+                Оставить заявку
+              </button>
+
+              <!-- Внутреннее модальное окно -->
+              <div
+                class="modal fade"
+                id="internalModal1"
+                tabindex="-1"
+                aria-labelledby="internalModalLabel1"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="internalModalLabel1">
+                        Спасибо за заявку!
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Мы свяжемся с вами в ближайшее время.</p>
+                      <!-- Дополнительный контент по вашему желанию: картинка, текст и т.д. -->
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#internalModal"
+                      >
+                        Оставить запрос
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="modal-footer">
@@ -742,32 +773,85 @@
 
       <!-- Pop up после отправки заявки на услуги 1,2,3,4 -->
 
-      <!--  Блок Дополнительно -->
-      <section class="additionally">
-        <div class="list additionally">
-          <div>
-            Дополнительно:
-            <ul>
-              <li>Помощь с оформлением документов для перевозки животных;</li>
-              <li>
-                Помощь с оформлением документов для транспортировки праха;
-              </li>
-              <li>Трансфер до аэропорта Храброво в Калининграде (15€);</li>
-              <li>Сопровождение несовершеннолетних;</li>
-              <li>
-                Бронь гостиницы, авиа- и ж/д билетов по всей России без
-                комиссии(услуга доступна только для пассажиров нашей компании);
-              </li>
-              <li>Пассажирские и грузовые перевозки по Европе.</li>
-            </ul>
-          </div>
+      <!-- Блок Дополнительно -->
+      <div class="additionally row">
+        <!-- Левая часть - текст -->
+        <div class="col-md-8">
+          <p class="title-additionally">Дополнительно:</p>
+          <ul class="list additionally">
+            <li>Помощь с оформлением документов для перевозки животных;</li>
+            <li>Помощь с оформлением документов для транспортировки праха;</li>
+            <li>Трансфер до аэропорта Храброво в Калининграде (15€);</li>
+            <li>Сопровождение несовершеннолетних;</li>
+            <li>
+              Бронь гостиницы, авиа- и ж/д билетов по всей России без
+              комиссии(услуга доступна только для пассажиров нашей компании);
+            </li>
+            <li>Пассажирские и грузовые перевозки по Европе.</li>
+          </ul>
+        </div>
+        <!-- Правая часть - картинка -->
+        <div class="col-md-4">
           <div class="img warning">
             <img src="assets/svg/Warning.svg" alt="warning" />
           </div>
         </div>
-      </section>
+      </div>
       <!-- Конец Блок Отправления-Услуги-Дополнительно -->
-      <!--feedback-->
+      <!-- Начало блока Почему мы? -->
+      <section class="advantages">
+        <div class="container">
+          <h2 class="text-center mt-3" style="font-weight: bold">Почему мы?</h2>
+          <div class="inner-container">
+            <div class="container-wrapper">
+              <div class="container-block">
+                <h3>01</h3>
+                <p>Опыт на рынке перевозок составляет три года</p>
+              </div>
+              <div class="container-block">
+                <h3>02</h3>
+                <p>Обеспечиваем поездку даже для одного пассажира</p>
+              </div>
+              <div class="container-block">
+                <h3>03</h3>
+                <p>Три микроавтобуса Mercedes Sprinter на восемь мест</p>
+              </div>
+              <div class="container-block">
+                <h3>04</h3>
+                <p>В автобусе высокие потолки и мягкие сидения с пледами</p>
+              </div>
+              <div class="container-block">
+                <h3>05</h3>
+                <p>Предусмотрены остановки для санитарных нужд</p>
+              </div>
+            </div>
+            <div class="container-wrapper">
+              <div class="container-block">
+                <h3>06</h3>
+                <p>Доступны Wi-Fi и USB для зарядки устройств</p>
+              </div>
+              <div class="container-block">
+                <h3>07</h3>
+                <p>Все микроавтобусы оснащены кондиционерами</p>
+              </div>
+              <div class="container-block">
+                <h3>08</h3>
+                <p>Планируем остановки в пути в кафе, чтобы перекусить</p>
+              </div>
+              <div class="container-block">
+                <h3>09</h3>
+                <p>Возможны остановки по требованию пассажиров</p>
+              </div>
+              <div class="container-block">
+                <h3>10</h3>
+                <p>Предоставляем услугу "от дома до дома"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Конец Блока Почему мы? -->
+                    <!--feedback-->
       <section class="feedback">
         <div class="container__feedback">
           <div class="row">
@@ -999,11 +1083,6 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <!--Feedback end-->
       <section class="FAQ">
         <h2 class="FAQ_title">Вопросы и ответы</h2>
@@ -1577,7 +1656,7 @@
           <div class="contact-us__lead-form lead-form col-xl-5 col-lg-12">
             <div class="lead-form__wrapper">
               <form action="x" class="form" method="POST">
-                <div class="lead-form__grid-col1r1">
+                <div class="lead-form__grid-services">
                   <div class="lead-form__info">
                     <h3 class="lead-form__info__title">Выберите услугу:</h3>
                   </div>
@@ -1627,7 +1706,7 @@
                   </div>
                 </div>
                 <!-- Contact info - tel number -->
-                <div class="lead-form__grid-col2">
+                <div class="lead-form__grid-data">
                   <div class="lead-form__input lead-form__input__tel">
                     <label for="tel_form">Номер телефона</label>
                     <input
@@ -1672,7 +1751,7 @@
                     ></textarea>
                   </div>
                 </div>
-                <div class="lead-form__grid-col1r2">
+                <div class="lead-form__grid-submit">
                   <button class="lead-form__button" type="submit">
                     Оставить заявку
                   </button>
@@ -1694,61 +1773,67 @@
     <footer>
       <div class="footer">
         <div class="footer__inner">
-          <div class="footer__logo">
-            <a href="/" class="footer__logo_link">
-              <picture>
-                <source srcset="./assets/svg/logo.svg" />
-                <img
-                  src="./assets/svg/logo.svg"
-                  alt="Логотип «Transfer»"
-                  class="img__fluid"
-                />
-              </picture>
+          <div class="footer__inner_content">
+            <div class="footer__logo">
+              <a href="/" class="footer__logo_link">
+                <picture>
+                  <source srcset="./assets/svg/logo-footer.svg" />
+                  <img
+                    src="./assets/svg/logo-footer.svg"
+                    alt="Логотип «Transfer»"
+                    class="img__fluid"
+                  />
+                </picture>
+              </a>
+            </div>
+            <div class="nav">
+              <ul class="nav__inner">
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Отправления</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Услуги</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Почему мы</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Отзывы</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Вопросы и ответы</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__socials">
+            <a href="/" class="footer__socials_link">
+              <img src="./assets/svg/instagram.svg" alt="Instagram" />
+            </a>
+            <a href="/" class="footer__socials_link">
+              <img src="./assets/svg/telegram.svg" alt="Telegram" />
+            </a>
+            <a href="/" class="footer__socials_link">
+              <img src="./assets/svg/whatsapp.svg" alt="WhatsApp" />
             </a>
           </div>
-          <div class="nav">
-            <ul class="nav__inner">
-              <li class="nav__item">
-                <a class="nav__link" href="#">Отправления</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Услуги</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Почему мы</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Отзывы</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Вопросы и ответы</a>
-              </li>
-            </ul>
+        </div>
+        <div class="footer__holder">
+          <div class="policy">
+            <p>&copy TRANSFER 2023</p>
+            <a href="/">Политика конфиденциальности</a>
           </div>
-        </div>
-        <div class="header__socials">
-          <a href="/" class="header__socials_link">
-            <img src="./assets/svg/instagram.svg" alt="Instagram" />
-          </a>
-          <a href="/" class="header__socials_link">
-            <img src="./assets/svg/telegram.svg" alt="Telegram" />
-          </a>
-          <a href="/" class="header__socials_link">
-            <img src="./assets/svg/whatsapp.svg" alt="WhatsApp" />
-          </a>
-        </div>
-        <div class="policy">
-          <p>© TRANSFER 2023</p>
-          <p>Политика конфиденциальности</p>
-        </div>
-        <div class="footer__mail">
-          <a href="mailto:transferdeutschland@gmail.com">
-            transferdeutschland@gmail.com
-          </a>
-        </div>
-        <div class="footer__phone">
-          <a href="tel:+4917680349804">+49 176 803 498 04</a>
-          <a href="tel:+4917666646855">+49 176 666 468 55</a>
+          <div class="footer__contacts">
+            <div class="footer__mail">
+              <a href="mailto:transferdeutschland@gmail.com">
+                transferdeutschland@gmail.com
+              </a>
+            </div>
+            <div class="footer__phone">
+              <a href="tel:+4917680349804">+49 176 803 498 04</a>
+              <a href="tel:+4917666646855">+49 176 666 468 55</a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

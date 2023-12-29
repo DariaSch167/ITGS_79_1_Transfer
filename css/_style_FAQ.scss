@@ -8,7 +8,7 @@
   justify-content: center;
 }
 .FAQ_title {
-  font-size: $H3_32;
+  font-size: $H2_40;
   font-weight: 600;
 }
 .accordion-item {
@@ -48,6 +48,8 @@
     display: inline;
   }
   .FAQ_title {
+    font-size: $H3_32;
+    font-weight: 600;
     margin-left: 3%;
     margin-top: 5%;
   }
