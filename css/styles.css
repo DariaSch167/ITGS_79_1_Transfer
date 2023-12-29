@@ -1617,6 +1617,159 @@ a:hover {
     height: 30px;
   }
 }
+.container__feedback {
+  padding-left: 4.875rem;
+  padding-top: 12.5rem;
+}
+
+.title-feedback {
+  margin-left: 5rem;
+  margin-top: 5%;
+}
+
+.embed- {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card__text__feedback {
+  min-height: 340px;
+  max-width: 450px;
+  width: 100%;
+}
+
+.card__video__feedback {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #ffffff;
+  border: 1px solid #fb8d00;
+  color: #fb8d00;
+  transition: all 0.2s ease;
+}
+.nav-pills .nav-link.active:hover,
+.nav-pills .show > .nav-link:hover {
+  background-color: #fb8d00;
+  border: 1px solid #fb8d00;
+  color: #ffffff;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: transparent !important;
+  color: black !important;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+  outline: none;
+}
+
+#owl-example-article .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.owl-next span,
+.owl-prev span {
+  font-size: 30px !important;
+  cursor: pointer;
+  outline: none !important;
+}
+.owl-next span:focus,
+.owl-prev span:focus {
+  outline: none !important;
+}
+
+.owl-nav {
+  position: absolute;
+  top: -13%;
+  transform: translate(-50%);
+  left: 85%;
+}
+
+.owl-item {
+  background-color: transparent;
+  color: black;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+}
+
+.owl-prev {
+  float: left;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 20px;
+  margin-right: 70px;
+  margin-top: 0;
+}
+
+.owl-next {
+  float: right;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.owl-dots {
+  counter-reset: slides-num; /* Initialize counter. */
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 15px;
+}
+.owl-dots:after {
+  content: counter(slides-num);
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+.owl-dot {
+  display: inline-block;
+  counter-increment: slides-num; /* Increment counter */
+  margin-right: 5px;
+}
+.owl-dot span {
+  display: none;
+}
+.owl-dot.active:before {
+  content: counter(slides-num) " / "; /* Use the same counter to get current item. */
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media screen and (max-width: 576px) {
+  .owl-nav {
+    position: absolute;
+    top: 100%;
+    transform: translate(-160%);
+    left: 15%;
+  }
+}
 body {
   max-width: 1920px;
   min-width: 320px;
