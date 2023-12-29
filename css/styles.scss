@@ -1,8 +1,14 @@
 @import "fonts";
 @import "variables";
 @import "mixins";
-@import "style1";
+@import "style_header_screen";
 @import "style_FAQ";
+@import "style_contact_us";
+@import "style_header";
+@import "style_footer";
+@import "styleblock2";
+@import "style_feedback";
+@import "style_whyus";
 
 body {
   max-width: 1920px;

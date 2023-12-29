@@ -1,0 +1,61 @@
+@import "fonts";
+@import "variables";
+@import "mixins";
+.FAQ {
+  display: grid;
+  grid-template-columns: 30% 60%;
+  margin-top: 20vh;
+  justify-content: center;
+}
+.FAQ_title {
+  font-size: $H2_40;
+  font-weight: 600;
+}
+.accordion-item {
+  border: none;
+  margin-bottom: 20px;
+  &.active {
+    outline: 1px solid #fb8d00;
+    border-radius: 10px;
+  }
+}
+.accordion-button {
+  position: static;
+  font-size: $r_20;
+
+  font-weight: 500;
+  &:focus {
+    box-shadow: none;
+  }
+  &.collapsed {
+    border: 1px #ededed solid;
+    border-radius: 10px;
+  }
+  &:not(.collapsed) {
+    color: black;
+    background-color: white;
+  }
+}
+.accordion-body {
+  font-weight: 400;
+  font-size: $r_18;
+  .special_text {
+    color: #fb8d00;
+  }
+}
+@media screen and (max-width: 767px) {
+  .FAQ {
+    display: inline;
+  }
+  .FAQ_title {
+    font-size: $H3_32;
+    font-weight: 600;
+    margin-left: 3%;
+    margin-top: 5%;
+  }
+  .accordion {
+    display: grid;
+    grid-template-columns: 95%;
+    justify-content: center;
+  }
+}
