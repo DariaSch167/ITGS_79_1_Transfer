@@ -10,9 +10,6 @@
     <link rel="icon" href="./assets/svg/logo-mobile.svg" type="image/svg" />
     <title>Transfer</title>
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/bootstrap/bootstrap.css" />
-    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -491,65 +488,53 @@
                   placeholder="Введите комментарий"
                 ></textarea>
               </div>
-
+            </div>
+            <div class="modal-footer">
               <!-- Кнопка для открытия внутреннего модального окна -->
               <button
                 type="button"
-                class="btn btn-primary"
+                class="btn btn modalfade"
                 data-bs-toggle="modal"
                 data-bs-target="#internalModal1"
               >
                 Оставить заявку
-              </button>
-
-              <!-- Внутреннее модальное окно -->
-              <div
-                class="modal fade"
-                id="internalModal1"
-                tabindex="-1"
-                aria-labelledby="internalModalLabel1"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="internalModalLabel1">
-                        Спасибо за заявку!
-                      </h5>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body">
-                      <p>Мы свяжемся с вами в ближайшее время.</p>
-                      <!-- Дополнительный контент по вашему желанию: картинка, текст и т.д. -->
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-primary"
-                        data-bs-toggle="modal"
-                        data-bs-target="#internalModal"
-                      >
-                        Оставить запрос
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-services">
-                Отправить запрос
               </button>
               <p>
                 Нажимая "Отправить запрос", вы соглашаетесь на обработку ваших
                 данных.
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Внутреннее модальное окно -->
+      <div
+        class="modal fade"
+        id="internalModal1"
+        tabindex="-1"
+        aria-labelledby="internalModalLabel1"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="internalModalLabel1">
+                Спасибо за заявку!
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img src="assets/svg/done.svg" alt="done" />
+              <p>В ближайшее время мы с вами свяжемся</p>
+              <!-- Дополнительный контент по вашему желанию: картинка, текст и т.д. -->
+            </div>
+            <div class="modal-footer"></div>
           </div>
         </div>
       </div>
@@ -851,240 +836,6 @@
         </div>
       </section>
       <!-- Конец Блока Почему мы? -->
-                    <!--feedback-->
-      <section class="feedback">
-        <div class="container__feedback">
-          <div class="row">
-            <div class="col-xl-2 col-md-2 col-sm-12">
-              <h2 class="title_feedback">Отзывы</h2>
-            </div>
-            <div class="col-xl-10 col-md-10 col-sm-12">
-              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link btn-lg btn-feedback active"
-                    id="pills-text-feedback-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-text-feedback"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-text-feedback"
-                    aria-selected="true"
-                  >
-                    Текстовые
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link btn-lg btn_feedback"
-                    id="pills-video-feedback-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-video-feedback"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-video-feedback"
-                    aria-selected="false"
-                  >
-                    Видео-отзывы
-                  </button>
-                </li>
-              </ul>
-              <div class="tab-content" id="pills-text">
-                <div
-                  class="tab-pane fade show active"
-                  id="pills-text-feedback"
-                  role="tabpanel"
-                  aria-labelledby="pills-text-feedback-tab"
-                  tabindex="0"
-                >
-                  <div class="owl-carousel owl-theme">
-                    <div class="carousel-feedback">
-                      <div
-                        class="card__text__feedback w-60 h-100 gx-sm-1 p-2 border bg-light"
-                      >
-                        <div class="card-body">
-                          Хочу сказать огромное спасибо фирме Трансфер и
-                          особенно водителю Игорю! Я ехала 21 августа с детьми
-                          из Калининграда. Благодаря внимательному и очень
-                          позитивному водителю поездка получилась быстрой и
-                          веселой! Детям тоже всё очень понравилось, спасибо вам
-                          за Вашу работу!!!
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div
-                        class="card__text__feedback w-60 h-100 g-1 p-2 m-2 border bg-light"
-                      >
-                        <div class="card-body">
-                          На днях приехала с Transfer из Калининграда в
-                          Германию. Хочу выразить свою благодарность водителю
-                          Игорю, очень вежливый, внимательный к своим пассажирам
-                          и опытный водитель. Доехали отлично! Буду всем
-                          рекомендовать!
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div
-                        class="card__text__feedback w-60 h-100 g-1 p-2 m-2 border bg-light"
-                      >
-                        <div class="card-body">
-                          Компания Трансфер, водитель Игорь, комфортабельная
-                          машина, водитель профессионал, довез в целости и
-                          сохранности до дома. Эмилия
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div
-                        class="card__text__feedback w-60 h-100 g-2 p-2 m-2 border bg-light"
-                      >
-                        <div class="card-body">
-                          Спасибо! Присоединяюсь к самым лучшим отзывам и
-                          пожеланиям о фирме Трансфер. Хочу выразить
-                          благодарность водителю Игорю за прекрасную поездку,
-                          его легкость и отзывчивость.
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div
-                        class="card__text__feedback w-60 h-100 g-1 p-2 m-2 border bg-light"
-                      >
-                        <div class="card-body">
-                          Спасибо за поездку! Отличное путешествие получилось!!!
-                          Всё легко, спокойно, надежно, комфортно!!! Всем
-                          рекомендую! @zi_kartina
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div
-                        class="card__text__feedback w-60 h-100 g-1 p-2 m-2 border bg-light"
-                      >
-                        <div class="card-body">
-                          Раз 8 уже ездила с @transfer_es и в декабре опять
-                          поеду, ни разу не подвели. И очень крутая атмосфера
-                          всю поездку, просто огонь! @sv_eta3251
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div
-                        class="card__text__feedback w-60 h-100 g-1 p-2 m-2 border bg-light"
-                      >
-                        <div class="card-body">
-                          Здравствуйте! Вчера ехала Вашей компанией в
-                          Калининград. Хотела отметить, что всё организовано,
-                          чётко. Вы очень внимательны к пассажирам и всё время
-                          были со мной на связи. чувствуется забота с вашей
-                          стороны. А атмосфера с водителем была комфортной.
-                          Доехали хорошо, спасибо Вам большое!
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div
-                        class="card__text__feedback w-60 h-100 g-1 p-2 m-2 border bg-light"
-                      >
-                        <div class="card-body">
-                          Всё прошло хорошо, несмотря на то, что я ехала
-                          туда-обратно и это тяжёлая дорога. Ребята
-                          внимательные, заботились о пассажирах, помогли в
-                          городе сориентироваться (была первый раз) и где
-                          остановиться. Еще один важный момент - сразу говорят,
-                          что по документам, как проходить границу, что
-                          можно/нельзя с собой. В общем, компетентно,
-                          профессионально. Спасибо) Наталья
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div
-                        class="card__text__feedback w-60 h-100 g-1 p-2 m-2 border bg-light"
-                      >
-                        <div class="card-body">
-                          Добрый вечер! Хотела сказать огромное спасибо Вам за
-                          поездку с Калининграда в Германию. Всё прошло просто
-                          супер! Такая классная попалась компания. Водитель
-                          Николай большой молодец! Я очень довольна! Время
-                          пролетело весело и быстро. СПАСИБО большое Диме за
-                          помощь в поездке. Лариса
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div
-                        class="card__text__feedback w-60 h-100 g-1 p-2 m-2 border bg-light"
-                      >
-                        <div class="card-body">
-                          Очень заботливые водители. Как за каменной стеной
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div
-                        class="card__text__feedback w-60 h-100 g-1 p-2 m-2 border bg-light"
-                      >
-                        <div class="card-body">
-                          Спасибо Вам большое! Мама сказала, что всё было
-                          замечательно! Водителям большая благодарность!!! Мария
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="tab-pane fade"
-                id="pills-video-feedback"
-                role="tabpanel"
-                aria-labelledby="pills-video-feedback-tab"
-                tabindex="0"
-              >
-                <div class="embed-container">
-                  <div class="row">
-                    <div class="col-xl-2 col-md-6 col-sm-12">
-                      <div class="card w-60 h-100 g-1 p-2 border bg-light">
-                        <video
-                          class="card__video__feedback"
-                          src="assets/images/IMG_2722.mp4"
-                          controls
-                        ></video>
-                      </div>
-                    </div>
-                    <div class="col-xl-2 col-md-6 col-sm-12">
-                      <div class="card w-60 h-100 g-1 p-2 border bg-light">
-                        <video
-                          class="card__video__feedback"
-                          src="/assets/images/IMG_2723.mp4"
-                          controls
-                        ></video>
-                      </div>
-                    </div>
-                    <div class="col-xl-2 col-md-6 col-sm-12">
-                      <div class="card w-60 h-100 g-1 p-2 border bg-light">
-                        <video
-                          class="card__video__feedback"
-                          src="/assets/images/IMG_2725.mp4"
-                          controls
-                        ></video>
-                      </div>
-                    </div>
-                    <div class="col-xl-2 col-md-6 col-sm-12">
-                      <div class="card w-60 h-100 g-1 p-2 border bg-light">
-                        <video
-                          class="card__video__feedback"
-                          src="/assets/images/IMG_2724.mp4"
-                          controls
-                        ></video>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                </section>
-      <!--Feedback end-->
       <section class="FAQ">
         <h2 class="FAQ_title">Вопросы и ответы</h2>
         <div class="FAQ_questions">
@@ -1839,35 +1590,8 @@
       </div>
     </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>
-    <!--bootstrap navtabs script-->
-    <script src="./js/bootstrap.js"></script>
     <script src="./js/FAQ.js"></script>
     <script src="./js/script1_form_input_switch.js"></script>
     <script src="js/script_services_switch.js" defer></script>
-
-    <!--owl carousel scripts-->
-    <script src="./js/jquery-3.7.1.slim.min.js"></script>
-    <script src="./js/owl.carousel.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".owl-carousel").owlCarousel();
-      });
-    </script>
-    <script>
-      $(".owl-carousel").owlCarousel({
-        margin: 20,
-        loop: true,
-        nav: true,
-        dots: false,
-        autoplayspeed: 2500,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: false,
-        responsive: {
-          0: { items: 1 },
-          575: { items: 2 },
-          991: { items: 4 },
-        },
-      });
-    </script>
   </body>
 </html>

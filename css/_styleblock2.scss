@@ -272,6 +272,13 @@ $white: #ffffff;
       margin-left: 400px;
     }
 
+    .btn.modalfade {
+      width: 390px; 
+      height: 66px;
+      $orange-border: 1px solid $orange;
+      color: $orange;
+      background-color: $white;
+    }
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   /* Блок отправления */
