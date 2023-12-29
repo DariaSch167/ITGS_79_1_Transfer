@@ -1011,7 +1011,6 @@ a:hover {
   color: #ffffff;
   padding: 2px;
   margin-bottom: 90px;
-  margin-left: 30px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1028,7 +1027,7 @@ a:hover {
   width: 145px;
   height: 35px;
   margin-bottom: 15px;
-  margin-left: 1px;
+  margin-left: 30px;
   color: #ffffff;
   font-family: "FiraSans_SemiBold600", serif;
 }
@@ -1040,7 +1039,7 @@ a:hover {
   font-family: "FiraSans_Regular400", serif;
   font-size: 20px;
   line-height: 130%;
-  margin-left: 1px;
+  margin-left: 30px;
   margin-bottom: 5px;
 }
 
@@ -1052,7 +1051,7 @@ a:hover {
   font-size: 14px;
   line-height: 130%;
   margin-bottom: 35px;
-  margin-left: 1px;
+  margin-left: 30px;
 }
 
 .card.kaliningrad {
@@ -1077,7 +1076,6 @@ a:hover {
   color: #ffffff;
   padding: 2px;
   margin-bottom: 90px;
-  margin-left: 30px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1089,7 +1087,7 @@ a:hover {
   width: 199px;
   height: 35px;
   margin-bottom: 15px;
-  margin-left: 1px;
+  margin-left: 30px;
   color: #ffffff;
 }
 
@@ -1100,7 +1098,7 @@ a:hover {
   font-family: "FiraSans_Regular400", serif;
   font-size: 20px;
   line-height: 130%;
-  margin-left: 1px;
+  margin-left: 30px;
   margin-bottom: 5px;
 }
 
@@ -1112,7 +1110,7 @@ a:hover {
   font-size: 14px;
   line-height: 130%;
   margin-bottom: 30px;
-  margin-left: 1px;
+  margin-left: 30px;
 }
 
 .services {
@@ -1225,45 +1223,41 @@ a:hover {
   height: 684px;
 }
 
-.additionally {
-  width: 1688px;
+.additionally.row {
+  width: 1767px;
   height: 261px;
   margin-left: 4.875rem;
   margin-right: 3rem;
   background-color: #fb8d00;
   border-radius: 1rem;
-  margin-top: 1rem;
+  margin-top: 1px;
 }
 
 .title-additionally {
-  width: 183px;
-  height: 31px;
   color: #ffffff;
   font-family: "FiraSans_Regular400", serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
   line-height: 130%;
-  margin-left: 5px;
+  margin-left: 35px;
   margin-top: 20px;
 }
 
 .list.additionally {
-  width: 1239px;
-  height: 150px;
   color: #ffffff;
-  margin-left: 0px;
+  margin-left: 45px;
   font-family: "FiraSans_Regular400", serif;
   font-size: 18px;
   line-height: 150%;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .img.warning {
   width: 123px;
   height: 123px;
-  margin-top: 7rem;
-  margin-left: auto;
+  margin-top: 100px;
+  margin-left: 400px;
 }
 
 /* Tablet */

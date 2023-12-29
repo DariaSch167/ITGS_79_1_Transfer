@@ -312,7 +312,12 @@
                         преимущественно, по скоростным и платным трассам.
                         Возможен трансфер от адреса до адреса.
                       </p>
-                      <button class="btn btn-custom-services">
+                      <!-- Кнопка-триггер модального окна -->
+                      <button
+                        class="btn btn-custom-services"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop1"
+                      >
                         Оставить заявку
                       </button>
                     </div>
@@ -341,7 +346,12 @@
                         Профессионально и комфортно доставим вашего питомца от
                         адреса до адреса
                       </p>
-                      <button class="btn btn-custom-services">
+                      <!-- Кнопка-триггер модального окна -->
+                      <button
+                        class="btn btn-custom-services"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop2"
+                      >
                         Оставить заявку
                       </button>
                     </div>
@@ -369,7 +379,12 @@
                         Германии и отправляем из Калининграда по всей России
                         почтой либо СДЭК
                       </p>
-                      <button class="btn btn-custom-services">
+                      <!-- Кнопка-триггер модального окна -->
+                      <button
+                        class="btn btn-custom-services"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop3"
+                      >
                         Оставить заявку
                       </button>
                     </div>
@@ -398,7 +413,12 @@
                         Проконсультируем и поможем организовать процесс
                         транспортировки бережно и с уважительным подходом
                       </p>
-                      <button class="btn btn-custom-services">
+                      <!-- Кнопка-триггер модального окна -->
+                      <button
+                        class="btn btn-custom-services"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop1"
+                      >
                         Оставить заявку
                       </button>
                     </div>
@@ -409,6 +429,127 @@
           </div>
         </div>
       </section>
+      <!-- Основное модальное окно блока услуг Пассажирские перевозки -->
+      <div
+        class="modal fade"
+        id="staticBackdrop1"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel1"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel1">
+                Пассажирские перевозки
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Закрыть"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="phoneNumber2">Номер телефона:</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phoneNumber2"
+                  placeholder="+49 176 803 498 04"
+                />
+              </div>
+              <div class="form-group">
+                <label for="departurePoint2">Пункт отправления:</label>
+                <select class="form-control" id="departurePoint2">
+                  <option value="Калининград">Калининград</option>
+                  <option value="Германия">Германия</option>
+                </select>
+              </div>
+              <button onclick="switchPoints2()">
+                <img src="assets/svg/block1_switch.svg" alt="img_switch" />
+              </button>
+              <div class="form-group">
+                <label for="arrivalPoint2">Пункт прибытия:</label>
+                <select class="form-control" id="arrivalPoint2">
+                  <option value="Германия">Германия</option>
+                  <option value="Калининград">Калининград</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="comment2">Комментарий:</label>
+                <textarea
+                  class="form-control"
+                  id="comment2"
+                  rows="3"
+                  placeholder="Введите комментарий"
+                ></textarea>
+              </div>
+
+              <!-- Кнопка для открытия внутреннего модального окна -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#internalModal1"
+              >
+                Оставить заявку
+              </button>
+
+              <!-- Внутреннее модальное окно -->
+              <div
+                class="modal fade"
+                id="internalModal1"
+                tabindex="-1"
+                aria-labelledby="internalModalLabel1"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="internalModalLabel1">
+                        Спасибо за заявку!
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Мы свяжемся с вами в ближайшее время.</p>
+                      <!-- Дополнительный контент по вашему желанию: картинка, текст и т.д. -->
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#internalModal"
+                      >
+                        Оставить запрос
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-services">
+                Отправить запрос
+              </button>
+              <p>
+                Нажимая "Отправить запрос", вы соглашаетесь на обработку ваших
+                данных.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Модальное окно блок услуг Перевозка домашних животных -->
       <div
@@ -629,29 +770,27 @@
 
       <!-- Pop up после отправки заявки на услуги 1,2,3,4 -->
 
-      <!--  Блок Дополнительно -->
-      <div class="additionally">
-        <div class="row additionally">
-          <div class="col-md-8">
-            <p class="title-additionally">Дополнительно:</p>
-            <ul class="list additionally">
-              <li>Помощь с оформлением документов для перевозки животных;</li>
-              <li>
-                Помощь с оформлением документов для транспортировки праха;
-              </li>
-              <li>Трансфер до аэропорта Храброво в Калининграде (15€);</li>
-              <li>Сопровождение несовершеннолетних;</li>
-              <li>
-                Бронь гостиницы, авиа- и ж/д билетов по всей России без
-                комиссии(услуга доступна только для пассажиров нашей компании);
-              </li>
-              <li>Пассажирские и грузовые перевозки по Европе.</li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <div class="img warning">
-              <img src="assets/svg/Warning.svg" alt="warning" />
-            </div>
+      <!-- Блок Дополнительно -->
+      <div class="additionally row">
+        <!-- Левая часть - текст -->
+        <div class="col-md-8">
+          <p class="title-additionally">Дополнительно:</p>
+          <ul class="list additionally">
+            <li>Помощь с оформлением документов для перевозки животных;</li>
+            <li>Помощь с оформлением документов для транспортировки праха;</li>
+            <li>Трансфер до аэропорта Храброво в Калининграде (15€);</li>
+            <li>Сопровождение несовершеннолетних;</li>
+            <li>
+              Бронь гостиницы, авиа- и ж/д билетов по всей России без
+              комиссии(услуга доступна только для пассажиров нашей компании);
+            </li>
+            <li>Пассажирские и грузовые перевозки по Европе.</li>
+          </ul>
+        </div>
+        <!-- Правая часть - картинка -->
+        <div class="col-md-4">
+          <div class="img warning">
+            <img src="assets/svg/Warning.svg" alt="warning" />
           </div>
         </div>
       </div>
