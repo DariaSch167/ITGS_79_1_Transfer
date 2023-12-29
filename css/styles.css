@@ -1101,7 +1101,7 @@ a:hover {
 }
 
 .additionally {
-  width: 1767px;
+  width: 1688px;
   height: 261px;
   margin-left: 4.875rem;
   margin-right: 3rem;
@@ -1119,24 +1119,26 @@ a:hover {
   font-style: normal;
   font-weight: 500;
   line-height: 130%;
-  margin-left: 30px;
-  margin-top: 10px;
+  margin-left: 5px;
+  margin-top: 20px;
 }
 
 .list.additionally {
   width: 1239px;
   height: 150px;
   color: #ffffff;
-  margin-left: 40px;
+  margin-left: 0px;
   font-family: "FiraSans_Regular400", serif;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 150%;
+  margin-top: 15px;
 }
 
 .img.warning {
   width: 123px;
   height: 123px;
-  margin-left: auto; /* Устанавливаем отступ слева в auto, чтобы картинка была выравнена справа */
+  margin-top: 7rem;
+  margin-left: auto;
 }
 
 /* Tablet */
