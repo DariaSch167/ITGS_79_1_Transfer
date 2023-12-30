@@ -278,6 +278,32 @@ $white: #ffffff;
       color: $orange;
       background-color: $white;
     }
+
+.btn.switch-services {
+    display: flex;
+    background: url("../assets/svg/block1_switch.svg") no-repeat;
+    background-size: cover;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: none;
+    align-self: center;
+    justify-content: center;
+    margin-left: 50%;
+    margin-top: 10px;
+}
+.btn.btn.modalfade {
+  width: 564px; 
+  height: 66px;
+  color: $white;
+  background-color: $orange ;
+}
+.modal-footer {
+  color: $black;
+  font-family: "FiraSans_Regular400", serif;
+  font-size: 14px;
+  line-height: 130%;
+}
+
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   /* Блок отправления */

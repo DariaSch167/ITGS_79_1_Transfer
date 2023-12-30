@@ -392,7 +392,6 @@
                 </div>
               </div>
             </div>
-
             <!-- Четвёртая карточка -->
             <div class="col-lg-6 col-md-12 col-12 mb-0">
               <div class="card border services">
@@ -417,7 +416,7 @@
                       <button
                         class="btn btn-custom-services"
                         data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop1"
+                        data-bs-target="#staticBackdrop4"
                       >
                         Оставить заявку
                       </button>
@@ -454,38 +453,41 @@
             </div>
             <div class="modal-body">
               <div class="form-group">
-                <label for="phoneNumber2">Номер телефона:</label>
+                <label for="phoneNumber1">Номер телефона:</label>
                 <input
                   type="tel"
                   class="form-control"
-                  id="phoneNumber2"
+                  id="phoneNumber1"
                   placeholder="+49 176 803 498 04"
+                  required
                 />
               </div>
               <div class="form-group">
-                <label for="departurePoint2">Пункт отправления:</label>
-                <select class="form-control" id="departurePoint2">
+                <label for="departurePoint1">Пункт отправления:</label>
+                <select class="form-control" id="departurePoint1">
                   <option value="Калининград">Калининград</option>
                   <option value="Германия">Германия</option>
                 </select>
               </div>
-              <button onclick="switchPoints2()">
-                <img src="assets/svg/block1_switch.svg" alt="img_switch" />
-              </button>
+              <button
+                onclick="switchPoints1()"
+                class="btn switch-services"
+              ></button>
               <div class="form-group">
-                <label for="arrivalPoint2">Пункт прибытия:</label>
-                <select class="form-control" id="arrivalPoint2">
+                <label for="arrivalPoint1">Пункт прибытия:</label>
+                <select class="form-control" id="arrivalPoint1">
                   <option value="Германия">Германия</option>
                   <option value="Калининград">Калининград</option>
                 </select>
               </div>
               <div class="form-group">
-                <label for="comment2">Комментарий:</label>
+                <label for="comment1">Комментарий:</label>
                 <textarea
                   class="form-control"
-                  id="comment2"
+                  id="comment1"
                   rows="3"
                   placeholder="Введите комментарий"
+                  readonly
                 ></textarea>
               </div>
             </div>
@@ -500,14 +502,13 @@
                 Оставить заявку
               </button>
               <p>
-                Нажимая "Отправить запрос", вы соглашаетесь на обработку ваших
-                данных.
+                Нажимая кнопку, вы даёте согласие на обработку персональных
+                данных
               </p>
             </div>
           </div>
         </div>
       </div>
-
       <!-- Внутреннее модальное окно -->
       <div
         class="modal fade"
@@ -516,11 +517,11 @@
         aria-labelledby="internalModalLabel1"
         aria-hidden="true"
       >
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="internalModalLabel1">
-                Спасибо за заявку!
+                Пассажирские перевозки
               </h5>
               <button
                 type="button"
@@ -529,16 +530,17 @@
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body">
+            <div
+              class="modal-body d-flex flex-column align-items-center justify-content-center"
+            >
               <img src="assets/svg/done.svg" alt="done" />
+              <p>Спасибо за заявку!</p>
               <p>В ближайшее время мы с вами свяжемся</p>
               <!-- Дополнительный контент по вашему желанию: картинка, текст и т.д. -->
             </div>
-            <div class="modal-footer"></div>
           </div>
         </div>
       </div>
-
       <!-- Модальное окно блок услуг Перевозка домашних животных -->
       <div
         class="modal fade"
@@ -570,6 +572,7 @@
                   class="form-control"
                   id="phoneNumber2"
                   placeholder="+49 176 803 498 04"
+                  required
                 />
               </div>
               <div class="form-group">
@@ -579,9 +582,10 @@
                   <option value="Германия">Германия</option>
                 </select>
               </div>
-              <button onclick="switchPoints2()">
-                <img src="assets/svg/block1_switch.svg" alt="img_switch" />
-              </button>
+              <button
+                onclick="switchPoints2()"
+                class="btn switch-services"
+              ></button>
               <div class="form-group">
                 <label for="arrivalPoint2">Пункт прибытия:</label>
                 <select class="form-control" id="arrivalPoint2">
@@ -600,13 +604,51 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-services">
-                Отправить запрос
+              <!-- Кнопка для открытия внутреннего модального окна -->
+              <button
+                type="button"
+                class="btn btn modalfade"
+                data-bs-toggle="modal"
+                data-bs-target="#internalModal2"
+              >
+                Оставить заявку
               </button>
               <p>
-                Нажимая "Отправить запрос", вы соглашаетесь на обработку ваших
-                данных.
+                Нажимая кнопку, вы даёте согласие на обработку персональных
+                данных
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Внутреннее модальное окно -->
+      <div
+        class="modal fade"
+        id="internalModal2"
+        tabindex="-1"
+        aria-labelledby="internalModalLabel2"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="internalModalLabel2">
+                Перевозка домашних животных
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div
+              class="modal-body d-flex flex-column align-items-center justify-content-center"
+            >
+              <img src="assets/svg/done.svg" alt="done" />
+              <p>Спасибо за заявку!</p>
+              <p>В ближайшее время мы с вами свяжемся</p>
+              <!-- Дополнительный контент по вашему желанию: картинка, текст и т.д. -->
             </div>
           </div>
         </div>
@@ -642,6 +684,7 @@
                   class="form-control"
                   id="phoneNumber3"
                   placeholder="+49 176 803 498 04"
+                  required
                 />
               </div>
               <div class="form-group">
@@ -651,9 +694,10 @@
                   <option value="Германия">Германия</option>
                 </select>
               </div>
-              <button onclick="switchPoints3()">
-                <img src="assets/svg/block1_switch.svg" alt="img_switch" />
-              </button>
+              <button
+                onclick="switchPoints3()"
+                class="btn switch-services"
+              ></button>
               <div class="form-group">
                 <label for="arrivalPoint3">Пункт прибытия:</label>
                 <select class="form-control" id="arrivalPoint3">
@@ -672,13 +716,51 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-services">
-                Отправить запрос
+              <!-- Кнопка для открытия внутреннего модального окна -->
+              <button
+                type="button"
+                class="btn btn modalfade"
+                data-bs-toggle="modal"
+                data-bs-target="#internalModal3"
+              >
+                Оставить заявку
               </button>
               <p>
-                Нажимая "Отправить запрос", вы соглашаетесь на обработку ваших
-                данных.
+                Нажимая кнопку, вы даёте согласие на обработку персональных
+                данных
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Внутреннее модальное окно -->
+      <div
+        class="modal fade"
+        id="internalModal3"
+        tabindex="-1"
+        aria-labelledby="internalModalLabel3"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="internalModalLabel3">
+                Доставка посылок и корреспонденции
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div
+              class="modal-body d-flex flex-column align-items-center justify-content-center"
+            >
+              <img src="assets/svg/done.svg" alt="done" />
+              <p>Спасибо за заявку!</p>
+              <p>В ближайшее время мы с вами свяжемся</p>
+              <!-- Дополнительный контент по вашему желанию: картинка, текст и т.д. -->
             </div>
           </div>
         </div>
@@ -714,6 +796,7 @@
                   class="form-control"
                   id="phoneNumber4"
                   placeholder="+49 176 803 498 04"
+                  required
                 />
               </div>
               <div class="form-group">
@@ -723,9 +806,10 @@
                   <option value="Германия">Германия</option>
                 </select>
               </div>
-              <button onclick="switchPoints4()">
-                <img src="assets/svg/block1_switch.svg" alt="img_switch" />
-              </button>
+              <button
+                onclick="switchPoints4()"
+                class="btn switch-services"
+              ></button>
               <div class="form-group">
                 <label for="arrivalPoint4">Пункт прибытия:</label>
                 <select class="form-control" id="arrivalPoint4">
@@ -744,20 +828,55 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-services">
-                Отправить запрос
+              <!-- Кнопка для открытия внутреннего модального окна -->
+              <button
+                type="button"
+                class="btn btn modalfade"
+                data-bs-toggle="modal"
+                data-bs-target="#internalModal4"
+              >
+                Оставить заявку
               </button>
               <p>
-                Нажимая "Отправить запрос", вы соглашаетесь на обработку ваших
-                данных.
+                Нажимая кнопку, вы даёте согласие на обработку персональных
+                данных
               </p>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- Pop up после отправки заявки на услуги 1,2,3,4 -->
-
+      <!-- Внутреннее модальное окно -->
+      <div
+        class="modal fade"
+        id="internalModal4"
+        tabindex="-1"
+        aria-labelledby="internalModalLabel4"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="internalModalLabel4">
+                Транспортировка праха в урнах
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div
+              class="modal-body d-flex flex-column align-items-center justify-content-center"
+            >
+              <img src="assets/svg/done.svg" alt="done" />
+              <p>Спасибо за заявку!</p>
+              <p>В ближайшее время мы с вами свяжемся</p>
+              <!-- Дополнительный контент по вашему желанию: картинка, текст и т.д. -->
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Блок Дополнительно -->
       <div class="additionally row">
         <!-- Левая часть - текст -->
