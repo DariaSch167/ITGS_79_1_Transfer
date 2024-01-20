@@ -1,11 +1,6 @@
 .container__feedback {
-  padding-left: $left-block-gap;
+  // padding-left: $left-block-gap;
   padding-top: $top-block-gap;
-}
-
-.title-feedback {
-  margin-left: 5rem;
-  margin-top: 5%;
 }
 
 .embed- {
@@ -27,9 +22,11 @@
 }
 
 .card__text__feedback {
-  min-height: 340px;
   max-width: 450px;
   width: 100%;
+  .card-body {
+    position: static;
+  }
 }
 
 .card__video__feedback {
@@ -85,8 +82,7 @@
 
 .owl-nav {
   position: absolute;
-  top: -13%;
-  transform: translate(-50%);
+  top: -4.5rem;
   left: 85%;
 }
 
@@ -203,13 +199,6 @@
   outline: none !important;
 }
 
-.owl-nav {
-  position: absolute;
-  top: -13%;
-  transform: translate(-50%);
-  left: 85%;
-}
-
 .owl-item {
   background-color: transparent;
   color: black;
@@ -275,21 +264,6 @@
     left: 15%;
   }
 }
-.container {
-  max-width: 1770px;
-  padding: 50px;
-  border-radius: 10px;
-  border: 1px;
-  gap: 20px;
-  justify-content: space-between;
-  border: 1px solid #ededed;
-  margin-top: 150px;
-}
-
-.container h2 {
-  padding-bottom: 20px;
-  margin-bottom: 0;
-}
 
 .inner-container {
   max-width: 1553px;
@@ -321,24 +295,12 @@
   margin-right: 20px;
 }
 
-.container-wrapper {
-  max-width: 671px;
-}
-
 .container-block p {
   font-family: "FiraSans_Regular400";
   font-size: 20px;
   line-height: 26px;
   text-align: left;
   flex: 6;
-}
-
-.container h2 {
-  font-family: "FiraSans_Regular400";
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 52px;
-  letter-spacing: 0em;
 }
 
 @media screen and (max-width: 767px) {
@@ -354,20 +316,6 @@
     flex-direction: column;
     max-width: 280px;
   }
-  .container h2 {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 31px;
-    letter-spacing: 0em;
-    text-align: center;
-  }
-  .container {
-    max-width: 320px;
-    gap: 20px;
-  }
-  .container-wrapper {
-    max-width: 280px;
-  }
   .inner-container {
     display: block;
   }
@@ -378,20 +326,6 @@
   }
   .container-block p {
     font-size: 18px;
-  }
-  .container h2 {
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 35px;
-    letter-spacing: 0em;
-    text-align: center;
-  }
-  .container {
-    max-width: 960px;
-    flex-direction: column-reverse;
-  }
-  .container-wrapper {
-    max-width: 343px;
   }
   .container-block {
     max-width: 342px;

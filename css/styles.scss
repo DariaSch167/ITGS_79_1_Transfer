@@ -11,7 +11,6 @@
 @import "style_whyus";
 
 body {
-  max-width: 1920px;
   min-width: 320px;
   margin: 0 auto;
   padding: 0;
@@ -20,4 +19,28 @@ body {
   font-size: 16px;
   font-weight: 400;
   background-color: #fff;
+}
+
+.container {
+  max-width: 1770px;
+  margin: 0 auto;
+}
+
+.container__wrapper {
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #ededed;
+  margin-top: 30px;
+}
+
+.top-margin {
+  margin-top: 186px;
+}
+
+.main-title {
+  color: $black;
+  font-family: "FiraSans_SemiBold600", serif;
+  font-size: 40px;
+  line-height: 130%;
+  margin-bottom: 30px;
 }

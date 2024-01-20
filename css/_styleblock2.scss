@@ -5,290 +5,141 @@ $black: #292929;
 $white: #ffffff;
 
 /*# Стили для Desktop */
-.departures {
-  width: 1793px;
-  height: 606px;
-  padding: 0;
-  margin-left: 1.7rem;
+
+.card {
+  position: relative;
+  border-radius: 10px;
 }
-.title-departures {
-  width: 252px;
-  height: 57px;
-  margin-left: 3rem;
-  margin-top: 10%;
-  margin-bottom: 25px;
-  color: $black;
-  font-family: "FiraSans_SemiBold600", serif;
-  font-size: 40px;
-  line-height: 130%;
-}
-.card.germany {
-  width: 870px;
-  height: 524px;
-  padding: 0;
-  border-color: $white;
-}
-.card-img-overlay.Germany {
-  display: flex;
-  justify-content: end;
-  flex-direction: column;
-  width: 870px;
-  height: 524px;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  color: $white;
-  padding: 2px;
-  margin-bottom: 90px;
-  object-fit: cover;
-}
-.img-fluid.Germany {
-  width: 870px;
-  height: 524px;
-}
-.card-title.Germany {
-  font-family: "FiraSans_SemiBold600", serif;
-  font-size: 32px;
-  line-height: 110%;
-  width: 145px;
-  height: 35px;
-  margin-bottom: 15px;
-  margin-left: 30px;
-  color: $white;
-  font-family: "FiraSans_SemiBold600", serif;
-}
-.card-text.germany1 {
-  width: 564px;
-  height: 26px;
-  color: $white;
-  font-family: "FiraSans_Regular400", serif;
-  font-size: 20px;
-  line-height: 130%;
-  margin-left: 30px;
-  margin-bottom: 5px;
-}
-.card-text.germany2 {
-  width: 518px;
-  height: 18px;
-  color: $white;
-  font-family: "FiraSans_Regular400", serif;
-  font-size: 14px;
-  line-height: 130%;
-  margin-bottom: 35px;
-  margin-left: 30px;
+.card-body {
+  position: absolute;
+  width: 100%;
+  min-height: 140px;
+  left: 30px;
+  bottom: 30px;
 }
 
-.card.kaliningrad {
-  width: 870px;
-  height: 524px;
-  padding: 0;
-  border-color: $white;
-}
-.img-fluid.Kaliningrad {
-  width: 870px;
-  height: 524px;
-}
-.card-img-overlay.Kaliningrad {
-  display: flex;
-  justify-content: end;
-  flex-direction: column;
-  width: 870px;
-  height: 524px;
-  text-align: left;
-  color: $white;
-  padding: 2px;
-  margin-bottom: 90px;
-  object-fit: cover;
-}
-.card-title.Kaliningrad {
+.card-title {
   font-family: "FiraSans_SemiBold600", serif;
   font-size: 32px;
   line-height: 110%;
-  width: 199px;
-  height: 35px;
-  margin-bottom: 15px;
-  margin-left: 30px;
   color: $white;
 }
-.card-text.kaliningrad1 {
-  width: 351px;
-  height: 26px;
+.card-text {
   color: $white;
   font-family: "FiraSans_Regular400", serif;
   font-size: 20px;
   line-height: 130%;
-  margin-left: 30px;
-  margin-bottom: 5px;
 }
-.card-text.kaliningrad2 {
-  width: 644px;
-  height: 18px;
-  color: $white;
-  font-family: "FiraSans_Regular400", serif;
+.card-text:last-child {
   font-size: 14px;
-  line-height: 130%;
-  margin-bottom: 30px;
-  margin-left: 30px;
 }
 
 .services {
-  width: 1900px;
-  height: 750px;
+  &__card {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    min-height: 323px;
+  }
+  &__card-text {
+    color: $black;
+    font-family: "FiraSans_Regular400";
+    font-size: 16px;
+    line-height: 150%;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+  &__card__img {
+    max-width: 390px;
+    border-radius: 5px;
+    overflow: hidden;
+    img {
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__card-body {
+    max-width: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__card-title {
+    margin-top: 10px;
+    color: $black;
+    font-family: "FiraSans_SemiBold600";
+    font-size: 24px;
+    line-height: 130%;
+  }
+
+  /*# Кнопка в блоке услуги */
+  .btn-custom-services {
+    $orange-border: 1px solid $orange;
+    color: $orange;
+    background-color: $white;
+    border: 1px solid $orange;
+    color: $orange;
+    background-color: $white;
+    padding: 20px 0;
+    font-size: 20px;
+  }
+  /*# эффект при наведении на кнопку */
+  .btn-custom-services:hover {
+    color: $white;
+    background-color: $orange;
+  }
+
+  .btn.btn-services {
+    $orange-border: 1px solid $orange;
+    color: $orange;
+    background-color: $white;
+  }
+}
+
+.additionally {
+  background-color: $orange;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 10px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
-}
-.row.services {
-  width: 1900px;
-  height: 200px;
-}
+  .title-additionally {
+    color: $white;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+  }
 
-.title-services {
-  width: 152px;
-  height: 52px;
-  color: $black;
-  font-family: "FiraSans_SemiBold600", serif;
-  font-size: 40px;
-  line-height: 130%;
-  margin-top: 70px;
-  margin-bottom: 30px;
-  margin-left: 5rem;
-}
+  .list {
+    color: $white;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 18px;
+    line-height: 150%;
+    margin-top: 20px;
+  }
 
-.services_row {
-  width: 1792px;
-  height: 580px;
-  display: flex;
-  justify-content: space-between;
-  margin-left: 3.4rem;
-}
-.card.border.services {
-  width: 870px;
-  height: 259px;
-}
-.card-img.services {
-  width: 390px;
-  height: 199px;
-  display: flex;
-  object-fit: cover; /* Обрезать изображение под размер контейнера */
-  margin-top: 30px;
-  margin-left: 30px;
-  margin-bottom: 30px;
-}
-.card-text.services {
-  width: 390px;
-  height: 113px;
-  color: $black;
-  font-family: "FiraSans_Regular400";
-  font-size: 16px;
-  line-height: 150%;
-  margin-top: 5px;
-  margin-bottom: 0;
-}
-
-.card-body.services {
-  width: 395px;
-  height: 199px;
-  padding: 7px;
-}
-
-.card-title.services {
-  width: 400px;
-  height: 31px;
-  margin-top: 10px;
-  color: $black;
-  font-family: "FiraSans_SemiBold600";
-  font-size: 24px;
-  line-height: 130%;
-}
-
-/*# Кнопка в блоке услуги */
-.btn-custom-services {
-  $orange-border: 1px solid $orange;
-  color: $orange;
-  background-color: $white;
-  border: 1px solid $orange;
-  color: $orange;
-  background-color: $white;
-  margin-top: 0px;
-}
-/*# эффект при наведении на кнопку */
-.btn-custom-services:hover {
-  color: $white;
-  background-color: $orange;
-}
-
-.btn.btn-custom-services {
-  width: 500px;
-  height: 54px;
-}
-.btn.btn-services {
-  width: 390px;
-  height: 66px;
-  $orange-border: 1px solid $orange;
-  color: $orange;
-  background-color: $white;
-}
-.modal.fade.services {
-  width: 624px;
-  height: 684px;
-}
-.additionally.row {
-  width: 1767px;
-  height: 261px;
-  margin-left: $left-block-gap;
-  margin-right: 3rem;
-  background-color: $orange;
-  border-radius: 1rem;
-  margin-top: 1px;
-}
-
-.title-additionally {
-  color: $white;
-  font-family: "FiraSans_Regular400", serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 130%;
-  margin-left: 35px;
-  margin-top: 20px;
-}
-
-.list.additionally {
-  color: $white;
-  margin-left: 45px;
-  font-family: "FiraSans_Regular400", serif;
-  font-size: 18px;
-  line-height: 150%;
-  margin-top: 5px;
-}
-
-.img.warning {
-  width: 123px;
-  height: 123px;
-  margin-top: 100px;
-  margin-left: 400px;
+  .img.warning {
+    width: 123px;
+    height: 123px;
+    margin-top: 100px;
+    margin-left: 400px;
+  }
 }
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   /* Блок отправления */
-  .departures {
-    width: 1024px;
-    height: 1085px;
-  }
   .title-departures {
     color: $black;
     font-family: "FiraSans_SemiBold600", serif;
     font-size: 32px;
     line-height: 110%;
-    width: 201px;
-    height: 35px;
   }
   .card.germany {
-    width: 871px;
-    height: 505px;
     margin-left: 4rem;
     margin-right: 3rem;
     padding: 0;
@@ -297,22 +148,18 @@ $white: #ffffff;
     display: flex;
     justify-content: end;
     flex-direction: column;
-    width: 873px;
-    height: 460px;
+
     margin: 0;
   }
   .card-title.Germany {
     font-family: "FiraSans_SemiBold600", serif;
     font-size: 24px;
     line-height: 130%;
-    width: 120px;
-    height: 31px;
+
     margin-bottom: 15px;
     margin-left: 30px;
   }
   .card-text.germany1 {
-    width: 550px;
-    height: 23px;
     color: $white;
     font-family: "FiraSans_Regular400", serif;
     font-size: 18px;
@@ -321,8 +168,6 @@ $white: #ffffff;
     margin-bottom: 5px;
   }
   .card-text.germany2 {
-    width: 450px;
-    height: 16px;
     color: $white;
     font-family: "FiraSans_Regular400", serif;
     font-size: 12px;
@@ -332,36 +177,27 @@ $white: #ffffff;
   }
 
   .card.kaliningrad {
-    width: 871px;
-    height: 570px;
     margin-left: 4rem;
     margin-right: 3rem;
     padding: 0;
   }
-  .img-fluid.Kaliningrad {
-    width: 960px;
-    height: 505px;
-  }
+
   .card-img-overlay.Kaliningrad {
     display: flex;
     justify-content: end;
     flex-direction: column;
-    width: 873px;
-    height: 506px;
+
     margin: 0;
   }
   .card-title.Kaliningrad {
     font-family: "FiraSans_SemiBold600", serif;
     font-size: 24px;
     line-height: 130%;
-    width: 170px;
-    height: 31px;
+
     margin-bottom: 15px;
     margin-left: 30px;
   }
   .card-text.kaliningrad1 {
-    width: 550px;
-    height: 23px;
     color: $white;
     font-family: "FiraSans_Regular400", serif;
     font-size: 18px;
@@ -370,8 +206,6 @@ $white: #ffffff;
     margin-bottom: 5px;
   }
   .card-text.kaliningrad2 {
-    width: 600px;
-    height: 16px;
     color: $white;
     font-family: "FiraSans_Regular400", serif;
     font-size: 12px;
@@ -384,14 +218,11 @@ $white: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 1301px;
-    height: 1033px;
+
     gap: 30px;
   }
 
   .title-services {
-    width: 100px;
-    height: 32px;
     color: $black;
     font-family: "FiraSans_SemiBold600", serif;
     font-size: 32px;
@@ -399,56 +230,7 @@ $white: #ffffff;
     margin-top: 60px;
   }
 
-  .row.services_row {
-    width: 968px;
-    height: 1200px;
-  }
-  .row.services_row {
-    width: 968px;
-    height: 1100px;
-  }
-  .card.border.services {
-    width: 960px;
-    height: 222px;
-  }
-  .card-img.services {
-    width: 390px;
-    height: 182px;
-  }
-  .card-text.services {
-    width: 500px;
-    height: 26px;
-  }
-
-  .card-body.services {
-    width: 500px;
-    height: 182px;
-  }
-
-  .card-title.services {
-    width: 303px;
-    height: 26px;
-  }
-
-  .btn.btn-custom-services {
-    width: 500px;
-    height: 54px;
-  }
-  .btn.btn-services {
-    width: 564px;
-    height: 54px;
-  }
-  .modal.fade.services {
-    width: 624px;
-    height: 666px;
-  }
-  .additionally {
-    width: 960px;
-    height: 268px;
-  }
   .title-additionally {
-    width: 153px;
-    height: 26px;
     color: $white;
     font-family: "FiraSans_Regular400", serif;
     font-size: 20px;
@@ -456,174 +238,83 @@ $white: #ffffff;
     font-weight: 500;
     line-height: 130%;
   }
-  .list.additionally {
-    width: 800px;
-    height: 162px;
+  .list {
     color: $white;
     font-family: "FiraSans_Regular400", serif;
     font-size: 18px;
     line-height: 150%;
-  }
-
-  .img.warning {
-    width: 100px;
-    height: 100px;
   }
 }
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
   /* Блок отправления */
-  .departures {
-    width: 320px;
-    height: 1124px;
-  }
+
   .title-departures {
-    color: $black;
-    font-family: "FiraSans_SemiBold600", serif;
-    font-size: 24px;
-    line-height: 130%;
-    width: 151px;
-    height: 31px;
-  }
-  .card.germany {
-    width: 320px;
-    height: 544px;
-  }
-  .img-fluid.Germany {
-    width: 320px;
-    height: 544px;
-  }
-  .card-img-overlay.Germany {
-    width: 320px;
-    height: 544px;
-    display: flex;
-  }
-  .card-title.Germany {
-    font-family: "FiraSans_SemiBold600", serif;
-    font-size: 24px;
-    line-height: 130%;
-    width: 109px;
-    height: 31px;
-  }
-  .card-text.germany1 {
-    width: 273px;
-    height: 46px;
-    color: $white;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 18px;
-    line-height: 130%;
-  }
-  .card-text.germany2 {
-    width: 280px;
-    height: 32px;
-    color: $white;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 12px;
-    line-height: 130%;
-  }
-
-  .card.kaliningrad {
-    width: 320px;
-    height: 560px;
-  }
-  .img-fluid.Kaliningrad {
-    width: 320px;
-    height: 560px;
-  }
-  .card-img-overlay.Kaliningrad {
-    display: flex;
-    width: 320px;
-    height: 560px;
-  }
-  .card-title.Kaliningrad {
-    font-family: "FiraSans_SemiBold600", serif;
-    font-size: 24px;
-    line-height: 130%;
-    width: 149px;
-    height: 31px;
-  }
-  .card-text.kaliningrad1 {
-    width: 273px;
-    height: 46px;
-    color: $white;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 18px;
-    line-height: 130%;
-  }
-  .card-text.kaliningrad2 {
-    width: 280px;
-    height: 48px;
-    color: $white;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 12px;
-    line-height: 130%;
-  }
-
-  .services {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 320px;
-    height: 1900px;
-    gap: 20px;
-  }
-
-  .title-services {
-    width: 320px;
-    height: 31px;
     color: $black;
     font-family: "FiraSans_SemiBold600", serif;
     font-size: 24px;
     line-height: 130%;
   }
 
-  .row.services_row {
-    width: 320px;
-    height: 1900px;
+  .card-img-overlay.Germany {
+    display: flex;
   }
-  .card.border.services {
-    width: 320px;
-    height: 442px;
+  .card-title.Germany {
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 24px;
+    line-height: 130%;
   }
-  .card-img.services {
-    width: 280px;
-    height: 166px;
+  .card-text.germany1 {
+    color: $white;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 18px;
+    line-height: 130%;
   }
-  .card-text.services {
-    width: 280px;
-    height: 150px;
-  }
-
-  .card-body.services {
-    width: 280px;
-    height: 232px;
-  }
-
-  .card-title.services {
-    width: 197px;
-    height: 52px;
+  .card-text.germany2 {
+    color: $white;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 12px;
+    line-height: 130%;
   }
 
-  .btn.btn-custom-services {
-    width: 280px;
-    height: 54px;
+  .card-img-overlay.Kaliningrad {
+    display: flex;
   }
-  .btn.btn-services {
-    width: 580px;
-    height: 54px;
+  .card-title.Kaliningrad {
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 24px;
+    line-height: 130%;
   }
-  .modal.fade.services {
-    width: 320px;
-    height: 677px;
+  .card-text.kaliningrad1 {
+    color: $white;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 18px;
+    line-height: 130%;
   }
-  .additionally {
-    width: 320px;
-    height: 450px;
+  .card-text.kaliningrad2 {
+    color: $white;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 12px;
+    line-height: 130%;
   }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+
+  .title-services {
+    color: $black;
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 24px;
+    line-height: 130%;
+  }
+
   .title-additionally {
-    width: 153px;
-    height: 26px;
     color: $white;
     font-family: "FiraSans_Regular400", serif;
     font-size: 20px;
@@ -631,144 +322,24 @@ $white: #ffffff;
     font-weight: 500;
     line-height: 130%;
   }
-  .list.additionally {
-    width: 800px;
-    height: 162px;
+  .list {
     color: $white;
     font-family: "FiraSans_Regular400", serif;
     font-size: 16px;
     line-height: 150%;
   }
-
-  .img.warning {
-    width: 30px;
-    height: 30px;
-  }
-}
-.card-title.Kaliningrad {
-  a:hover {
-    height: 199px;
-    display: flex;
-    -o-object-fit: cover;
-    object-fit: cover; /* Обрезать изображение под размер контейнера */
-    margin-top: 30px;
-    margin-left: 30px;
-    margin-bottom: 30px;
-  }
-  a:hover {
-    color: #292929;
-    font-family: "FiraSans_Regular400";
-    font-size: 16px;
-    line-height: 150%;
-    margin-top: 5px;
-    margin-bottom: 0;
-  }
-}
-
-.card-body.services {
-  width: 395px;
-  height: 199px;
-  padding: 7px;
-}
-
-.card-title.services {
-  width: 400px;
-  height: 31px;
-  margin-top: 10px;
-  color: #292929;
-  font-family: "FiraSans_SemiBold600";
-  font-size: 24px;
-  line-height: 130%;
-}
-
-/*# Кнопка в блоке услуги */
-.btn-custom-services {
-  color: #fb8d00;
-  background-color: #ffffff;
-  border: 1px solid #fb8d00;
-  color: #fb8d00;
-  background-color: #ffffff;
-  margin-top: 0px;
-}
-
-/*# эффект при наведении на кнопку */
-.btn-custom-services:hover {
-  color: #ffffff;
-  background-color: #fb8d00;
-}
-
-.btn.btn-custom-services {
-  width: 500px;
-  height: 54px;
-}
-
-.btn.btn-services {
-  width: 390px;
-  height: 66px;
-  color: #fb8d00;
-  background-color: #ffffff;
-}
-
-.modal.fade.services {
-  width: 624px;
-  height: 684px;
-}
-
-.additionally.row {
-  width: 1767px;
-  height: 261px;
-  margin-left: 4.875rem;
-  margin-right: 3rem;
-  background-color: #fb8d00;
-  border-radius: 1rem;
-  margin-top: 1px;
-}
-
-.title-additionally {
-  color: #ffffff;
-  font-family: "FiraSans_Regular400", serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 130%;
-  margin-left: 35px;
-  margin-top: 20px;
-}
-
-.list.additionally {
-  color: #ffffff;
-  margin-left: 45px;
-  font-family: "FiraSans_Regular400", serif;
-  font-size: 18px;
-  line-height: 150%;
-  margin-top: 5px;
-}
-
-.img.warning {
-  width: 123px;
-  height: 123px;
-  margin-top: 100px;
-  margin-left: 400px;
 }
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   /* Блок отправления */
-  .departures {
-    width: 1024px;
-    height: 1085px;
-  }
   .title-departures {
     color: #292929;
     font-family: "FiraSans_SemiBold600", serif;
     font-size: 32px;
     line-height: 110%;
-    width: 201px;
-    height: 35px;
   }
   .card.germany {
-    width: 871px;
-    height: 505px;
     margin-left: 4rem;
     margin-right: 3rem;
     padding: 0;
@@ -777,22 +348,18 @@ $white: #ffffff;
     display: flex;
     justify-content: end;
     flex-direction: column;
-    width: 873px;
-    height: 460px;
+
     margin: 0;
   }
   .card-title.Germany {
     font-family: "FiraSans_SemiBold600", serif;
     font-size: 24px;
     line-height: 130%;
-    width: 120px;
-    height: 31px;
+
     margin-bottom: 15px;
     margin-left: 30px;
   }
   .card-text.germany1 {
-    width: 550px;
-    height: 23px;
     color: #ffffff;
     font-family: "FiraSans_Regular400", serif;
     font-size: 18px;
@@ -801,8 +368,6 @@ $white: #ffffff;
     margin-bottom: 5px;
   }
   .card-text.germany2 {
-    width: 450px;
-    height: 16px;
     color: #ffffff;
     font-family: "FiraSans_Regular400", serif;
     font-size: 12px;
@@ -811,36 +376,26 @@ $white: #ffffff;
     margin-left: 30px;
   }
   .card.kaliningrad {
-    width: 871px;
-    height: 570px;
     margin-left: 4rem;
     margin-right: 3rem;
     padding: 0;
   }
-  .img-fluid.Kaliningrad {
-    width: 960px;
-    height: 505px;
-  }
+
   .card-img-overlay.Kaliningrad {
     display: flex;
     justify-content: end;
     flex-direction: column;
-    width: 873px;
-    height: 506px;
+
     margin: 0;
   }
   .card-title.Kaliningrad {
     font-family: "FiraSans_SemiBold600", serif;
     font-size: 24px;
     line-height: 130%;
-    width: 170px;
-    height: 31px;
     margin-bottom: 15px;
     margin-left: 30px;
   }
   .card-text.kaliningrad1 {
-    width: 550px;
-    height: 23px;
     color: #ffffff;
     font-family: "FiraSans_Regular400", serif;
     font-size: 18px;
@@ -849,8 +404,6 @@ $white: #ffffff;
     margin-bottom: 5px;
   }
   .card-text.kaliningrad2 {
-    width: 600px;
-    height: 16px;
     color: #ffffff;
     font-family: "FiraSans_Regular400", serif;
     font-size: 12px;
@@ -862,66 +415,18 @@ $white: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 1301px;
-    height: 1033px;
+
     gap: 30px;
   }
   .title-services {
-    width: 100px;
-    height: 32px;
     color: #292929;
     font-family: "FiraSans_SemiBold600", serif;
     font-size: 32px;
     line-height: 110%;
     margin-top: 60px;
   }
-  .row.services_row {
-    width: 968px;
-    height: 1200px;
-  }
-  .row.services_row {
-    width: 968px;
-    height: 1100px;
-  }
-  .card.border.services {
-    width: 960px;
-    height: 222px;
-  }
-  .card-img.services {
-    width: 390px;
-    height: 182px;
-  }
-  .card-text.services {
-    width: 500px;
-    height: 26px;
-  }
-  .card-body.services {
-    width: 500px;
-    height: 182px;
-  }
-  .card-title.services {
-    width: 303px;
-    height: 26px;
-  }
-  .btn.btn-custom-services {
-    width: 500px;
-    height: 54px;
-  }
-  .btn.btn-services {
-    width: 564px;
-    height: 54px;
-  }
-  .modal.fade.services {
-    width: 624px;
-    height: 666px;
-  }
-  .additionally {
-    width: 960px;
-    height: 268px;
-  }
+
   .title-additionally {
-    width: 153px;
-    height: 26px;
     color: #ffffff;
     font-family: "FiraSans_Regular400", serif;
     font-size: 20px;
@@ -930,100 +435,58 @@ $white: #ffffff;
     line-height: 130%;
   }
   .list.additionally {
-    width: 800px;
-    height: 162px;
     color: #ffffff;
     font-family: "FiraSans_Regular400", serif;
     font-size: 18px;
     line-height: 150%;
-  }
-  .img.warning {
-    width: 100px;
-    height: 100px;
   }
 }
 /* Mobile */
 @media only screen and (max-width: 767px) {
   /* Блок отправления */
-  .departures {
-    width: 320px;
-    height: 1124px;
-  }
   .title-departures {
     color: #292929;
     font-family: "FiraSans_SemiBold600", serif;
     font-size: 24px;
     line-height: 130%;
-    width: 151px;
-    height: 31px;
   }
-  .card.germany {
-    width: 320px;
-    height: 544px;
-  }
-  .img-fluid.Germany {
-    width: 320px;
-    height: 544px;
-  }
+
   .card-img-overlay.Germany {
-    width: 320px;
-    height: 544px;
     display: flex;
   }
   .card-title.Germany {
     font-family: "FiraSans_SemiBold600", serif;
     font-size: 24px;
     line-height: 130%;
-    width: 109px;
-    height: 31px;
   }
   .card-text.germany1 {
-    width: 273px;
-    height: 46px;
     color: #ffffff;
     font-family: "FiraSans_Regular400", serif;
     font-size: 18px;
     line-height: 130%;
   }
   .card-text.germany2 {
-    width: 280px;
-    height: 32px;
     color: #ffffff;
     font-family: "FiraSans_Regular400", serif;
     font-size: 12px;
     line-height: 130%;
   }
-  .card.kaliningrad {
-    width: 320px;
-    height: 560px;
-  }
-  .img-fluid.Kaliningrad {
-    width: 320px;
-    height: 560px;
-  }
+
   .card-img-overlay.Kaliningrad {
     display: flex;
-    width: 320px;
-    height: 560px;
   }
   .card-title.Kaliningrad {
     font-family: "FiraSans_SemiBold600", serif;
     font-size: 24px;
     line-height: 130%;
-    width: 149px;
-    height: 31px;
   }
   .card-text.kaliningrad1 {
-    width: 273px;
-    height: 46px;
     color: #ffffff;
     font-family: "FiraSans_Regular400", serif;
     font-size: 18px;
     line-height: 130%;
   }
   .card-text.kaliningrad2 {
-    width: 280px;
-    height: 48px;
     color: #ffffff;
     font-family: "FiraSans_Regular400", serif;
     font-size: 12px;
@@ -1033,61 +496,17 @@ $white: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 320px;
-    height: 1900px;
+
     gap: 20px;
   }
   .title-services {
-    width: 320px;
-    height: 31px;
     color: #292929;
     font-family: "FiraSans_SemiBold600", serif;
     font-size: 24px;
     line-height: 130%;
   }
-  .row.services_row {
-    width: 320px;
-    height: 1900px;
-  }
-  .card.border.services {
-    width: 320px;
-    height: 442px;
-  }
-  .card-img.services {
-    width: 280px;
-    height: 166px;
-  }
-  .card-text.services {
-    width: 280px;
-    height: 150px;
-  }
-  .card-body.services {
-    width: 280px;
-    height: 232px;
-  }
-  .card-title.services {
-    width: 197px;
-    height: 52px;
-  }
-  .btn.btn-custom-services {
-    width: 280px;
-    height: 54px;
-  }
-  .btn.btn-services {
-    width: 580px;
-    height: 54px;
-  }
-  .modal.fade.services {
-    width: 320px;
-    height: 677px;
-  }
-  .additionally {
-    width: 320px;
-    height: 450px;
-  }
+
   .title-additionally {
-    width: 153px;
-    height: 26px;
     color: #ffffff;
     font-family: "FiraSans_Regular400", serif;
     font-size: 20px;
@@ -1095,177 +514,24 @@ $white: #ffffff;
     font-weight: 500;
     line-height: 130%;
   }
-  .list.additionally {
-    width: 800px;
-    height: 162px;
+  .list {
     color: #ffffff;
     font-family: "FiraSans_Regular400", serif;
     font-size: 16px;
     line-height: 150%;
   }
-  .img.warning {
-    width: 30px;
-    height: 30px;
-  }
-}
-.container__feedback {
-  padding-left: 4.875rem;
-  padding-top: 12.5rem;
-}
-
-.title-feedback {
-  margin-left: 5rem;
-  margin-top: 5%;
-}
-
-.embed- {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-}
-
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.card__text__feedback {
-  min-height: 340px;
-  max-width: 450px;
-  width: 100%;
-}
-// То, что было затёрто коммитом
-.card-title.Kaliningrad {
-  a:hover {
-    height: 199px;
-    display: flex;
-    -o-object-fit: cover;
-    object-fit: cover; /* Обрезать изображение под размер контейнера */
-    margin-top: 30px;
-    margin-left: 30px;
-    margin-bottom: 30px;
-  }
-  a:hover {
-    color: #292929;
-    font-family: "FiraSans_Regular400";
-    font-size: 16px;
-    line-height: 150%;
-    margin-top: 5px;
-    margin-bottom: 0;
-  }
-}
-
-.card-body.services {
-  width: 395px;
-  height: 199px;
-  padding: 7px;
-}
-
-.card-title.services {
-  width: 400px;
-  height: 31px;
-  margin-top: 10px;
-  color: #292929;
-  font-family: "FiraSans_SemiBold600";
-  font-size: 24px;
-  line-height: 130%;
-}
-
-/*# Кнопка в блоке услуги */
-.btn-custom-services {
-  color: #fb8d00;
-  background-color: #ffffff;
-  border: 1px solid #fb8d00;
-  color: #fb8d00;
-  background-color: #ffffff;
-  margin-top: 0px;
-}
-
-/*# эффект при наведении на кнопку */
-.btn-custom-services:hover {
-  color: #ffffff;
-  background-color: #fb8d00;
-}
-
-.btn.btn-custom-services {
-  width: 500px;
-  height: 54px;
-}
-
-.btn.btn-services {
-  width: 390px;
-  height: 66px;
-  color: #fb8d00;
-  background-color: #ffffff;
-}
-
-.modal.fade.services {
-  width: 624px;
-  height: 684px;
-}
-
-.additionally.row {
-  width: 1767px;
-  height: 261px;
-  margin-left: 4.875rem;
-  margin-right: 3rem;
-  background-color: #fb8d00;
-  border-radius: 1rem;
-  margin-top: 1px;
-}
-
-.title-additionally {
-  color: #ffffff;
-  font-family: "FiraSans_Regular400", serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 130%;
-  margin-left: 35px;
-  margin-top: 20px;
-}
-
-.list.additionally {
-  color: #ffffff;
-  margin-left: 45px;
-  font-family: "FiraSans_Regular400", serif;
-  font-size: 18px;
-  line-height: 150%;
-  margin-top: 5px;
-}
-
-.img.warning {
-  width: 123px;
-  height: 123px;
-  margin-top: 100px;
-  margin-left: 400px;
 }
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   /* Блок отправления */
-  .departures {
-    width: 1024px;
-    height: 1085px;
-  }
   .title-departures {
     color: #292929;
     font-family: "FiraSans_SemiBold600", serif;
     font-size: 32px;
     line-height: 110%;
-    width: 201px;
-    height: 35px;
   }
   .card.germany {
-    width: 871px;
-    height: 505px;
     margin-left: 4rem;
     margin-right: 3rem;
     padding: 0;
@@ -1274,22 +540,18 @@ $white: #ffffff;
     display: flex;
     justify-content: end;
     flex-direction: column;
-    width: 873px;
-    height: 460px;
+
     margin: 0;
   }
   .card-title.Germany {
     font-family: "FiraSans_SemiBold600", serif;
     font-size: 24px;
     line-height: 130%;
-    width: 120px;
-    height: 31px;
+
     margin-bottom: 15px;
     margin-left: 30px;
   }
   .card-text.germany1 {
-    width: 550px;
-    height: 23px;
     color: #ffffff;
     font-family: "FiraSans_Regular400", serif;
     font-size: 18px;
@@ -1298,8 +560,6 @@ $white: #ffffff;
     margin-bottom: 5px;
   }
   .card-text.germany2 {
-    width: 450px;
-    height: 16px;
     color: #ffffff;
     font-family: "FiraSans_Regular400", serif;
     font-size: 12px;
@@ -1308,36 +568,27 @@ $white: #ffffff;
     margin-left: 30px;
   }
   .card.kaliningrad {
-    width: 871px;
-    height: 570px;
     margin-left: 4rem;
     margin-right: 3rem;
     padding: 0;
   }
-  .img-fluid.Kaliningrad {
-    width: 960px;
-    height: 505px;
-  }
+
   .card-img-overlay.Kaliningrad {
     display: flex;
     justify-content: end;
     flex-direction: column;
-    width: 873px;
-    height: 506px;
+
     margin: 0;
   }
   .card-title.Kaliningrad {
     font-family: "FiraSans_SemiBold600", serif;
     font-size: 24px;
     line-height: 130%;
-    width: 170px;
-    height: 31px;
+
     margin-bottom: 15px;
     margin-left: 30px;
   }
   .card-text.kaliningrad1 {
-    width: 550px;
-    height: 23px;
     color: #ffffff;
     font-family: "FiraSans_Regular400", serif;
     font-size: 18px;
@@ -1346,8 +597,6 @@ $white: #ffffff;
     margin-bottom: 5px;
   }
   .card-text.kaliningrad2 {
-    width: 600px;
-    height: 16px;
     color: #ffffff;
     font-family: "FiraSans_Regular400", serif;
     font-size: 12px;
@@ -1359,66 +608,18 @@ $white: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 1301px;
-    height: 1033px;
+
     gap: 30px;
   }
   .title-services {
-    width: 100px;
-    height: 32px;
     color: #292929;
     font-family: "FiraSans_SemiBold600", serif;
     font-size: 32px;
     line-height: 110%;
     margin-top: 60px;
   }
-  .row.services_row {
-    width: 968px;
-    height: 1200px;
-  }
-  .row.services_row {
-    width: 968px;
-    height: 1100px;
-  }
-  .card.border.services {
-    width: 960px;
-    height: 222px;
-  }
-  .card-img.services {
-    width: 390px;
-    height: 182px;
-  }
-  .card-text.services {
-    width: 500px;
-    height: 26px;
-  }
-  .card-body.services {
-    width: 500px;
-    height: 182px;
-  }
-  .card-title.services {
-    width: 303px;
-    height: 26px;
-  }
-  .btn.btn-custom-services {
-    width: 500px;
-    height: 54px;
-  }
-  .btn.btn-services {
-    width: 564px;
-    height: 54px;
-  }
-  .modal.fade.services {
-    width: 624px;
-    height: 666px;
-  }
-  .additionally {
-    width: 960px;
-    height: 268px;
-  }
+
   .title-additionally {
-    width: 153px;
-    height: 26px;
     color: #ffffff;
     font-family: "FiraSans_Regular400", serif;
     font-size: 20px;
@@ -1426,101 +627,59 @@ $white: #ffffff;
     font-weight: 500;
     line-height: 130%;
   }
-  .list.additionally {
-    width: 800px;
-    height: 162px;
+  .list {
     color: #ffffff;
     font-family: "FiraSans_Regular400", serif;
     font-size: 18px;
     line-height: 150%;
   }
-  .img.warning {
-    width: 100px;
-    height: 100px;
-  }
 }
 /* Mobile */
 @media only screen and (max-width: 767px) {
   /* Блок отправления */
-  .departures {
-    width: 320px;
-    height: 1124px;
-  }
   .title-departures {
     color: #292929;
     font-family: "FiraSans_SemiBold600", serif;
     font-size: 24px;
     line-height: 130%;
-    width: 151px;
-    height: 31px;
   }
-  .card.germany {
-    width: 320px;
-    height: 544px;
-  }
-  .img-fluid.Germany {
-    width: 320px;
-    height: 544px;
-  }
+
   .card-img-overlay.Germany {
-    width: 320px;
-    height: 544px;
     display: flex;
   }
   .card-title.Germany {
     font-family: "FiraSans_SemiBold600", serif;
     font-size: 24px;
     line-height: 130%;
-    width: 109px;
-    height: 31px;
   }
   .card-text.germany1 {
-    width: 273px;
-    height: 46px;
     color: #ffffff;
     font-family: "FiraSans_Regular400", serif;
     font-size: 18px;
     line-height: 130%;
   }
   .card-text.germany2 {
-    width: 280px;
-    height: 32px;
     color: #ffffff;
     font-family: "FiraSans_Regular400", serif;
     font-size: 12px;
     line-height: 130%;
   }
-  .card.kaliningrad {
-    width: 320px;
-    height: 560px;
-  }
-  .img-fluid.Kaliningrad {
-    width: 320px;
-    height: 560px;
-  }
+
   .card-img-overlay.Kaliningrad {
     display: flex;
-    width: 320px;
-    height: 560px;
   }
   .card-title.Kaliningrad {
     font-family: "FiraSans_SemiBold600", serif;
     font-size: 24px;
     line-height: 130%;
-    width: 149px;
-    height: 31px;
   }
   .card-text.kaliningrad1 {
-    width: 273px;
-    height: 46px;
     color: #ffffff;
     font-family: "FiraSans_Regular400", serif;
     font-size: 18px;
     line-height: 130%;
   }
   .card-text.kaliningrad2 {
-    width: 280px;
-    height: 48px;
     color: #ffffff;
     font-family: "FiraSans_Regular400", serif;
     font-size: 12px;
@@ -1530,61 +689,17 @@ $white: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 320px;
-    height: 1900px;
+
     gap: 20px;
   }
   .title-services {
-    width: 320px;
-    height: 31px;
     color: #292929;
     font-family: "FiraSans_SemiBold600", serif;
     font-size: 24px;
     line-height: 130%;
   }
-  .row.services_row {
-    width: 320px;
-    height: 1900px;
-  }
-  .card.border.services {
-    width: 320px;
-    height: 442px;
-  }
-  .card-img.services {
-    width: 280px;
-    height: 166px;
-  }
-  .card-text.services {
-    width: 280px;
-    height: 150px;
-  }
-  .card-body.services {
-    width: 280px;
-    height: 232px;
-  }
-  .card-title.services {
-    width: 197px;
-    height: 52px;
-  }
-  .btn.btn-custom-services {
-    width: 280px;
-    height: 54px;
-  }
-  .btn.btn-services {
-    width: 580px;
-    height: 54px;
-  }
-  .modal.fade.services {
-    width: 320px;
-    height: 677px;
-  }
-  .additionally {
-    width: 320px;
-    height: 450px;
-  }
+
   .title-additionally {
-    width: 153px;
-    height: 26px;
     color: #ffffff;
     font-family: "FiraSans_Regular400", serif;
     font-size: 20px;
@@ -1592,54 +707,10 @@ $white: #ffffff;
     font-weight: 500;
     line-height: 130%;
   }
-  .list.additionally {
-    width: 800px;
-    height: 162px;
+  .list {
     color: #ffffff;
     font-family: "FiraSans_Regular400", serif;
     font-size: 16px;
     line-height: 150%;
   }
-  .img.warning {
-    width: 30px;
-    height: 30px;
-  }
-}
-.container__feedback {
-  padding-left: 4.875rem;
-  padding-top: 12.5rem;
-}
-
-.title-feedback {
-  margin-left: 5rem;
-  margin-top: 5%;
-}
-
-.embed- {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-}
-
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.card__text__feedback {
-  min-height: 340px;
-  max-width: 450px;
-  width: 100%;
-}
-
-.card__video__feedback {
-  max-width: 100%;
-  max-height: 100%;
 }

@@ -214,14 +214,18 @@
     <!-- Main content -->
     <main>
       <!-- Начало Блок Отправления-Услуги-Дополнительно -->
-      <section class="departures">
-        <h2 class="title-departures">Отправления</h2>
+      <section class="departures top-margin">
         <!-- Контейнер отправления Германия-Калининград -->
-        <div class="container-fluid departures-container">
-          <div class="row departures">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="main-title">Отправления</h2>
+            </div>
+          </div>
+          <div class="row">
             <!-- Первая карточка отправления Германия -->
             <div class="col-lg-6 col-md-12 col-12">
-              <div class="card germany">
+              <div class="card">
                 <picture>
                   <!-- Источник для меньших экранов (ширина до 965 пикселей) -->
                   <source
@@ -234,17 +238,17 @@
                   <img
                     src="assets/images/card_germany.jpg"
                     alt="img_Germany»"
-                    class="img-fluid Germany"
+                    class="img-fluid"
                   />
                 </picture>
-                <div class="card-body departures">
-                  <div class="card-img-overlay Germany">
+                <div class="card-body">
+                  <div class="card-img-overlay">
                     <div>
-                      <h2 class="card-title Germany">Германия</h2>
-                      <p class="card-text germany1">
+                      <h2 class="card-title">Германия</h2>
+                      <p class="card-text">
                         Отправление каждую среду по индивидуальному маршруту
                       </p>
-                      <p class="card-text germany2">
+                      <p class="card-text">
                         Уточняйте в наших мессенджерах или в комментарии при
                         заполнении формы
                       </p>
@@ -255,7 +259,7 @@
             </div>
             <!-- Вторая карточка отправления Калининград -->
             <div class="col-lg-6 col-md-12 col-12">
-              <div class="card kaliningrad">
+              <div class="card">
                 <picture>
                   <!-- Источник для меньших экранов (ширина до 965 пикселей) -->
                   <source
@@ -271,14 +275,14 @@
                     class="img-fluid Kaliningrad"
                   />
                 </picture>
-                <div class="card-body departures">
-                  <div class="card-img-overlay Kaliningrad">
+                <div class="card-body">
+                  <div class="card-img-overlay">
                     <div>
-                      <h2 class="card-title Kaliningrad">Калининград</h2>
-                      <p class="card-text kaliningrad1">
+                      <h2 class="card-title">Калининград</h2>
+                      <p class="card-text">
                         Отправление каждую субботу в 03:00
                       </p>
-                      <p class="card-text kaliningrad2">
+                      <p class="card-text">
                         Cбор у гостевого дома Бриг по адресу: г. Калининград,
                         поселок Большое Исаково, ул. Зеленая, 4А
                       </p>
@@ -291,141 +295,130 @@
         </div>
       </section>
       <!-- Карточки услуг блок-1 -->
-      <section class="services">
-        <h2 class="title-services">Услуги</h2>
-        <div class="container-fluid services">
-          <div class="row services_row">
+      <section class="services top-margin">
+        <div class="container">
+          <div class="row">
+            <h2 class="main-title">Услуги</h2>
+          </div>
+          <div class="row">
             <!-- Первая карточка -->
-            <div class="col-lg-6 col-md-12 col-12 mb-0">
-              <div class="card border services">
-                <div class="row services">
-                  <div class="col-md-6">
-                    <img
-                      src="assets/images/service1.png"
-                      class="card-img services"
-                      alt="img_service1"
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <div class="card-body services">
-                      <p class="card-title services">Пассажирские перевозки</p>
-                      <p class="card-text services">
-                        Еженедельные рейсы по маршруту
-                        Германия-Калининград-Германия, совершаемые,
-                        преимущественно, по скоростным и платным трассам.
-                        Возможен трансфер от адреса до адреса.
-                      </p>
-                      <!-- Кнопка-триггер модального окна -->
-                      <button
-                        class="btn btn-custom-services"
-                        data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop1"
-                      >
-                        Оставить заявку
-                      </button>
-                    </div>
-                  </div>
+            <div class="col-lg-6 col-md-12 col-12">
+              <div class="services__card container__wrapper">
+                <div class="services__card__img">
+                  <img
+                    src="assets/images/service1.png"
+                    class="card-img"
+                    alt="img_service1"
+                  />
+                </div>
+                <div class="services__card-body">
+                  <p class="services__card-title">Пассажирские перевозки</p>
+                  <p class="services__card-text">
+                    Еженедельные рейсы по маршруту
+                    Германия-Калининград-Германия, совершаемые, преимущественно,
+                    по скоростным и платным трассам. Возможен трансфер от адреса
+                    до адреса.
+                  </p>
+                  <!-- Кнопка-триггер модального окна -->
+                  <button
+                    class="btn btn-custom-services"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop1"
+                  >
+                    Оставить заявку
+                  </button>
                 </div>
               </div>
             </div>
-
             <!-- Вторая карточка -->
-            <div class="col-lg-6 col-md-12 col-12 mb-0">
-              <div class="card border services">
-                <div class="row services">
-                  <div class="col-md-6">
-                    <img
-                      src="assets/images/service2.png"
-                      class="card-img services"
-                      alt="img_service2"
-                    />
+            <div class="col-lg-6 col-md-12 col-12">
+              <div class="services__card container__wrapper">
+                <div class="services__card__img">
+                  <img
+                    src="assets/images/service2.png"
+                    class="card-img"
+                    alt="img_service2"
+                  />
+                </div>
+                <div class="services__card-body">
+                  <div>
+                    <p class="services__card-title">
+                      Перевозка домашних животных
+                    </p>
+                    <p class="services__card-text">
+                      Профессионально и комфортно доставим вашего питомца от
+                      адреса до адреса
+                    </p>
                   </div>
-                  <div class="col-md-6">
-                    <div class="card-body services">
-                      <p class="card-title services">
-                        Перевозка домашних животных
-                      </p>
-                      <p class="card-text services">
-                        Профессионально и комфортно доставим вашего питомца от
-                        адреса до адреса
-                      </p>
-                      <!-- Кнопка-триггер модального окна -->
-                      <button
-                        class="btn btn-custom-services"
-                        data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop2"
-                      >
-                        Оставить заявку
-                      </button>
-                    </div>
-                  </div>
+                  <!-- Кнопка-триггер модального окна -->
+                  <button
+                    class="btn btn-custom-services"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop2"
+                  >
+                    Оставить заявку
+                  </button>
                 </div>
               </div>
             </div>
-
             <!-- Третья карточка -->
-            <div class="col-lg-6 col-md-12 col-12 mb-0">
-              <div class="card border services">
-                <div class="row services">
-                  <div class="col-md-6">
-                    <img
-                      src="assets/images/service3.png"
-                      class="card-img services"
-                      alt="img_service3"
-                    />
+            <div class="col-lg-6 col-md-12 col-12">
+              <div class="services__card container__wrapper">
+                <div class="services__card__img">
+                  <img
+                    src="assets/images/service3.png"
+                    class="card-img"
+                    alt="img_service3"
+                  />
+                </div>
+                <div class="services__card-body">
+                  <div>
+                    <p class="services__card-title">Доставка посылок</p>
+                    <p class="services__card-text">
+                      Посылки и корреспонденцию принимаем на почтовый адрес в
+                      Германии и отправляем из Калининграда по всей России
+                      почтой либо СДЭК
+                    </p>
                   </div>
-                  <div class="col-md-6">
-                    <div class="card-body services">
-                      <p class="card-title services">Доставка посылок</p>
-                      <p class="card-text services">
-                        Посылки и корреспонденцию принимаем на почтовый адрес в
-                        Германии и отправляем из Калининграда по всей России
-                        почтой либо СДЭК
-                      </p>
-                      <!-- Кнопка-триггер модального окна -->
-                      <button
-                        class="btn btn-custom-services"
-                        data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop3"
-                      >
-                        Оставить заявку
-                      </button>
-                    </div>
-                  </div>
+                  <!-- Кнопка-триггер модального окна -->
+                  <button
+                    class="btn btn-custom-services"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop3"
+                  >
+                    Оставить заявку
+                  </button>
                 </div>
               </div>
             </div>
-
             <!-- Четвёртая карточка -->
-            <div class="col-lg-6 col-md-12 col-12 mb-0">
-              <div class="card border services">
-                <div class="row services">
-                  <div class="col-md-6">
-                    <img
-                      src="assets/images/service4.png"
-                      class="card-img services"
-                      alt="img_service4"
-                    />
+            <div class="col-lg-6 col-md-12 col-12">
+              <div class="services__card container__wrapper">
+                <div class="services__card__img">
+                  <img
+                    src="assets/images/service4.png"
+                    class="card-img"
+                    alt="img_service4"
+                  />
+                </div>
+                <div class="services__card-body">
+                  <div>
+                    <p class="services__card-title">
+                      Транспортировка праха в урнах
+                    </p>
+                    <p class="services__card-text">
+                      Проконсультируем и поможем организовать процесс
+                      транспортировки бережно и с уважительным подходом
+                    </p>
                   </div>
-                  <div class="col-md-6">
-                    <div class="card-body services">
-                      <p class="card-title services">
-                        Транспортировка праха в урнах
-                      </p>
-                      <p class="card-text services">
-                        Проконсультируем и поможем организовать процесс
-                        транспортировки бережно и с уважительным подходом
-                      </p>
-                      <!-- Кнопка-триггер модального окна -->
-                      <button
-                        class="btn btn-custom-services"
-                        data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop1"
-                      >
-                        Оставить заявку
-                      </button>
-                    </div>
-                  </div>
+                  <!-- Кнопка-триггер модального окна -->
+                  <button
+                    class="btn btn-custom-services"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop1"
+                  >
+                    Оставить заявку
+                  </button>
                 </div>
               </div>
             </div>
@@ -774,89 +767,104 @@
       <!-- Pop up после отправки заявки на услуги 1,2,3,4 -->
 
       <!-- Блок Дополнительно -->
-      <div class="additionally row">
-        <!-- Левая часть - текст -->
-        <div class="col-md-8">
-          <p class="title-additionally">Дополнительно:</p>
-          <ul class="list additionally">
-            <li>Помощь с оформлением документов для перевозки животных;</li>
-            <li>Помощь с оформлением документов для транспортировки праха;</li>
-            <li>Трансфер до аэропорта Храброво в Калининграде (15€);</li>
-            <li>Сопровождение несовершеннолетних;</li>
-            <li>
-              Бронь гостиницы, авиа- и ж/д билетов по всей России без
-              комиссии(услуга доступна только для пассажиров нашей компании);
-            </li>
-            <li>Пассажирские и грузовые перевозки по Европе.</li>
-          </ul>
-        </div>
-        <!-- Правая часть - картинка -->
-        <div class="col-md-4">
-          <div class="img warning">
-            <img src="assets/svg/Warning.svg" alt="warning" />
+      <div class="container">
+        <div class="row">
+          <!-- Левая часть - текст -->
+          <div class="col-12">
+            <div class="additionally">
+              <div class="additionally__wrapper">
+                <p class="title-additionally">Дополнительно:</p>
+                <ul class="list">
+                  <li>
+                    Помощь с оформлением документов для перевозки животных;
+                  </li>
+                  <li>
+                    Помощь с оформлением документов для транспортировки праха;
+                  </li>
+                  <li>Трансфер до аэропорта Храброво в Калининграде (15€);</li>
+                  <li>Сопровождение несовершеннолетних;</li>
+                  <li>
+                    Бронь гостиницы, авиа- и ж/д билетов по всей России без
+                    комиссии(услуга доступна только для пассажиров нашей
+                    компании);
+                  </li>
+                  <li>Пассажирские и грузовые перевозки по Европе.</li>
+                </ul>
+              </div>
+              <!-- Правая часть - картинка -->
+              <div class="img warning">
+                <img src="assets/svg/Warning.svg" alt="warning" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <!-- Конец Блок Отправления-Услуги-Дополнительно -->
       <!-- Начало блока Почему мы? -->
-      <section class="advantages">
-        <div class="container">
-          <h2 class="text-center mt-3" style="font-weight: bold">Почему мы?</h2>
-          <div class="inner-container">
-            <div class="container-wrapper">
-              <div class="container-block">
-                <h3>01</h3>
-                <p>Опыт на рынке перевозок составляет три года</p>
-              </div>
-              <div class="container-block">
-                <h3>02</h3>
-                <p>Обеспечиваем поездку даже для одного пассажира</p>
-              </div>
-              <div class="container-block">
-                <h3>03</h3>
-                <p>Три микроавтобуса Mercedes Sprinter на восемь мест</p>
-              </div>
-              <div class="container-block">
-                <h3>04</h3>
-                <p>В автобусе высокие потолки и мягкие сидения с пледами</p>
-              </div>
-              <div class="container-block">
-                <h3>05</h3>
-                <p>Предусмотрены остановки для санитарных нужд</p>
-              </div>
+      <section class="advantages top-margin">
+        <div class="container container__wrapper">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="main-title" style="text-align: center">Почему мы?</h2>
             </div>
-            <div class="container-wrapper">
-              <div class="container-block">
-                <h3>06</h3>
-                <p>Доступны Wi-Fi и USB для зарядки устройств</p>
+          </div>
+          <div class="row">
+            <div class="inner-container">
+              <div class="">
+                <div class="container-block">
+                  <h3>01</h3>
+                  <p>Опыт на рынке перевозок составляет три года</p>
+                </div>
+                <div class="container-block">
+                  <h3>02</h3>
+                  <p>Обеспечиваем поездку даже для одного пассажира</p>
+                </div>
+                <div class="container-block">
+                  <h3>03</h3>
+                  <p>Три микроавтобуса Mercedes Sprinter на восемь мест</p>
+                </div>
+                <div class="container-block">
+                  <h3>04</h3>
+                  <p>В автобусе высокие потолки и мягкие сидения с пледами</p>
+                </div>
+                <div class="container-block">
+                  <h3>05</h3>
+                  <p>Предусмотрены остановки для санитарных нужд</p>
+                </div>
               </div>
-              <div class="container-block">
-                <h3>07</h3>
-                <p>Все микроавтобусы оснащены кондиционерами</p>
-              </div>
-              <div class="container-block">
-                <h3>08</h3>
-                <p>Планируем остановки в пути в кафе, чтобы перекусить</p>
-              </div>
-              <div class="container-block">
-                <h3>09</h3>
-                <p>Возможны остановки по требованию пассажиров</p>
-              </div>
-              <div class="container-block">
-                <h3>10</h3>
-                <p>Предоставляем услугу "от дома до дома"</p>
+              <div class="container-wrapper">
+                <div class="container-block">
+                  <h3>06</h3>
+                  <p>Доступны Wi-Fi и USB для зарядки устройств</p>
+                </div>
+                <div class="container-block">
+                  <h3>07</h3>
+                  <p>Все микроавтобусы оснащены кондиционерами</p>
+                </div>
+                <div class="container-block">
+                  <h3>08</h3>
+                  <p>Планируем остановки в пути в кафе, чтобы перекусить</p>
+                </div>
+                <div class="container-block">
+                  <h3>09</h3>
+                  <p>Возможны остановки по требованию пассажиров</p>
+                </div>
+                <div class="container-block">
+                  <h3>10</h3>
+                  <p>Предоставляем услугу "от дома до дома"</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
       <!-- Конец Блока Почему мы? -->
-                    <!--feedback-->
-      <section class="feedback">
-        <div class="container__feedback">
+      <!--feedback-->
+      <section class="feedback top-margin">
+        <div class="container">
           <div class="row">
             <div class="col-xl-2 col-md-2 col-sm-12">
-              <h2 class="title_feedback">Отзывы</h2>
+              <h2 class="main-title">Отзывы</h2>
             </div>
             <div class="col-xl-10 col-md-10 col-sm-12">
               <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -898,195 +906,176 @@
                   tabindex="0"
                 >
                   <div class="owl-carousel owl-theme">
-                    <div class="carousel-feedback">
-                      <div
-                        class="card__text__feedback w-60 h-100 gx-sm-1 p-2 border bg-light"
-                      >
-                        <div class="card-body">
-                          Хочу сказать огромное спасибо фирме Трансфер и
-                          особенно водителю Игорю! Я ехала 21 августа с детьми
-                          из Калининграда. Благодаря внимательному и очень
-                          позитивному водителю поездка получилась быстрой и
-                          веселой! Детям тоже всё очень понравилось, спасибо вам
-                          за Вашу работу!!!
-                        </div>
+                    <div
+                      class="card__text__feedback w-60 h-100 g-1 p-2 m-2 border bg-light"
+                    >
+                      <div class="card-body">
+                        Хочу сказать огромное спасибо фирме Трансфер и особенно
+                        водителю Игорю! Я ехала 21 августа с детьми из
+                        Калининграда. Благодаря внимательному и очень
+                        позитивному водителю поездка получилась быстрой и
+                        веселой! Детям тоже всё очень понравилось, спасибо вам
+                        за Вашу работу!!!
                       </div>
                     </div>
-                    <div>
-                      <div
-                        class="card__text__feedback w-60 h-100 g-1 p-2 m-2 border bg-light"
-                      >
-                        <div class="card-body">
-                          На днях приехала с Transfer из Калининграда в
-                          Германию. Хочу выразить свою благодарность водителю
-                          Игорю, очень вежливый, внимательный к своим пассажирам
-                          и опытный водитель. Доехали отлично! Буду всем
-                          рекомендовать!
-                        </div>
+                    <div
+                      class="card__text__feedback w-60 h-100 g-1 p-2 m-2 border bg-light"
+                    >
+                      <div class="card-body">
+                        На днях приехала с Transfer из Калининграда в Германию.
+                        Хочу выразить свою благодарность водителю Игорю, очень
+                        вежливый, внимательный к своим пассажирам и опытный
+                        водитель. Доехали отлично! Буду всем рекомендовать!
                       </div>
                     </div>
-                    <div>
-                      <div
-                        class="card__text__feedback w-60 h-100 g-1 p-2 m-2 border bg-light"
-                      >
-                        <div class="card-body">
-                          Компания Трансфер, водитель Игорь, комфортабельная
-                          машина, водитель профессионал, довез в целости и
-                          сохранности до дома. Эмилия
-                        </div>
+                    <div
+                      class="card__text__feedback w-60 h-100 g-1 p-2 m-2 border bg-light"
+                    >
+                      <div class="card-body">
+                        Компания Трансфер, водитель Игорь, комфортабельная
+                        машина, водитель профессионал, довез в целости и
+                        сохранности до дома. Эмилия
                       </div>
                     </div>
-                    <div>
-                      <div
-                        class="card__text__feedback w-60 h-100 g-2 p-2 m-2 border bg-light"
-                      >
-                        <div class="card-body">
-                          Спасибо! Присоединяюсь к самым лучшим отзывам и
-                          пожеланиям о фирме Трансфер. Хочу выразить
-                          благодарность водителю Игорю за прекрасную поездку,
-                          его легкость и отзывчивость.
-                        </div>
+                    <div
+                      class="card__text__feedback w-60 h-100 g-1 p-2 m-2 border bg-light"
+                    >
+                      <div class="card-body">
+                        Спасибо! Присоединяюсь к самым лучшим отзывам и
+                        пожеланиям о фирме Трансфер. Хочу выразить благодарность
+                        водителю Игорю за прекрасную поездку, его легкость и
+                        отзывчивость.
                       </div>
                     </div>
-                    <div>
-                      <div
-                        class="card__text__feedback w-60 h-100 g-1 p-2 m-2 border bg-light"
-                      >
-                        <div class="card-body">
-                          Спасибо за поездку! Отличное путешествие получилось!!!
-                          Всё легко, спокойно, надежно, комфортно!!! Всем
-                          рекомендую! @zi_kartina
-                        </div>
+                    <div
+                      class="card__text__feedback w-60 h-100 g-1 p-2 m-2 border bg-light"
+                    >
+                      <div class="card-body">
+                        Спасибо за поездку! Отличное путешествие получилось!!!
+                        Всё легко, спокойно, надежно, комфортно!!! Всем
+                        рекомендую! @zi_kartina
                       </div>
                     </div>
-                    <div>
-                      <div
-                        class="card__text__feedback w-60 h-100 g-1 p-2 m-2 border bg-light"
-                      >
-                        <div class="card-body">
-                          Раз 8 уже ездила с @transfer_es и в декабре опять
-                          поеду, ни разу не подвели. И очень крутая атмосфера
-                          всю поездку, просто огонь! @sv_eta3251
-                        </div>
+                    <div
+                      class="card__text__feedback w-60 h-100 g-1 p-2 m-2 border bg-light"
+                    >
+                      <div class="card-body">
+                        Раз 8 уже ездила с @transfer_es и в декабре опять поеду,
+                        ни разу не подвели. И очень крутая атмосфера всю
+                        поездку, просто огонь! @sv_eta3251
                       </div>
                     </div>
-                    <div>
-                      <div
-                        class="card__text__feedback w-60 h-100 g-1 p-2 m-2 border bg-light"
-                      >
-                        <div class="card-body">
-                          Здравствуйте! Вчера ехала Вашей компанией в
-                          Калининград. Хотела отметить, что всё организовано,
-                          чётко. Вы очень внимательны к пассажирам и всё время
-                          были со мной на связи. чувствуется забота с вашей
-                          стороны. А атмосфера с водителем была комфортной.
-                          Доехали хорошо, спасибо Вам большое!
-                        </div>
+                    <div
+                      class="card__text__feedback w-60 h-100 g-1 p-2 m-2 border bg-light"
+                    >
+                      <div class="card-body">
+                        Здравствуйте! Вчера ехала Вашей компанией в Калининград.
+                        Хотела отметить, что всё организовано, чётко. Вы очень
+                        внимательны к пассажирам и всё время были со мной на
+                        связи. чувствуется забота с вашей стороны. А атмосфера с
+                        водителем была комфортной. Доехали хорошо, спасибо Вам
+                        большое!
                       </div>
                     </div>
-                    <div>
-                      <div
-                        class="card__text__feedback w-60 h-100 g-1 p-2 m-2 border bg-light"
-                      >
-                        <div class="card-body">
-                          Всё прошло хорошо, несмотря на то, что я ехала
-                          туда-обратно и это тяжёлая дорога. Ребята
-                          внимательные, заботились о пассажирах, помогли в
-                          городе сориентироваться (была первый раз) и где
-                          остановиться. Еще один важный момент - сразу говорят,
-                          что по документам, как проходить границу, что
-                          можно/нельзя с собой. В общем, компетентно,
-                          профессионально. Спасибо) Наталья
-                        </div>
+                    <div
+                      class="card__text__feedback w-60 h-100 g-1 p-2 m-2 border bg-light"
+                    >
+                      <div class="card-body">
+                        Всё прошло хорошо, несмотря на то, что я ехала
+                        туда-обратно и это тяжёлая дорога. Ребята внимательные,
+                        заботились о пассажирах, помогли в городе
+                        сориентироваться (была первый раз) и где остановиться.
+                        Еще один важный момент - сразу говорят, что по
+                        документам, как проходить границу, что можно/нельзя с
+                        собой. В общем, компетентно, профессионально. Спасибо)
+                        Наталья
                       </div>
                     </div>
-                    <div>
-                      <div
-                        class="card__text__feedback w-60 h-100 g-1 p-2 m-2 border bg-light"
-                      >
-                        <div class="card-body">
-                          Добрый вечер! Хотела сказать огромное спасибо Вам за
-                          поездку с Калининграда в Германию. Всё прошло просто
-                          супер! Такая классная попалась компания. Водитель
-                          Николай большой молодец! Я очень довольна! Время
-                          пролетело весело и быстро. СПАСИБО большое Диме за
-                          помощь в поездке. Лариса
-                        </div>
+                    <div
+                      class="card__text__feedback w-60 h-100 g-1 p-2 m-2 border bg-light"
+                    >
+                      <div class="card-body">
+                        Добрый вечер! Хотела сказать огромное спасибо Вам за
+                        поездку с Калининграда в Германию. Всё прошло просто
+                        супер! Такая классная попалась компания. Водитель
+                        Николай большой молодец! Я очень довольна! Время
+                        пролетело весело и быстро. СПАСИБО большое Диме за
+                        помощь в поездке. Лариса
                       </div>
                     </div>
-                    <div>
-                      <div
-                        class="card__text__feedback w-60 h-100 g-1 p-2 m-2 border bg-light"
-                      >
-                        <div class="card-body">
-                          Очень заботливые водители. Как за каменной стеной
-                        </div>
+                    <div
+                      class="card__text__feedback w-60 h-100 g-1 p-2 m-2 border bg-light"
+                    >
+                      <div class="card-body">
+                        Очень заботливые водители. Как за каменной стеной
                       </div>
                     </div>
-                    <div>
-                      <div
-                        class="card__text__feedback w-60 h-100 g-1 p-2 m-2 border bg-light"
-                      >
-                        <div class="card-body">
-                          Спасибо Вам большое! Мама сказала, что всё было
-                          замечательно! Водителям большая благодарность!!! Мария
+                    <div
+                      class="card__text__feedback w-60 h-100 g-1 p-2 m-2 border bg-light"
+                    >
+                      <div class="card-body">
+                        Спасибо Вам большое! Мама сказала, что всё было
+                        замечательно! Водителям большая благодарность!!! Мария
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-video-feedback"
+                  role="tabpanel"
+                  aria-labelledby="pills-video-feedback-tab"
+                  tabindex="0"
+                >
+                  <div class="embed-container">
+                    <div class="row">
+                      <div class="col-xl-2 col-md-6 col-sm-12">
+                        <div class="card w-60 h-100 g-1 p-2 border bg-light">
+                          <video
+                            class="card__video__feedback"
+                            src="assets/images/IMG_2722.mp4"
+                            controls
+                          ></video>
+                        </div>
+                      </div>
+                      <div class="col-xl-2 col-md-6 col-sm-12">
+                        <div class="card w-60 h-100 g-1 p-2 border bg-light">
+                          <video
+                            class="card__video__feedback"
+                            src="/assets/images/IMG_2723.mp4"
+                            controls
+                          ></video>
+                        </div>
+                      </div>
+                      <div class="col-xl-2 col-md-6 col-sm-12">
+                        <div class="card w-60 h-100 g-1 p-2 border bg-light">
+                          <video
+                            class="card__video__feedback"
+                            src="/assets/images/IMG_2725.mp4"
+                            controls
+                          ></video>
+                        </div>
+                      </div>
+                      <div class="col-xl-2 col-md-6 col-sm-12">
+                        <div class="card w-60 h-100 g-1 p-2 border bg-light">
+                          <video
+                            class="card__video__feedback"
+                            src="/assets/images/IMG_2724.mp4"
+                            controls
+                          ></video>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div
-                class="tab-pane fade"
-                id="pills-video-feedback"
-                role="tabpanel"
-                aria-labelledby="pills-video-feedback-tab"
-                tabindex="0"
-              >
-                <div class="embed-container">
-                  <div class="row">
-                    <div class="col-xl-2 col-md-6 col-sm-12">
-                      <div class="card w-60 h-100 g-1 p-2 border bg-light">
-                        <video
-                          class="card__video__feedback"
-                          src="assets/images/IMG_2722.mp4"
-                          controls
-                        ></video>
-                      </div>
-                    </div>
-                    <div class="col-xl-2 col-md-6 col-sm-12">
-                      <div class="card w-60 h-100 g-1 p-2 border bg-light">
-                        <video
-                          class="card__video__feedback"
-                          src="/assets/images/IMG_2723.mp4"
-                          controls
-                        ></video>
-                      </div>
-                    </div>
-                    <div class="col-xl-2 col-md-6 col-sm-12">
-                      <div class="card w-60 h-100 g-1 p-2 border bg-light">
-                        <video
-                          class="card__video__feedback"
-                          src="/assets/images/IMG_2725.mp4"
-                          controls
-                        ></video>
-                      </div>
-                    </div>
-                    <div class="col-xl-2 col-md-6 col-sm-12">
-                      <div class="card w-60 h-100 g-1 p-2 border bg-light">
-                        <video
-                          class="card__video__feedback"
-                          src="/assets/images/IMG_2724.mp4"
-                          controls
-                        ></video>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                </section>
+            </div>
+          </div>
+        </div>
+      </section>
       <!--Feedback end-->
       <section class="FAQ">
-        <h2 class="FAQ_title">Вопросы и ответы</h2>
+        <h2 class="main-title">Вопросы и ответы</h2>
         <div class="FAQ_questions">
           <div class="row">
             <div class="col">
@@ -1855,7 +1844,7 @@
     </script>
     <script>
       $(".owl-carousel").owlCarousel({
-        margin: 20,
+        margin: 10,
         loop: true,
         nav: true,
         dots: false,
