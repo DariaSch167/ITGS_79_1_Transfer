@@ -6,12 +6,14 @@
 @import "style_contact_us";
 @import "style_header";
 @import "style_footer";
-@import "styleblock2";
 @import "style_feedback";
 @import "style_whyus";
+@import "style_departures";
+@import "style_additionally";
+@import "style_services";
 
 body {
-  min-width: 320px;
+  min-width: 375px;
   margin: 0 auto;
   padding: 0;
   font-family: "FiraSans_Regular400", sans-serif;
@@ -24,6 +26,11 @@ body {
 .container {
   max-width: 1770px;
   margin: 0 auto;
+}
+
+.img__fluid {
+  max-width: 100%;
+  height: auto;
 }
 
 .container__wrapper {
@@ -43,4 +50,24 @@ body {
   font-size: 40px;
   line-height: 130%;
   margin-bottom: 30px;
+}
+
+@media (max-width: 1200px) {
+  .top-margin {
+    margin-top: 150px;
+  }
+  .main-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .top-margin {
+    margin-top: 100px;
+  }
+  .main-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
 }

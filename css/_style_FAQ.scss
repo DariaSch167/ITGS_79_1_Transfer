@@ -1,15 +1,11 @@
 @import "fonts";
 @import "variables";
 @import "mixins";
-.FAQ {
-  display: grid;
-  grid-template-columns: 30% 60%;
-  margin-top: 20vh;
-  justify-content: center;
-}
 .FAQ_title {
   font-size: $H2_40;
   font-weight: 600;
+}
+.FAQ_questions {
 }
 .accordion-item {
   border: none;

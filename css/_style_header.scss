@@ -1,12 +1,18 @@
+$orange: #fb8d00;
+$grey: #ededed;
+
 .header {
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
-  padding-top: 2rem;
+  padding: 2rem 4.68rem 0;
+  .mobile {
+    display: none;
+  }
 
   &__inner {
     display: flex;
-    padding-left: $left-block-gap;
+    width: 100%;
   }
 
   &__logo {
@@ -18,7 +24,6 @@
     display: flex;
     align-items: center;
     gap: 1.875rem;
-    padding-right: $right-block-gap;
   }
 
   &__socials {
@@ -38,6 +43,7 @@
       position: relative;
       display: inline-block;
       color: $white;
+      transition: 0.3s ease-in-out;
       &::before {
         content: "";
         position: absolute;
@@ -64,24 +70,21 @@ a:hover {
 
 .nav {
   padding-left: 4rem;
+  margin-left: 0;
+  margin-right: auto;
 
   &__inner {
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    gap: 1.25rem;
     margin: 0;
     padding: 0;
     list-style-type: none;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-    padding-inline-start: 0;
   }
 
   &__item {
-    padding: 1.25rem;
     font-family: "FiraSans_Regular400", sans-serif;
     font-size: 1.25rem;
     line-height: 130%;
@@ -90,11 +93,11 @@ a:hover {
   &__link {
     position: relative;
     display: flex;
-
     justify-content: space-between;
     align-items: center;
     color: $white;
     line-height: 1.3;
+    transition: 0.3s ease-out;
 
     &::before {
       content: "";
@@ -113,6 +116,140 @@ a:hover {
       &:before {
         width: 100%;
       }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .header {
+    &__logo {
+      max-width: 150px;
+    }
+  }
+
+  .nav {
+    &__link {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  body.active {
+    overflow: hidden;
+  }
+  .header {
+    padding: 2rem 1rem 0;
+    &__logo {
+      max-width: 200px;
+      position: relative;
+      z-index: 101;
+    }
+    .mobile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 47px;
+      height: 47px;
+      border: 1px solid $orange;
+      background-color: transparent;
+      padding: 0;
+      border-radius: 3px;
+      position: relative;
+      z-index: 101;
+      &.active {
+        border: 1px solid $white;
+        .show {
+          display: none;
+        }
+        .hide {
+          display: block;
+        }
+      }
+
+      .show {
+        display: block;
+      }
+      .hide {
+        display: none;
+      }
+    }
+    &__inner {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 100%;
+      width: 100%;
+      height: 100%;
+      z-index: 100;
+      transition: 0.3s ease-in-out;
+      background-color: $orange;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      &.active {
+        left: 0;
+      }
+    }
+
+    &__contacts {
+      display: flex;
+      flex-direction: column;
+      min-height: 260px;
+      padding-right: 2.2rem;
+    }
+
+    &__phone {
+      a {
+        font-size: 1.5rem;
+      }
+    }
+
+    .nav {
+      width: 50%;
+      min-height: 260px;
+      border-right: 1px solid $grey;
+      padding-left: 1.25rem;
+      &__inner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      &__link {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    &__inner {
+      flex-direction: column-reverse;
+      justify-content: center;
+      padding: 1.25rem;
+      // align-items: center;
+    }
+
+    .nav {
+      width: 100%;
+      padding: 0;
+      display: flex;
+      justify-content: flex-start;
+      padding-top: 50px;
+      border-top: 1px solid $white;
+      border-right-color: transparent;
+      &__inner {
+        max-width: 320px;
+      }
+    }
+    &__contacts {
+      min-height: auto;
+      padding-bottom: 50px;
+      padding-right: 0;
+      width: 100%;
+      align-items: flex-start;
     }
   }
 }

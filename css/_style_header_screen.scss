@@ -50,7 +50,8 @@ body {
     border-radius: 0.625rem;
     border: $grey-border;
     padding: 1.875rem;
-    width: 85%;
+    width: 100%;
+    max-width: 624px;
     color: $black;
   }
   & h3 {
@@ -198,14 +199,14 @@ body {
   margin: 1.25rem 0;
 }
 
-@media screen and (max-width: 1025px) and (min-width: 450px) {
+@media screen and (max-width: 1200px) and (min-width: 450px) {
   .header__screen {
     &__wrapper {
-      margin: 3.125rem 0;
-      padding: 0;
+      padding: 3.125rem 0;
     }
     &__title {
       padding-left: 1.25rem;
+      text-align: center;
     }
   }
   .header__lead-form {

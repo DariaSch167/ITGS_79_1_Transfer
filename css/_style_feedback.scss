@@ -83,7 +83,7 @@
 .owl-nav {
   position: absolute;
   top: -4.5rem;
-  left: 85%;
+  left: 95%;
 }
 
 .owl-item {
@@ -156,12 +156,14 @@
     left: 15%;
   }
 }
+.nav-pills .nav-link {
+  color: #fb8d00;
+}
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   background-color: #ffffff;
   border: 1px solid #fb8d00;
-  color: #fb8d00;
   transition: all 0.2s ease;
 }
 .nav-pills .nav-link.active:hover,
@@ -256,15 +258,6 @@
   top: 0;
 }
 
-@media screen and (max-width: 576px) {
-  .owl-nav {
-    position: absolute;
-    top: 100%;
-    transform: translate(-160%);
-    left: 15%;
-  }
-}
-
 .inner-container {
   max-width: 1553px;
   --bs-gutter-x: 1.5rem;
@@ -319,6 +312,10 @@
   .inner-container {
     display: block;
   }
+  .owl-nav {
+    top: -5rem;
+    left: 85%;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .container-block h3 {
@@ -329,5 +326,22 @@
   }
   .container-block {
     max-width: 342px;
+  }
+  .owl-nav {
+    top: -5rem;
+    left: 85%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .owl-nav {
+    position: absolute;
+    top: 100%;
+    transform: translate(-160%);
+    left: 15%;
+  }
+  .owl-nav {
+    top: -8.25rem;
+    left: 87%;
   }
 }

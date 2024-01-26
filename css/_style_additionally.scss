@@ -1,0 +1,93 @@
+$orange: #fb8d00;
+$grey: #ededed;
+$grey-dark: #c8c8c8;
+$black: #292929;
+$white: #ffffff;
+
+.additionally {
+  background-color: $orange;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  column-gap: 1.25rem;
+  .title-additionally {
+    color: $white;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+  }
+
+  .list {
+    color: $white;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 18px;
+    line-height: 150%;
+    margin-top: 20px;
+  }
+
+  .img.warning {
+    width: 123px;
+    height: 123px;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  /* Блок отправления */
+
+  .additionally {
+    .title-additionally {
+      color: $white;
+      font-family: "FiraSans_Regular400", serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 130%;
+    }
+    .list {
+      color: $white;
+      font-family: "FiraSans_Regular400", serif;
+      font-size: 16px;
+      line-height: 150%;
+    }
+    .img.warning {
+      max-width: 100px;
+      width: 100%;
+      height: 100px;
+    }
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  /* Блок отправления */
+  .additionally {
+    align-items: flex-start;
+    .title-additionally {
+      color: #ffffff;
+      font-family: "FiraSans_Regular400", serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 130%;
+    }
+    .list.additionally {
+      color: #ffffff;
+      font-family: "FiraSans_Regular400", serif;
+      font-size: 18px;
+      line-height: 150%;
+    }
+
+    .img.warning {
+      max-width: 50px;
+      width: 100%;
+      height: 50px;
+    }
+  }
+}

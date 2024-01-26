@@ -98,7 +98,6 @@
     }
 
     &__inner {
-      width: 50%;
       position: relative;
       border-bottom: none;
 
@@ -159,6 +158,8 @@
     display: block;
 
     &__inner {
+      padding-left: 1rem;
+      padding-right: 1rem;
       &_content {
         display: block;
       }
@@ -172,6 +173,7 @@
 
     &__holder {
       padding-bottom: 1.875rem;
+      padding-left: 1rem;
     }
   }
 }

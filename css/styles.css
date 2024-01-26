@@ -72,7 +72,8 @@ body {
   border-radius: 0.625rem;
   border: 1px solid #ededed;
   padding: 1.875rem;
-  width: 85%;
+  width: 100%;
+  max-width: 624px;
   color: #292929;
 }
 .lead-form h3 {
@@ -285,13 +286,13 @@ body {
   margin: 1.25rem 0;
 }
 
-@media screen and (max-width: 1025px) and (min-width: 450px) {
+@media screen and (max-width: 1200px) and (min-width: 450px) {
   .header__screen__wrapper {
-    margin: 3.125rem 0;
-    padding: 0;
+    padding: 3.125rem 0;
   }
   .header__screen__title {
     padding-left: 1.25rem;
+    text-align: center;
   }
   .header__lead-form {
     margin-top: -3.125rem;
@@ -422,13 +423,6 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-.FAQ {
-  display: grid;
-  grid-template-columns: 30% 60%;
-  margin-top: 20vh;
-  justify-content: center;
-}
-
 .FAQ_title {
   font-size: 2.5rem;
   font-weight: 600;
@@ -557,9 +551,6 @@ body {
   .contact-us__image {
     display: none;
   }
-  .lead-form__wrapper {
-    margin-top: 3.125rem;
-  }
   .c-u_lead-form_radio label {
     font-size: 0.875rem;
   }
@@ -589,11 +580,14 @@ body {
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
-  padding-top: 2rem;
+  padding: 2rem 4.68rem 0;
+}
+.header .mobile {
+  display: none;
 }
 .header__inner {
   display: flex;
-  padding-left: 4.875rem;
+  width: 100%;
 }
 .header__logo {
   display: flex;
@@ -603,7 +597,6 @@ body {
   display: flex;
   align-items: center;
   gap: 1.875rem;
-  padding-right: 4.875rem;
 }
 .header__socials {
   display: flex;
@@ -621,6 +614,7 @@ body {
   position: relative;
   display: inline-block;
   color: #ffffff;
+  transition: 0.3s ease-in-out;
 }
 .header__phone a::before {
   content: "";
@@ -643,23 +637,20 @@ a:hover {
 
 .nav {
   padding-left: 4rem;
+  margin-left: 0;
+  margin-right: auto;
 }
 .nav__inner {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  gap: 1.25rem;
   margin: 0;
   padding: 0;
   list-style-type: none;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  padding-inline-start: 0;
 }
 .nav__item {
-  padding: 1.25rem;
   font-family: "FiraSans_Regular400", sans-serif;
   font-size: 1.25rem;
   line-height: 130%;
@@ -671,6 +662,7 @@ a:hover {
   align-items: center;
   color: #ffffff;
   line-height: 1.3;
+  transition: 0.3s ease-out;
 }
 .nav__link::before {
   content: "";
@@ -689,6 +681,121 @@ a:hover {
   width: 100%;
 }
 
+@media (max-width: 1440px) {
+  .header__logo {
+    max-width: 150px;
+  }
+  .nav__link {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 1200px) {
+  body.active {
+    overflow: hidden;
+  }
+  .header {
+    padding: 2rem 1rem 0;
+  }
+  .header__logo {
+    max-width: 200px;
+    position: relative;
+    z-index: 101;
+  }
+  .header .mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 47px;
+    height: 47px;
+    border: 1px solid #fb8d00;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 3px;
+    position: relative;
+    z-index: 101;
+  }
+  .header .mobile.active {
+    border: 1px solid #ffffff;
+  }
+  .header .mobile.active .show {
+    display: none;
+  }
+  .header .mobile.active .hide {
+    display: block;
+  }
+  .header .mobile .show {
+    display: block;
+  }
+  .header .mobile .hide {
+    display: none;
+  }
+  .header__inner {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    transition: 0.3s ease-in-out;
+    background-color: #fb8d00;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .header__inner.active {
+    left: 0;
+  }
+  .header__contacts {
+    display: flex;
+    flex-direction: column;
+    min-height: 260px;
+    padding-right: 2.2rem;
+  }
+  .header__phone a {
+    font-size: 1.5rem;
+  }
+  .header .nav {
+    width: 50%;
+    min-height: 260px;
+    border-right: 1px solid #ededed;
+    padding-left: 1.25rem;
+  }
+  .header .nav__inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .header .nav__link {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .header__inner {
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 1.25rem;
+  }
+  .header .nav {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 50px;
+    border-top: 1px solid #ffffff;
+    border-right-color: transparent;
+  }
+  .header .nav__inner {
+    max-width: 320px;
+  }
+  .header__contacts {
+    min-height: auto;
+    padding-bottom: 50px;
+    padding-right: 0;
+    width: 100%;
+    align-items: flex-start;
+  }
+}
 .footer {
   display: flex;
   flex-direction: column;
@@ -778,7 +885,6 @@ a:hover {
     align-items: start;
   }
   .footer__inner {
-    width: 50%;
     position: relative;
     border-bottom: none;
   }
@@ -829,6 +935,10 @@ a:hover {
   .footer {
     display: block;
   }
+  .footer__inner {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   .footer__inner_content {
     display: block;
   }
@@ -839,678 +949,13 @@ a:hover {
   }
   .footer__holder {
     padding-bottom: 1.875rem;
+    padding-left: 1rem;
   }
 }
 @media screen and (max-width: 370px) {
   .footer__phone {
     display: flex;
     flex-direction: column;
-  }
-}
-/*# Стили для Desktop */
-.card {
-  position: relative;
-  border-radius: 10px;
-}
-
-.card-body {
-  position: absolute;
-  width: 100%;
-  min-height: 140px;
-  left: 30px;
-  bottom: 30px;
-}
-
-.card-title {
-  font-family: "FiraSans_SemiBold600", serif;
-  font-size: 32px;
-  line-height: 110%;
-  color: #ffffff;
-}
-
-.card-text {
-  color: #ffffff;
-  font-family: "FiraSans_Regular400", serif;
-  font-size: 20px;
-  line-height: 130%;
-}
-
-.card-text:last-child {
-  font-size: 14px;
-}
-
-.services {
-  /*# Кнопка в блоке услуги */
-  /*# эффект при наведении на кнопку */
-}
-.services__card {
-  display: flex;
-  flex-direction: row;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-  min-height: 323px;
-}
-.services__card-text {
-  color: #292929;
-  font-family: "FiraSans_Regular400";
-  font-size: 16px;
-  line-height: 150%;
-  margin-top: 5px;
-  margin-bottom: 0;
-}
-.services__card__img {
-  max-width: 390px;
-  border-radius: 5px;
-  overflow: hidden;
-}
-.services__card__img img {
-  max-width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.services__card-body {
-  max-width: 390px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.services__card-title {
-  margin-top: 10px;
-  color: #292929;
-  font-family: "FiraSans_SemiBold600";
-  font-size: 24px;
-  line-height: 130%;
-}
-.services .btn-custom-services {
-  color: #fb8d00;
-  background-color: #ffffff;
-  border: 1px solid #fb8d00;
-  color: #fb8d00;
-  background-color: #ffffff;
-  padding: 20px 0;
-  font-size: 20px;
-}
-.services .btn-custom-services:hover {
-  color: #ffffff;
-  background-color: #fb8d00;
-}
-.services .btn.btn-services {
-  color: #fb8d00;
-  background-color: #ffffff;
-}
-
-.additionally {
-  background-color: #fb8d00;
-  padding: 30px;
-  margin-top: 30px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: row;
-}
-.additionally .title-additionally {
-  color: #ffffff;
-  font-family: "FiraSans_Regular400", serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 130%;
-}
-.additionally .list {
-  color: #ffffff;
-  font-family: "FiraSans_Regular400", serif;
-  font-size: 18px;
-  line-height: 150%;
-  margin-top: 20px;
-}
-.additionally .img.warning {
-  width: 123px;
-  height: 123px;
-  margin-top: 100px;
-  margin-left: 400px;
-}
-
-/* Tablet */
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  /* Блок отправления */
-  .title-departures {
-    color: #292929;
-    font-family: "FiraSans_SemiBold600", serif;
-    font-size: 32px;
-    line-height: 110%;
-  }
-  .card.germany {
-    margin-left: 4rem;
-    margin-right: 3rem;
-    padding: 0;
-  }
-  .card-img-overlay.Germany {
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-    margin: 0;
-  }
-  .card-title.Germany {
-    font-family: "FiraSans_SemiBold600", serif;
-    font-size: 24px;
-    line-height: 130%;
-    margin-bottom: 15px;
-    margin-left: 30px;
-  }
-  .card-text.germany1 {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 18px;
-    line-height: 130%;
-    margin-left: 30px;
-    margin-bottom: 5px;
-  }
-  .card-text.germany2 {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 12px;
-    line-height: 130%;
-    margin-bottom: 30px;
-    margin-left: 30px;
-  }
-  .card.kaliningrad {
-    margin-left: 4rem;
-    margin-right: 3rem;
-    padding: 0;
-  }
-  .card-img-overlay.Kaliningrad {
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-    margin: 0;
-  }
-  .card-title.Kaliningrad {
-    font-family: "FiraSans_SemiBold600", serif;
-    font-size: 24px;
-    line-height: 130%;
-    margin-bottom: 15px;
-    margin-left: 30px;
-  }
-  .card-text.kaliningrad1 {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 18px;
-    line-height: 130%;
-    margin-left: 30px;
-    margin-bottom: 5px;
-  }
-  .card-text.kaliningrad2 {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 12px;
-    line-height: 130%;
-    margin-bottom: 30px;
-    margin-left: 30px;
-  }
-  .services {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-  }
-  .title-services {
-    color: #292929;
-    font-family: "FiraSans_SemiBold600", serif;
-    font-size: 32px;
-    line-height: 110%;
-    margin-top: 60px;
-  }
-  .title-additionally {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 130%;
-  }
-  .list {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 18px;
-    line-height: 150%;
-  }
-}
-/* Mobile */
-@media only screen and (max-width: 767px) {
-  /* Блок отправления */
-  .title-departures {
-    color: #292929;
-    font-family: "FiraSans_SemiBold600", serif;
-    font-size: 24px;
-    line-height: 130%;
-  }
-  .card-img-overlay.Germany {
-    display: flex;
-  }
-  .card-title.Germany {
-    font-family: "FiraSans_SemiBold600", serif;
-    font-size: 24px;
-    line-height: 130%;
-  }
-  .card-text.germany1 {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 18px;
-    line-height: 130%;
-  }
-  .card-text.germany2 {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 12px;
-    line-height: 130%;
-  }
-  .card-img-overlay.Kaliningrad {
-    display: flex;
-  }
-  .card-title.Kaliningrad {
-    font-family: "FiraSans_SemiBold600", serif;
-    font-size: 24px;
-    line-height: 130%;
-  }
-  .card-text.kaliningrad1 {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 18px;
-    line-height: 130%;
-  }
-  .card-text.kaliningrad2 {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 12px;
-    line-height: 130%;
-  }
-  .services {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-  }
-  .title-services {
-    color: #292929;
-    font-family: "FiraSans_SemiBold600", serif;
-    font-size: 24px;
-    line-height: 130%;
-  }
-  .title-additionally {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 130%;
-  }
-  .list {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 16px;
-    line-height: 150%;
-  }
-}
-/* Tablet */
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  /* Блок отправления */
-  .title-departures {
-    color: #292929;
-    font-family: "FiraSans_SemiBold600", serif;
-    font-size: 32px;
-    line-height: 110%;
-  }
-  .card.germany {
-    margin-left: 4rem;
-    margin-right: 3rem;
-    padding: 0;
-  }
-  .card-img-overlay.Germany {
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-    margin: 0;
-  }
-  .card-title.Germany {
-    font-family: "FiraSans_SemiBold600", serif;
-    font-size: 24px;
-    line-height: 130%;
-    margin-bottom: 15px;
-    margin-left: 30px;
-  }
-  .card-text.germany1 {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 18px;
-    line-height: 130%;
-    margin-left: 30px;
-    margin-bottom: 5px;
-  }
-  .card-text.germany2 {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 12px;
-    line-height: 130%;
-    margin-bottom: 30px;
-    margin-left: 30px;
-  }
-  .card.kaliningrad {
-    margin-left: 4rem;
-    margin-right: 3rem;
-    padding: 0;
-  }
-  .card-img-overlay.Kaliningrad {
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-    margin: 0;
-  }
-  .card-title.Kaliningrad {
-    font-family: "FiraSans_SemiBold600", serif;
-    font-size: 24px;
-    line-height: 130%;
-    margin-bottom: 15px;
-    margin-left: 30px;
-  }
-  .card-text.kaliningrad1 {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 18px;
-    line-height: 130%;
-    margin-left: 30px;
-    margin-bottom: 5px;
-  }
-  .card-text.kaliningrad2 {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 12px;
-    line-height: 130%;
-    margin-bottom: 30px;
-    margin-left: 30px;
-  }
-  .services {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-  }
-  .title-services {
-    color: #292929;
-    font-family: "FiraSans_SemiBold600", serif;
-    font-size: 32px;
-    line-height: 110%;
-    margin-top: 60px;
-  }
-  .title-additionally {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 130%;
-  }
-  .list.additionally {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 18px;
-    line-height: 150%;
-  }
-}
-/* Mobile */
-@media only screen and (max-width: 767px) {
-  /* Блок отправления */
-  .title-departures {
-    color: #292929;
-    font-family: "FiraSans_SemiBold600", serif;
-    font-size: 24px;
-    line-height: 130%;
-  }
-  .card-img-overlay.Germany {
-    display: flex;
-  }
-  .card-title.Germany {
-    font-family: "FiraSans_SemiBold600", serif;
-    font-size: 24px;
-    line-height: 130%;
-  }
-  .card-text.germany1 {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 18px;
-    line-height: 130%;
-  }
-  .card-text.germany2 {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 12px;
-    line-height: 130%;
-  }
-  .card-img-overlay.Kaliningrad {
-    display: flex;
-  }
-  .card-title.Kaliningrad {
-    font-family: "FiraSans_SemiBold600", serif;
-    font-size: 24px;
-    line-height: 130%;
-  }
-  .card-text.kaliningrad1 {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 18px;
-    line-height: 130%;
-  }
-  .card-text.kaliningrad2 {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 12px;
-    line-height: 130%;
-  }
-  .services {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-  }
-  .title-services {
-    color: #292929;
-    font-family: "FiraSans_SemiBold600", serif;
-    font-size: 24px;
-    line-height: 130%;
-  }
-  .title-additionally {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 130%;
-  }
-  .list {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 16px;
-    line-height: 150%;
-  }
-}
-/* Tablet */
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  /* Блок отправления */
-  .title-departures {
-    color: #292929;
-    font-family: "FiraSans_SemiBold600", serif;
-    font-size: 32px;
-    line-height: 110%;
-  }
-  .card.germany {
-    margin-left: 4rem;
-    margin-right: 3rem;
-    padding: 0;
-  }
-  .card-img-overlay.Germany {
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-    margin: 0;
-  }
-  .card-title.Germany {
-    font-family: "FiraSans_SemiBold600", serif;
-    font-size: 24px;
-    line-height: 130%;
-    margin-bottom: 15px;
-    margin-left: 30px;
-  }
-  .card-text.germany1 {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 18px;
-    line-height: 130%;
-    margin-left: 30px;
-    margin-bottom: 5px;
-  }
-  .card-text.germany2 {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 12px;
-    line-height: 130%;
-    margin-bottom: 30px;
-    margin-left: 30px;
-  }
-  .card.kaliningrad {
-    margin-left: 4rem;
-    margin-right: 3rem;
-    padding: 0;
-  }
-  .card-img-overlay.Kaliningrad {
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-    margin: 0;
-  }
-  .card-title.Kaliningrad {
-    font-family: "FiraSans_SemiBold600", serif;
-    font-size: 24px;
-    line-height: 130%;
-    margin-bottom: 15px;
-    margin-left: 30px;
-  }
-  .card-text.kaliningrad1 {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 18px;
-    line-height: 130%;
-    margin-left: 30px;
-    margin-bottom: 5px;
-  }
-  .card-text.kaliningrad2 {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 12px;
-    line-height: 130%;
-    margin-bottom: 30px;
-    margin-left: 30px;
-  }
-  .services {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-  }
-  .title-services {
-    color: #292929;
-    font-family: "FiraSans_SemiBold600", serif;
-    font-size: 32px;
-    line-height: 110%;
-    margin-top: 60px;
-  }
-  .title-additionally {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 130%;
-  }
-  .list {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 18px;
-    line-height: 150%;
-  }
-}
-/* Mobile */
-@media only screen and (max-width: 767px) {
-  /* Блок отправления */
-  .title-departures {
-    color: #292929;
-    font-family: "FiraSans_SemiBold600", serif;
-    font-size: 24px;
-    line-height: 130%;
-  }
-  .card-img-overlay.Germany {
-    display: flex;
-  }
-  .card-title.Germany {
-    font-family: "FiraSans_SemiBold600", serif;
-    font-size: 24px;
-    line-height: 130%;
-  }
-  .card-text.germany1 {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 18px;
-    line-height: 130%;
-  }
-  .card-text.germany2 {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 12px;
-    line-height: 130%;
-  }
-  .card-img-overlay.Kaliningrad {
-    display: flex;
-  }
-  .card-title.Kaliningrad {
-    font-family: "FiraSans_SemiBold600", serif;
-    font-size: 24px;
-    line-height: 130%;
-  }
-  .card-text.kaliningrad1 {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 18px;
-    line-height: 130%;
-  }
-  .card-text.kaliningrad2 {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 12px;
-    line-height: 130%;
-  }
-  .services {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-  }
-  .title-services {
-    color: #292929;
-    font-family: "FiraSans_SemiBold600", serif;
-    font-size: 24px;
-    line-height: 130%;
-  }
-  .title-additionally {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 130%;
-  }
-  .list {
-    color: #ffffff;
-    font-family: "FiraSans_Regular400", serif;
-    font-size: 16px;
-    line-height: 150%;
   }
 }
 .container__feedback {
@@ -1593,7 +1038,7 @@ a:hover {
 .owl-nav {
   position: absolute;
   top: -4.5rem;
-  left: 85%;
+  left: 95%;
 }
 
 .owl-item {
@@ -1661,11 +1106,14 @@ a:hover {
     left: 15%;
   }
 }
+.nav-pills .nav-link {
+  color: #fb8d00;
+}
+
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   background-color: #ffffff;
   border: 1px solid #fb8d00;
-  color: #fb8d00;
   transition: all 0.2s ease;
 }
 
@@ -1765,6 +1213,80 @@ a:hover {
   top: 0;
 }
 
+.inner-container {
+  max-width: 1553px;
+  --bs-gutter-x: 1.5rem;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ededed;
+}
+
+.container-block {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.container-block h3 {
+  font-family: "FiraSans_Regular400";
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 125px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  flex: 1;
+  -webkit-text-stroke: 2px #fb8d00;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.container-block p {
+  font-family: "FiraSans_Regular400";
+  font-size: 20px;
+  line-height: 26px;
+  text-align: left;
+  flex: 6;
+}
+
+@media screen and (max-width: 767px) {
+  .container-block h3 {
+    font-size: 64px;
+  }
+  .container-block p {
+    font-size: 18px;
+  }
+  .container-block {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 280px;
+  }
+  .inner-container {
+    display: block;
+  }
+  .owl-nav {
+    top: -5rem;
+    left: 85%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container-block h3 {
+    font-size: 64px;
+  }
+  .container-block p {
+    font-size: 18px;
+  }
+  .container-block {
+    max-width: 342px;
+  }
+  .owl-nav {
+    top: -5rem;
+    left: 85%;
+  }
+}
 @media screen and (max-width: 576px) {
   .owl-nav {
     position: absolute;
@@ -1772,7 +1294,15 @@ a:hover {
     transform: translate(-160%);
     left: 15%;
   }
+  .owl-nav {
+    top: -8.25rem;
+    left: 87%;
+  }
 }
+.advantages {
+  padding: 0 1.25rem;
+}
+
 .inner-container {
   max-width: 1553px;
   --bs-gutter-x: 1.5rem;
@@ -1781,6 +1311,8 @@ a:hover {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
   border-top: 1px solid #ededed;
 }
 
@@ -1822,7 +1354,7 @@ a:hover {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    max-width: 280px;
+    max-width: 100%;
   }
   .inner-container {
     display: block;
@@ -1839,74 +1371,260 @@ a:hover {
     max-width: 342px;
   }
 }
-.inner-container {
-  max-width: 1553px;
-  --bs-gutter-x: 1.5rem;
+.departures .card {
+  position: relative;
+  border-radius: 10px;
+}
+.departures .card-body {
+  position: absolute;
   width: 100%;
-  height: auto;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  border-top: 1px solid #ededed;
+  max-width: 700px;
+  min-height: 140px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 1.875rem;
 }
-
-.container-block {
-  display: flex;
-  align-items: center;
-  gap: 2px;
+.departures .card-img-overlay {
+  padding: 0;
+  position: static;
 }
-
-.container-block h3 {
-  font-family: "FiraSans_Regular400";
-  font-size: 96px;
-  font-weight: 400;
-  line-height: 125px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  flex: 1;
-  -webkit-text-stroke: 2px #fb8d00;
-  color: #fff;
-  margin-right: 20px;
+.departures .card-title {
+  font-family: "FiraSans_SemiBold600", serif;
+  font-size: 32px;
+  line-height: 110%;
+  color: #ffffff;
 }
-
-.container-block p {
-  font-family: "FiraSans_Regular400";
+.departures .card-text {
+  color: #ffffff;
+  font-family: "FiraSans_Regular400", serif;
   font-size: 20px;
-  line-height: 26px;
-  text-align: left;
-  flex: 6;
+  line-height: 130%;
+}
+.departures .card-text:last-child {
+  font-size: 14px;
 }
 
-@media screen and (max-width: 767px) {
-  .container-block h3 {
-    font-size: 64px;
-  }
-  .container-block p {
-    font-size: 18px;
-  }
-  .container-block {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    max-width: 280px;
-  }
-  .inner-container {
-    display: block;
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  /* Блок отправления */
+  .departures .card:first-child {
+    margin-bottom: 1.25rem;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .container-block h3 {
-    font-size: 64px;
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  /* Блок отправления */
+  .departures .card:first-child {
+    margin-bottom: 1.25rem;
   }
-  .container-block p {
+  .departures .card-body {
+    padding: 1.25rem;
+  }
+  .departures .card-title {
+    font-size: 24px;
+    line-height: 110%;
+  }
+  .departures .card-text {
     font-size: 18px;
   }
-  .container-block {
-    max-width: 342px;
+  .departures .card-text:last-child {
+    font-size: 12px;
+  }
+  .departures .card img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .card img {
+    width: 100%;
+  }
+}
+.additionally {
+  background-color: #fb8d00;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+.additionally .title-additionally {
+  color: #ffffff;
+  font-family: "FiraSans_Regular400", serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
+.additionally .list {
+  color: #ffffff;
+  font-family: "FiraSans_Regular400", serif;
+  font-size: 18px;
+  line-height: 150%;
+  margin-top: 20px;
+}
+.additionally .img.warning {
+  width: 123px;
+  height: 123px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  /* Блок отправления */
+  .additionally .title-additionally {
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+  }
+  .additionally .list {
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 16px;
+    line-height: 150%;
+  }
+  .additionally .img.warning {
+    max-width: 100px;
+    width: 100%;
+    height: 100px;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  /* Блок отправления */
+  .additionally {
+    align-items: flex-start;
+  }
+  .additionally .title-additionally {
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+  }
+  .additionally .list.additionally {
+    color: #ffffff;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 18px;
+    line-height: 150%;
+  }
+  .additionally .img.warning {
+    max-width: 50px;
+    width: 100%;
+    height: 50px;
+  }
+}
+.services {
+  /*# Кнопка в блоке услуги */
+  /*# эффект при наведении на кнопку */
+}
+.services__card {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  min-height: 323px;
+}
+.services__card-text {
+  color: #292929;
+  font-family: "FiraSans_Regular400";
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.services__card__img {
+  max-width: 390px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.services__card__img img {
+  max-width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.services__card-body {
+  max-width: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.services__card-title {
+  margin-top: 10px;
+  color: #292929;
+  font-family: "FiraSans_SemiBold600";
+  font-size: 24px;
+  line-height: 130%;
+}
+.services .btn-custom-services {
+  color: #fb8d00;
+  background-color: #ffffff;
+  border: 1px solid #fb8d00;
+  color: #fb8d00;
+  background-color: #ffffff;
+  padding: 20px 0;
+  font-size: 20px;
+}
+.services .btn-custom-services:hover {
+  color: #ffffff;
+  background-color: #fb8d00;
+}
+.services .btn.btn-services {
+  color: #fb8d00;
+  background-color: #ffffff;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  /* Блок отправления */
+  .services__card {
+    min-height: 222px;
+  }
+  .services__card-body {
+    max-width: 500px;
+    width: 100%;
+  }
+  .services__card__img {
+    width: 100%;
+  }
+  .services__card__img img {
+    height: 200px;
+    width: 100%;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  /* Блок отправления */
+  .services__card {
+    flex-direction: column;
+    min-height: 100%;
+  }
+  .services__card-body {
+    max-width: 100%;
+    margin-top: 1.875rem;
+  }
+  .services__card-text {
+    margin-bottom: 1.25rem;
+  }
+  .services__card__img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .services__card__img img {
+    height: 200px;
+    width: 100%;
   }
 }
 body {
-  min-width: 320px;
+  min-width: 375px;
   margin: 0 auto;
   padding: 0;
   font-family: "FiraSans_Regular400", sans-serif;
@@ -1919,6 +1637,11 @@ body {
 .container {
   max-width: 1770px;
   margin: 0 auto;
+}
+
+.img__fluid {
+  max-width: 100%;
+  height: auto;
 }
 
 .container__wrapper {
@@ -1938,4 +1661,23 @@ body {
   font-size: 40px;
   line-height: 130%;
   margin-bottom: 30px;
+}
+
+@media (max-width: 1200px) {
+  .top-margin {
+    margin-top: 150px;
+  }
+  .main-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .top-margin {
+    margin-top: 100px;
+  }
+  .main-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
 }

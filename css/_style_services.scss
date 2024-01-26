@@ -1,0 +1,117 @@
+$orange: #fb8d00;
+$grey: #ededed;
+$grey-dark: #c8c8c8;
+$black: #292929;
+$white: #ffffff;
+
+.services {
+  &__card {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    min-height: 323px;
+  }
+  &__card-text {
+    color: $black;
+    font-family: "FiraSans_Regular400";
+    font-size: 16px;
+    line-height: 150%;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+  &__card__img {
+    max-width: 390px;
+    border-radius: 5px;
+    overflow: hidden;
+    img {
+      max-width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+  &__card-body {
+    max-width: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__card-title {
+    margin-top: 10px;
+    color: $black;
+    font-family: "FiraSans_SemiBold600";
+    font-size: 24px;
+    line-height: 130%;
+  }
+
+  /*# Кнопка в блоке услуги */
+  .btn-custom-services {
+    $orange-border: 1px solid $orange;
+    color: $orange;
+    background-color: $white;
+    border: 1px solid $orange;
+    color: $orange;
+    background-color: $white;
+    padding: 20px 0;
+    font-size: 20px;
+  }
+  /*# эффект при наведении на кнопку */
+  .btn-custom-services:hover {
+    color: $white;
+    background-color: $orange;
+  }
+
+  .btn.btn-services {
+    $orange-border: 1px solid $orange;
+    color: $orange;
+    background-color: $white;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  /* Блок отправления */
+
+  .services {
+    &__card {
+      min-height: 222px;
+    }
+    &__card-body {
+      max-width: 500px;
+      width: 100%;
+    }
+    &__card__img {
+      width: 100%;
+      img {
+        height: 200px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  /* Блок отправления */
+  .services {
+    &__card {
+      flex-direction: column;
+      min-height: 100%;
+    }
+    &__card-body {
+      max-width: 100%;
+      margin-top: 1.875rem;
+    }
+    &__card-text {
+      margin-bottom: 1.25rem;
+    }
+    &__card__img {
+      width: 100%;
+      max-width: 100%;
+      img {
+        height: 200px;
+        width: 100%;
+      }
+    }
+  }
+}

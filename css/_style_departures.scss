@@ -1,0 +1,89 @@
+$orange: #fb8d00;
+$grey: #ededed;
+$grey-dark: #c8c8c8;
+$black: #292929;
+$white: #ffffff;
+
+.departures {
+  .card {
+    position: relative;
+    border-radius: 10px;
+  }
+  .card-body {
+    position: absolute;
+    width: 100%;
+    max-width: 700px;
+    min-height: 140px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 1.875rem;
+  }
+
+  .card-img-overlay {
+    padding: 0;
+    position: static;
+  }
+
+  .card-title {
+    font-family: "FiraSans_SemiBold600", serif;
+    font-size: 32px;
+    line-height: 110%;
+    color: $white;
+  }
+  .card-text {
+    color: $white;
+    font-family: "FiraSans_Regular400", serif;
+    font-size: 20px;
+    line-height: 130%;
+  }
+  .card-text:last-child {
+    font-size: 14px;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  /* Блок отправления */
+
+  .departures {
+    .card:first-child {
+      margin-bottom: 1.25rem;
+    }
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  /* Блок отправления */
+
+  .departures {
+    .card:first-child {
+      margin-bottom: 1.25rem;
+    }
+    .card-body {
+      padding: 1.25rem;
+    }
+
+    .card-title {
+      font-size: 24px;
+      line-height: 110%;
+    }
+    .card-text {
+      font-size: 18px;
+    }
+    .card-text:last-child {
+      font-size: 12px;
+    }
+
+    .card img {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .card img {
+    width: 100%;
+  }
+}
