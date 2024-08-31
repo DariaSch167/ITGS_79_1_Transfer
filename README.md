@@ -11,5 +11,5 @@ Services info sections, request form, Q&A accordion, feedback slider, adaptive d
 
 ## Stack
 
-HTML, Bootstrap, CSS, Owl Carousel
+HTML, Bootstrap, SCSS, Owl Carousel
 
